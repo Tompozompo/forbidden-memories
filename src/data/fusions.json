@@ -1,0 +1,6820 @@
+[
+  {
+    "materials": [
+      1,
+      5
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      1,
+      7
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      1,
+      10
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      14
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      20
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      26
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      31
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      1,
+      32
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      37
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      1,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      48
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      1,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      1,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      63
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      1,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      72
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      1,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      84
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      1,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      1,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      1,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      1,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      1,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      2,
+      8
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      2,
+      15
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      2,
+      21
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      2,
+      27
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      33
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      2,
+      39
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      2,
+      45
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      50
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      2,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      2,
+      62
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      68
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      2,
+      74
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      80
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      86
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      2,
+      92
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      2,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      3,
+      9
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      3,
+      16
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      22
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      28
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      34
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      3,
+      40
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      3,
+      51
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      57
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      3,
+      63
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      3,
+      69
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      3,
+      75
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      81
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      3,
+      87
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      3,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      3,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      3,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      4,
+      9
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      4,
+      11
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      17
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      19
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      23
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      25
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      4,
+      26
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      29
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      35
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      40
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      4,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      4,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      4,
+      54
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      4,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      4,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      5,
+      13
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      19
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      5,
+      24
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      5,
+      31
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      37
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      43
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      5,
+      48
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      63
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      78
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      5,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      6,
+      12
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      18
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      6,
+      25
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      6,
+      30
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      6,
+      36
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      6,
+      42
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      47
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      6,
+      53
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      59
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      6,
+      65
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      71
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      6,
+      83
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      6,
+      89
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      6,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      7,
+      10
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      14
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      20
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      23
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      26
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      32
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      38
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      44
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      49
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      55
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      58
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      61
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      67
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      70
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      73
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      79
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      82
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      85
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      7,
+      94
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      7,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      8,
+      11
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      8,
+      15
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      8,
+      21
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      8,
+      24
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      27
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      29
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      8,
+      33
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      8,
+      39
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      8,
+      42
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      43
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      8,
+      45
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      8,
+      50
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      52
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      8,
+      56
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      8,
+      62
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      65
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      66
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      8,
+      68
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      8,
+      69
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      74
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      8,
+      78
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      80
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      86
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      8,
+      92
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      8,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      9,
+      16
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      9,
+      17
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      9,
+      19
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      22
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      9,
+      25
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      9,
+      26
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      28
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      9,
+      34
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      9,
+      40
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      46
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      9,
+      51
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      9,
+      54
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      9,
+      57
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      9,
+      63
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      9,
+      69
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      75
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      9,
+      76
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      9,
+      81
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      87
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      9,
+      88
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      9,
+      93
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      9,
+      99
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      10,
+      14
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      20
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      26
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      32
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      10,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      10,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      11,
+      17
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      11,
+      21
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      23
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      24
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      11,
+      27
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      11,
+      29
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      35
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      11,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      11,
+      42
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      11,
+      43
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      52
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      58
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      11,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      65
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      11,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      11,
+      69
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      11,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      11,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      11,
+      98
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      11,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      12,
+      14
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      18
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      12,
+      25
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      12,
+      30
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      12,
+      36
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      12,
+      38
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      42
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      47
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      12,
+      49
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      53
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      55
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      59
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      12,
+      65
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      71
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      12,
+      79
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      83
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      12,
+      89
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      12,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      12,
+      97
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      13,
+      16
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      19
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      24
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      31
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      35
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      37
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      39
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      43
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      13,
+      48
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      78
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      13,
+      100
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      14,
+      20
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      26
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      32
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      14,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      14,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      15,
+      21
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      15,
+      27
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      33
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      39
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      45
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      50
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      62
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      68
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      15,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      80
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      86
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      15,
+      98
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      16,
+      22
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      28
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      34
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      16,
+      35
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      16,
+      39
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      40
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      51
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      57
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      16,
+      63
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      69
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      75
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      81
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      87
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      16,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      17,
+      19
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      23
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      25
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      17,
+      26
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      29
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      35
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      17,
+      40
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      17,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      17,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      52
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      17,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      17,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      18,
+      25
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      18,
+      30
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      18,
+      36
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      18,
+      42
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      18,
+      47
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      18,
+      53
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      18,
+      59
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      18,
+      65
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      18,
+      71
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      18,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      18,
+      83
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      18,
+      89
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      18,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      19,
+      24
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      19,
+      25
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      19,
+      26
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      19,
+      31
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      19,
+      37
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      40
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      19,
+      43
+    ],
+    "result": 78
+  },
+  {
+    "materials": [
+      19,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      19,
+      48
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      19,
+      54
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      60
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      19,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      72
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      19,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      19,
+      78
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      19,
+      84
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      19,
+      90
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      19,
+      96
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      20,
+      26
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      32
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      20,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      20,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      21,
+      24
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      27
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      29
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      33
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      39
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      21,
+      42
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      43
+    ],
+    "result": 86
+  },
+  {
+    "materials": [
+      21,
+      45
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      50
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      52
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      56
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      21,
+      62
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      65
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      66
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      21,
+      68
+    ],
+    "result": 86
+  },
+  {
+    "materials": [
+      21,
+      69
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      74
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      78
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      80
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      86
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      21,
+      92
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      21,
+      98
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      22,
+      28
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      22,
+      34
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      22,
+      40
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      22,
+      51
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      22,
+      57
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      22,
+      63
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      22,
+      69
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      22,
+      75
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      22,
+      81
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      22,
+      87
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      22,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      22,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      22,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      23,
+      29
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      23,
+      35
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      23,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      23,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      23,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      82
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      23,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      23,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      24,
+      27
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      24,
+      29
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      24,
+      31
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      24,
+      37
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      42
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      24,
+      43
+    ],
+    "result": 78
+  },
+  {
+    "materials": [
+      24,
+      48
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      24,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      24,
+      54
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      60
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      65
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      24,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      69
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      24,
+      72
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      24,
+      78
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      24,
+      84
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      90
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      96
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      24,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      25,
+      26
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      25,
+      30
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      25,
+      36
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      25,
+      40
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      25,
+      42
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      25,
+      46
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      25,
+      47
+    ],
+    "result": 42
+  },
+  {
+    "materials": [
+      25,
+      53
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      25,
+      54
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      25,
+      59
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      25,
+      64
+    ],
+    "result": 88
+  },
+  {
+    "materials": [
+      25,
+      65
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      25,
+      71
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      25,
+      76
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      25,
+      77
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      25,
+      83
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      25,
+      88
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      25,
+      89
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      25,
+      95
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      26,
+      32
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      40
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      26,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      26,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      54
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      26,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      26,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      26,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      26,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      26,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      26,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      27,
+      29
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      27,
+      33
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      27,
+      39
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      27,
+      42
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      43
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      27,
+      45
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      27,
+      50
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      27,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      27,
+      62
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      65
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      27,
+      68
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      27,
+      69
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      27,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      27,
+      78
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      27,
+      80
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      86
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      27,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      27,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      28,
+      34
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      28,
+      40
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      28,
+      51
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      57
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      28,
+      63
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      69
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      28,
+      75
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      81
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      87
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      28,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      28,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      29,
+      35
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      29,
+      42
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      43
+    ],
+    "result": 88
+  },
+  {
+    "materials": [
+      29,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      65
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      29,
+      69
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      78
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      82
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      29,
+      98
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      29,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      30,
+      36
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      30,
+      42
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      30,
+      47
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      30,
+      53
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      59
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      65
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      71
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      30,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      83
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      89
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      30,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      31,
+      37
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      43
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      31,
+      48
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      63
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      78
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      31,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      32,
+      38
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      32,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      32,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      33,
+      39
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      33,
+      45
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      33,
+      50
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      33,
+      56
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      33,
+      62
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      33,
+      68
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      33,
+      74
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      33,
+      80
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      33,
+      86
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      33,
+      92
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      33,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      34,
+      40
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      34,
+      51
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      34,
+      57
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      34,
+      63
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      34,
+      69
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      34,
+      75
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      34,
+      81
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      34,
+      87
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      34,
+      93
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      34,
+      96
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      34,
+      99
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      35,
+      39
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      35,
+      41
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      35,
+      46
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      52
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      58
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      35,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      35,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      36,
+      42
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      36,
+      47
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      36,
+      53
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      36,
+      59
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      36,
+      65
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      36,
+      71
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      36,
+      77
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      36,
+      83
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      36,
+      89
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      36,
+      95
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      37,
+      43
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      37,
+      48
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      63
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      37,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      37,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      37,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      38,
+      44
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      38,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      38,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      39,
+      45
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      50
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      62
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      68
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      39,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      80
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      86
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      98
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      39,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      40,
+      46
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      51
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      40,
+      54
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      40,
+      57
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      40,
+      63
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      40,
+      69
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      40,
+      75
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      40,
+      76
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      81
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      87
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      88
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      40,
+      93
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      40,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      41,
+      46
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      52
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      41,
+      58
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      64
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      70
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      76
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      82
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      88
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      94
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      41,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      42,
+      43
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      42,
+      47
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      42,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      42,
+      53
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      42,
+      59
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      42,
+      65
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      42,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      42,
+      69
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      42,
+      71
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      42,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      42,
+      78
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      42,
+      83
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      42,
+      89
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      42,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      42,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      43,
+      48
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      43,
+      52
+    ],
+    "result": 88
+  },
+  {
+    "materials": [
+      43,
+      54
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      60
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      65
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      43,
+      66
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      69
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      43,
+      72
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      43,
+      78
+    ],
+    "result": 48
+  },
+  {
+    "materials": [
+      43,
+      84
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      90
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      96
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      43,
+      98
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      44,
+      49
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      44,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      44,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      45,
+      50
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      45,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      45,
+      62
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      45,
+      68
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      45,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      45,
+      80
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      45,
+      86
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      45,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      45,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      46,
+      52
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      46,
+      54
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      46,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      46,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      47,
+      53
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      47,
+      59
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      47,
+      65
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      47,
+      71
+    ],
+    "result": 65
+  },
+  {
+    "materials": [
+      47,
+      77
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      47,
+      83
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      47,
+      89
+    ],
+    "result": 89
+  },
+  {
+    "materials": [
+      47,
+      95
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      48,
+      54
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      63
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      48,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      72
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      48,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      48,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      48,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      49,
+      55
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      49,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      49,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      50,
+      56
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      50,
+      62
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      50,
+      68
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      50,
+      74
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      50,
+      80
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      50,
+      86
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      50,
+      92
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      50,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      51,
+      57
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      51,
+      63
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      51,
+      69
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      51,
+      75
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      51,
+      81
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      51,
+      87
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      51,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      51,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      51,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      52,
+      58
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      52,
+      64
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      65
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      66
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      52,
+      69
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      70
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      76
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      78
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      82
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      88
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      94
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      98
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      52,
+      100
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      53,
+      59
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      53,
+      65
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      53,
+      71
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      53,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      53,
+      83
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      53,
+      89
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      53,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      54,
+      60
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      54,
+      64
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      54,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      54,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      54,
+      76
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      54,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      54,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      54,
+      88
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      54,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      54,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      55,
+      61
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      55,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      55,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      55,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      55,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      55,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      55,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      56,
+      62
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      56,
+      68
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      56,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      56,
+      80
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      56,
+      86
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      56,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      56,
+      98
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      57,
+      63
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      57,
+      69
+    ],
+    "result": 87
+  },
+  {
+    "materials": [
+      57,
+      75
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      57,
+      81
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      57,
+      87
+    ],
+    "result": 22
+  },
+  {
+    "materials": [
+      57,
+      93
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      57,
+      96
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      57,
+      99
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      58,
+      64
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      58,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      59,
+      65
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      59,
+      71
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      59,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      59,
+      83
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      59,
+      89
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      59,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      60,
+      63
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      66
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      78
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      60,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      61,
+      67
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      61,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      61,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      61,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      61,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      61,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      62,
+      68
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      62,
+      74
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      62,
+      80
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      62,
+      86
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      62,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      62,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      63,
+      69
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      63,
+      72
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      63,
+      75
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      63,
+      81
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      63,
+      84
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      63,
+      87
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      63,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      63,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      63,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      64,
+      70
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      64,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      64,
+      82
+    ],
+    "result": 17
+  },
+  {
+    "materials": [
+      64,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      64,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      64,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      65,
+      66
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      65,
+      69
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      65,
+      71
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      65,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      65,
+      78
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      65,
+      83
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      65,
+      89
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      65,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      65,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      66,
+      69
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      66,
+      72
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      66,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      66,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      66,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      66,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      66,
+      98
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      67,
+      73
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      67,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      67,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      67,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      67,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      68,
+      74
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      68,
+      80
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      68,
+      86
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      68,
+      92
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      68,
+      98
+    ],
+    "result": 80
+  },
+  {
+    "materials": [
+      69,
+      75
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      69,
+      78
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      69,
+      81
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      69,
+      87
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      69,
+      93
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      69,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      69,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      70,
+      76
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      70,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      70,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      70,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      70,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      71,
+      77
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      71,
+      83
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      71,
+      89
+    ],
+    "result": 6
+  },
+  {
+    "materials": [
+      71,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      72,
+      78
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      72,
+      84
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      72,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      72,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      72,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      72,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      73,
+      79
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      73,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      73,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      73,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      74,
+      80
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      74,
+      86
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      74,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      74,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      75,
+      81
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      75,
+      87
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      75,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      75,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      75,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      76,
+      82
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      76,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      76,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      76,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      77,
+      83
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      77,
+      89
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      77,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      78,
+      84
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      78,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      78,
+      96
+    ],
+    "result": 5
+  },
+  {
+    "materials": [
+      78,
+      98
+    ],
+    "result": 54
+  },
+  {
+    "materials": [
+      79,
+      85
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      79,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      79,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      80,
+      86
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      80,
+      92
+    ],
+    "result": 39
+  },
+  {
+    "materials": [
+      80,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      81,
+      87
+    ],
+    "result": 3
+  },
+  {
+    "materials": [
+      81,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      81,
+      96
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      81,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      82,
+      88
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      82,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      82,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      83,
+      89
+    ],
+    "result": 30
+  },
+  {
+    "materials": [
+      83,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      84,
+      90
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      84,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      84,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      84,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      85,
+      91
+    ],
+    "result": 7
+  },
+  {
+    "materials": [
+      85,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      86,
+      92
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      86,
+      98
+    ],
+    "result": 92
+  },
+  {
+    "materials": [
+      87,
+      93
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      87,
+      96
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      87,
+      99
+    ],
+    "result": 93
+  },
+  {
+    "materials": [
+      88,
+      94
+    ],
+    "result": 35
+  },
+  {
+    "materials": [
+      88,
+      100
+    ],
+    "result": 100
+  },
+  {
+    "materials": [
+      89,
+      95
+    ],
+    "result": 95
+  },
+  {
+    "materials": [
+      90,
+      93
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      90,
+      96
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      90,
+      99
+    ],
+    "result": 13
+  },
+  {
+    "materials": [
+      91,
+      97
+    ],
+    "result": 67
+  },
+  {
+    "materials": [
+      92,
+      98
+    ],
+    "result": 56
+  },
+  {
+    "materials": [
+      93,
+      99
+    ],
+    "result": 16
+  },
+  {
+    "materials": [
+      94,
+      100
+    ],
+    "result": 100
+  }
+]

@@ -38,10 +38,22 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       return { ...state, decks: newDecks, hands: newHands };
     }
     case 'FUSE': {
-      const res = checkFusion(action.matA, action.matB);
-      if (!res) return state;
-      // TODO: remove materials, add res to hand, etc.
-      return { ...state };
+      const resId = checkFusion(action.matA, action.matB);
+      if (!resId) return state;
+
+      // find the result card in the combined pool
+      const pool = [...state.decks[0], ...state.decks[1], ...state.hands[0], ...state.hands[1]];
+      const resCard = pool.find(c => c.id === resId);
+      if (!resCard) return state;
+
+      // remove materials, add result to current player's hand
+      const newHands = state.hands.map((h, i) =>
+        i === state.turn
+          ? [...h.filter(c => c.id !== action.matA && c.id !== action.matB), resCard]
+          : h
+      ) as [Card[], Card[]];
+
+      return { ...state, hands: newHands };
     }
     default:
       return state;

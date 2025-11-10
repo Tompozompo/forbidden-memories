@@ -33,5 +33,4 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 writeFileSync(OUT, JSON.stringify(results, null, 2));
-console.log(`✅ ${results.length} fusions written to ${OU
-T}`);
+console.log(`✅ ${results.length} fusions written to ${OUT}`);

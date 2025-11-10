@@ -126,7 +126,7 @@ src/
 ---
 
 10. Phone-Edit Checklist
-- Create GitHub repo → paste this README  
+- Create GitHub repo → paste this README 
 - Generate 150-card JSON (prompt Claude)  
 - Generate fusion JSON (prompt Claude)  
 - Scaffold Vite-React-PWA template  
@@ -137,7 +137,3 @@ src/
 - Add starchip shop  
 - PWA icons & manifest  
 - Playtest on subway → ship v0.1
-
----
-
-Next action: copy this into your repo, tick the first box, and we’ll iterate in the Issues tab straight from the GitHub app.

@@ -1,10 +1,19 @@
-import { useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { initialDuel, duelReducer } from '../engine/duel';
+import type { Card } from '../types';
 
-export default function DuelBoard({ p0Deck, p1Deck }: { p0Deck: number[]; p1Deck: number[] }) {
+export default function DuelBoard({ p0Deck, p1Deck }: { p0Deck: Card[]; p1Deck: Card[] }) {
   const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
 
-  // ultra-simple UI: just show hand and a fuse test
+  // draw a starting hand on mount (5 cards each by default)
+  useEffect(() => {
+    // draw 5 times for starting hand (simple approach)
+    for (let i = 0; i < 5; i++) {
+      dispatch({ type: 'DRAW' });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="p-2">
       <div className="text-xs">LP: {state.lp[0]} vs {state.lp[1]}</div>
@@ -12,7 +21,7 @@ export default function DuelBoard({ p0Deck, p1Deck }: { p0Deck: number[]; p1Deck
 
       {/* player hand */}
       <div className="flex gap-1 my-2">
-        {state.hands[0].map((c, i) => (
+        {state.hands[0].map((c: Card, i) => (
           <button key={i} className="border px-2 py-1 text-xs">{c.name}</button>
         ))}
       </div>
@@ -24,6 +33,16 @@ export default function DuelBoard({ p0Deck, p1Deck }: { p0Deck: number[]; p1Deck
       >
         Test Fuse 1+2
       </button>
+
+      {/* manual draw button for testing */}
+      <div className="mt-2">
+        <button
+          className="border px-2 py-1 text-xs"
+          onClick={() => dispatch({ type: 'DRAW' })}
+        >
+          Draw
+        </button>
+      </div>
     </div>
   );
 }

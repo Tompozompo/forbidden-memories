@@ -1,7 +1,7 @@
 // genFusions.js – phone-friendly, zero deps
-import cards from '../src/data/cards.json' assert { type: 'json' };
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
+const cards = JSON.parse(readFileSync('src/data/cards.json', 'utf-8'));
 const OUT = 'src/data/fusions.json';
 const results = [];
 

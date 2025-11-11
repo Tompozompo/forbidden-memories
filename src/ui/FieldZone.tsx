@@ -4,9 +4,11 @@ interface FieldZoneProps {
   player: 0 | 1;
   monsters: (Card | null)[];
   isActive: boolean;
+  onZoneClick?: (zoneIndex: number, card: Card | null) => void;
+  highlightedZone?: number | null;
 }
 
-export default function FieldZone({ player, monsters, isActive }: FieldZoneProps) {
+export default function FieldZone({ player, monsters, isActive, onZoneClick, highlightedZone }: FieldZoneProps) {
   return (
     <div className="my-4">
       <div className="text-xs font-bold mb-2">
@@ -18,10 +20,13 @@ export default function FieldZone({ player, monsters, isActive }: FieldZoneProps
             key={idx}
             data-slot={idx}
             data-player={player}
+            onClick={() => onZoneClick?.(idx, card)}
             className={`
               w-16 h-20 border-2 rounded flex items-center justify-center text-xs
               ${isActive ? 'border-blue-400 bg-blue-50' : 'border-gray-300 bg-gray-50'}
               ${card ? 'bg-green-100 border-green-500' : ''}
+              ${highlightedZone === idx ? 'ring-4 ring-yellow-400' : ''}
+              ${onZoneClick ? 'cursor-pointer hover:opacity-80' : ''}
             `}
             style={{ minWidth: '64px' }}
           >

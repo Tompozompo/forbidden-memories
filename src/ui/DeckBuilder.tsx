@@ -30,11 +30,13 @@ function DraggableOwnedCard({ card, onDragEnd }: { card: Card; onDragEnd: (targe
     <animated.div
       {...bind()}
       style={{ x, y, touchAction: 'none' }}
-      className="border rounded p-2 bg-white cursor-grab select-none"
+      className="card select-none"
     >
-      <div className="font-bold text-sm">{card.name}</div>
-      <div className="text-xs text-gray-600">
-        ATK: {card.atk ?? '?'} / DEF: {card.def ?? '?'}
+      <div style={{ fontSize: '8px', textAlign: 'center', padding: '4px' }}>
+        <div style={{ fontWeight: 'bold' }}>{card.name}</div>
+        <div style={{ fontSize: '7px', marginTop: '2px' }}>
+          ATK: {card.atk ?? '?'} / DEF: {card.def ?? '?'}
+        </div>
       </div>
     </animated.div>
   );
@@ -95,7 +97,7 @@ export default function DeckBuilder({ allCards, onReturnToDuel }: DeckBuilderPro
   const isValidDeck = deck.filter(id => id !== null).length === 20;
 
   return (
-    <div style={{ padding: '16px', fontFamily: 'sans-serif' }}>
+    <div style={{ padding: '16px' }}>
       <h1 style={{ fontSize: '24px', marginBottom: '16px' }}>Deck Builder</h1>
       
       <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>

@@ -1,5 +1,6 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
 import { initialDuel, duelReducer } from '../engine/duel';
+import { getAIAction } from '../engine/ai';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
 import DraggableCard from './DraggableCard';
@@ -7,8 +8,11 @@ import DraggableCard from './DraggableCard';
 export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]; p1Deck: Card[]; allCards: Card[] }) {
   const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
   const initialDrawDone = useRef(false);
+  const aiTimeoutRef = useRef<number | null>(null);
   const [selectedAttacker, setSelectedAttacker] = useState<{ cardId: number; playerIdx: number } | null>(null);
   const [attackPreview, setAttackPreview] = useState<{ damage: number; targetPos: number; isDirect: boolean } | null>(null);
+  const [isAIThinking, setIsAIThinking] = useState(false);
+  const [aiReady, setAIReady] = useState(true); // Controls when AI can make next move
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -25,6 +29,46 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // AI turn loop - auto-queue AI moves when it's player 1's turn
+  useEffect(() => {
+    if (state.turn !== 1) {
+      setIsAIThinking(false);
+      setAIReady(true);
+      // Clear timeout when turn changes away from AI
+      if (aiTimeoutRef.current) {
+        clearTimeout(aiTimeoutRef.current);
+        aiTimeoutRef.current = null;
+      }
+      return;
+    }
+    
+    // Don't start a new timeout if one is already running or AI is not ready
+    if (aiTimeoutRef.current || !aiReady) return;
+    
+    // Start AI thinking
+    setIsAIThinking(true);
+    setAIReady(false);
+    
+    // Schedule AI move after 1 second
+    aiTimeoutRef.current = setTimeout(() => {
+      const aiAction = getAIAction(state.hands[1], state.fields[1], state.fields[0]);
+      
+      if (aiAction) {
+        dispatch(aiAction);
+        
+        // Set ready flag after cooldown to allow next action
+        setTimeout(() => {
+          setAIReady(true);
+        }, 500); // 500ms cooldown before next action can start
+      } else {
+        setIsAIThinking(false);
+        setAIReady(true);
+      }
+      
+      aiTimeoutRef.current = null;
+    }, 1000);
+  }, [state.turn, state.phase, state.fields[1].filter(c => c !== null).length, aiReady]);
 
   const handleCardDrop = (card: Card, target: HTMLElement | null) => {
     if (!target) return;
@@ -88,6 +132,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       <div className="text-xs">LP: {state.lp[0]} vs {state.lp[1]}</div>
       <div className="text-xs">Phase: {state.phase}</div>
       <div className="text-xs">Current Turn: Player {state.turn}</div>
+
+      {/* AI thinking banner */}
+      {isAIThinking && (
+        <div className="my-2 p-2 bg-blue-100 border border-blue-300 rounded text-center">
+          <span className="text-sm font-semibold">Rex is thinking...</span>
+        </div>
+      )}
 
       {/* Player 1 Field (opponent on top) */}
       <FieldZone 
@@ -188,6 +239,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           onClick={() => dispatch({ type: 'DRAW' })}
         >
           Draw
+        </button>
+        <button
+          className="border px-2 py-1 text-xs ml-2 bg-blue-500 text-white"
+          onClick={() => dispatch({ type: 'END_TURN' })}
+          disabled={state.turn !== 0}
+        >
+          End Turn
         </button>
       </div>
     </div>

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "github-run": "pnpm dev --host"
   },
   "dependencies": {
     "@react-spring/web": "^10.0.3",

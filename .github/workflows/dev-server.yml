@@ -1,0 +1,13 @@
+name: DevServer
+on:
+  workflow_dispatch:
+
+jobs:
+  serve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - run: pnpm install
+      - run: pnpm dev --host --port 5173 &
+      - run: sleep 5 && curl -I http://localhost:5173

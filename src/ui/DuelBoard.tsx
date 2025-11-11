@@ -151,10 +151,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* player 1 hand */}
       <div className="mt-2">
-        <div className="text-xs font-bold">Player 1 Hand ({state.hands[1].length} cards):</div>
+        <div className="text-xs font-bold">
+          Player 1 Hand ({state.hands[1].length} cards)
+          {state.hasSummoned[1] && <span className="text-gray-500 ml-2">(already summoned)</span>}
+        </div>
         <div className="flex gap-1 my-2">
           {state.hands[1].map((c: Card, i) => (
-            state.turn === 1 ? (
+            state.turn === 1 && !state.hasSummoned[1] ? (
               <DraggableCard 
                 key={i} 
                 card={c} 
@@ -178,10 +181,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* player 0 hand */}
       <div className="mt-2">
-        <div className="text-xs font-bold">Player 0 Hand ({state.hands[0].length} cards):</div>
+        <div className="text-xs font-bold">
+          Player 0 Hand ({state.hands[0].length} cards)
+          {state.hasSummoned[0] && <span className="text-gray-500 ml-2">(already summoned)</span>}
+        </div>
         <div className="flex gap-1 my-2">
           {state.hands[0].map((c: Card, i) => (
-            state.turn === 0 ? (
+            state.turn === 0 && !state.hasSummoned[0] ? (
               <DraggableCard 
                 key={i} 
                 card={c} 

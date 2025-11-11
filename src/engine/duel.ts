@@ -19,6 +19,7 @@ export interface DuelState {
   fields: (Card | null)[][];
   graves: Card[][];
   phase: 'Draw' | 'Standby' | 'Main' | 'Battle' | 'End';
+  hasSummoned: [boolean, boolean];
 }
 
 export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
@@ -34,6 +35,7 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
     fields: [[null, null, null, null, null], [null, null, null, null, null]],
     graves: [[], []],
     phase: 'Draw',
+    hasSummoned: [false, false],
   };
 };
 
@@ -76,6 +78,12 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
     }
     case 'SUMMON': {
       const player = state.turn;
+      
+      // Check if player has already summoned this turn
+      if (state.hasSummoned[player]) {
+        return state; // Reject summon if already summoned
+      }
+      
       const card = state.hands[player].find(c => c.id === action.cardId);
       if (!card) return state;
 
@@ -95,8 +103,13 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
           : f
       ) as [(Card | null)[], (Card | null)[]];
 
+      // Set hasSummoned to true for the current player
+      const newHasSummoned = state.hasSummoned.map((s, i) => 
+        i === player ? true : s
+      ) as [boolean, boolean];
+
       // switch to Battle phase after summoning
-      return { ...state, hands: newHands, fields: newFields, phase: 'Battle' };
+      return { ...state, hands: newHands, fields: newFields, phase: 'Battle', hasSummoned: newHasSummoned };
     }
     case 'ATTACK': {
       const player = state.turn;
@@ -167,11 +180,16 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       // Flip turn to the other player
       const newTurn = state.turn === 0 ? 1 : 0;
       
+      // Reset hasSummoned for the player ending their turn
+      const newHasSummoned = state.hasSummoned.map((s, i) => 
+        i === state.turn ? false : s
+      ) as [boolean, boolean];
+      
       // Draw 1 card for the new player
       const deck = state.decks[newTurn];
       if (!deck || deck.length === 0) {
         // No card to draw, just flip turn
-        return { ...state, turn: newTurn, phase: 'Draw' };
+        return { ...state, turn: newTurn, phase: 'Draw', hasSummoned: newHasSummoned };
       }
       
       const [card, ...rest] = deck;
@@ -183,7 +201,8 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         decks: newDecks, 
         hands: newHands, 
         turn: newTurn, 
-        phase: 'Draw' 
+        phase: 'Draw',
+        hasSummoned: newHasSummoned
       };
     }
     default:

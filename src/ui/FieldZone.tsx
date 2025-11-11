@@ -10,33 +10,30 @@ interface FieldZoneProps {
 
 export default function FieldZone({ player, monsters, isActive, onZoneClick, highlightedZone }: FieldZoneProps) {
   return (
-    <div className="my-4">
-      <div className="text-xs font-bold mb-2">
+    <div style={{ margin: '20px 0' }}>
+      <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px' }}>
         Player {player} Field {isActive ? '(Your Turn)' : ''}
       </div>
-      <div className="flex gap-2">
+      <div className="field-zone">
         {monsters.map((card, idx) => (
           <div
             key={idx}
             data-slot={idx}
             data-player={player}
             onClick={() => onZoneClick?.(idx, card)}
-            className={`
-              w-16 h-20 border-2 rounded flex items-center justify-center text-xs
-              ${isActive ? 'border-blue-400 bg-blue-50' : 'border-gray-300 bg-gray-50'}
-              ${card ? 'bg-green-100 border-green-500' : ''}
-              ${highlightedZone === idx ? 'ring-4 ring-yellow-400' : ''}
-              ${onZoneClick ? 'cursor-pointer hover:opacity-80' : ''}
-            `}
-            style={{ minWidth: '64px' }}
+            className={`slot ${highlightedZone === idx ? 'highlighted' : ''}`}
+            style={{
+              borderColor: isActive ? '#4488ff' : '#444',
+              boxShadow: highlightedZone === idx ? '0 0 20px rgba(255, 215, 0, 0.8)' : undefined,
+            }}
           >
             {card ? (
-              <div className="text-center px-1">
-                <div className="font-bold text-[10px] leading-tight">{card.name}</div>
-                <div className="text-[9px]">ATK {card.atk ?? 0}</div>
+              <div className="card" style={{ margin: 0, fontSize: '8px', textAlign: 'center', padding: '4px' }}>
+                <div style={{ fontWeight: 'bold', lineHeight: '1.2' }}>{card.name}</div>
+                <div style={{ fontSize: '7px', marginTop: '4px' }}>ATK {card.atk ?? 0}</div>
               </div>
             ) : (
-              <span className="text-gray-400">—</span>
+              <span style={{ color: '#666' }}>—</span>
             )}
           </div>
         ))}

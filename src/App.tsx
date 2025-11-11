@@ -33,7 +33,7 @@ function App() {
   };
   
   return (
-    <div style={{ padding: '16px', fontFamily: 'sans-serif' }}>
+    <div style={{ padding: '16px' }}>
       <h1 style={{ fontSize: '24px', marginBottom: '16px' }}>Forbidden Memories - MVP</h1>
       
       {/* Tab Navigation */}
@@ -41,14 +41,7 @@ function App() {
         <button
           onClick={() => handleTabChange('Duel')}
           style={{
-            padding: '8px 16px',
-            backgroundColor: activeTab === 'Duel' ? '#2196f3' : '#e0e0e0',
-            color: activeTab === 'Duel' ? 'white' : 'black',
-            border: 'none',
-            borderRadius: '4px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            cursor: 'pointer'
+            backgroundColor: activeTab === 'Duel' ? '#2196f3' : undefined,
           }}
         >
           Duel
@@ -56,14 +49,7 @@ function App() {
         <button
           onClick={() => handleTabChange('Deck')}
           style={{
-            padding: '8px 16px',
-            backgroundColor: activeTab === 'Deck' ? '#2196f3' : '#e0e0e0',
-            color: activeTab === 'Deck' ? 'white' : 'black',
-            border: 'none',
-            borderRadius: '4px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            cursor: 'pointer'
+            backgroundColor: activeTab === 'Deck' ? '#2196f3' : undefined,
           }}
         >
           Deck

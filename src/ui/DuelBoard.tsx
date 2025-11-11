@@ -171,15 +171,15 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   };
 
   return (
-    <div className="p-2">
-      <div className="text-xs">LP: {state.lp[0]} vs {state.lp[1]}</div>
-      <div className="text-xs">Phase: {state.phase}</div>
-      <div className="text-xs">Current Turn: Player {state.turn}</div>
+    <div style={{ padding: '8px' }}>
+      <div style={{ fontSize: '12px' }}>LP: {state.lp[0]} vs {state.lp[1]}</div>
+      <div style={{ fontSize: '12px' }}>Phase: {state.phase}</div>
+      <div style={{ fontSize: '12px' }}>Current Turn: Player {state.turn}</div>
 
       {/* AI thinking banner */}
       {isAIThinking && (
-        <div className="my-2 p-2 bg-blue-100 border border-blue-300 rounded text-center">
-          <span className="text-sm font-semibold">Rex is thinking...</span>
+        <div style={{ margin: '8px 0', padding: '8px', backgroundColor: '#2196f3', border: '2px solid #4488ff', borderRadius: '5px', textAlign: 'center' }}>
+          <span style={{ fontSize: '12px', fontWeight: 'bold' }}>Rex is thinking...</span>
         </div>
       )}
 
@@ -193,12 +193,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       />
 
       {/* player 1 hand */}
-      <div className="mt-2">
-        <div className="text-xs font-bold">
+      <div style={{ marginTop: '8px' }}>
+        <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
           Player 1 Hand ({state.hands[1].length} cards)
-          {state.hasSummoned[1] && <span className="text-gray-500 ml-2">(already summoned)</span>}
+          {state.hasSummoned[1] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
         </div>
-        <div className="flex gap-1 my-2">
+        <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
           {state.hands[1].map((c: Card, i) => (
             state.turn === 1 && !state.hasSummoned[1] ? (
               <DraggableCard 
@@ -207,7 +207,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                 onDragEnd={(target) => handleCardDrop(c, target)}
               />
             ) : (
-              <button key={i} className="border px-2 py-1 text-xs bg-gray-100">{c.name}</button>
+              <button key={i} style={{ fontSize: '8px', padding: '4px 8px' }}>{c.name}</button>
             )
           ))}
         </div>
@@ -223,12 +223,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       />
 
       {/* player 0 hand */}
-      <div className="mt-2">
-        <div className="text-xs font-bold">
+      <div style={{ marginTop: '8px' }}>
+        <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
           Player 0 Hand ({state.hands[0].length} cards)
-          {state.hasSummoned[0] && <span className="text-gray-500 ml-2">(already summoned)</span>}
+          {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
         </div>
-        <div className="flex gap-1 my-2">
+        <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
           {state.hands[0].map((c: Card, i) => (
             state.turn === 0 && !state.hasSummoned[0] ? (
               <DraggableCard 
@@ -237,7 +237,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                 onDragEnd={(target) => handleCardDrop(c, target)}
               />
             ) : (
-              <button key={i} className="border px-2 py-1 text-xs bg-gray-100">{c.name}</button>
+              <button key={i} style={{ fontSize: '8px', padding: '4px 8px' }}>{c.name}</button>
             )
           ))}
         </div>
@@ -245,22 +245,21 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* Attack confirmation UI */}
       {attackPreview && selectedAttacker && (
-        <div className="mt-4 p-3 bg-yellow-100 border-2 border-yellow-500 rounded">
-          <div className="text-sm font-bold mb-2">
+        <div style={{ marginTop: '16px', padding: '12px', backgroundColor: '#ff8800', border: '2px solid #ffaa00', borderRadius: '5px' }}>
+          <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px' }}>
             {attackPreview.isDirect 
               ? `Direct Attack: ${attackPreview.damage} → ${state.lp[state.turn === 0 ? 1 : 0]} LP`
               : `Battle: ${attackPreview.damage} ATK vs Enemy Monster`
             }
           </div>
-          <div className="flex gap-2">
+          <div style={{ display: 'flex', gap: '8px' }}>
             <button
-              className="bg-red-500 text-white px-4 py-2 rounded font-bold"
+              style={{ backgroundColor: '#cc0000', padding: '8px 16px', fontWeight: 'bold' }}
               onClick={confirmAttack}
             >
               Confirm Attack
             </button>
             <button
-              className="bg-gray-300 px-4 py-2 rounded"
               onClick={cancelAttack}
             >
               Cancel
@@ -271,7 +270,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* fusion test button - try fusing first two cards if possible */}
       <button
-        className="bg-blue-500 text-white px-3 py-1 rounded"
+        style={{ backgroundColor: '#2196f3', padding: '8px 12px' }}
         onClick={() => {
           if (state.hands[0].length >= 2) {
             dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
@@ -282,15 +281,15 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       </button>
 
       {/* manual draw button for testing */}
-      <div className="mt-2">
+      <div style={{ marginTop: '8px' }}>
         <button
-          className="border px-2 py-1 text-xs"
+          style={{ padding: '8px', fontSize: '10px' }}
           onClick={() => dispatch({ type: 'DRAW' })}
         >
           Draw
         </button>
         <button
-          className="border px-2 py-1 text-xs ml-2 bg-blue-500 text-white"
+          style={{ marginLeft: '8px', backgroundColor: '#2196f3', padding: '8px', fontSize: '10px' }}
           onClick={() => dispatch({ type: 'END_TURN' })}
           disabled={state.turn !== 0}
         >

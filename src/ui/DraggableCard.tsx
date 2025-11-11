@@ -51,9 +51,11 @@ export default function DraggableCard({ card, onDragEnd }: DraggableCardProps) {
         touchAction: 'none',
         cursor: 'grab',
       }}
-      className="border px-2 py-1 text-xs bg-white select-none"
+      className="card select-none"
     >
-      {card.name}
+      <div style={{ fontSize: '8px', textAlign: 'center', padding: '4px' }}>
+        {card.name}
+      </div>
     </animated.div>
   );
 }

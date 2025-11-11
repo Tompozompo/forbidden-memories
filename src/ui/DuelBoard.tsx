@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useEffect, useReducer, useRef, useState } from 'react';
 import { initialDuel, duelReducer } from '../engine/duel';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
@@ -7,6 +7,8 @@ import DraggableCard from './DraggableCard';
 export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]; p1Deck: Card[]; allCards: Card[] }) {
   const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
   const initialDrawDone = useRef(false);
+  const [selectedAttacker, setSelectedAttacker] = useState<{ cardId: number; playerIdx: number } | null>(null);
+  const [attackPreview, setAttackPreview] = useState<{ damage: number; targetPos: number; isDirect: boolean } | null>(null);
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -37,6 +39,50 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     }
   };
 
+  const handleFieldZoneClick = (player: 0 | 1, zoneIndex: number, card: Card | null) => {
+    // Can only attack during Battle phase
+    if (state.phase !== 'Battle') return;
+
+    const currentPlayer = state.turn;
+    
+    if (player === currentPlayer) {
+      // Clicking own monster - select as attacker
+      if (card) {
+        setSelectedAttacker({ cardId: card.id, playerIdx: player });
+        setAttackPreview(null);
+      }
+    } else {
+      // Clicking opponent's field - set as target if we have an attacker selected
+      if (selectedAttacker && selectedAttacker.playerIdx === currentPlayer) {
+        const attacker = state.fields[currentPlayer].find(c => c?.id === selectedAttacker.cardId);
+        if (attacker && attacker.atk !== undefined) {
+          const isDirect = !card;
+          const damage = attacker.atk;
+          setAttackPreview({ damage, targetPos: zoneIndex, isDirect });
+        }
+      }
+    }
+  };
+
+  const confirmAttack = () => {
+    if (!selectedAttacker || !attackPreview) return;
+    
+    dispatch({
+      type: 'ATTACK',
+      attackerId: selectedAttacker.cardId,
+      targetPos: attackPreview.targetPos,
+    });
+    
+    // Reset selection
+    setSelectedAttacker(null);
+    setAttackPreview(null);
+  };
+
+  const cancelAttack = () => {
+    setSelectedAttacker(null);
+    setAttackPreview(null);
+  };
+
   return (
     <div className="p-2">
       <div className="text-xs">LP: {state.lp[0]} vs {state.lp[1]}</div>
@@ -48,6 +94,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         player={1} 
         monsters={state.fields[1]} 
         isActive={state.turn === 1}
+        onZoneClick={(idx, card) => handleFieldZoneClick(1, idx, card)}
+        highlightedZone={attackPreview && state.turn === 0 ? attackPreview.targetPos : null}
       />
 
       {/* player 1 hand */}
@@ -73,6 +121,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         player={0} 
         monsters={state.fields[0]} 
         isActive={state.turn === 0}
+        onZoneClick={(idx, card) => handleFieldZoneClick(0, idx, card)}
+        highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
       />
 
       {/* player 0 hand */}
@@ -92,6 +142,32 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           ))}
         </div>
       </div>
+
+      {/* Attack confirmation UI */}
+      {attackPreview && selectedAttacker && (
+        <div className="mt-4 p-3 bg-yellow-100 border-2 border-yellow-500 rounded">
+          <div className="text-sm font-bold mb-2">
+            {attackPreview.isDirect 
+              ? `Direct Attack: ${attackPreview.damage} → ${state.lp[state.turn === 0 ? 1 : 0]} LP`
+              : `Battle: ${attackPreview.damage} ATK vs Enemy Monster`
+            }
+          </div>
+          <div className="flex gap-2">
+            <button
+              className="bg-red-500 text-white px-4 py-2 rounded font-bold"
+              onClick={confirmAttack}
+            >
+              Confirm Attack
+            </button>
+            <button
+              className="bg-gray-300 px-4 py-2 rounded"
+              onClick={cancelAttack}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* fusion test button - try fusing first two cards if possible */}
       <button

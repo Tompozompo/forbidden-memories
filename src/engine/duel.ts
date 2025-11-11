@@ -42,7 +42,8 @@ type Action =
   | { type: 'DRAW'; player?: 0 | 1 }
   | { type: 'PLAY'; cardId: number; pos: 'atk' | 'def' }
   | { type: 'FUSE'; matA: number; matB: number; allCards: Card[] }
-  | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' };
+  | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' }
+  | { type: 'ATTACK'; attackerId: number; targetPos: number };
 
 export function duelReducer(state: DuelState, action: Action): DuelState {
   switch (action.type) {
@@ -95,6 +96,71 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
 
       // switch to Battle phase after summoning
       return { ...state, hands: newHands, fields: newFields, phase: 'Battle' };
+    }
+    case 'ATTACK': {
+      const player = state.turn;
+      const opponent = player === 0 ? 1 : 0;
+      
+      // find attacker on current player's field
+      const attacker = state.fields[player].find(c => c?.id === action.attackerId);
+      if (!attacker || !attacker.atk) return state;
+      
+      // check if target position has a monster
+      const defender = state.fields[opponent][action.targetPos];
+      
+      let newLp = [...state.lp] as [number, number];
+      let newFields = state.fields.map(f => [...f]) as [(Card | null)[], (Card | null)[]];
+      let newGraves = state.graves.map(g => [...g]) as [Card[], Card[]];
+      
+      if (defender && defender.atk !== undefined) {
+        // Monster vs Monster battle (PS1 style - both take damage)
+        const attackerAtk = attacker.atk;
+        const defenderAtk = defender.atk;
+        
+        // Apply battle damage to both players
+        newLp[player] -= defenderAtk;
+        newLp[opponent] -= attackerAtk;
+        
+        // Destroy monsters if ATK is higher than opponent's
+        if (attackerAtk < defenderAtk) {
+          // Attacker destroyed
+          const attackerIdx = newFields[player].findIndex(c => c?.id === action.attackerId);
+          if (attackerIdx !== -1) {
+            newGraves[player].push(attacker);
+            newFields[player][attackerIdx] = null;
+          }
+        }
+        if (defenderAtk < attackerAtk) {
+          // Defender destroyed
+          newGraves[opponent].push(defender);
+          newFields[opponent][action.targetPos] = null;
+        }
+        if (attackerAtk === defenderAtk) {
+          // Both destroyed
+          const attackerIdx = newFields[player].findIndex(c => c?.id === action.attackerId);
+          if (attackerIdx !== -1) {
+            newGraves[player].push(attacker);
+            newFields[player][attackerIdx] = null;
+          }
+          newGraves[opponent].push(defender);
+          newFields[opponent][action.targetPos] = null;
+        }
+      } else {
+        // Direct attack - reduce opponent LP by attacker's ATK
+        newLp[opponent] -= attacker.atk;
+      }
+      
+      // Switch turn after attack
+      const newTurn = opponent;
+      
+      return { 
+        ...state, 
+        lp: newLp, 
+        fields: newFields, 
+        graves: newGraves,
+        turn: newTurn,
+        phase: 'Draw'
+      };
     }
     default:
       return state;

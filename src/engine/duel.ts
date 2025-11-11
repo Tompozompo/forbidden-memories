@@ -43,7 +43,8 @@ type Action =
   | { type: 'PLAY'; cardId: number; pos: 'atk' | 'def' }
   | { type: 'FUSE'; matA: number; matB: number; allCards: Card[] }
   | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' }
-  | { type: 'ATTACK'; attackerId: number; targetPos: number };
+  | { type: 'ATTACK'; attackerId: number; targetPos: number }
+  | { type: 'END_TURN' };
 
 export function duelReducer(state: DuelState, action: Action): DuelState {
   switch (action.type) {
@@ -160,6 +161,29 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         graves: newGraves,
         turn: newTurn,
         phase: 'Draw'
+      };
+    }
+    case 'END_TURN': {
+      // Flip turn to the other player
+      const newTurn = state.turn === 0 ? 1 : 0;
+      
+      // Draw 1 card for the new player
+      const deck = state.decks[newTurn];
+      if (!deck || deck.length === 0) {
+        // No card to draw, just flip turn
+        return { ...state, turn: newTurn, phase: 'Draw' };
+      }
+      
+      const [card, ...rest] = deck;
+      const newDecks = state.decks.map((d, i) => (i === newTurn ? rest : d)) as [Card[], Card[]];
+      const newHands = state.hands.map((h, i) => (i === newTurn ? [...h, card] : h)) as [Card[], Card[]];
+      
+      return { 
+        ...state, 
+        decks: newDecks, 
+        hands: newHands, 
+        turn: newTurn, 
+        phase: 'Draw' 
       };
     }
     default:

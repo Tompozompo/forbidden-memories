@@ -9,10 +9,10 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
   const initialDrawDone = useRef(false);
   const aiTimeoutRef = useRef<number | null>(null);
-  const aiCooldownRef = useRef(false);
   const [selectedAttacker, setSelectedAttacker] = useState<{ cardId: number; playerIdx: number } | null>(null);
   const [attackPreview, setAttackPreview] = useState<{ damage: number; targetPos: number; isDirect: boolean } | null>(null);
   const [isAIThinking, setIsAIThinking] = useState(false);
+  const [aiReady, setAIReady] = useState(true); // Controls when AI can make next move
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   useEffect(() => {
     if (state.turn !== 1) {
       setIsAIThinking(false);
-      aiCooldownRef.current = false;
+      setAIReady(true);
       // Clear timeout when turn changes away from AI
       if (aiTimeoutRef.current) {
         clearTimeout(aiTimeoutRef.current);
@@ -43,11 +43,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       return;
     }
     
-    // Don't start a new timeout if one is already running or we're in cooldown
-    if (aiTimeoutRef.current || aiCooldownRef.current) return;
+    // Don't start a new timeout if one is already running or AI is not ready
+    if (aiTimeoutRef.current || !aiReady) return;
     
     // Start AI thinking
     setIsAIThinking(true);
+    setAIReady(false);
     
     // Schedule AI move after 1 second
     aiTimeoutRef.current = setTimeout(() => {
@@ -56,18 +57,18 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       if (aiAction) {
         dispatch(aiAction);
         
-        // Set cooldown to prevent immediate re-trigger
-        aiCooldownRef.current = true;
+        // Set ready flag after cooldown to allow next action
         setTimeout(() => {
-          aiCooldownRef.current = false;
+          setAIReady(true);
         }, 500); // 500ms cooldown before next action can start
       } else {
         setIsAIThinking(false);
+        setAIReady(true);
       }
       
       aiTimeoutRef.current = null;
     }, 1000);
-  }, [state.turn, state.phase, state.fields[1].filter(c => c !== null).length]);
+  }, [state.turn, state.phase, state.fields[1].filter(c => c !== null).length, aiReady]);
 
   const handleCardDrop = (card: Card, target: HTMLElement | null) => {
     if (!target) return;

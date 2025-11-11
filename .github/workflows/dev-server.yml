@@ -11,6 +11,12 @@ jobs:
         with:
           version: 8
       - run: pnpm install
-      - run: pnpm dev --host --port 5173 
-      - run: sleep 5 && curl -I http://localhost:5173
-      - run: npm i -g localtunnel && lt --port 5173 --subdomain fmvp$GITHUB_RUN_ID
+      - run: |
+          pnpm dev --host --port 5173 > server.log 2>&1 &
+          sleep 5
+          curl -I http://localhost:5173
+      - name: expose public url
+        uses: github/develop-preview-action@v1
+        with:
+          port: 5173
+          visibility: public

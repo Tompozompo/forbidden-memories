@@ -11,5 +11,6 @@ jobs:
         with:
           version: 8
       - run: pnpm install
-      - run: pnpm dev --host --port 5173 &
+      - run: pnpm dev --host --port 5173 
       - run: sleep 5 && curl -I http://localhost:5173
+      - run: npm i -g localtunnel && lt --port 5173 --subdomain fmvp$GITHUB_RUN_ID

@@ -15,13 +15,14 @@ export type AIAction =
 export function getAIAction(
   hand: Card[], 
   field: (Card | null)[], 
-  opponentField: (Card | null)[]
+  opponentField: (Card | null)[],
+  hasSummoned?: boolean
 ): AIAction {
-  // 1. Try to summon a monster from hand if we have an empty field slot
+  // 1. Try to summon a monster from hand if we have an empty field slot and haven't summoned yet
   const firstMonster = hand.find(c => c.atk !== undefined && c.def !== undefined);
   const hasEmptySlot = field.some(slot => slot === null);
   
-  if (firstMonster && hasEmptySlot) {
+  if (firstMonster && hasEmptySlot && !hasSummoned) {
     return { type: 'SUMMON', cardId: firstMonster.id, position: 'atk' };
   }
   

@@ -13,6 +13,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const [attackPreview, setAttackPreview] = useState<{ damage: number; targetPos: number; isDirect: boolean } | null>(null);
   const [isAIThinking, setIsAIThinking] = useState(false);
   const [aiReady, setAIReady] = useState(true); // Controls when AI can make next move
+  const safetyTimeoutRef = useRef<number | null>(null);
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -35,10 +36,14 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     if (state.turn !== 1) {
       setIsAIThinking(false);
       setAIReady(true);
-      // Clear timeout when turn changes away from AI
+      // Clear timeouts when turn changes away from AI
       if (aiTimeoutRef.current) {
         clearTimeout(aiTimeoutRef.current);
         aiTimeoutRef.current = null;
+      }
+      if (safetyTimeoutRef.current) {
+        clearTimeout(safetyTimeoutRef.current);
+        safetyTimeoutRef.current = null;
       }
       return;
     }
@@ -50,23 +55,61 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     setIsAIThinking(true);
     setAIReady(false);
     
+    // 5-second safety timeout - force end turn if AI gets stuck
+    safetyTimeoutRef.current = setTimeout(() => {
+      console.warn('AI safety timeout triggered - forcing END_TURN');
+      setIsAIThinking(false);
+      dispatch({ type: 'END_TURN' });
+      setAIReady(true);
+      aiTimeoutRef.current = null;
+      safetyTimeoutRef.current = null;
+    }, 5000);
+    
     // Schedule AI move after 1 second
     aiTimeoutRef.current = setTimeout(() => {
-      const aiAction = getAIAction(state.hands[1], state.fields[1], state.fields[0]);
+      aiTimeoutRef.current = null; // Clear immediately so effect can run again
       
-      if (aiAction) {
-        dispatch(aiAction);
+      try {
+        const aiAction = getAIAction(state.hands[1], state.fields[1], state.fields[0], state.hasSummoned[1]);
         
-        // Set ready flag after cooldown to allow next action
-        setTimeout(() => {
+        if (aiAction) {
+          dispatch(aiAction);
+          
+          // If action was END_TURN, clear thinking state immediately
+          if (aiAction.type === 'END_TURN') {
+            setIsAIThinking(false);
+            setAIReady(true);
+            if (safetyTimeoutRef.current) {
+              clearTimeout(safetyTimeoutRef.current);
+              safetyTimeoutRef.current = null;
+            }
+          } else {
+            // For SUMMON or ATTACK, wait a bit then allow next action
+            setTimeout(() => {
+              setAIReady(true);
+            }, 500);
+          }
+        } else {
+          // No action - shouldn't happen, but end turn as safety
+          setIsAIThinking(false);
           setAIReady(true);
-        }, 500); // 500ms cooldown before next action can start
-      } else {
+          dispatch({ type: 'END_TURN' });
+          if (safetyTimeoutRef.current) {
+            clearTimeout(safetyTimeoutRef.current);
+            safetyTimeoutRef.current = null;
+          }
+        }
+      } catch (error) {
+        console.error('AI action error:', error);
+        // On error, force end turn
         setIsAIThinking(false);
         setAIReady(true);
+        dispatch({ type: 'END_TURN' });
+        if (safetyTimeoutRef.current) {
+          clearTimeout(safetyTimeoutRef.current);
+          safetyTimeoutRef.current = null;
+        }
       }
-      
-      aiTimeoutRef.current = null;
     }, 1000);
   }, [state.turn, state.phase, state.fields[1].filter(c => c !== null).length, aiReady]);
 

@@ -16,7 +16,8 @@ export function getAIAction(
   hand: Card[], 
   field: (Card | null)[], 
   opponentField: (Card | null)[],
-  hasSummoned?: boolean
+  hasSummoned?: boolean,
+  hasAttacked?: boolean
 ): AIAction {
   // 1. Try to summon a monster from hand if we have an empty field slot and haven't summoned yet
   const firstMonster = hand.find(c => c.atk !== undefined && c.def !== undefined);
@@ -26,9 +27,9 @@ export function getAIAction(
     return { type: 'SUMMON', cardId: firstMonster.id, position: 'atk' };
   }
   
-  // 2. Try to attack with a monster on field
+  // 2. Try to attack with a monster on field (only if hasn't attacked yet)
   const myMonsters = field.filter((c): c is Card => c !== null && c.atk !== undefined);
-  if (myMonsters.length > 0) {
+  if (myMonsters.length > 0 && !hasAttacked) {
     // Pick first available attacker
     const attacker = myMonsters[0];
     

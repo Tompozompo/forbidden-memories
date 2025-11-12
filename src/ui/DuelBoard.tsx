@@ -14,6 +14,9 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const [isAIThinking, setIsAIThinking] = useState(false);
   const [aiReady, setAIReady] = useState(true); // Controls when AI can make next move
   const safetyTimeoutRef = useRef<number | null>(null);
+  const [attackingZone, setAttackingZone] = useState<{ player: number; zone: number } | null>(null);
+  const [defendingZone, setDefendingZone] = useState<{ player: number; zone: number } | null>(null);
+  const [fusingCards, setFusingCards] = useState<number[]>([]);
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -154,6 +157,21 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const confirmAttack = () => {
     if (!selectedAttacker || !attackPreview) return;
     
+    // Find attacker zone
+    const currentPlayer = selectedAttacker.playerIdx;
+    const attackerZone = state.fields[currentPlayer].findIndex(c => c?.id === selectedAttacker.cardId);
+    const targetPlayer = currentPlayer === 0 ? 1 : 0;
+    
+    // Trigger attack animations
+    setAttackingZone({ player: currentPlayer, zone: attackerZone });
+    setDefendingZone({ player: targetPlayer, zone: attackPreview.targetPos });
+    
+    // Clear animations after they complete
+    setTimeout(() => {
+      setAttackingZone(null);
+      setDefendingZone(null);
+    }, 300);
+    
     dispatch({
       type: 'ATTACK',
       attackerId: selectedAttacker.cardId,
@@ -190,6 +208,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         isActive={state.turn === 1}
         onZoneClick={(idx, card) => handleFieldZoneClick(1, idx, card)}
         highlightedZone={attackPreview && state.turn === 0 ? attackPreview.targetPos : null}
+        attackingZone={attackingZone?.player === 1 ? attackingZone.zone : null}
+        defendingZone={defendingZone?.player === 1 ? defendingZone.zone : null}
       />
 
       {/* player 1 hand */}
@@ -221,6 +241,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         isActive={state.turn === 0}
         onZoneClick={(idx, card) => handleFieldZoneClick(0, idx, card)}
         highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
+        attackingZone={attackingZone?.player === 0 ? attackingZone.zone : null}
+        defendingZone={defendingZone?.player === 0 ? defendingZone.zone : null}
       />
 
       {/* player 0 hand */}
@@ -231,17 +253,19 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already attacked)</span>}
         </div>
         <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
-          {state.hands[0].map((c: Card, i) => (
-            state.turn === 0 && !state.hasSummoned[0] ? (
-              <DraggableCard 
-                key={i} 
-                card={c} 
-                onDragEnd={(target) => handleCardDrop(c, target)}
-              />
+          {state.hands[0].map((c: Card, i) => {
+            const isFusing = fusingCards.includes(c.id);
+            return state.turn === 0 && !state.hasSummoned[0] ? (
+              <div key={i} className={isFusing ? 'flash burst' : ''}>
+                <DraggableCard 
+                  card={c} 
+                  onDragEnd={(target) => handleCardDrop(c, target)}
+                />
+              </div>
             ) : (
               <button key={i} style={{ fontSize: '8px', padding: '4px 8px' }}>{c.name}</button>
-            )
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -275,7 +299,14 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         style={{ backgroundColor: '#2196f3', padding: '8px 12px' }}
         onClick={() => {
           if (state.hands[0].length >= 2) {
-            dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
+            // Trigger fusion animation
+            setFusingCards([state.hands[0][0].id, state.hands[0][1].id]);
+            
+            // Wait for animation before dispatching
+            setTimeout(() => {
+              dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
+              setFusingCards([]);
+            }, 600);
           }
         }}
       >

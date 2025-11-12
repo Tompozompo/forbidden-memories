@@ -69,3 +69,48 @@ button:disabled {
 .field-zone .slot:hover {
   transform: scale(1.05);
 }
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes burst {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Animation classes */
+.fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.flash {
+  animation: flash 0.2s ease forwards;
+}
+
+.burst {
+  animation: burst 0.3s ease forwards;
+}
+
+.shake {
+  animation: shake 0.3s ease forwards;
+}
+
+/* Tab transition */
+.tab-content {
+  animation: fadeIn 0.3s ease forwards;
+}

@@ -58,14 +58,18 @@ function App() {
       
       {/* Tab Content */}
       {activeTab === 'Duel' && (
-        <DuelBoard p0Deck={p0Cards} p1Deck={p1Cards} allCards={allCards} />
+        <div className="tab-content">
+          <DuelBoard p0Deck={p0Cards} p1Deck={p1Cards} allCards={allCards} />
+        </div>
       )}
       
       {activeTab === 'Deck' && (
-        <DeckBuilder 
-          allCards={allCards} 
-          onReturnToDuel={() => handleTabChange('Duel')} 
-        />
+        <div className="tab-content">
+          <DeckBuilder 
+            allCards={allCards} 
+            onReturnToDuel={() => handleTabChange('Duel')} 
+          />
+        </div>
       )}
     </div>
   );

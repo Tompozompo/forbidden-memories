@@ -41,7 +41,7 @@ button:disabled {
 
 .card {
   width: 100%;
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 5/7; /* Maintain card proportions */
   background: linear-gradient(135deg, #666 0%, #333 100%);
@@ -52,15 +52,51 @@ button:disabled {
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
-  min-width: 60px; /* Minimum size for mobile */
+  min-width: 0; /* Allow shrinking in flex containers */
+  overflow: hidden; /* Clip contents */
 }
 
 @media (max-width: 480px) {
   .card {
-    max-width: 70px;
     margin: 3px;
     border-radius: 6px;
   }
+}
+
+/* Card internal structure for text truncation */
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card-sub {
+  font-size: 0.85em;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2px;
+  font-weight: bold;
 }
 
 .field-zone {
@@ -71,7 +107,7 @@ button:disabled {
 }
 
 .field-zone .slot {
-  flex: 1;
+  flex: 1 1 0px;
   max-width: 100px;
   aspect-ratio: 5/7; /* Maintain card proportions */
   background: #222;
@@ -83,6 +119,7 @@ button:disabled {
   transition: transform 0.3s;
   cursor: pointer;
   min-width: 50px;
+  box-sizing: border-box;
 }
 
 .field-zone .slot:hover {
@@ -146,4 +183,37 @@ button:disabled {
 /* Tab transition */
 .tab-content {
   animation: fadeIn 0.3s ease forwards;
+}
+
+/* Hand container for overlapping card layout */
+.hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  position: relative;
+}
+
+.hand > * {
+  margin-left: -30px; /* Overlap cards */
+  transition: transform 0.2s, z-index 0s;
+}
+
+.hand > *:first-child {
+  margin-left: 0; /* First card has no overlap */
+}
+
+.hand > *:hover {
+  transform: translateY(-10px) scale(1.05);
+  z-index: 1000 !important; /* Lift hovered card to top */
+}
+
+@media (max-width: 480px) {
+  .hand > * {
+    margin-left: -20px; /* Less overlap on mobile */
+  }
+  
+  .hand > *:hover {
+    transform: translateY(-6px) scale(1.03);
+  }
 }

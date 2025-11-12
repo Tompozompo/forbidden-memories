@@ -24,8 +24,8 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
   }, [monsters, player, summonedCards]);
 
   return (
-    <div style={{ margin: '20px 0' }}>
-      <div style={{ fontSize: '10px', fontWeight: 'bold', marginBottom: '8px', color: '#888' }}>
+    <div style={{ margin: '10px 0' }}>
+      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
         Monster Zone
       </div>
       <div className="field-zone">
@@ -51,21 +51,23 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
                   className={`card ${isNewSummon ? 'fadeIn' : ''} ${isAttacking || isDefending ? 'shake' : ''}`}
                   style={{ 
                     margin: 0, 
-                    fontSize: '7px', 
+                    fontSize: 'clamp(6px, 1.5vw, 7px)', 
                     textAlign: 'center', 
                     padding: '4px',
                     backgroundColor: '#2a2a2a',
                     border: '1px solid #555',
-                    borderRadius: '3px'
+                    borderRadius: '3px',
+                    width: '100%',
+                    height: '100%'
                   }}
                 >
-                  <div style={{ fontWeight: 'bold', lineHeight: '1.2', fontSize: '8px' }}>{card.name}</div>
-                  {card.attr && <div style={{ fontSize: '6px', color: '#aaa' }}>[{card.attr}]</div>}
-                  <div style={{ fontSize: '7px', marginTop: '2px', display: 'flex', justifyContent: 'space-around' }}>
+                  <div style={{ fontWeight: 'bold', lineHeight: '1.2', fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{card.name}</div>
+                  {card.attr && <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: '#aaa' }}>[{card.attr}]</div>}
+                  <div style={{ fontSize: 'clamp(6px, 1.5vw, 7px)', marginTop: '2px', display: 'flex', justifyContent: 'space-around' }}>
                     <span style={{ fontWeight: 'bold' }}>ATK {card.atk ?? 0}</span>
                     <span>DEF {card.def ?? 0}</span>
                   </div>
-                  {card.level && <div style={{ fontSize: '6px', color: '#ffa' }}>★{card.level}</div>}
+                  {card.level && <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: '#ffa' }}>★{card.level}</div>}
                 </div>
               ) : (
                 <span style={{ color: '#666' }}>—</span>

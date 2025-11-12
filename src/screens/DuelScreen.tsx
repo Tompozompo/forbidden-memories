@@ -78,8 +78,8 @@ function DuelScreen() {
         <button
           onClick={handleBackToMap}
           style={{
-            padding: '8px 16px',
-            fontSize: '14px',
+            padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+            fontSize: 'clamp(10px, 2.5vw, 14px)',
             backgroundColor: '#444',
             color: '#fff',
             border: 'none',
@@ -101,8 +101,8 @@ function DuelScreen() {
         <button
           onClick={handleTestWin}
           style={{
-            padding: '8px 16px',
-            fontSize: '14px',
+            padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+            fontSize: 'clamp(10px, 2.5vw, 14px)',
             backgroundColor: '#4caf50',
             color: '#fff',
             border: 'none',
@@ -134,7 +134,7 @@ function DuelScreen() {
           color: '#fff',
         }}>
           <div style={{
-            fontSize: '48px',
+            fontSize: 'clamp(32px, 10vw, 48px)',
             fontWeight: 'bold',
             marginBottom: '24px',
             color: '#ffd700',
@@ -144,14 +144,14 @@ function DuelScreen() {
           </div>
           
           <div style={{
-            fontSize: '24px',
+            fontSize: 'clamp(18px, 5vw, 24px)',
             marginBottom: '16px',
           }}>
             You defeated {npc.name}!
           </div>
           
           <div style={{
-            fontSize: '20px',
+            fontSize: 'clamp(16px, 4vw, 20px)',
             marginBottom: '32px',
             color: '#ffd700',
           }}>
@@ -159,7 +159,7 @@ function DuelScreen() {
           </div>
           
           <div style={{
-            fontSize: '16px',
+            fontSize: 'clamp(12px, 3vw, 16px)',
             marginBottom: '32px',
             color: '#aaa',
           }}>
@@ -170,7 +170,7 @@ function DuelScreen() {
             onClick={handleContinue}
             style={{
               padding: '16px 48px',
-              fontSize: '20px',
+              fontSize: 'clamp(16px, 4vw, 20px)',
               fontWeight: 'bold',
               backgroundColor: '#4caf50',
               color: '#fff',

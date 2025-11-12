@@ -199,61 +199,62 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   };
 
   return (
-    <div style={{ padding: '8px', maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ padding: '4px', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
       {/* Header Info */}
       <div style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 
-        marginBottom: '16px',
-        padding: '8px',
+        marginBottom: '8px',
+        padding: '6px',
         backgroundColor: '#1a1a1a',
-        borderRadius: '8px'
+        borderRadius: '4px',
+        fontSize: 'clamp(10px, 2.5vw, 14px)',
       }}>
-        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>
+        <div style={{ fontWeight: 'bold' }}>
           You: {state.lp[0]} LP
         </div>
-        <div style={{ fontSize: '12px', color: '#888' }}>
+        <div style={{ color: '#888' }}>
           Phase: {state.phase}
         </div>
-        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>
-          Opponent: {state.lp[1]} LP
+        <div style={{ fontWeight: 'bold' }}>
+          Opp: {state.lp[1]} LP
         </div>
       </div>
 
       {/* AI thinking banner */}
       {isAIThinking && (
-        <div style={{ margin: '8px 0', padding: '8px', backgroundColor: '#2196f3', border: '2px solid #4488ff', borderRadius: '5px', textAlign: 'center' }}>
-          <span style={{ fontSize: '12px', fontWeight: 'bold' }}>Rex is thinking...</span>
+        <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#2196f3', border: '2px solid #4488ff', borderRadius: '4px', textAlign: 'center' }}>
+          <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>Rex is thinking...</span>
         </div>
       )}
 
       {/* ========== OPPONENT SIDE (Player 1) ========== */}
       <div style={{ 
-        padding: '12px', 
+        padding: 'clamp(6px, 2vw, 12px)', 
         backgroundColor: '#0a0a0a', 
         borderRadius: '8px',
-        marginBottom: '16px',
+        marginBottom: '8px',
         border: state.turn === 1 ? '2px solid #ff4444' : '2px solid #333'
       }}>
         {/* Opponent Hand - HIDDEN */}
-        <div style={{ marginBottom: '8px' }}>
-          <div style={{ fontSize: '11px', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
+        <div style={{ marginBottom: '4px' }}>
+          <div style={{ fontSize: 'clamp(8px, 2vw, 11px)', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
             Opponent Hand ({state.hands[1].length} cards)
           </div>
-          <div style={{ display: 'flex', gap: '4px', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', gap: '4px', justifyContent: 'center', flexWrap: 'wrap' }}>
             {state.hands[1].map((_, i) => (
               <div
                 key={i}
                 style={{
-                  width: '50px',
-                  height: '70px',
+                  width: 'clamp(35px, 10vw, 50px)',
+                  height: 'clamp(49px, 14vw, 70px)',
                   backgroundColor: '#4a2a2a',
                   border: '2px solid #666',
                   borderRadius: '4px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '20px'
+                  fontSize: 'clamp(14px, 4vw, 20px)'
                 }}
               >
                 🂠
@@ -283,7 +284,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* ========== PLAYER SIDE (Player 0) ========== */}
       <div style={{ 
-        padding: '12px', 
+        padding: 'clamp(6px, 2vw, 12px)', 
         backgroundColor: '#0a0a0a', 
         borderRadius: '8px',
         border: state.turn === 0 ? '2px solid #4444ff' : '2px solid #333'
@@ -307,8 +308,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         />
 
         {/* Player Hand */}
-        <div style={{ marginTop: '12px' }}>
-          <div style={{ fontSize: '11px', fontWeight: 'bold', marginBottom: '4px' }}>
+        <div style={{ marginTop: '8px' }}>
+          <div style={{ fontSize: 'clamp(8px, 2vw, 11px)', fontWeight: 'bold', marginBottom: '4px' }}>
             Your Hand ({state.hands[0].length} cards)
             {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(summoned)</span>}
             {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(attacked)</span>}
@@ -327,19 +328,19 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                 <div
                   key={i}
                   style={{
-                    fontSize: '7px',
+                    fontSize: 'clamp(6px, 1.5vw, 7px)',
                     padding: '4px',
                     backgroundColor: c.type === 'Monster' ? '#2a2a2a' : c.type === 'Spell' ? '#1a3a2a' : '#3a1a1a',
                     border: '1px solid #555',
                     borderRadius: '3px',
-                    minWidth: '80px',
+                    minWidth: 'clamp(60px, 18vw, 80px)',
                     textAlign: 'center'
                   }}
                 >
-                  <div style={{ fontWeight: 'bold', marginBottom: '2px', fontSize: '8px' }}>{c.name}</div>
+                  <div style={{ fontWeight: 'bold', marginBottom: '2px', fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{c.name}</div>
                   {c.type === 'Monster' && (
                     <>
-                      <div style={{ fontSize: '6px', color: '#aaa' }}>
+                      <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: '#aaa' }}>
                         {c.attr && `[${c.attr}]`}
                       </div>
                       <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '2px', fontWeight: 'bold' }}>
@@ -349,7 +350,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                     </>
                   )}
                   {(c.type === 'Spell' || c.type === 'Trap') && (
-                    <div style={{ fontSize: '6px', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
+                    <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
                       {c.type}
                     </div>
                   )}
@@ -363,15 +364,16 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       {/* Attack confirmation UI */}
       {attackPreview && selectedAttacker && (
         <div style={{ 
-          marginTop: '16px', 
-          padding: '12px', 
+          marginTop: '8px', 
+          padding: '8px', 
           backgroundColor: '#ff8800', 
           border: '2px solid #ffaa00', 
           borderRadius: '8px',
+          width: '100%',
           maxWidth: '800px',
-          margin: '16px auto'
+          margin: '8px auto'
         }}>
-          <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px', textAlign: 'center' }}>
+          <div style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold', marginBottom: '8px', textAlign: 'center' }}>
             {attackPreview.isDirect 
               ? `Direct Attack: ${attackPreview.damage} damage → ${state.lp[state.turn === 0 ? 1 : 0] - attackPreview.damage} LP`
               : `Battle: ${attackPreview.damage} ATK vs Enemy Monster`
@@ -379,13 +381,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           </div>
           <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
             <button
-              style={{ backgroundColor: '#cc0000', padding: '8px 16px', fontWeight: 'bold', cursor: 'pointer' }}
+              style={{ backgroundColor: '#cc0000', padding: '8px 16px', fontWeight: 'bold', cursor: 'pointer', fontSize: 'clamp(9px, 2.5vw, 11px)' }}
               onClick={confirmAttack}
             >
               Confirm Attack
             </button>
             <button
-              style={{ padding: '8px 16px', cursor: 'pointer' }}
+              style={{ padding: '8px 16px', cursor: 'pointer', fontSize: 'clamp(9px, 2.5vw, 11px)' }}
               onClick={cancelAttack}
             >
               Cancel
@@ -396,24 +398,28 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
 
       {/* Control Buttons */}
       <div style={{ 
-        marginTop: '16px', 
-        padding: '12px', 
+        marginTop: '8px', 
+        padding: '8px', 
         display: 'flex', 
-        gap: '8px', 
+        gap: '6px', 
         justifyContent: 'center',
+        width: '100%',
         maxWidth: '800px',
-        margin: '16px auto'
+        margin: '8px auto',
+        flexWrap: 'wrap'
       }}>
         <button
           style={{ 
             backgroundColor: '#2196f3', 
-            padding: '10px 16px', 
-            fontSize: '11px',
+            padding: '10px 12px', 
+            fontSize: 'clamp(8px, 2vw, 11px)',
             fontWeight: 'bold',
             cursor: 'pointer',
             borderRadius: '4px',
             border: 'none',
-            color: 'white'
+            color: 'white',
+            flex: '1 1 auto',
+            minWidth: '100px'
           }}
           onClick={() => {
             if (state.hands[0].length >= 2) {
@@ -428,17 +434,19 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
             }
           }}
         >
-          🔮 Fuse First 2 Cards
+          🔮 Fuse First 2
         </button>
         <button
           style={{ 
-            padding: '10px 16px', 
-            fontSize: '11px',
+            padding: '10px 12px', 
+            fontSize: 'clamp(8px, 2vw, 11px)',
             cursor: 'pointer',
             borderRadius: '4px',
             backgroundColor: '#555',
             border: 'none',
-            color: 'white'
+            color: 'white',
+            flex: '0 1 auto',
+            minWidth: '80px'
           }}
           onClick={() => dispatch({ type: 'DRAW' })}
         >
@@ -447,13 +455,15 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         <button
           style={{ 
             backgroundColor: state.turn === 0 ? '#22aa22' : '#666', 
-            padding: '10px 16px', 
-            fontSize: '11px',
+            padding: '10px 12px', 
+            fontSize: 'clamp(8px, 2vw, 11px)',
             fontWeight: 'bold',
             cursor: state.turn === 0 ? 'pointer' : 'not-allowed',
             borderRadius: '4px',
             border: 'none',
-            color: 'white'
+            color: 'white',
+            flex: '0 1 auto',
+            minWidth: '100px'
           }}
           onClick={() => dispatch({ type: 'END_TURN' })}
           disabled={state.turn !== 0}

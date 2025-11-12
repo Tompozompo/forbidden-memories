@@ -70,7 +70,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       aiTimeoutRef.current = null; // Clear immediately so effect can run again
       
       try {
-        const aiAction = getAIAction(state.hands[1], state.fields[1], state.fields[0], state.hasSummoned[1]);
+        const aiAction = getAIAction(state.hands[1], state.fields[1], state.fields[0], state.hasSummoned[1], state.hasAttacked[1]);
         
         if (aiAction) {
           dispatch(aiAction);

@@ -20,6 +20,7 @@ export interface DuelState {
   graves: Card[][];
   phase: 'Draw' | 'Standby' | 'Main' | 'Battle' | 'End';
   hasSummoned: [boolean, boolean];
+  hasAttacked: [boolean, boolean];
 }
 
 export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
@@ -36,6 +37,7 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
     graves: [[], []],
     phase: 'Draw',
     hasSummoned: [false, false],
+    hasAttacked: [false, false],
   };
 };
 
@@ -115,6 +117,11 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       const player = state.turn;
       const opponent = player === 0 ? 1 : 0;
       
+      // Check if player has already attacked this turn
+      if (state.hasAttacked[player]) {
+        return state; // Reject attack if already attacked
+      }
+      
       // find attacker on current player's field
       const attacker = state.fields[player].find(c => c?.id === action.attackerId);
       if (!attacker || !attacker.atk) return state;
@@ -164,6 +171,11 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         newLp[opponent] -= attacker.atk;
       }
       
+      // Set hasAttacked to true for the current player
+      const newHasAttacked = state.hasAttacked.map((s, i) => 
+        i === player ? true : s
+      ) as [boolean, boolean];
+      
       // Switch turn after attack
       const newTurn = opponent;
       
@@ -173,23 +185,23 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         fields: newFields, 
         graves: newGraves,
         turn: newTurn,
-        phase: 'Draw'
+        phase: 'Draw',
+        hasAttacked: newHasAttacked
       };
     }
     case 'END_TURN': {
       // Flip turn to the other player
       const newTurn = state.turn === 0 ? 1 : 0;
       
-      // Reset hasSummoned for the player ending their turn
-      const newHasSummoned = state.hasSummoned.map((s, i) => 
-        i === state.turn ? false : s
-      ) as [boolean, boolean];
+      // Reset hasSummoned and hasAttacked for both players at turn end
+      const newHasSummoned: [boolean, boolean] = [false, false];
+      const newHasAttacked: [boolean, boolean] = [false, false];
       
       // Draw 1 card for the new player
       const deck = state.decks[newTurn];
       if (!deck || deck.length === 0) {
         // No card to draw, just flip turn
-        return { ...state, turn: newTurn, phase: 'Draw', hasSummoned: newHasSummoned };
+        return { ...state, turn: newTurn, phase: 'Draw', hasSummoned: newHasSummoned, hasAttacked: newHasAttacked };
       }
       
       const [card, ...rest] = deck;
@@ -202,7 +214,8 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         hands: newHands, 
         turn: newTurn, 
         phase: 'Draw',
-        hasSummoned: newHasSummoned
+        hasSummoned: newHasSummoned,
+        hasAttacked: newHasAttacked
       };
     }
     default:

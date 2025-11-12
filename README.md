@@ -44,7 +44,7 @@ Story mode, world map, 3-D battle scenes, online multiplayer, trading, sound, ca
 - PWA: Vite-PWA plugin → offline, icon, splash  
 - State: Zustand (tiny, phone-edit friendly)  
 - Storage: localStorage + JSON serialization  
-- Router: none—single-page shell  
+- Router: react-router-dom (main menu → map → duel flow)  
 - Repo: GitHub private, README = this doc  
 - AI pair: Claude 3.5 Sonnet (mobile prompt via claude.ai)
 

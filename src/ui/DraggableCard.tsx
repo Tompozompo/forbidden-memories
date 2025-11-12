@@ -50,30 +50,26 @@ export default function DraggableCard({ card, onDragEnd }: DraggableCardProps) {
         y,
         touchAction: 'none',
         cursor: 'grab',
+        width: '100%',
+        height: '100%',
+        boxSizing: 'border-box',
       }}
       className="card select-none"
+      title={card.name} // Show full name on hover
     >
-      <div style={{ 
-        fontSize: 'clamp(6px, 1.5vw, 7px)', 
-        textAlign: 'center', 
-        padding: '4px',
+      <div className="card-content" style={{ 
         backgroundColor: card.type === 'Monster' ? '#2a2a2a' : card.type === 'Spell' ? '#1a3a2a' : '#3a1a1a',
         border: '1px solid #555',
         borderRadius: '3px',
-        minWidth: 'clamp(60px, 18vw, 80px)',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center'
+        textAlign: 'center',
       }}>
-        <div style={{ fontWeight: 'bold', marginBottom: '2px', fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{card.name}</div>
+        <div className="card-name" style={{ fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{card.name}</div>
         {card.type === 'Monster' && (
           <>
-            <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: '#aaa' }}>
+            <div className="card-sub" style={{ fontSize: 'clamp(5px, 1.2vw, 6px)' }}>
               {card.attr && `[${card.attr}]`} {card.race && `${card.race}`}
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '2px', fontWeight: 'bold' }}>
+            <div className="card-stats" style={{ fontSize: 'clamp(6px, 1.5vw, 7px)' }}>
               <span>ATK {card.atk ?? 0}</span>
               <span>DEF {card.def ?? 0}</span>
             </div>

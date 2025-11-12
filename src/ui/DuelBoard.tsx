@@ -314,11 +314,22 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
             {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(summoned)</span>}
             {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(attacked)</span>}
           </div>
-          <div style={{ display: 'flex', gap: '4px', margin: '8px 0', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="hand">
             {state.hands[0].map((c: Card, i) => {
               const isFusing = fusingCards.includes(c.id);
+              const zIndex = i; // Rightmost card has highest z-index
+              
               return state.turn === 0 && !state.hasSummoned[0] ? (
-                <div key={i} className={isFusing ? 'flash burst' : ''}>
+                <div 
+                  key={i} 
+                  className={isFusing ? 'flash burst' : ''}
+                  style={{
+                    width: 'clamp(60px, 15vw, 80px)',
+                    height: 'clamp(84px, 21vw, 112px)',
+                    display: 'inline-block',
+                    zIndex,
+                  }}
+                >
                   <DraggableCard 
                     card={c} 
                     onDragEnd={(target) => handleCardDrop(c, target)}
@@ -327,33 +338,41 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
               ) : (
                 <div
                   key={i}
+                  className="card"
+                  title={c.name}
                   style={{
+                    width: 'clamp(60px, 15vw, 80px)',
+                    height: 'clamp(84px, 21vw, 112px)',
+                    display: 'inline-block',
+                    zIndex,
+                    margin: 0,
+                  }}
+                >
+                  <div className="card-content" style={{
                     fontSize: 'clamp(6px, 1.5vw, 7px)',
-                    padding: '4px',
                     backgroundColor: c.type === 'Monster' ? '#2a2a2a' : c.type === 'Spell' ? '#1a3a2a' : '#3a1a1a',
                     border: '1px solid #555',
                     borderRadius: '3px',
-                    minWidth: 'clamp(60px, 18vw, 80px)',
-                    textAlign: 'center'
-                  }}
-                >
-                  <div style={{ fontWeight: 'bold', marginBottom: '2px', fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{c.name}</div>
-                  {c.type === 'Monster' && (
-                    <>
-                      <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: '#aaa' }}>
-                        {c.attr && `[${c.attr}]`}
+                    textAlign: 'center',
+                  }}>
+                    <div className="card-name" style={{ fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{c.name}</div>
+                    {c.type === 'Monster' && (
+                      <>
+                        <div className="card-sub" style={{ fontSize: 'clamp(5px, 1.2vw, 6px)' }}>
+                          {c.attr && `[${c.attr}]`}
+                        </div>
+                        <div className="card-stats" style={{ fontSize: 'clamp(6px, 1.5vw, 7px)' }}>
+                          <span>ATK {c.atk ?? 0}</span>
+                          <span>DEF {c.def ?? 0}</span>
+                        </div>
+                      </>
+                    )}
+                    {(c.type === 'Spell' || c.type === 'Trap') && (
+                      <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
+                        {c.type}
                       </div>
-                      <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '2px', fontWeight: 'bold' }}>
-                        <span>ATK {c.atk ?? 0}</span>
-                        <span>DEF {c.def ?? 0}</span>
-                      </div>
-                    </>
-                  )}
-                  {(c.type === 'Spell' || c.type === 'Trap') && (
-                    <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
-                      {c.type}
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
               );
             })}

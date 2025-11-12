@@ -72,7 +72,7 @@ function MapScreen() {
       
       {/* Title */}
       <h1 style={{
-        fontSize: '28px',
+        fontSize: 'clamp(20px, 6vw, 28px)',
         textAlign: 'center',
         marginBottom: '32px',
         textShadow: '0 0 10px rgba(255, 215, 0, 0.5)',
@@ -83,7 +83,7 @@ function MapScreen() {
       {/* Duelist Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
         gap: '16px',
         maxWidth: '800px',
         margin: '0 auto',
@@ -122,7 +122,7 @@ function MapScreen() {
             >
               {/* Duelist Name */}
               <div style={{
-                fontSize: '16px',
+                fontSize: 'clamp(12px, 3.5vw, 16px)',
                 fontWeight: 'bold',
                 textAlign: 'center',
                 marginBottom: '8px',

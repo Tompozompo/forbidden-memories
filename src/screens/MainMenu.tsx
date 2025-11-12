@@ -30,7 +30,7 @@ function MainMenu() {
     }}>
       {/* Logo Placeholder */}
       <div style={{
-        fontSize: '48px',
+        fontSize: 'clamp(24px, 8vw, 48px)',
         fontWeight: 'bold',
         marginBottom: '48px',
         textAlign: 'center',
@@ -53,7 +53,7 @@ function MainMenu() {
           onClick={handleNewJourney}
           style={{
             padding: '16px 32px',
-            fontSize: '20px',
+            fontSize: 'clamp(14px, 4vw, 20px)',
             fontWeight: 'bold',
             backgroundColor: '#2196f3',
             color: '#fff',
@@ -77,7 +77,7 @@ function MainMenu() {
             onClick={handleContinue}
             style={{
               padding: '16px 32px',
-              fontSize: '20px',
+              fontSize: 'clamp(14px, 4vw, 20px)',
               fontWeight: 'bold',
               backgroundColor: '#4caf50',
               color: '#fff',

@@ -7,6 +7,11 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 button {
@@ -35,8 +40,10 @@ button:disabled {
 }
 
 .card {
-  width: 100px;
-  height: 140px;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  aspect-ratio: 5/7; /* Maintain card proportions */
   background: linear-gradient(135deg, #666 0%, #333 100%);
   display: flex;
   align-items: center;
@@ -45,17 +52,28 @@ button:disabled {
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
+  min-width: 60px; /* Minimum size for mobile */
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 70px;
+    margin: 3px;
+    border-radius: 6px;
+  }
 }
 
 .field-zone {
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
+  gap: 4px;
 }
 
 .field-zone .slot {
-  width: 100px;
-  height: 140px;
+  flex: 1;
+  max-width: 100px;
+  aspect-ratio: 5/7; /* Maintain card proportions */
   background: #222;
   border: 2px solid #444;
   border-radius: 10px;
@@ -64,10 +82,25 @@ button:disabled {
   justify-content: center;
   transition: transform 0.3s;
   cursor: pointer;
+  min-width: 50px;
 }
 
 .field-zone .slot:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .field-zone {
+    margin: 10px 0;
+    gap: 2px;
+  }
+  
+  .field-zone .slot {
+    max-width: 70px;
+    border-width: 1px;
+    border-radius: 6px;
+    min-width: 45px;
+  }
 }
 
 /* Animation keyframes */

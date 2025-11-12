@@ -3,6 +3,7 @@ import { initialDuel, duelReducer } from '../engine/duel';
 import { getAIAction } from '../engine/ai';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
+import SpellTrapZone from './SpellTrapZone';
 import DraggableCard from './DraggableCard';
 
 export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]; p1Deck: Card[]; allCards: Card[] }) {
@@ -198,10 +199,26 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   };
 
   return (
-    <div style={{ padding: '8px' }}>
-      <div style={{ fontSize: '12px' }}>LP: {state.lp[0]} vs {state.lp[1]}</div>
-      <div style={{ fontSize: '12px' }}>Phase: {state.phase}</div>
-      <div style={{ fontSize: '12px' }}>Current Turn: Player {state.turn}</div>
+    <div style={{ padding: '8px', maxWidth: '800px', margin: '0 auto' }}>
+      {/* Header Info */}
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        marginBottom: '16px',
+        padding: '8px',
+        backgroundColor: '#1a1a1a',
+        borderRadius: '8px'
+      }}>
+        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>
+          You: {state.lp[0]} LP
+        </div>
+        <div style={{ fontSize: '12px', color: '#888' }}>
+          Phase: {state.phase}
+        </div>
+        <div style={{ fontSize: '14px', fontWeight: 'bold' }}>
+          Opponent: {state.lp[1]} LP
+        </div>
+      </div>
 
       {/* AI thinking banner */}
       {isAIThinking && (
@@ -210,91 +227,165 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         </div>
       )}
 
-      {/* Player 1 Field (opponent on top) */}
-      <FieldZone 
-        player={1} 
-        monsters={state.fields[1]} 
-        isActive={state.turn === 1}
-        onZoneClick={(idx, card) => handleFieldZoneClick(1, idx, card)}
-        highlightedZone={attackPreview && state.turn === 0 ? attackPreview.targetPos : null}
-        attackingZone={attackingZone?.player === 1 ? attackingZone.zone : null}
-        defendingZone={defendingZone?.player === 1 ? defendingZone.zone : null}
-      />
+      {/* ========== OPPONENT SIDE (Player 1) ========== */}
+      <div style={{ 
+        padding: '12px', 
+        backgroundColor: '#0a0a0a', 
+        borderRadius: '8px',
+        marginBottom: '16px',
+        border: state.turn === 1 ? '2px solid #ff4444' : '2px solid #333'
+      }}>
+        {/* Opponent Hand - HIDDEN */}
+        <div style={{ marginBottom: '8px' }}>
+          <div style={{ fontSize: '11px', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
+            Opponent Hand ({state.hands[1].length} cards)
+          </div>
+          <div style={{ display: 'flex', gap: '4px', justifyContent: 'center' }}>
+            {state.hands[1].map((_, i) => (
+              <div
+                key={i}
+                style={{
+                  width: '50px',
+                  height: '70px',
+                  backgroundColor: '#4a2a2a',
+                  border: '2px solid #666',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '20px'
+                }}
+              >
+                🂠
+              </div>
+            ))}
+          </div>
+        </div>
 
-      {/* player 1 hand */}
-      <div style={{ marginTop: '8px' }}>
-        <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
-          Player 1 Hand ({state.hands[1].length} cards)
-          {state.hasSummoned[1] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
-          {state.hasAttacked[1] && <span style={{ color: '#888', marginLeft: '8px' }}>(already attacked)</span>}
-        </div>
-        <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
-          {state.hands[1].map((c: Card, i) => (
-            state.turn === 1 && !state.hasSummoned[1] ? (
-              <DraggableCard 
-                key={i} 
-                card={c} 
-                onDragEnd={(target) => handleCardDrop(c, target)}
-              />
-            ) : (
-              <button key={i} style={{ fontSize: '8px', padding: '4px 8px' }}>{c.name}</button>
-            )
-          ))}
-        </div>
+        {/* Opponent Monster Field */}
+        <FieldZone 
+          player={1} 
+          monsters={state.fields[1]} 
+          isActive={state.turn === 1}
+          onZoneClick={(idx, card) => handleFieldZoneClick(1, idx, card)}
+          highlightedZone={attackPreview && state.turn === 0 ? attackPreview.targetPos : null}
+          attackingZone={attackingZone?.player === 1 ? attackingZone.zone : null}
+          defendingZone={defendingZone?.player === 1 ? defendingZone.zone : null}
+        />
+
+        {/* Opponent Spell/Trap Zone */}
+        <SpellTrapZone 
+          player={1} 
+          cards={state.spellTraps[1]} 
+          isActive={state.turn === 1}
+        />
       </div>
 
-      {/* Player 0 Field */}
-      <FieldZone 
-        player={0} 
-        monsters={state.fields[0]} 
-        isActive={state.turn === 0}
-        onZoneClick={(idx, card) => handleFieldZoneClick(0, idx, card)}
-        highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
-        attackingZone={attackingZone?.player === 0 ? attackingZone.zone : null}
-        defendingZone={defendingZone?.player === 0 ? defendingZone.zone : null}
-      />
+      {/* ========== PLAYER SIDE (Player 0) ========== */}
+      <div style={{ 
+        padding: '12px', 
+        backgroundColor: '#0a0a0a', 
+        borderRadius: '8px',
+        border: state.turn === 0 ? '2px solid #4444ff' : '2px solid #333'
+      }}>
+        {/* Player Spell/Trap Zone */}
+        <SpellTrapZone 
+          player={0} 
+          cards={state.spellTraps[0]} 
+          isActive={state.turn === 0}
+        />
 
-      {/* player 0 hand */}
-      <div style={{ marginTop: '8px' }}>
-        <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
-          Player 0 Hand ({state.hands[0].length} cards)
-          {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
-          {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already attacked)</span>}
-        </div>
-        <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
-          {state.hands[0].map((c: Card, i) => {
-            const isFusing = fusingCards.includes(c.id);
-            return state.turn === 0 && !state.hasSummoned[0] ? (
-              <div key={i} className={isFusing ? 'flash burst' : ''}>
-                <DraggableCard 
-                  card={c} 
-                  onDragEnd={(target) => handleCardDrop(c, target)}
-                />
-              </div>
-            ) : (
-              <button key={i} style={{ fontSize: '8px', padding: '4px 8px' }}>{c.name}</button>
-            );
-          })}
+        {/* Player Monster Field */}
+        <FieldZone 
+          player={0} 
+          monsters={state.fields[0]} 
+          isActive={state.turn === 0}
+          onZoneClick={(idx, card) => handleFieldZoneClick(0, idx, card)}
+          highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
+          attackingZone={attackingZone?.player === 0 ? attackingZone.zone : null}
+          defendingZone={defendingZone?.player === 0 ? defendingZone.zone : null}
+        />
+
+        {/* Player Hand */}
+        <div style={{ marginTop: '12px' }}>
+          <div style={{ fontSize: '11px', fontWeight: 'bold', marginBottom: '4px' }}>
+            Your Hand ({state.hands[0].length} cards)
+            {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(summoned)</span>}
+            {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(attacked)</span>}
+          </div>
+          <div style={{ display: 'flex', gap: '4px', margin: '8px 0', justifyContent: 'center', flexWrap: 'wrap' }}>
+            {state.hands[0].map((c: Card, i) => {
+              const isFusing = fusingCards.includes(c.id);
+              return state.turn === 0 && !state.hasSummoned[0] ? (
+                <div key={i} className={isFusing ? 'flash burst' : ''}>
+                  <DraggableCard 
+                    card={c} 
+                    onDragEnd={(target) => handleCardDrop(c, target)}
+                  />
+                </div>
+              ) : (
+                <div
+                  key={i}
+                  style={{
+                    fontSize: '7px',
+                    padding: '4px',
+                    backgroundColor: c.type === 'Monster' ? '#2a2a2a' : c.type === 'Spell' ? '#1a3a2a' : '#3a1a1a',
+                    border: '1px solid #555',
+                    borderRadius: '3px',
+                    minWidth: '80px',
+                    textAlign: 'center'
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold', marginBottom: '2px', fontSize: '8px' }}>{c.name}</div>
+                  {c.type === 'Monster' && (
+                    <>
+                      <div style={{ fontSize: '6px', color: '#aaa' }}>
+                        {c.attr && `[${c.attr}]`}
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '2px', fontWeight: 'bold' }}>
+                        <span>ATK {c.atk ?? 0}</span>
+                        <span>DEF {c.def ?? 0}</span>
+                      </div>
+                    </>
+                  )}
+                  {(c.type === 'Spell' || c.type === 'Trap') && (
+                    <div style={{ fontSize: '6px', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
+                      {c.type}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
       {/* Attack confirmation UI */}
       {attackPreview && selectedAttacker && (
-        <div style={{ marginTop: '16px', padding: '12px', backgroundColor: '#ff8800', border: '2px solid #ffaa00', borderRadius: '5px' }}>
-          <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px' }}>
+        <div style={{ 
+          marginTop: '16px', 
+          padding: '12px', 
+          backgroundColor: '#ff8800', 
+          border: '2px solid #ffaa00', 
+          borderRadius: '8px',
+          maxWidth: '800px',
+          margin: '16px auto'
+        }}>
+          <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px', textAlign: 'center' }}>
             {attackPreview.isDirect 
-              ? `Direct Attack: ${attackPreview.damage} → ${state.lp[state.turn === 0 ? 1 : 0]} LP`
+              ? `Direct Attack: ${attackPreview.damage} damage → ${state.lp[state.turn === 0 ? 1 : 0] - attackPreview.damage} LP`
               : `Battle: ${attackPreview.damage} ATK vs Enemy Monster`
             }
           </div>
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
             <button
-              style={{ backgroundColor: '#cc0000', padding: '8px 16px', fontWeight: 'bold' }}
+              style={{ backgroundColor: '#cc0000', padding: '8px 16px', fontWeight: 'bold', cursor: 'pointer' }}
               onClick={confirmAttack}
             >
               Confirm Attack
             </button>
             <button
+              style={{ padding: '8px 16px', cursor: 'pointer' }}
               onClick={cancelAttack}
             >
               Cancel
@@ -303,39 +394,71 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         </div>
       )}
 
-      {/* fusion test button - try fusing first two cards if possible */}
-      <button
-        style={{ backgroundColor: '#2196f3', padding: '8px 12px' }}
-        onClick={() => {
-          if (state.hands[0].length >= 2) {
-            // Trigger fusion animation
-            setFusingCards([state.hands[0][0].id, state.hands[0][1].id]);
-            
-            // Wait for animation before dispatching
-            setTimeout(() => {
-              dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
-              setFusingCards([]);
-            }, 600);
-          }
-        }}
-      >
-        Fuse First 2 Cards
-      </button>
-
-      {/* manual draw button for testing */}
-      <div style={{ marginTop: '8px' }}>
+      {/* Control Buttons */}
+      <div style={{ 
+        marginTop: '16px', 
+        padding: '12px', 
+        display: 'flex', 
+        gap: '8px', 
+        justifyContent: 'center',
+        maxWidth: '800px',
+        margin: '16px auto'
+      }}>
         <button
-          style={{ padding: '8px', fontSize: '10px' }}
-          onClick={() => dispatch({ type: 'DRAW' })}
+          style={{ 
+            backgroundColor: '#2196f3', 
+            padding: '10px 16px', 
+            fontSize: '11px',
+            fontWeight: 'bold',
+            cursor: 'pointer',
+            borderRadius: '4px',
+            border: 'none',
+            color: 'white'
+          }}
+          onClick={() => {
+            if (state.hands[0].length >= 2) {
+              // Trigger fusion animation
+              setFusingCards([state.hands[0][0].id, state.hands[0][1].id]);
+              
+              // Wait for animation before dispatching
+              setTimeout(() => {
+                dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
+                setFusingCards([]);
+              }, 600);
+            }
+          }}
         >
-          Draw
+          🔮 Fuse First 2 Cards
         </button>
         <button
-          style={{ marginLeft: '8px', backgroundColor: '#2196f3', padding: '8px', fontSize: '10px' }}
+          style={{ 
+            padding: '10px 16px', 
+            fontSize: '11px',
+            cursor: 'pointer',
+            borderRadius: '4px',
+            backgroundColor: '#555',
+            border: 'none',
+            color: 'white'
+          }}
+          onClick={() => dispatch({ type: 'DRAW' })}
+        >
+          📥 Draw
+        </button>
+        <button
+          style={{ 
+            backgroundColor: state.turn === 0 ? '#22aa22' : '#666', 
+            padding: '10px 16px', 
+            fontSize: '11px',
+            fontWeight: 'bold',
+            cursor: state.turn === 0 ? 'pointer' : 'not-allowed',
+            borderRadius: '4px',
+            border: 'none',
+            color: 'white'
+          }}
           onClick={() => dispatch({ type: 'END_TURN' })}
           disabled={state.turn !== 0}
         >
-          End Turn
+          ⏭️ End Turn
         </button>
       </div>
     </div>

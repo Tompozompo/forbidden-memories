@@ -197,6 +197,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
           Player 1 Hand ({state.hands[1].length} cards)
           {state.hasSummoned[1] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
+          {state.hasAttacked[1] && <span style={{ color: '#888', marginLeft: '8px' }}>(already attacked)</span>}
         </div>
         <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
           {state.hands[1].map((c: Card, i) => (
@@ -227,6 +228,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         <div style={{ fontSize: '12px', fontWeight: 'bold' }}>
           Player 0 Hand ({state.hands[0].length} cards)
           {state.hasSummoned[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already summoned)</span>}
+          {state.hasAttacked[0] && <span style={{ color: '#888', marginLeft: '8px' }}>(already attacked)</span>}
         </div>
         <div style={{ display: 'flex', gap: '4px', margin: '8px 0' }}>
           {state.hands[0].map((c: Card, i) => (

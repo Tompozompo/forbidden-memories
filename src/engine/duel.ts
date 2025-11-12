@@ -16,7 +16,8 @@ export interface DuelState {
   lp: [number, number];
   hands: Card[][];
   decks: Card[][];
-  fields: (Card | null)[][];
+  fields: (Card | null)[][]; // Monster zones (5 per player)
+  spellTraps: (Card | null)[][]; // Spell/Trap zones (5 per player)
   graves: Card[][];
   phase: 'Draw' | 'Standby' | 'Main' | 'Battle' | 'End';
   hasSummoned: [boolean, boolean];
@@ -34,6 +35,7 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
     hands: [[], []],
     decks: [p0Deck, p1Deck],
     fields: [[null, null, null, null, null], [null, null, null, null, null]],
+    spellTraps: [[null, null, null, null, null], [null, null, null, null, null]],
     graves: [[], []],
     phase: 'Draw',
     hasSummoned: [false, false],

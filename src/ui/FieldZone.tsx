@@ -25,8 +25,8 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
 
   return (
     <div style={{ margin: '20px 0' }}>
-      <div style={{ fontSize: '12px', fontWeight: 'bold', marginBottom: '8px' }}>
-        Player {player} Field {isActive ? '(Your Turn)' : ''}
+      <div style={{ fontSize: '10px', fontWeight: 'bold', marginBottom: '8px', color: '#888' }}>
+        Monster Zone
       </div>
       <div className="field-zone">
         {monsters.map((card, idx) => {
@@ -49,10 +49,23 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
               {card ? (
                 <div 
                   className={`card ${isNewSummon ? 'fadeIn' : ''} ${isAttacking || isDefending ? 'shake' : ''}`}
-                  style={{ margin: 0, fontSize: '8px', textAlign: 'center', padding: '4px' }}
+                  style={{ 
+                    margin: 0, 
+                    fontSize: '7px', 
+                    textAlign: 'center', 
+                    padding: '4px',
+                    backgroundColor: '#2a2a2a',
+                    border: '1px solid #555',
+                    borderRadius: '3px'
+                  }}
                 >
-                  <div style={{ fontWeight: 'bold', lineHeight: '1.2' }}>{card.name}</div>
-                  <div style={{ fontSize: '7px', marginTop: '4px' }}>ATK {card.atk ?? 0}</div>
+                  <div style={{ fontWeight: 'bold', lineHeight: '1.2', fontSize: '8px' }}>{card.name}</div>
+                  {card.attr && <div style={{ fontSize: '6px', color: '#aaa' }}>[{card.attr}]</div>}
+                  <div style={{ fontSize: '7px', marginTop: '2px', display: 'flex', justifyContent: 'space-around' }}>
+                    <span style={{ fontWeight: 'bold' }}>ATK {card.atk ?? 0}</span>
+                    <span>DEF {card.def ?? 0}</span>
+                  </div>
+                  {card.level && <div style={{ fontSize: '6px', color: '#ffa' }}>★{card.level}</div>}
                 </div>
               ) : (
                 <span style={{ color: '#666' }}>—</span>

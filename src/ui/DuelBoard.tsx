@@ -14,6 +14,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const [isAIThinking, setIsAIThinking] = useState(false);
   const [aiReady, setAIReady] = useState(true); // Controls when AI can make next move
   const safetyTimeoutRef = useRef<number | null>(null);
+  const turnEndedRef = useRef(false); // Track if END_TURN was already dispatched
   const [attackingZone, setAttackingZone] = useState<{ player: number; zone: number } | null>(null);
   const [defendingZone, setDefendingZone] = useState<{ player: number; zone: number } | null>(null);
   const [fusingCards, setFusingCards] = useState<number[]>([]);
@@ -39,6 +40,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     if (state.turn !== 1) {
       setIsAIThinking(false);
       setAIReady(true);
+      turnEndedRef.current = false; // Reset the flag when it's not AI's turn
       // Clear timeouts when turn changes away from AI
       if (aiTimeoutRef.current) {
         clearTimeout(aiTimeoutRef.current);
@@ -58,15 +60,21 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     setIsAIThinking(true);
     setAIReady(false);
     
-    // 5-second safety timeout - force end turn if AI gets stuck
-    safetyTimeoutRef.current = setTimeout(() => {
-      console.warn('AI safety timeout triggered - forcing END_TURN');
-      setIsAIThinking(false);
-      dispatch({ type: 'END_TURN' });
-      setAIReady(true);
-      aiTimeoutRef.current = null;
-      safetyTimeoutRef.current = null;
-    }, 5000);
+    // Only create safety timeout if it doesn't exist yet (first action of the turn)
+    if (!safetyTimeoutRef.current) {
+      safetyTimeoutRef.current = setTimeout(() => {
+        // Only force END_TURN if turn hasn't already ended
+        if (!turnEndedRef.current) {
+          console.warn('AI safety timeout triggered - forcing END_TURN');
+          turnEndedRef.current = true;
+          setIsAIThinking(false);
+          dispatch({ type: 'END_TURN' });
+          setAIReady(true);
+        }
+        aiTimeoutRef.current = null;
+        safetyTimeoutRef.current = null;
+      }, 5000);
+    }
     
     // Schedule AI move after 1 second
     aiTimeoutRef.current = setTimeout(() => {
@@ -78,8 +86,9 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         if (aiAction) {
           dispatch(aiAction);
           
-          // If action was END_TURN, clear thinking state immediately
+           // If action was END_TURN, clear thinking state immediately
           if (aiAction.type === 'END_TURN') {
+            turnEndedRef.current = true; // Mark that turn has ended
             setIsAIThinking(false);
             setAIReady(true);
             if (safetyTimeoutRef.current) {

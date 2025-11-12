@@ -176,16 +176,11 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         i === player ? true : s
       ) as [boolean, boolean];
       
-      // Switch turn after attack
-      const newTurn = opponent;
-      
       return { 
         ...state, 
         lp: newLp, 
         fields: newFields, 
         graves: newGraves,
-        turn: newTurn,
-        phase: 'Draw',
         hasAttacked: newHasAttacked
       };
     }

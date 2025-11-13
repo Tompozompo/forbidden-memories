@@ -1,0 +1,259 @@
+import type { Card as CardType } from '../types';
+
+interface CardProps {
+  card: CardType;
+  size?: 'small' | 'medium' | 'large';
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+// Attribute color mapping
+const ATTR_COLORS: Record<string, string> = {
+  EARTH: '#8B4513',
+  WATER: '#4169E1',
+  FIRE: '#FF4500',
+  WIND: '#32CD32',
+  LIGHT: '#FFD700',
+  DARK: '#9370DB',
+};
+
+// Attribute symbols
+const ATTR_SYMBOLS: Record<string, string> = {
+  EARTH: '🪨',
+  WATER: '💧',
+  FIRE: '🔥',
+  WIND: '💨',
+  LIGHT: '☀️',
+  DARK: '🌙',
+};
+
+// Type/Race symbols
+const RACE_SYMBOLS: Record<string, string> = {
+  Warrior: '⚔️',
+  Beast: '🦁',
+  Dragon: '🐉',
+  Spellcaster: '🪄',
+  Zombie: '💀',
+  Machine: '⚙️',
+  Aqua: '🌊',
+  Pyro: '🔥',
+  Rock: '🗿',
+  Insect: '🐛',
+  Plant: '🌿',
+  Reptile: '🦎',
+  Fiend: '👿',
+  Dinosaur: '🦖',
+  Fish: '🐟',
+  Thunder: '⚡',
+  Winged: '🦅',
+  Fairy: '🧚',
+  Angel: '👼',
+};
+
+export default function Card({ card, size = 'medium', className = '', style = {} }: CardProps) {
+  const isMonster = card.type === 'Monster';
+  const isSpell = card.type === 'Spell';
+  const isTrap = card.type === 'Trap';
+
+  // Size-based styling
+  const sizes = {
+    small: {
+      width: '60px',
+      height: '84px',
+      fontSize: '6px',
+      nameFontSize: '7px',
+      statsFontSize: '6px',
+      padding: '2px',
+    },
+    medium: {
+      width: '100px',
+      height: '140px',
+      fontSize: '8px',
+      nameFontSize: '10px',
+      statsFontSize: '9px',
+      padding: '4px',
+    },
+    large: {
+      width: '150px',
+      height: '210px',
+      fontSize: '12px',
+      nameFontSize: '14px',
+      statsFontSize: '12px',
+      padding: '6px',
+    },
+  };
+
+  const sizeStyle = sizes[size];
+
+  // Card frame color based on type
+  const getFrameColor = () => {
+    if (isMonster) return '#d4af37'; // Gold
+    if (isSpell) return '#1d9e74'; // Green
+    if (isTrap) return '#bc5a84'; // Purple/Pink
+    return '#888';
+  };
+
+  const getCardBg = () => {
+    if (isMonster) return 'linear-gradient(to bottom, #f5e6d3 0%, #e8d4b8 100%)';
+    if (isSpell) return 'linear-gradient(to bottom, #d4f1e8 0%, #b8e6d5 100%)';
+    if (isTrap) return 'linear-gradient(to bottom, #f5d4e8 0%, #e8b8d5 100%)';
+    return '#f0f0f0';
+  };
+
+  const attrColor = card.attr ? ATTR_COLORS[card.attr] : '#888';
+  const attrSymbol = card.attr ? ATTR_SYMBOLS[card.attr] : '';
+  const raceSymbol = card.race ? RACE_SYMBOLS[card.race] : '';
+
+  return (
+    <div
+      className={className}
+      style={{
+        width: sizeStyle.width,
+        height: sizeStyle.height,
+        background: getCardBg(),
+        border: `2px solid ${getFrameColor()}`,
+        borderRadius: '4px',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+        padding: sizeStyle.padding,
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative',
+        boxSizing: 'border-box',
+        fontFamily: 'Arial, sans-serif',
+        ...style,
+      }}
+    >
+      {/* Header: Name and Attribute */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: '2px',
+          background: 'rgba(0,0,0,0.1)',
+          padding: '1px 2px',
+          borderRadius: '2px',
+        }}
+      >
+        <div
+          style={{
+            fontSize: sizeStyle.nameFontSize,
+            fontWeight: 'bold',
+            color: '#000',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+            flex: 1,
+          }}
+          title={card.name}
+        >
+          {card.name}
+        </div>
+        {isMonster && card.attr && (
+          <div
+            style={{
+              fontSize: sizeStyle.fontSize,
+              marginLeft: '2px',
+              backgroundColor: attrColor,
+              borderRadius: '50%',
+              width: `calc(${sizeStyle.fontSize} * 1.5)`,
+              height: `calc(${sizeStyle.fontSize} * 1.5)`,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              border: '1px solid rgba(0,0,0,0.2)',
+            }}
+            title={card.attr}
+          >
+            {attrSymbol}
+          </div>
+        )}
+      </div>
+
+      {/* Image Placeholder Area */}
+      <div
+        style={{
+          flex: 1,
+          background: isMonster
+            ? 'linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)'
+            : isSpell
+            ? 'linear-gradient(135deg, #1a3a2a 0%, #0a2a1a 100%)'
+            : 'linear-gradient(135deg, #3a1a1a 0%, #2a0a0a 100%)',
+          border: '1px solid rgba(0,0,0,0.3)',
+          borderRadius: '2px',
+          marginBottom: '2px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: '#555',
+          fontSize: sizeStyle.fontSize,
+        }}
+      >
+        {/* Placeholder for future card artwork */}
+      </div>
+
+      {/* Type/Race Info */}
+      {isMonster && (
+        <div
+          style={{
+            fontSize: sizeStyle.fontSize,
+            color: '#333',
+            background: 'rgba(0,0,0,0.05)',
+            padding: '1px 2px',
+            borderRadius: '2px',
+            marginBottom: '2px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <span style={{ fontWeight: 'bold' }}>
+            {raceSymbol} {card.race}
+          </span>
+          {card.level && (
+            <span style={{ color: '#ffa500', fontWeight: 'bold' }}>
+              {'★'.repeat(Math.min(card.level, 12))}
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Spell/Trap Type */}
+      {(isSpell || isTrap) && (
+        <div
+          style={{
+            fontSize: sizeStyle.fontSize,
+            color: isSpell ? '#1d9e74' : '#bc5a84',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            background: 'rgba(0,0,0,0.05)',
+            padding: '1px 2px',
+            borderRadius: '2px',
+            marginBottom: '2px',
+          }}
+        >
+          {isSpell && '🎴 '}{isTrap && '🪤 '}{card.type}
+        </div>
+      )}
+
+      {/* ATK/DEF Stats */}
+      {isMonster && (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            fontSize: sizeStyle.statsFontSize,
+            fontWeight: 'bold',
+            color: '#000',
+            background: 'rgba(0,0,0,0.1)',
+            padding: '1px 2px',
+            borderRadius: '2px',
+          }}
+        >
+          <span style={{ color: '#c41e3a' }}>ATK/{card.atk ?? 0}</span>
+          <span style={{ color: '#0e4da4' }}>DEF/{card.def ?? 0}</span>
+        </div>
+      )}
+    </div>
+  );
+}

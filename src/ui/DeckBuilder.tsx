@@ -2,14 +2,15 @@ import { useState, useEffect } from 'react';
 import { useDeckStore } from '../store/deckStore';
 import { useDrag } from '@use-gesture/react';
 import { useSpring, animated } from '@react-spring/web';
-import type { Card } from '../types';
+import type { Card as CardType } from '../types';
+import Card from './Card';
 
 interface DeckBuilderProps {
-  allCards: Card[];
+  allCards: CardType[];
   onReturnToDuel: () => void;
 }
 
-function DraggableOwnedCard({ card, onDragEnd }: { card: Card; onDragEnd: (target: HTMLElement | null) => void }) {
+function DraggableOwnedCard({ card, onDragEnd }: { card: CardType; onDragEnd: (target: HTMLElement | null) => void }) {
   const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
   
   const bind = useDrag(
@@ -29,15 +30,10 @@ function DraggableOwnedCard({ card, onDragEnd }: { card: Card; onDragEnd: (targe
   return (
     <animated.div
       {...bind()}
-      style={{ x, y, touchAction: 'none' }}
+      style={{ x, y, touchAction: 'none', cursor: 'grab' }}
       className="card select-none"
     >
-      <div style={{ fontSize: '8px', textAlign: 'center', padding: '4px' }}>
-        <div style={{ fontWeight: 'bold' }}>{card.name}</div>
-        <div style={{ fontSize: '7px', marginTop: '2px' }}>
-          ATK: {card.atk ?? '?'} / DEF: {card.def ?? '?'}
-        </div>
-      </div>
+      <Card card={card} size="small" />
     </animated.div>
   );
 }
@@ -60,7 +56,7 @@ export default function DeckBuilder({ allCards, onReturnToDuel }: DeckBuilderPro
 
   const ownedCardObjects = ownedCards
     .map(id => allCards.find(c => c.id === id))
-    .filter(Boolean) as Card[];
+    .filter(Boolean) as CardType[];
 
   const filteredCards = ownedCardObjects.filter(card =>
     card.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -175,12 +171,7 @@ export default function DeckBuilder({ allCards, onReturnToDuel }: DeckBuilderPro
                   }}
                 >
                   {card ? (
-                    <div>
-                      <div className="font-bold text-sm">{card.name}</div>
-                      <div className="text-xs text-gray-600">
-                        {card.atk}/{card.def}
-                      </div>
-                    </div>
+                    <Card card={card} size="small" />
                   ) : (
                     <span style={{ color: '#999' }}>Slot {index + 1}</span>
                   )}

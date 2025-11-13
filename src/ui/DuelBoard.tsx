@@ -5,6 +5,7 @@ import type { Card } from '../types';
 import FieldZone from './FieldZone';
 import SpellTrapZone from './SpellTrapZone';
 import DraggableCard from './DraggableCard';
+import CardComponent from './Card';
 
 export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]; p1Deck: Card[]; allCards: Card[] }) {
   const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
@@ -401,7 +402,6 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                 <div
                   key={i}
                   className="card"
-                  title={c.name}
                   style={{
                     width: 'clamp(60px, 15vw, 80px)',
                     height: 'clamp(84px, 21vw, 112px)',
@@ -415,31 +415,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                   }}
                   onClick={() => handleCardClick(c.id)}
                 >
-                  <div className="card-content" style={{
-                    fontSize: 'clamp(6px, 1.5vw, 7px)',
-                    backgroundColor: c.type === 'Monster' ? '#2a2a2a' : c.type === 'Spell' ? '#1a3a2a' : '#3a1a1a',
-                    border: '1px solid #555',
-                    borderRadius: '3px',
-                    textAlign: 'center',
-                  }}>
-                    <div className="card-name" style={{ fontSize: 'clamp(7px, 1.8vw, 8px)' }}>{c.name}</div>
-                    {c.type === 'Monster' && (
-                      <>
-                        <div className="card-sub" style={{ fontSize: 'clamp(5px, 1.2vw, 6px)' }}>
-                          {c.attr && `[${c.attr}]`}
-                        </div>
-                        <div className="card-stats" style={{ fontSize: 'clamp(6px, 1.5vw, 7px)' }}>
-                          <span>ATK {c.atk ?? 0}</span>
-                          <span>DEF {c.def ?? 0}</span>
-                        </div>
-                      </>
-                    )}
-                    {(c.type === 'Spell' || c.type === 'Trap') && (
-                      <div style={{ fontSize: 'clamp(5px, 1.2vw, 6px)', color: c.type === 'Spell' ? '#2a8' : '#a52', fontWeight: 'bold' }}>
-                        {c.type}
-                      </div>
-                    )}
-                  </div>
+                  <CardComponent card={c} size="small" style={{ width: '100%', height: '100%' }} />
                 </div>
               );
             })}

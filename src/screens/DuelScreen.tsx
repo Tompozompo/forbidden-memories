@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSaveStore } from '../store/saveStore';
-import { useDeckStore } from '../store/deckStore';
 import DuelBoard from '../ui/DuelBoard';
 import npcs from '../data/npcs.json';
 import cards from '../data/cards.json';
@@ -18,8 +17,7 @@ function DuelScreen() {
   const { id } = useParams<{ id: string }>();
   const npcId = parseInt(id || '1', 10);
   
-  const { currentDeck } = useDeckStore();
-  const { addStarchips, addBeatenId, addOwnedCard } = useSaveStore();
+  const { currentDeck, addStarchips, addBeatenId, addOwnedCard } = useSaveStore();
   
   const [showVictory, setShowVictory] = useState(false);
   

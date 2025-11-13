@@ -3,6 +3,7 @@ import { useSaveStore } from '../store/saveStore';
 import { useState } from 'react';
 import cards from '../data/cards.json';
 import type { Card } from '../types';
+import CardComponent from '../ui/Card';
 
 const allCards = cards as Card[];
 
@@ -342,7 +343,7 @@ function ShopScreen() {
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
               gap: '12px',
               marginBottom: '20px',
             }}>
@@ -350,32 +351,11 @@ function ShopScreen() {
                 <div
                   key={index}
                   style={{
-                    padding: '12px',
-                    backgroundColor: '#1a1a2e',
-                    border: '2px solid #4caf50',
-                    borderRadius: '8px',
-                    textAlign: 'center',
+                    display: 'flex',
+                    justifyContent: 'center',
                   }}
                 >
-                  <div style={{
-                    fontWeight: 'bold',
-                    marginBottom: '8px',
-                    fontSize: '14px',
-                  }}>
-                    {card.name}
-                  </div>
-                  {card.type === 'Monster' && (
-                    <div style={{ fontSize: '12px', color: '#aaa' }}>
-                      ATK: {card.atk} / DEF: {card.def}
-                    </div>
-                  )}
-                  <div style={{
-                    fontSize: '10px',
-                    color: '#888',
-                    marginTop: '4px',
-                  }}>
-                    {card.type}
-                  </div>
+                  <CardComponent card={card} size="medium" />
                 </div>
               ))}
             </div>

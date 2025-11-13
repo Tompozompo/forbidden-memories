@@ -19,6 +19,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
   const [attackingZone, setAttackingZone] = useState<{ player: number; zone: number } | null>(null);
   const [defendingZone, setDefendingZone] = useState<{ player: number; zone: number } | null>(null);
   const [fusingCards, setFusingCards] = useState<number[]>([]);
+  const [selectedForFusion, setSelectedForFusion] = useState<number[]>([]); // Track cards selected for fusion
+  const [fuseMode, setFuseMode] = useState(false); // Track if we're in fusion selection mode
 
   // draw a starting hand on mount (5 cards each for both players)
   useEffect(() => {
@@ -198,6 +200,44 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
     setAttackPreview(null);
   };
 
+  const handleCardClick = (cardId: number) => {
+    // Only allow card selection in fuse mode
+    if (!fuseMode || state.turn !== 0) return;
+    
+    if (selectedForFusion.includes(cardId)) {
+      // Deselect card
+      setSelectedForFusion(selectedForFusion.filter(id => id !== cardId));
+    } else if (selectedForFusion.length < 2) {
+      // Select card (max 2)
+      setSelectedForFusion([...selectedForFusion, cardId]);
+    }
+  };
+
+  const handleFuseClick = () => {
+    if (!fuseMode) {
+      // Enter fusion mode
+      setFuseMode(true);
+      setSelectedForFusion([]);
+    } else if (selectedForFusion.length === 2) {
+      // Execute fusion
+      setFusingCards([...selectedForFusion]);
+      
+      // Wait for animation before dispatching
+      setTimeout(() => {
+        dispatch({ type: 'FUSE', matA: selectedForFusion[0], matB: selectedForFusion[1], allCards });
+        setFusingCards([]);
+        setSelectedForFusion([]);
+        setFuseMode(false);
+      }, 600);
+    }
+  };
+
+  const handleCancelFuse = () => {
+    setFuseMode(false);
+    setSelectedForFusion([]);
+  };
+
+
   return (
     <div style={{ padding: '4px', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
       {/* Header Info */}
@@ -225,6 +265,22 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
       {isAIThinking && (
         <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#2196f3', border: '2px solid #4488ff', borderRadius: '4px', textAlign: 'center' }}>
           <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>Rex is thinking...</span>
+        </div>
+      )}
+
+      {/* Fusion mode banner */}
+      {fuseMode && (
+        <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#ff8800', border: '2px solid #ffaa00', borderRadius: '4px', textAlign: 'center' }}>
+          <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>
+            Fusion Mode: Select 2 cards from your hand ({selectedForFusion.length}/2 selected)
+          </span>
+        </div>
+      )}
+
+      {/* First turn attack restriction banner */}
+      {state.turnCount === 1 && state.phase === 'Battle' && state.turn === 0 && (
+        <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#cc0000', border: '2px solid #ff4444', borderRadius: '4px', textAlign: 'center' }}>
+          <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>Cannot attack on the first turn!</span>
         </div>
       )}
 
@@ -317,6 +373,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           <div className="hand">
             {state.hands[0].map((c: Card, i) => {
               const isFusing = fusingCards.includes(c.id);
+              const isSelectedForFusion = selectedForFusion.includes(c.id);
               const zIndex = i; // Rightmost card has highest z-index
               
               return state.turn === 0 && !state.hasSummoned[0] ? (
@@ -328,7 +385,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                     height: 'clamp(84px, 21vw, 112px)',
                     display: 'inline-block',
                     zIndex,
+                    cursor: fuseMode ? 'pointer' : 'grab',
+                    border: isSelectedForFusion ? '3px solid #ffaa00' : 'none',
+                    borderRadius: '4px',
+                    boxSizing: 'border-box',
                   }}
+                  onClick={() => handleCardClick(c.id)}
                 >
                   <DraggableCard 
                     card={c} 
@@ -346,7 +408,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
                     display: 'inline-block',
                     zIndex,
                     margin: 0,
+                    cursor: fuseMode && state.turn === 0 ? 'pointer' : 'default',
+                    border: isSelectedForFusion ? '3px solid #ffaa00' : 'none',
+                    borderRadius: '4px',
+                    boxSizing: 'border-box',
                   }}
+                  onClick={() => handleCardClick(c.id)}
                 >
                   <div className="card-content" style={{
                     fontSize: 'clamp(6px, 1.5vw, 7px)',
@@ -427,50 +494,64 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         margin: '8px auto',
         flexWrap: 'wrap'
       }}>
-        <button
-          style={{ 
-            backgroundColor: '#2196f3', 
-            padding: '10px 12px', 
-            fontSize: 'clamp(8px, 2vw, 11px)',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-            borderRadius: '4px',
-            border: 'none',
-            color: 'white',
-            flex: '1 1 auto',
-            minWidth: '100px'
-          }}
-          onClick={() => {
-            if (state.hands[0].length >= 2) {
-              // Trigger fusion animation
-              setFusingCards([state.hands[0][0].id, state.hands[0][1].id]);
-              
-              // Wait for animation before dispatching
-              setTimeout(() => {
-                dispatch({ type: 'FUSE', matA: state.hands[0][0].id, matB: state.hands[0][1].id, allCards });
-                setFusingCards([]);
-              }, 600);
-            }
-          }}
-        >
-          🔮 Fuse First 2
-        </button>
-        <button
-          style={{ 
-            padding: '10px 12px', 
-            fontSize: 'clamp(8px, 2vw, 11px)',
-            cursor: 'pointer',
-            borderRadius: '4px',
-            backgroundColor: '#555',
-            border: 'none',
-            color: 'white',
-            flex: '0 1 auto',
-            minWidth: '80px'
-          }}
-          onClick={() => dispatch({ type: 'DRAW' })}
-        >
-          📥 Draw
-        </button>
+        {!fuseMode ? (
+          <button
+            style={{ 
+              backgroundColor: '#2196f3', 
+              padding: '10px 12px', 
+              fontSize: 'clamp(8px, 2vw, 11px)',
+              fontWeight: 'bold',
+              cursor: state.turn === 0 && state.hands[0].length >= 2 ? 'pointer' : 'not-allowed',
+              borderRadius: '4px',
+              border: 'none',
+              color: 'white',
+              flex: '1 1 auto',
+              minWidth: '100px',
+              opacity: state.turn === 0 && state.hands[0].length >= 2 ? 1 : 0.5,
+            }}
+            onClick={handleFuseClick}
+            disabled={state.turn !== 0 || state.hands[0].length < 2}
+          >
+            🔮 Fuse
+          </button>
+        ) : (
+          <>
+            <button
+              style={{ 
+                backgroundColor: selectedForFusion.length === 2 ? '#ff8800' : '#666',
+                padding: '10px 12px', 
+                fontSize: 'clamp(8px, 2vw, 11px)',
+                fontWeight: 'bold',
+                cursor: selectedForFusion.length === 2 ? 'pointer' : 'not-allowed',
+                borderRadius: '4px',
+                border: 'none',
+                color: 'white',
+                flex: '1 1 auto',
+                minWidth: '100px'
+              }}
+              onClick={handleFuseClick}
+              disabled={selectedForFusion.length !== 2}
+            >
+              ⚡ Confirm Fusion
+            </button>
+            <button
+              style={{ 
+                backgroundColor: '#cc0000',
+                padding: '10px 12px', 
+                fontSize: 'clamp(8px, 2vw, 11px)',
+                cursor: 'pointer',
+                borderRadius: '4px',
+                border: 'none',
+                color: 'white',
+                flex: '0 1 auto',
+                minWidth: '80px'
+              }}
+              onClick={handleCancelFuse}
+            >
+              ✖ Cancel
+            </button>
+          </>
+        )}
         <button
           style={{ 
             backgroundColor: state.turn === 0 ? '#22aa22' : '#666', 

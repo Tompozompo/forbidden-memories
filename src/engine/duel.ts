@@ -13,6 +13,7 @@ export function shuffle<T>(arr: T[]): T[] {
 
 export interface DuelState {
   turn: 0 | 1;
+  turnCount: number; // Total number of turns that have passed
   lp: [number, number];
   hands: Card[][];
   decks: Card[][];
@@ -31,6 +32,7 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
   
   return {
     turn: 0,
+    turnCount: 1, // Start at turn 1
     lp: [8000, 8000],
     hands: [[], []],
     decks: [p0Deck, p1Deck],
@@ -119,6 +121,11 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       const player = state.turn;
       const opponent = player === 0 ? 1 : 0;
       
+      // Prevent attacking on the first turn
+      if (state.turnCount === 1) {
+        return state; // Reject attack on first turn
+      }
+      
       // Check if player has already attacked this turn
       if (state.hasAttacked[player]) {
         return state; // Reject attack if already attacked
@@ -190,6 +197,9 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       // Flip turn to the other player
       const newTurn = state.turn === 0 ? 1 : 0;
       
+      // Increment turn count
+      const newTurnCount = state.turnCount + 1;
+      
       // Reset hasSummoned and hasAttacked for both players at turn end
       const newHasSummoned: [boolean, boolean] = [false, false];
       const newHasAttacked: [boolean, boolean] = [false, false];
@@ -198,7 +208,7 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       const deck = state.decks[newTurn];
       if (!deck || deck.length === 0) {
         // No card to draw, just flip turn
-        return { ...state, turn: newTurn, phase: 'Draw', hasSummoned: newHasSummoned, hasAttacked: newHasAttacked };
+        return { ...state, turn: newTurn, turnCount: newTurnCount, phase: 'Draw', hasSummoned: newHasSummoned, hasAttacked: newHasAttacked };
       }
       
       const [card, ...rest] = deck;
@@ -209,7 +219,8 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         ...state, 
         decks: newDecks, 
         hands: newHands, 
-        turn: newTurn, 
+        turn: newTurn,
+        turnCount: newTurnCount,
         phase: 'Draw',
         hasSummoned: newHasSummoned,
         hasAttacked: newHasAttacked

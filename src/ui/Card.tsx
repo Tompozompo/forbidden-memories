@@ -55,27 +55,24 @@ export default function Card({ card, size = 'medium', className = '', style = {}
   const isSpell = card.type === 'Spell';
   const isTrap = card.type === 'Trap';
 
-  // Size-based styling
+  // Size-based styling - using max-width to maintain aspect ratio
   const sizes = {
     small: {
-      width: '60px',
-      height: '84px',
+      maxWidth: '60px',
       fontSize: '6px',
       nameFontSize: '7px',
       statsFontSize: '6px',
       padding: '2px',
     },
     medium: {
-      width: '100px',
-      height: '140px',
+      maxWidth: '100px',
       fontSize: '8px',
       nameFontSize: '10px',
       statsFontSize: '9px',
       padding: '4px',
     },
     large: {
-      width: '150px',
-      height: '210px',
+      maxWidth: '150px',
       fontSize: '12px',
       nameFontSize: '14px',
       statsFontSize: '12px',
@@ -108,8 +105,9 @@ export default function Card({ card, size = 'medium', className = '', style = {}
     <div
       className={className}
       style={{
-        width: sizeStyle.width,
-        height: sizeStyle.height,
+        width: '100%',
+        maxWidth: sizeStyle.maxWidth,
+        aspectRatio: '5 / 7',
         background: getCardBg(),
         border: `2px solid ${getFrameColor()}`,
         borderRadius: '4px',

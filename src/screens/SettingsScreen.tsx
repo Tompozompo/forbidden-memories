@@ -9,14 +9,14 @@ export default function SettingsScreen() {
     <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       <div style={{ marginBottom: '20px' }}>
         <button
-          onClick={() => navigate('/map')}
+          onClick={() => navigate('/campaign-menu')}
           style={{
             fontSize: 'clamp(9px, 2.5vw, 12px)',
             padding: '8px 16px',
             cursor: 'pointer',
           }}
         >
-          ← Back to Map
+          ← Back
         </button>
       </div>
 

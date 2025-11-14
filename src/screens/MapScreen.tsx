@@ -135,7 +135,7 @@ function MapScreen() {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         >
-          🛒 Card Shop
+          🛒 Store
         </button>
         
         <button

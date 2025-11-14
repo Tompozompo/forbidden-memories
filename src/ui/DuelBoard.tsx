@@ -31,8 +31,14 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   const [selectedForFusion, setSelectedForFusion] = useState<number[]>([]); // Track cards selected for fusion
   const [fuseMode, setFuseMode] = useState(false); // Track if we're in fusion selection mode
 
-  // Notify parent of state changes
+  // Notify parent of state changes (skip initial mount)
+  const isInitialMount = useRef(true);
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    
     if (onStateChange) {
       onStateChange(state);
     }
@@ -43,7 +49,6 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   useEffect(() => {
     if (initialDrawDone.current || initialState) return;
     initialDrawDone.current = true;
-    
     // draw 5 times for player 0
     for (let i = 0; i < 5; i++) {
       dispatch({ type: 'DRAW', player: 0 });

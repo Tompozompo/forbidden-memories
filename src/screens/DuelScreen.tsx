@@ -82,7 +82,7 @@ function DuelScreen() {
         p0Deck={p0Cards} 
         p1Deck={p1Cards} 
         allCards={allCards}
-        initialState={duelState || undefined}
+        initialState={duelState ? duelState : undefined}
         onStateChange={handleStateChange}
       />
     );

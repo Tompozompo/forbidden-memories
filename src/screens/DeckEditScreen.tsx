@@ -140,8 +140,9 @@ function DeckEditScreen() {
             maxHeight: '500px',
             overflowY: 'auto',
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(60px, 1fr))',
             gap: '8px',
+            justifyItems: 'center',
           }}>
             {filteredCards.map((card) => {
               // Check if card is already in deck
@@ -209,9 +210,10 @@ function DeckEditScreen() {
           
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(60px, 1fr))',
             gap: '8px',
             marginBottom: '16px',
+            justifyItems: 'center',
           }}>
             {deck.map((cardId, index) => {
               const card = cardId ? allCards.find(c => c.id === cardId) : null;
@@ -224,7 +226,7 @@ function DeckEditScreen() {
                     borderColor: card ? '#4caf50' : '#555',
                     borderRadius: '4px',
                     padding: '4px',
-                    minHeight: '140px',
+                    minHeight: '84px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',

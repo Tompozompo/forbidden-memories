@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Card as CardType } from '../types';
 import CardComponent from './Card';
+import { useSettingsStore } from '../store/settingsStore';
 
 interface FieldZoneProps {
   player: 0 | 1;
@@ -14,6 +15,7 @@ interface FieldZoneProps {
 
 export default function FieldZone({ player, monsters, isActive, onZoneClick, highlightedZone, attackingZone, defendingZone }: FieldZoneProps) {
   const [summonedCards, setSummonedCards] = useState<Set<string>>(new Set());
+  const { checkerColor1, checkerColor2 } = useSettingsStore();
 
   useEffect(() => {
     // Track newly summoned cards for animation
@@ -24,11 +26,14 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
     });
   }, [monsters, player, summonedCards]);
 
+  // Create checkered pattern background
+  const getCheckerBackground = (index: number) => {
+    const isEven = index % 2 === 0;
+    return isEven ? checkerColor1 : checkerColor2;
+  };
+
   return (
-    <div style={{ margin: '10px 0' }}>
-      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
-        Monster Zone
-      </div>
+    <div style={{ margin: '4px 0' }}>
       <div className="field-zone">
         {monsters.map((card, idx) => {
           const isNewSummon = card && !summonedCards.has(`${player}-${idx}-${card.id}`);
@@ -44,6 +49,7 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
               className={`slot ${highlightedZone === idx ? 'highlighted' : ''}`}
               style={{
                 borderColor: isActive ? '#4488ff' : '#444',
+                backgroundColor: getCheckerBackground(idx),
                 boxShadow: highlightedZone === idx ? '0 0 20px rgba(255, 215, 0, 0.8)' : undefined,
               }}
             >

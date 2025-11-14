@@ -1,4 +1,5 @@
 import type { Card } from '../types';
+import { useSettingsStore } from '../store/settingsStore';
 
 interface SpellTrapZoneProps {
   player: 0 | 1;
@@ -7,28 +8,24 @@ interface SpellTrapZoneProps {
 }
 
 export default function SpellTrapZone({ cards, isActive }: SpellTrapZoneProps) {
+  const { checkerColor1, checkerColor2 } = useSettingsStore();
+
+  // Create checkered pattern background
+  const getCheckerBackground = (index: number) => {
+    const isEven = index % 2 === 0;
+    return isEven ? checkerColor2 : checkerColor1; // Inverse of monster zone for visual distinction
+  };
+
   return (
-    <div style={{ margin: '8px 0' }}>
-      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', fontWeight: 'bold', marginBottom: '4px', color: '#888' }}>
-        Spell/Trap Zone
-      </div>
-      <div style={{ display: 'flex', gap: '4px', justifyContent: 'center' }}>
+    <div style={{ margin: '4px 0' }}>
+      <div className="spell-trap-zone">
         {cards.map((card, idx) => (
           <div
             key={idx}
+            className="slot"
             style={{
-              flex: '1',
-              maxWidth: '60px',
-              height: 'clamp(30px, 8vw, 40px)',
               border: `2px solid ${isActive ? '#885500' : '#332200'}`,
-              borderRadius: '4px',
-              backgroundColor: '#1a1a1a',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: 'clamp(6px, 1.5vw, 7px)',
-              padding: '2px',
-              minWidth: '40px',
+              backgroundColor: getCheckerBackground(idx),
             }}
           >
             {card ? (

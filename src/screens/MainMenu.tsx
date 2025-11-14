@@ -9,12 +9,12 @@ function MainMenu() {
   
   const handleNewJourney = () => {
     resetGame();
-    navigate('/map');
+    navigate('/campaign-menu');
   };
   
   const handleContinue = () => {
     loadGame();
-    navigate('/map');
+    navigate('/campaign-menu');
   };
   
   return (

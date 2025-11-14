@@ -51,7 +51,7 @@ function ShopScreen() {
   const [showRewards, setShowRewards] = useState(false);
 
   const handleBack = () => {
-    navigate('/map');
+    navigate('/campaign-menu');
   };
 
   const getRandomCards = (count: number, packId: string): Card[] => {
@@ -151,7 +151,7 @@ function ShopScreen() {
         marginBottom: '16px',
         textShadow: '0 0 10px rgba(255, 215, 0, 0.5)',
       }}>
-        Card Shop
+        Store
       </h1>
 
       <p style={{

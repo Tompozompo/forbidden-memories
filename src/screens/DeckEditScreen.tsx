@@ -48,11 +48,11 @@ function DeckEditScreen() {
   const handleSave = () => {
     const validDeck = deck.filter((id): id is number => id !== null);
     saveGame({ currentDeck: validDeck });
-    navigate('/map');
+    navigate('/campaign-menu');
   };
 
   const handleCancel = () => {
-    navigate('/map');
+    navigate('/campaign-menu');
   };
 
   const isValidDeck = deck.filter(id => id !== null).length === 20;

@@ -1,5 +1,5 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
-import { initialDuel, duelReducer } from '../engine/duel';
+import { initialDuel, duelReducer, type DuelState } from '../engine/duel';
 import { getAIAction } from '../engine/ai';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
@@ -7,20 +7,18 @@ import SpellTrapZone from './SpellTrapZone';
 import DraggableCard from './DraggableCard';
 import CardComponent from './Card';
 
-export default function DuelBoard({ 
-  p0Deck, 
-  p1Deck, 
-  allCards,
-  onVictory,
-  onDefeat 
-}: { 
-  p0Deck: Card[]; 
-  p1Deck: Card[]; 
+interface DuelBoardProps {
+  p0Deck: Card[];
+  p1Deck: Card[];
   allCards: Card[];
+  initialState?: DuelState;
+  onStateChange?: (state: DuelState) => void;
   onVictory?: () => void;
   onDefeat?: () => void;
-}) {
-  const [state, dispatch] = useReducer(duelReducer, initialDuel(p0Deck, p1Deck));
+}
+
+export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onStateChange }: DuelBoardProps) {
+  const [state, dispatch] = useReducer(duelReducer, initialState || initialDuel(p0Deck, p1Deck));
   const initialDrawDone = useRef(false);
   const aiTimeoutRef = useRef<number | null>(null);
   const [selectedAttacker, setSelectedAttacker] = useState<{ cardId: number; playerIdx: number } | null>(null);
@@ -59,11 +57,24 @@ export default function DuelBoard({
     }
   }, [state.lp, onVictory, onDefeat]);
 
-  // draw a starting hand on mount (5 cards each for both players)
+  // Notify parent of state changes (skip initial mount)
+  const isInitialMount = useRef(true);
   useEffect(() => {
-    if (initialDrawDone.current) return;
-    initialDrawDone.current = true;
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
     
+    if (onStateChange) {
+      onStateChange(state);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state]); // Only depend on state, not onStateChange to avoid infinite loops
+
+  // draw a starting hand on mount (5 cards each for both players) - only if no initial state provided
+  useEffect(() => {
+    if (initialDrawDone.current || initialState) return;
+    initialDrawDone.current = true;
     // draw 5 times for player 0
     for (let i = 0; i < 5; i++) {
       dispatch({ type: 'DRAW', player: 0 });

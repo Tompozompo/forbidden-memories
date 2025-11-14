@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSaveStore } from '../store/saveStore';
 import DuelBoard from '../ui/DuelBoard';
 import npcs from '../data/npcs.json';
 import cards from '../data/cards.json';
 import type { Card } from '../types';
+import type { DuelState } from '../engine/duel';
+import { saveDuelSession, loadDuelSession, clearDuelSession } from '../utils/duelSession';
 
 interface NPC {
   id: number;
@@ -20,6 +22,8 @@ function DuelScreen() {
   const { currentDeck, addStarchips, addBeatenId, addOwnedCard } = useSaveStore();
   
   const [showVictory, setShowVictory] = useState(false);
+  const [duelState, setDuelState] = useState<DuelState | null>(null);
+  const [isRestored, setIsRestored] = useState(false);
   const [showDefeat, setShowDefeat] = useState(false);
   
   const allCards = cards as Card[];
@@ -32,6 +36,45 @@ function DuelScreen() {
   
   // NPC deck
   const p1Cards = npc.deck.map(id => allCards.find(c => c.id === id)).filter(Boolean) as Card[];
+
+  // Try to restore duel session on mount
+  useEffect(() => {
+    const session = loadDuelSession();
+    if (session && session.npcId === npcId) {
+      setDuelState(session.state);
+      setIsRestored(true);
+      // Clear the restored flag after a few seconds
+      setTimeout(() => setIsRestored(false), 3000);
+    }
+  }, [npcId]);
+
+  // Save duel state whenever it changes (but not if hands are empty - means initial draw hasn't happened)
+  const handleStateChange = useCallback((state: DuelState) => {
+    setDuelState(state);
+    // Only save if at least one player has cards in hand (initial draw has happened)
+    if (state.hands[0].length > 0 || state.hands[1].length > 0) {
+      saveDuelSession(state, npcId);
+    }
+  }, [npcId]);
+
+  // Add beforeunload handler to warn about leaving during active duel
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      // Only show warning if duel is still active (both players have LP > 0)
+      if (duelState && duelState.lp[0] > 0 && duelState.lp[1] > 0) {
+        e.preventDefault();
+        // Modern browsers ignore custom messages, but we still need to set returnValue
+        e.returnValue = '';
+        return '';
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [duelState]);
   
   // Create a modified DuelBoard that detects victory
   const DuelBoardWrapper = () => {
@@ -40,6 +83,8 @@ function DuelScreen() {
         p0Deck={p0Cards} 
         p1Deck={p1Cards} 
         allCards={allCards}
+        initialState={duelState ? duelState : undefined}
+        onStateChange={handleStateChange}
         onVictory={handleVictory}
         onDefeat={handleDefeat}
       />
@@ -57,6 +102,9 @@ function DuelScreen() {
       addOwnedCard(randomCardId);
     }
     
+    // Clear the duel session since duel is over
+    clearDuelSession();
+    
     setShowVictory(true);
   };
   
@@ -66,15 +114,40 @@ function DuelScreen() {
   };
   
   const handleContinue = () => {
+    clearDuelSession();
     navigate('/map');
   };
   
   const handleBackToMap = () => {
+    // Clear session when deliberately leaving
+    clearDuelSession();
     navigate('/map');
   };
   
   return (
     <div style={{ position: 'relative' }}>
+      {/* Restoration notification */}
+      {isRestored && (
+        <div style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          backgroundColor: 'rgba(0, 150, 0, 0.95)',
+          color: '#fff',
+          padding: 'clamp(16px, 4vw, 24px)',
+          borderRadius: '8px',
+          fontSize: 'clamp(14px, 3.5vw, 18px)',
+          fontWeight: 'bold',
+          zIndex: 2000,
+          border: '3px solid #0f0',
+          boxShadow: '0 0 20px rgba(0, 255, 0, 0.5)',
+          textAlign: 'center',
+        }}>
+          ✓ Duel Restored!
+        </div>
+      )}
+      
       {/* Back button */}
       <div style={{
         position: 'absolute',

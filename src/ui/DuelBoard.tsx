@@ -13,6 +13,8 @@ interface DuelBoardProps {
   allCards: Card[];
   initialState?: DuelState;
   onStateChange?: (state: DuelState) => void;
+  onVictory?: () => void;
+  onDefeat?: () => void;
 }
 
 export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onStateChange }: DuelBoardProps) {
@@ -30,6 +32,30 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   const [fusingCards, setFusingCards] = useState<number[]>([]);
   const [selectedForFusion, setSelectedForFusion] = useState<number[]>([]); // Track cards selected for fusion
   const [fuseMode, setFuseMode] = useState(false); // Track if we're in fusion selection mode
+  const gameOverTriggered = useRef(false); // Prevent multiple game-over triggers
+
+  // Check for victory/defeat conditions
+  useEffect(() => {
+    if (gameOverTriggered.current) return;
+    
+    // Player 0 (user) loses
+    if (state.lp[0] <= 0) {
+      gameOverTriggered.current = true;
+      if (onDefeat) {
+        // Small delay to let the UI update
+        setTimeout(() => onDefeat(), 500);
+      }
+    }
+    
+    // Player 1 (opponent) loses
+    if (state.lp[1] <= 0) {
+      gameOverTriggered.current = true;
+      if (onVictory) {
+        // Small delay to let the UI update
+        setTimeout(() => onVictory(), 500);
+      }
+    }
+  }, [state.lp, onVictory, onDefeat]);
 
   // Notify parent of state changes (skip initial mount)
   const isInitialMount = useRef(true);
@@ -262,24 +288,77 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
 
   return (
     <div style={{ padding: '4px', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
-      {/* Header Info */}
+      {/* Header Info - Yu-Gi-Oh Style */}
       <div style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 
+        alignItems: 'center',
         marginBottom: '8px',
-        padding: '6px',
-        backgroundColor: '#1a1a1a',
-        borderRadius: '4px',
-        fontSize: 'clamp(10px, 2.5vw, 14px)',
+        padding: '8px 12px',
+        background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        borderRadius: '8px',
+        border: '2px solid #0f3460',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
       }}>
-        <div style={{ fontWeight: 'bold' }}>
-          You: {state.lp[0]} LP
+        <div style={{ 
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+        }}>
+          <div style={{ 
+            fontSize: 'clamp(8px, 2vw, 10px)',
+            color: '#aaa',
+            marginBottom: '2px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.5px'
+          }}>
+            Your LP
+          </div>
+          <div style={{ 
+            fontSize: 'clamp(16px, 4vw, 24px)',
+            fontWeight: 'bold',
+            color: state.lp[0] <= 2000 ? '#ff4444' : state.lp[0] <= 4000 ? '#ffaa00' : '#00ff88',
+            textShadow: state.lp[0] <= 2000 ? '0 0 10px rgba(255, 68, 68, 0.5)' : '0 0 10px rgba(0, 255, 136, 0.3)',
+            fontFamily: 'monospace',
+          }}>
+            {state.lp[0]}
+          </div>
         </div>
-        <div style={{ color: '#888' }}>
-          Phase: {state.phase}
+        
+        <div style={{ 
+          fontSize: 'clamp(9px, 2.2vw, 12px)',
+          color: '#888',
+          padding: '4px 8px',
+          backgroundColor: 'rgba(255, 255, 255, 0.05)',
+          borderRadius: '4px',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+        }}>
+          {state.phase}
         </div>
-        <div style={{ fontWeight: 'bold' }}>
-          Opp: {state.lp[1]} LP
+        
+        <div style={{ 
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-end',
+        }}>
+          <div style={{ 
+            fontSize: 'clamp(8px, 2vw, 10px)',
+            color: '#aaa',
+            marginBottom: '2px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.5px'
+          }}>
+            Opponent LP
+          </div>
+          <div style={{ 
+            fontSize: 'clamp(16px, 4vw, 24px)',
+            fontWeight: 'bold',
+            color: state.lp[1] <= 2000 ? '#ff4444' : state.lp[1] <= 4000 ? '#ffaa00' : '#ff6b6b',
+            textShadow: state.lp[1] <= 2000 ? '0 0 10px rgba(255, 68, 68, 0.5)' : '0 0 10px rgba(255, 107, 107, 0.3)',
+            fontFamily: 'monospace',
+          }}>
+            {state.lp[1]}
+          </div>
         </div>
       </div>
 

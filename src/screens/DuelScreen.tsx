@@ -24,6 +24,7 @@ function DuelScreen() {
   const [showVictory, setShowVictory] = useState(false);
   const [duelState, setDuelState] = useState<DuelState | null>(null);
   const [isRestored, setIsRestored] = useState(false);
+  const [showDefeat, setShowDefeat] = useState(false);
   
   const allCards = cards as Card[];
   const allNpcs = npcs as NPC[];
@@ -84,6 +85,8 @@ function DuelScreen() {
         allCards={allCards}
         initialState={duelState ? duelState : undefined}
         onStateChange={handleStateChange}
+        onVictory={handleVictory}
+        onDefeat={handleDefeat}
       />
     );
   };
@@ -105,6 +108,11 @@ function DuelScreen() {
     setShowVictory(true);
   };
   
+  const handleDefeat = () => {
+    // Show defeat screen
+    setShowDefeat(true);
+  };
+  
   const handleContinue = () => {
     clearDuelSession();
     navigate('/map');
@@ -114,11 +122,6 @@ function DuelScreen() {
     // Clear session when deliberately leaving
     clearDuelSession();
     navigate('/map');
-  };
-  
-  // Temporary: Add a "Win" button for testing until DuelBoard is modified
-  const handleTestWin = () => {
-    handleVictory();
   };
   
   return (
@@ -165,29 +168,6 @@ function DuelScreen() {
           }}
         >
           ← Back to Map
-        </button>
-      </div>
-      
-      {/* Temporary test win button */}
-      <div style={{
-        position: 'absolute',
-        top: '8px',
-        right: '8px',
-        zIndex: 10,
-      }}>
-        <button
-          onClick={handleTestWin}
-          style={{
-            padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-            fontSize: 'clamp(10px, 2.5vw, 14px)',
-            backgroundColor: '#4caf50',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-          }}
-        >
-          Test Win (temp)
         </button>
       </div>
       
@@ -257,6 +237,57 @@ function DuelScreen() {
             }}
           >
             Continue
+          </button>
+        </div>
+      )}
+      
+      {/* Defeat Overlay */}
+      {showDefeat && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          color: '#fff',
+        }}>
+          <div style={{
+            fontSize: 'clamp(32px, 10vw, 48px)',
+            fontWeight: 'bold',
+            marginBottom: '24px',
+            color: '#ff4444',
+            textShadow: '0 0 20px rgba(255, 68, 68, 0.5)',
+          }}>
+            DEFEAT
+          </div>
+          
+          <div style={{
+            fontSize: 'clamp(18px, 5vw, 24px)',
+            marginBottom: '32px',
+          }}>
+            {npc.name} has won the duel!
+          </div>
+          
+          <button
+            onClick={handleContinue}
+            style={{
+              padding: '16px 48px',
+              fontSize: 'clamp(16px, 4vw, 20px)',
+              fontWeight: 'bold',
+              backgroundColor: '#666',
+              color: '#fff',
+              border: '2px solid #fff',
+              borderRadius: '8px',
+              cursor: 'pointer',
+            }}
+          >
+            Return to Map
           </button>
         </div>
       )}

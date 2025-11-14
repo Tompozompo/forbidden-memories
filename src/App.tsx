@@ -6,6 +6,7 @@ import MapScreen from './screens/MapScreen';
 import DuelScreen from './screens/DuelScreen';
 import DeckEditScreen from './screens/DeckEditScreen';
 import ShopScreen from './screens/ShopScreen';
+import SettingsScreen from './screens/SettingsScreen';
 
 function App() {
   const { loadGame } = useSaveStore();
@@ -22,6 +23,7 @@ function App() {
       <Route path="/duel/:id" element={<DuelScreen />} />
       <Route path="/deck" element={<DeckEditScreen />} />
       <Route path="/shop" element={<ShopScreen />} />
+      <Route path="/settings" element={<SettingsScreen />} />
     </Routes>
   );
 }

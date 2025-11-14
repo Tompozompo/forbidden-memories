@@ -320,6 +320,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           </div>
         </div>
 
+        {/* Opponent Spell/Trap Zone (Behind/Above Monster Zone) */}
+        <SpellTrapZone 
+          player={1} 
+          cards={state.spellTraps[1]} 
+          isActive={state.turn === 1}
+        />
+
         {/* Opponent Monster Field */}
         <FieldZone 
           player={1} 
@@ -330,13 +337,6 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           attackingZone={attackingZone?.player === 1 ? attackingZone.zone : null}
           defendingZone={defendingZone?.player === 1 ? defendingZone.zone : null}
         />
-
-        {/* Opponent Spell/Trap Zone */}
-        <SpellTrapZone 
-          player={1} 
-          cards={state.spellTraps[1]} 
-          isActive={state.turn === 1}
-        />
       </div>
 
       {/* ========== PLAYER SIDE (Player 0) ========== */}
@@ -346,13 +346,6 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
         borderRadius: '8px',
         border: state.turn === 0 ? '2px solid #4444ff' : '2px solid #333'
       }}>
-        {/* Player Spell/Trap Zone */}
-        <SpellTrapZone 
-          player={0} 
-          cards={state.spellTraps[0]} 
-          isActive={state.turn === 0}
-        />
-
         {/* Player Monster Field */}
         <FieldZone 
           player={0} 
@@ -362,6 +355,13 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards }: { p0Deck: Card[]
           highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
           attackingZone={attackingZone?.player === 0 ? attackingZone.zone : null}
           defendingZone={defendingZone?.player === 0 ? defendingZone.zone : null}
+        />
+
+        {/* Player Spell/Trap Zone (Behind/Below Monster Zone) */}
+        <SpellTrapZone 
+          player={0} 
+          cards={state.spellTraps[0]} 
+          isActive={state.turn === 0}
         />
 
         {/* Player Hand */}

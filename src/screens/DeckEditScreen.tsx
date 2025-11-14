@@ -3,6 +3,7 @@ import { useSaveStore } from '../store/saveStore';
 import cards from '../data/cards.json';
 import type { Card } from '../types';
 import { useState, useEffect } from 'react';
+import CardComponent from '../ui/Card';
 
 const allCards = cards as Card[];
 
@@ -139,7 +140,7 @@ function DeckEditScreen() {
             maxHeight: '500px',
             overflowY: 'auto',
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
             gap: '8px',
           }}>
             {filteredCards.map((card) => {
@@ -152,15 +153,10 @@ function DeckEditScreen() {
                   key={card.id}
                   onClick={() => availableSlot !== -1 && handleCardClick(card.id, availableSlot)}
                   style={{
-                    padding: '8px',
-                    backgroundColor: availableSlot !== -1 ? '#2196f3' : '#555',
-                    border: '2px solid #fff',
-                    borderRadius: '4px',
                     cursor: availableSlot !== -1 ? 'pointer' : 'not-allowed',
                     opacity: availableSlot !== -1 ? 1 : 0.6,
-                    fontSize: '10px',
-                    textAlign: 'center',
                     transition: 'transform 0.2s',
+                    position: 'relative',
                   }}
                   onMouseEnter={(e) => {
                     if (availableSlot !== -1) {
@@ -173,15 +169,20 @@ function DeckEditScreen() {
                     }
                   }}
                 >
-                  <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>{card.name}</div>
-                  {card.type === 'Monster' && (
-                    <div style={{ fontSize: '9px' }}>
-                      ATK: {card.atk ?? '?'} / DEF: {card.def ?? '?'}
-                    </div>
-                  )}
+                  <CardComponent card={card} size="small" />
                   {usedSlots.length > 0 && (
-                    <div style={{ fontSize: '8px', color: '#ffd700', marginTop: '2px' }}>
-                      In deck ({usedSlots.length}x)
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '4px',
+                      right: '4px',
+                      fontSize: '10px',
+                      color: '#ffd700',
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      padding: '2px 4px',
+                      borderRadius: '2px',
+                      fontWeight: 'bold',
+                    }}>
+                      {usedSlots.length}x
                     </div>
                   )}
                 </div>
@@ -208,7 +209,7 @@ function DeckEditScreen() {
           
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
             gap: '8px',
             marginBottom: '16px',
           }}>
@@ -222,15 +223,14 @@ function DeckEditScreen() {
                     border: '2px solid',
                     borderColor: card ? '#4caf50' : '#555',
                     borderRadius: '4px',
-                    padding: '8px',
-                    minHeight: '70px',
+                    padding: '4px',
+                    minHeight: '140px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    backgroundColor: card ? 'rgba(76, 175, 80, 0.2)' : 'rgba(0, 0, 0, 0.3)',
+                    backgroundColor: card ? 'rgba(76, 175, 80, 0.1)' : 'rgba(0, 0, 0, 0.3)',
                     cursor: card ? 'pointer' : 'default',
                     textAlign: 'center',
-                    fontSize: '10px',
                     transition: 'transform 0.2s',
                   }}
                   onMouseEnter={(e) => {
@@ -245,16 +245,9 @@ function DeckEditScreen() {
                   }}
                 >
                   {card ? (
-                    <div>
-                      <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>{card.name}</div>
-                      {card.type === 'Monster' && (
-                        <div style={{ fontSize: '9px' }}>
-                          {card.atk}/{card.def}
-                        </div>
-                      )}
-                    </div>
+                    <CardComponent card={card} size="small" />
                   ) : (
-                    <span style={{ color: '#888' }}>Slot {index + 1}</span>
+                    <span style={{ color: '#888', fontSize: '10px' }}>Slot {index + 1}</span>
                   )}
                 </div>
               );

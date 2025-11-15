@@ -17,7 +17,7 @@ interface DuelBoardProps {
   onDefeat?: () => void;
 }
 
-export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onStateChange }: DuelBoardProps) {
+export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onStateChange, onVictory, onDefeat }: DuelBoardProps) {
   const [state, dispatch] = useReducer(duelReducer, initialState || initialDuel(p0Deck, p1Deck));
   const initialDrawDone = useRef(false);
   const aiTimeoutRef = useRef<number | null>(null);

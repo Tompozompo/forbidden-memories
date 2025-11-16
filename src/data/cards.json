@@ -1,1 +1,6892 @@
-[{"id":1,"name":"Aegis Knight","atk":1800,"def":1500,"type":"Monster","attr":"EARTH","race":"Warrior","level":4,"text":"When summoned, shield one ally from destruction this turn."},{"id":2,"name":"Aqua Spirite","atk":1200,"def":1000,"type":"Monster","attr":"WATER","race":"Aqua","level":3,"text":"If you control another WATER monster, this card gains 300 ATK."},{"id":3,"name":"Blaze Djinn","atk":2300,"def":200,"type":"Monster","attr":"FIRE","race":"Pyro","level":6,"text":"Inflict 200 damage to your opponent when this card destroys a monster."},{"id":4,"name":"Gale Harpy","atk":1500,"def":1200,"type":"Monster","attr":"WIND","race":"Beast","level":4,"text":"This card can attack directly if you control no other monsters."},{"id":5,"name":"Lumina Valkyrie","atk":2500,"def":2100,"type":"Monster","attr":"LIGHT","race":"Warrior","level":7,"text":"When destroyed by battle, add 1 LIGHT monster from deck to hand."},{"id":6,"name":"Shadow Lurker","atk":2000,"def":2500,"type":"Monster","attr":"DARK","race":"Zombie","level":6,"text":"Cannot be destroyed by Spell effects."},{"id":7,"name":"Iron Colossus","atk":2600,"def":3000,"type":"Monster","attr":"EARTH","race":"Machine","level":8,"text":"Must be Tribute Summoned by offering 2 monsters."},{"id":8,"name":"Frost Fairy","atk":800,"def":1400,"type":"Monster","attr":"WATER","race":"Spellcaster","level":2,"text":"When flipped, freeze 1 enemy monster (it cannot attack for 2 turns)."},{"id":9,"name":"Ember Pup","atk":900,"def":500,"type":"Monster","attr":"FIRE","race":"Beast","level":2,"text":"When destroyed by battle, Special Summon 1 \"Ember Pup\" from deck."},{"id":10,"name":"Stone Gargoyle","atk":1400,"def":1800,"type":"Monster","attr":"EARTH","race":"Rock","level":4,"text":"Defending monsters you control cannot be destroyed by battle once per turn."},{"id":11,"name":"Storm Caller","atk":2200,"def":1900,"type":"Monster","attr":"WIND","race":"Spellcaster","level":6,"text":"Once per turn: return 1 Spell/Trap on the field to hand."},{"id":12,"name":"Nightmare Moth","atk":1600,"def":1000,"type":"Monster","attr":"DARK","race":"Insect","level":4,"text":"When sent to graveyard, decrease 1 enemy monster ATK by 500."},{"id":13,"name":"Crystal Dragon","atk":2800,"def":2500,"type":"Monster","attr":"LIGHT","race":"Dragon","level":8,"text":"When summoned, negate the effects of 1 enemy monster."},{"id":14,"name":"Rust Scorpion","atk":1300,"def":1100,"type":"Monster","attr":"EARTH","race":"Insect","level":3,"text":"Inflict piercing damage when attacking a defending monster."},{"id":15,"name":"Tidal Serpent","atk":2400,"def":1800,"type":"Monster","attr":"WATER","race":"Aqua","level":7,"text":"Can be Special Summoned by banishing 2 WATER monsters from graveyard."},{"id":16,"name":"Cinder Phoenix","atk":2700,"def":2000,"type":"Monster","attr":"FIRE","race":"Dragon","level":8,"text":"When destroyed by card effect, Special Summon it during your next Standby Phase."},{"id":17,"name":"Tempest Eagle","atk":2100,"def":1600,"type":"Monster","attr":"WIND","race":"Beast","level":5,"text":"Once per turn: change this card's battle position immediately after attacking."},{"id":18,"name":"Gravekeeper's Wraith","atk":1900,"def":2200,"type":"Monster","attr":"DARK","race":"Zombie","level":5,"text":"Gains 300 ATK for each Zombie in your graveyard."},{"id":19,"name":"Mystic Unicorn","atk":1000,"def":1500,"type":"Monster","attr":"LIGHT","race":"Beast","level":3,"text":"When summoned, gain 500 Life Points."},{"id":20,"name":"Obsidian Golem","atk":1700,"def":2300,"type":"Monster","attr":"EARTH","race":"Rock","level":5,"text":"Cannot be destroyed by Trap effects."},{"id":21,"name":"Mirror Sprite","atk":600,"def":600,"type":"Monster","attr":"WATER","race":"Spellcaster","level":1,"text":"When targeted by an attack, switch the attack target to another monster you control."},{"id":22,"name":"Lava Brute","atk":2000,"def":1000,"type":"Monster","attr":"FIRE","race":"Pyro","level":5,"text":"When destroyed by battle, destroy the monster that destroyed it."},{"id":23,"name":"Cloud Slicer","atk":1300,"def":900,"type":"Monster","attr":"WIND","race":"Machine","level":3,"text":"This card can attack twice during each Battle Phase."},{"id":24,"name":"Specter of Dawn","atk":1100,"def":1300,"type":"Monster","attr":"LIGHT","race":"Spellcaster","level":3,"text":"When Normal Summoned, add 1 Spell from graveyard to hand."},{"id":25,"name":"Nether Bat","atk":700,"def":400,"type":"Monster","attr":"DARK","race":"Beast","level":1,"text":"Can be Special Summoned from graveyard by discarding 1 DARK monster."},{"id":26,"name":"Rumble Rhino","atk":1600,"def":1400,"type":"Monster","attr":"EARTH","race":"Beast","level":4,"text":"When this card declares an attack, it gains 300 ATK during damage calculation only."},{"id":27,"name":"Siren Priestess","atk":1500,"def":1800,"type":"Monster","attr":"WATER","race":"Spellcaster","level":4,"text":"Once per turn: target 1 monster; it loses 800 ATK until end of turn."},{"id":28,"name":"Magma Guardian","atk":2500,"def":1600,"type":"Monster","attr":"FIRE","race":"Pyro","level":7,"text":"When summoned, inflict 500 damage to your opponent."},{"id":29,"name":"Sky Dancer","atk":1200,"def":1000,"type":"Monster","attr":"WIND","race":"Spellcaster","level":3,"text":"If this card is in graveyard, you can banish it to increase 1 WIND monster ATK by 500."},{"id":30,"name":"Dusk Reaper","atk":2400,"def":2200,"type":"Monster","attr":"DARK","race":"Zombie","level":7,"text":"When destroyed by battle, send 2 random cards from opponent's hand to graveyard."},{"id":31,"name":"Solar Angel","atk":2600,"def":2300,"type":"Monster","attr":"LIGHT","race":"Warrior","level":8,"text":"When summoned, destroy all DARK monsters on the field."},{"id":32,"name":"Quake Beast","atk":1400,"def":1700,"type":"Monster","attr":"EARTH","race":"Rock","level":4,"text":"When flipped, change all enemy monsters to face-down defense position."},{"id":33,"name":"Aqua Ninja","atk":1100,"def":800,"type":"Monster","attr":"WATER","race":"Aqua","level":2,"text":"Once per turn: return this card to hand to Special Summon 1 Level 4 or lower WATER monster from deck."},{"id":34,"name":"Inferno Dwarf","atk":1000,"def":600,"type":"Monster","attr":"FIRE","race":"Pyro","level":2,"text":"When Normal Summoned, inflict 300 damage to your opponent."},{"id":35,"name":"Whirlwind Wyvern","atk":2300,"def":1900,"type":"Monster","attr":"WIND","race":"Dragon","level":6,"text":"When summoned, return 1 enemy Spell/Trap to the bottom of the deck."},{"id":36,"name":"Dark Marionette","atk":800,"def":1200,"type":"Monster","attr":"DARK","race":"Zombie","level":2,"text":"When flipped, take control of 1 enemy Level 3 or lower monster until end of turn."},{"id":37,"name":"Radiant Paladin","atk":2200,"def":2200,"type":"Monster","attr":"LIGHT","race":"Warrior","level":6,"text":"When battling a DARK monster, this card gains 500 ATK during damage calculation."},{"id":38,"name":"Gem Beetle","atk":900,"def":1400,"type":"Monster","attr":"EARTH","race":"Insect","level":3,"text":"When destroyed by card effect, add 1 Rock monster from deck to hand."},{"id":39,"name":"Coral Drake","atk":2500,"def":2100,"type":"Monster","attr":"WATER","race":"Dragon","level":7,"text":"When summoned, Special Summon 1 Level 4 or lower WATER monster from graveyard."},{"id":40,"name":"Ash Hound","atk":1500,"def":900,"type":"Monster","attr":"FIRE","race":"Beast","level":3,"text":"When destroyed by battle, Special Summon 1 Level 2 FIRE monster from deck."},{"id":41,"name":"Typhoon Titan","atk":2700,"def":2400,"type":"Monster","attr":"WIND","race":"Machine","level":8,"text":"Once per turn: destroy 1 Spell/Trap on the field."},{"id":42,"name":"Phantom Jester","atk":1200,"def":1000,"type":"Monster","attr":"DARK","race":"Spellcaster","level":3,"text":"When Normal Summoned, send 1 DARK monster from deck to graveyard."},{"id":43,"name":"Beacon Sprite","atk":500,"def":500,"type":"Monster","attr":"LIGHT","race":"Spellcaster","level":1,"text":"When summoned, add 1 Level 4 or lower LIGHT monster from deck to hand."},{"id":44,"name":"Boulder Brute","atk":1800,"def":2000,"type":"Monster","attr":"EARTH","race":"Rock","level":5,"text":"When destroyed by battle, halve the ATK of the monster that destroyed it."},{"id":45,"name":"Torrent Assassin","atk":1900,"def":1500,"type":"Monster","attr":"WATER","race":"Aqua","level":5,"text":"Once per turn: halve the ATK of 1 enemy monster until end of turn."},{"id":46,"name":"Flash Falcon","atk":1700,"def":1300,"type":"Monster","attr":"WIND","race":"Beast","level":4,"text":"When summoned, draw 1 card, then discard 1 card."},{"id":47,"name":"Cursed Doll","atk":600,"def":800,"type":"Monster","attr":"DARK","race":"Zombie","level":1,"text":"When flipped, decrease 1 enemy monster ATK by 600."},{"id":48,"name":"Glimmer Knight","atk":2000,"def":1800,"type":"Monster","attr":"LIGHT","race":"Warrior","level":5,"text":"When battling a monster with higher ATK, this card gains 400 ATK during damage calculation."},{"id":49,"name":"Sand Worm","atk":1300,"def":1500,"type":"Monster","attr":"EARTH","race":"Insect","level":4,"text":"When destroyed by battle, send 1 Spell/Trap on the field to graveyard."},{"id":50,"name":"Frozen Heart","atk":1000,"def":1600,"type":"Monster","attr":"WATER","race":"Aqua","level":3,"text":"When flipped, destroy 1 FIRE monster on the field."},{"id":51,"name":"Volcanic Hammer","atk":2100,"def":1700,"type":"Monster","attr":"FIRE","race":"Pyro","level":6,"text":"When summoned, destroy 1 WATER monster on the field."},{"id":52,"name":"Nimbus Pixie","atk":800,"def":700,"type":"Monster","attr":"WIND","race":"Spellcaster","level":2,"text":"When tributed, Special Summon 1 Level 4 or lower WIND monster from hand."},{"id":53,"name":"Grave Phantom","atk":1600,"def":1900,"type":"Monster","attr":"DARK","race":"Zombie","level":4,"text":"When destroyed by card effect, Special Summon 1 Level 4 or lower DARK monster from graveyard."},{"id":54,"name":"Dawn Pegasus","atk":2300,"def":2000,"type":"Monster","attr":"LIGHT","race":"Beast","level":6,"text":"When summoned, gain 1000 Life Points."},{"id":55,"name":"Iron Mandible","atk":1250,"def":1450,"type":"Monster","attr":"EARTH","race":"Insect","level":3,"text":"When battling a Machine monster, destroy it at end of damage step."},{"id":56,"name":"Tide Caller","atk":2200,"def":1800,"type":"Monster","attr":"WATER","race":"Aqua","level":6,"text":"When summoned, return 2 enemy monsters to hand."},{"id":57,"name":"Scorch Imp","atk":700,"def":500,"type":"Monster","attr":"FIRE","race":"Pyro","level":1,"text":"When destroyed by battle, inflict 500 damage to your opponent."},{"id":58,"name":"Cyclops Smith","atk":2000,"def":1600,"type":"Monster","attr":"WIND","race":"Machine","level":5,"text":"Once per turn: increase 1 Machine monster ATK by 400."},{"id":59,"name":"Void Revenant","atk":2400,"def":2100,"type":"Monster","attr":"DARK","race":"Zombie","level":7,"text":"When summoned, banish 1 enemy monster until your next End Phase."},{"id":60,"name":"Sunblade Sentinel","atk":2500,"def":2200,"type":"Monster","attr":"LIGHT","race":"Warrior","level":7,"text":"When battling a DARK monster, destroy it before damage calculation."},{"id":61,"name":"Mud Golem","atk":1500,"def":1700,"type":"Monster","attr":"EARTH","race":"Rock","level":4,"text":"When destroyed by battle, Special Summon 1 Level 4 or lower EARTH monster from deck."},{"id":62,"name":"Deep Stalker","atk":1800,"def":1400,"type":"Monster","attr":"WATER","race":"Aqua","level":4,"text":"When summoned, look at 1 random card in your opponent's hand."},{"id":63,"name":"Blaze Soldier","atk":1600,"def":1200,"type":"Monster","attr":"FIRE","race":"Warrior","level":4,"text":"When destroyed by battle, inflict 400 damage to your opponent."},{"id":64,"name":"Featherblade","atk":1400,"def":1100,"type":"Monster","attr":"WIND","race":"Beast","level":3,"text":"When tributed, draw 1 card."},{"id":65,"name":"Hex Wraith","atk":1700,"def":1600,"type":"Monster","attr":"DARK","race":"Spellcaster","level":4,"text":"When flipped, discard 1 random card from your opponent's hand."},{"id":66,"name":"Star Seraph","atk":2100,"def":1900,"type":"Monster","attr":"LIGHT","race":"Spellcaster","level":6,"text":"When summoned, add 1 LIGHT Spell from deck to hand."},{"id":67,"name":"Granite Guardian","atk":1900,"def":2300,"type":"Monster","attr":"EARTH","race":"Rock","level":5,"text":"When destroyed by card effect, destroy 1 card on the field."},{"id":68,"name":"Bubble Familiar","atk":600,"def":1000,"type":"Monster","attr":"WATER","race":"Aqua","level":1,"text":"When tributed, return 1 monster from graveyard to hand."},{"id":69,"name":"Ember Sage","atk":1200,"def":900,"type":"Monster","attr":"FIRE","race":"Spellcaster","level":3,"text":"Once per turn: inflict 300 damage to your opponent."},{"id":70,"name":"Jet Strix","atk":1700,"def":1300,"type":"Monster","attr":"WIND","race":"Machine","level":4,"text":"When summoned, Special Summon 1 Level 4 or lower Machine from hand."},{"id":71,"name":"Bone Scribe","atk":1000,"def":1300,"type":"Monster","attr":"DARK","race":"Zombie","level":3,"text":"When destroyed by battle, add 1 DARK Spell from graveyard to hand."},{"id":72,"name":"Halo Angel","atk":1800,"def":2000,"type":"Monster","attr":"LIGHT","race":"Warrior","level":5,"text":"When summoned, negate 1 Trap effect this turn."},{"id":73,"name":"Root Golem","atk":1300,"def":1800,"type":"Monster","attr":"EARTH","race":"Rock","level":4,"text":"When flipped, destroy 1 Spell/Trap on the field."},{"id":74,"name":"Sapphire Siren","atk":2000,"def":1700,"type":"Monster","attr":"WATER","race":"Aqua","level":5,"text":"When battling a FIRE monster, destroy it before damage calculation."},{"id":75,"name":"Char Impaler","atk":2200,"def":1500,"type":"Monster","attr":"FIRE","race":"Pyro","level":6,"text":"When summoned, destroy 1 monster with 1500 or less DEF."},{"id":76,"name":"Gust Avian","atk":1500,"def":1200,"type":"Monster","attr":"WIND","race":"Beast","level":4,"text":"When tributed, Special Summon 1 Level 5 or higher WIND monster from hand."},{"id":77,"name":"Night Lich","atk":2600,"def":2400,"type":"Monster","attr":"DARK","race":"Zombie","level":8,"text":"When summoned, send 2 cards from your opponent's deck to graveyard."},{"id":78,"name":"Aurora Muse","atk":1600,"def":1800,"type":"Monster","attr":"LIGHT","race":"Spellcaster","level":4,"text":"Once per turn: add 1 LIGHT monster from graveyard to hand."},{"id":79,"name":"Quartz Beetle","atk":1100,"def":1500,"type":"Monster","attr":"EARTH","race":"Insect","level":3,"text":"When destroyed by card effect, Special Summon 1 Insect from deck."},{"id":80,"name":"Coral Guard","atk":1900,"def":1600,"type":"Monster","attr":"WATER","race":"Aqua","level":4,"text":"When summoned, switch 1 enemy monster to defense position."},{"id":81,"name":"Pyre Brute","atk":1700,"def":1100,"type":"Monster","attr":"FIRE","race":"Pyro","level":4,"text":"When destroyed by battle, destroy 1 Spell/Trap on the field."},{"id":82,"name":"Sirocco Rider","atk":1300,"def":1000,"type":"Monster","attr":"WIND","race":"Machine","level":3,"text":"When Normal Summoned, increase 1 Machine ATK by 500 until end of turn."},{"id":83,"name":"Crypt Shade","atk":1400,"def":1700,"type":"Monster","attr":"DARK","race":"Zombie","level":4,"text":"When flipped, send 1 monster from opponent's extra deck to graveyard."},{"id":84,"name":"Lustrous Knight","atk":2300,"def":2100,"type":"Monster","attr":"LIGHT","race":"Warrior","level":6,"text":"When battling a monster with lower DEF, destroy it after damage calculation."},{"id":85,"name":"Clay Brute","atk":1200,"def":1600,"type":"Monster","attr":"EARTH","race":"Rock","level":3,"text":"When destroyed by battle, Special Summon 1 Level 3 or lower EARTH monster from graveyard."},{"id":86,"name":"Mist Assassin","atk":1600,"def":1300,"type":"Monster","attr":"WATER","race":"Aqua","level":3,"text":"Cannot be destroyed by battle once per turn."},{"id":87,"name":"Cinder Brute","atk":1800,"def":1400,"type":"Monster","attr":"FIRE","race":"Pyro","level":4,"text":"When summoned, inflict 200 damage to your opponent for each FIRE monster in graveyard."},{"id":88,"name":"Stratos Ranger","atk":1900,"def":1500,"type":"Monster","attr":"WIND","race":"Beast","level":4,"text":"When tributed, draw 1 card, then discard 1 card."},{"id":89,"name":"Soul Reaper","atk":2000,"def":1800,"type":"Monster","attr":"DARK","race":"Zombie","level":5,"text":"When destroyed by battle, banish the top 3 cards of your opponent's deck."},{"id":90,"name":"Beacon Archon","atk":2400,"def":2200,"type":"Monster","attr":"LIGHT","race":"Warrior","level":7,"text":"When summoned, add 1 LIGHT Spell from graveyard to hand."},{"id":91,"name":"Tectonic Guardian","atk":2500,"def":2800,"type":"Monster","attr":"EARTH","race":"Rock","level":8,"text":"When summoned, destroy 1 monster with 2000 or less ATK."},{"id":92,"name":"Tide Hunter","atk":2100,"def":1700,"type":"Monster","attr":"WATER","race":"Aqua","level":5,"text":"When battling a FIRE monster, this card gains 600 ATK during damage calculation."},{"id":93,"name":"Flare Knight","atk":2600,"def":2000,"type":"Monster","attr":"FIRE","race":"Warrior","level":7,"text":"When summoned, destroy 1 monster with 1800 or less DEF."},{"id":94,"name":"Cyclone Rider","atk":1800,"def":1400,"type":"Monster","attr":"WIND","race":"Machine","level":4,"text":"When Normal Summoned, return 1 enemy Spell/Trap to hand."},{"id":95,"name":"Doom Herald","atk":2700,"def":2300,"type":"Monster","attr":"DARK","race":"Zombie","level":8,"text":"When summoned, your opponent discards 1 card."},{"id":96,"name":"Solar Flare","atk":2200,"def":1900,"type":"Monster","attr":"LIGHT","race":"Pyro","level":6,"text":"When summoned, inflict 800 damage to your opponent."},{"id":97,"name":"Topaz Scarab","atk":1000,"def":1400,"type":"Monster","attr":"EARTH","race":"Insect","level":2,"text":"When destroyed by battle, add 1 Level 4 or lower EARTH monster from deck to hand."},{"id":98,"name":"Aqua Mirage","atk":1500,"def":1500,"type":"Monster","attr":"WATER","race":"Spellcaster","level":3,"text":"Once per turn: switch this card's ATK and DEF."},{"id":99,"name":"Blaze Paladin","atk":2300,"def":1800,"type":"Monster","attr":"FIRE","race":"Warrior","level":6,"text":"When battling a monster, inflict 300 damage to your opponent during damage calculation."},{"id":100,"name":"Galeforce Dragoon","atk":2800,"def":2400,"type":"Monster","attr":"WIND","race":"Dragon","level":8,"text":"When summoned, destroy 1 Spell/Trap on each side of the field."},{"id":101,"name":"Dark Contract","atk":0,"def":0,"type":"Spell","text":"Pay 1000 Life Points; draw 2 cards."},{"id":102,"name":"Earth Surge","atk":0,"def":0,"type":"Spell","text":"All EARTH monsters gain 500 ATK/DEF until end of turn."},{"id":103,"name":"Aqua Boost","atk":0,"def":0,"type":"Spell","text":"Target 1 WATER monster; it gains 1000 ATK until end of turn."},{"id":104,"name":"Inferno Burst","atk":0,"def":0,"type":"Spell","text":"Inflict 1500 damage to your opponent."},{"id":105,"name":"Wind Whirl","atk":0,"def":0,"type":"Spell","text":"Return 1 enemy monster to the top of the deck."},{"id":106,"name":"Light Blessing","atk":0,"def":0,"type":"Spell","text":"Gain 2000 Life Points."},{"id":107,"name":"Shadow Drain","atk":0,"def":0,"type":"Spell","text":"Target 1 DARK monster; it gains 800 ATK and your opponent loses 500 Life Points."},{"id":108,"name":"Rock Solid","atk":0,"def":0,"type":"Spell","text":"Target 1 EARTH monster; it cannot be destroyed by battle or card effect this turn."},{"id":109,"name":"Tidal Wave","atk":0,"def":0,"type":"Spell","text":"Destroy all FIRE monsters on the field."},{"id":110,"name":"Scorched Earth","atk":0,"def":0,"type":"Spell","text":"Destroy all WATER monsters on the field."},{"id":111,"name":"Sky Current","atk":0,"def":0,"type":"Spell","text":"All WIND monsters can attack directly this turn."},{"id":112,"name":"Photon Ray","atk":0,"def":0,"type":"Spell","text":"Target 1 LIGHT monster; it gains 700 ATK and can attack twice this turn."},{"id":113,"name":"Nightfall","atk":0,"def":0,"type":"Spell","text":"All DARK monsters gain 600 ATK/DEF until end of turn."},{"id":114,"name":"Gem Polish","atk":0,"def":0,"type":"Spell","text":"Target 1 Rock monster; it gains 1000 DEF."},{"id":115,"name":"Bubble Shield","atk":0,"def":0,"type":"Spell","text":"Target 1 Aqua monster; it cannot be targeted by Spell/Trap effects this turn."},{"id":116,"name":"Flame Charge","atk":0,"def":0,"type":"Spell","text":"Target 1 Pyro monster; it gains 800 ATK and inflicts piercing damage."},{"id":117,"name":"Jet Stream","atk":0,"def":0,"type":"Spell","text":"Target 1 Machine monster; it can attack directly this turn."},{"id":118,"name":"Zombie Feast","atk":0,"def":0,"type":"Spell","text":"Special Summon 1 Level 4 or lower Zombie from graveyard."},{"id":119,"name":"Starlight","atk":0,"def":0,"type":"Spell","text":"Add 1 LIGHT monster from deck to hand."},{"id":120,"name":"Terraform","atk":0,"def":0,"type":"Spell","text":"Add 1 EARTH monster from deck to hand."},{"id":121,"name":"Hidden Mine","atk":0,"def":0,"type":"Trap","text":"When a monster is summoned: destroy it and inflict 1000 damage."},{"id":122,"name":"Aegis Barrier","atk":0,"def":0,"type":"Trap","text":"Negate 1 Spell effect that targets a monster you control."},{"id":123,"name":"Torrential Counter","atk":0,"def":0,"type":"Trap","text":"When a WATER monster is destroyed: destroy 1 enemy monster."},{"id":124,"name":"Backdraft","atk":0,"def":0,"type":"Trap","text":"When a FIRE monster is destroyed by battle: inflict 1200 damage to your opponent."},{"id":125,"name":"Wind Wall","atk":0,"def":0,"type":"Trap","text":"Until end of turn, enemy monsters cannot attack WIND monsters you control."},{"id":126,"name":"Divine Halo","atk":0,"def":0,"type":"Trap","text":"When a LIGHT monster is targeted by an effect: negate and destroy that card."},{"id":127,"name":"Shadow Snare","atk":0,"def":0,"type":"Trap","text":"When a DARK monster is destroyed: take control of 1 enemy monster until end of turn."},{"id":128,"name":"Quake Spike","atk":0,"def":0,"type":"Trap","text":"When an EARTH monster is attacked: destroy the attacking monster."},{"id":129,"name":"Frozen Gate","atk":0,"def":0,"type":"Trap","text":"When a WATER monster is attacked: negate the attack and end the Battle Phase."},{"id":130,"name":"Blaze Ring","atk":0,"def":0,"type":"Trap","text":"When a Pyro monster is destroyed: inflict 800 damage to your opponent."},{"id":131,"name":"Gust Guard","atk":0,"def":0,"type":"Trap","text":"When a WIND monster is targeted: negate the effect and destroy that card."},{"id":132,"name":"Dark Bargain","atk":0,"def":0,"type":"Trap","text":"Pay 800 Life Points; draw 1 card and discard 1 card."},{"id":133,"name":"Rockfall","atk":0,"def":0,"type":"Trap","text":"When an EARTH monster is destroyed: destroy 1 Spell/Trap on the field."},{"id":134,"name":"Aqua Ring","atk":0,"def":0,"type":"Trap","text":"Target 1 Aqua monster; it gains 1000 ATK until end of turn."},{"id":135,"name":"Flare Trap","atk":0,"def":0,"type":"Trap","text":"When a FIRE monster is targeted: destroy 1 enemy monster."},{"id":136,"name":"Jet Parry","atk":0,"def":0,"type":"Trap","text":"When a Machine monster is attacked: negate the attack and destroy the attacking monster."},{"id":137,"name":"Zombie Rise","atk":0,"def":0,"type":"Trap","text":"Special Summon 1 Zombie from graveyard in defense position."},{"id":138,"name":"Light Lock","atk":0,"def":0,"type":"Trap","text":"When a LIGHT monster is destroyed: negate all enemy monster effects this turn."},{"id":139,"name":"Mud Cover","atk":0,"def":0,"type":"Trap","text":"Target 1 EARTH monster; switch it to defense position and it cannot be destroyed this turn."},{"id":140,"name":"Bubble Burst","atk":0,"def":0,"type":"Trap","text":"When an Aqua monster is destroyed: destroy 1 enemy Spell/Trap."},{"id":141,"name":"Ember Shield","atk":0,"def":0,"type":"Trap","text":"Target 1 Pyro monster; it cannot be destroyed by battle this turn and inflicts 300 damage."},{"id":142,"name":"Wind Blast","atk":0,"def":0,"type":"Trap","text":"Return 1 enemy monster to hand and your opponent discards 1 card."},{"id":143,"name":"Shadow Bind","atk":0,"def":0,"type":"Trap","text":"When a DARK monster is targeted: negate the effect and your opponent loses 500 Life Points."},{"id":144,"name":"Star Shield","atk":0,"def":0,"type":"Trap","text":"When a LIGHT monster is attacked: negate the attack and gain 800 Life Points."},{"id":145,"name":"Fossil Trap","atk":0,"def":0,"type":"Trap","text":"When an EARTH monster is destroyed: Special Summon 1 Rock monster from graveyard."},{"id":146,"name":"Tide Bind","atk":0,"def":0,"type":"Trap","text":"When a WATER monster is targeted: negate the effect and destroy 1 enemy monster."},{"id":147,"name":"Scorch Shield","atk":0,"def":0,"type":"Trap","text":"When a FIRE monster is attacked: negate the attack and inflict 500 damage."},{"id":148,"name":"Gale Counter","atk":0,"def":0,"type":"Trap","text":"When a WIND monster is destroyed: Special Summon 1 WIND monster from deck."},{"id":149,"name":"Dark Revival","atk":0,"def":0,"type":"Trap","text":"Special Summon 1 DARK monster from graveyard with 500 extra ATK."},{"id":150,"name":"Light Wave","atk":0,"def":0,"type":"Trap","text":"When a LIGHT monster is summoned: destroy 1 enemy Spell/Trap."}]
+[
+  {
+    "id": 1,
+    "name": "Blue-Eyes White Dragon",
+    "atk": 3000,
+    "def": 2500,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 2,
+    "name": "Mystical Elf",
+    "atk": 800,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 3,
+    "name": "Hitotsu-Me Giant",
+    "atk": 1200,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 4
+  },
+  {
+    "id": 4,
+    "name": "Baby Dragon",
+    "atk": 1200,
+    "def": 700,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 5,
+    "name": "Ryu-Kishin",
+    "atk": 1000,
+    "def": 500,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
+  },
+  {
+    "id": 6,
+    "name": "Feral Imp",
+    "atk": 1300,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 7,
+    "name": "Winged Dragon, Guardian of the Fortress #1",
+    "atk": 1400,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 8,
+    "name": "Mushroom Man",
+    "atk": 800,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 2
+  },
+  {
+    "id": 9,
+    "name": "Shadow Specter",
+    "atk": 500,
+    "def": 200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 1
+  },
+  {
+    "id": 10,
+    "name": "Blackland Fire Dragon",
+    "atk": 1500,
+    "def": 800,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 11,
+    "name": "Sword Arm of Dragon",
+    "atk": 1750,
+    "def": 2030,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 6
+  },
+  {
+    "id": 12,
+    "name": "Swamp Battleguard",
+    "atk": 1800,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 13,
+    "name": "Tyhone",
+    "atk": 1200,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 14,
+    "name": "Battle Steer",
+    "atk": 1800,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 5
+  },
+  {
+    "id": 15,
+    "name": "Flame Swordsman",
+    "atk": 1800,
+    "def": 1600,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 16,
+    "name": "Time Wizard",
+    "atk": 500,
+    "def": 400,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 17,
+    "name": "Right Leg of the Forbidden One",
+    "atk": 200,
+    "def": 300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 1
+  },
+  {
+    "id": 18,
+    "name": "Left Leg of the Forbidden One",
+    "atk": 200,
+    "def": 300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 1
+  },
+  {
+    "id": 19,
+    "name": "Right Arm of the Forbidden One",
+    "atk": 200,
+    "def": 300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 1
+  },
+  {
+    "id": 20,
+    "name": "Left Arm of the Forbidden One",
+    "atk": 200,
+    "def": 300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 1
+  },
+  {
+    "id": 21,
+    "name": "Exodia the Forbidden One",
+    "atk": 1000,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 3
+  },
+  {
+    "id": 22,
+    "name": "Summoned Skull",
+    "atk": 2500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 23,
+    "name": "The Wicked Worm Beast",
+    "atk": 1400,
+    "def": 700,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 24,
+    "name": "Skull Servant",
+    "atk": 300,
+    "def": 200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 1
+  },
+  {
+    "id": 25,
+    "name": "Horn Imp",
+    "atk": 1300,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 26,
+    "name": "Battle Ox",
+    "atk": 1700,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 4
+  },
+  {
+    "id": 27,
+    "name": "Beaver Warrior",
+    "atk": 1200,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 4
+  },
+  {
+    "id": 28,
+    "name": "Rock Ogre Grotto #1",
+    "atk": 800,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Rock",
+    "level": 3
+  },
+  {
+    "id": 29,
+    "name": "Mountain Warrior",
+    "atk": 600,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 3
+  },
+  {
+    "id": 30,
+    "name": "Zombie Warrior",
+    "atk": 1200,
+    "def": 900,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 31,
+    "name": "Koumori Dragon",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 32,
+    "name": "Two-Headed King Rex",
+    "atk": 1600,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 4
+  },
+  {
+    "id": 33,
+    "name": "Judge Man",
+    "atk": 2200,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 34,
+    "name": "Saggi the Dark Clown",
+    "atk": 600,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 3
+  },
+  {
+    "id": 35,
+    "name": "Dark Magician",
+    "atk": 2500,
+    "def": 2100,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 36,
+    "name": "The Snake Hair",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 37,
+    "name": "Gaia The Fierce Knight",
+    "atk": 2300,
+    "def": 2100,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 38,
+    "name": "Gaia The Dragon Champion",
+    "atk": 2600,
+    "def": 2100,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 39,
+    "name": "Curse of Dragon",
+    "atk": 2000,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 40,
+    "name": "Dragon Piper",
+    "atk": 200,
+    "def": 1800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 41,
+    "name": "Celtic Guardian",
+    "atk": 1400,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 42,
+    "name": "Illusionist Faceless Mage",
+    "atk": 1200,
+    "def": 2200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 43,
+    "name": "Karbonala Warrior",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 44,
+    "name": "Rogue Doll",
+    "atk": 1600,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 45,
+    "name": "Oscillo Hero #2",
+    "atk": 1000,
+    "def": 500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 46,
+    "name": "Griffore",
+    "atk": 1200,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 47,
+    "name": "Torike",
+    "atk": 1200,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 48,
+    "name": "Sangan",
+    "atk": 1000,
+    "def": 600,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
+  },
+  {
+    "id": 49,
+    "name": "Big Insect",
+    "atk": 1200,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 4
+  },
+  {
+    "id": 50,
+    "name": "Basic Insect",
+    "atk": 500,
+    "def": 700,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 2
+  },
+  {
+    "id": 51,
+    "name": "Armored Lizard",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Reptile",
+    "level": 4
+  },
+  {
+    "id": 52,
+    "name": "Hercules Beetle",
+    "atk": 1500,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 53,
+    "name": "Killer Needle",
+    "atk": 1200,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Insect",
+    "level": 4
+  },
+  {
+    "id": 54,
+    "name": "Gokibore",
+    "atk": 1200,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 4
+  },
+  {
+    "id": 55,
+    "name": "Giant Flea",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 4
+  },
+  {
+    "id": 56,
+    "name": "Larvae Moth",
+    "atk": 500,
+    "def": 400,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 2
+  },
+  {
+    "id": 57,
+    "name": "Great Moth",
+    "atk": 2600,
+    "def": 2500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 8
+  },
+  {
+    "id": 58,
+    "name": "Kuriboh",
+    "atk": 300,
+    "def": 200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 59,
+    "name": "Mammoth Graveyard",
+    "atk": 1200,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 3
+  },
+  {
+    "id": 60,
+    "name": "Great White",
+    "atk": 1600,
+    "def": 800,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Fish",
+    "level": 4
+  },
+  {
+    "id": 61,
+    "name": "Wolf",
+    "atk": 1200,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 62,
+    "name": "Harpie Lady",
+    "atk": 1300,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 63,
+    "name": "Harpie Lady Sisters",
+    "atk": 1950,
+    "def": 2100,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 6
+  },
+  {
+    "id": 64,
+    "name": "Tiger Axe",
+    "atk": 1300,
+    "def": 1100,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 4
+  },
+  {
+    "id": 65,
+    "name": "Silver Fang",
+    "atk": 1200,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 66,
+    "name": "Kojikocy",
+    "atk": 1500,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 67,
+    "name": "Perfectly Ultimate Great Moth",
+    "atk": 3500,
+    "def": 3000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 8
+  },
+  {
+    "id": 68,
+    "name": "Garoozis",
+    "atk": 1800,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Beast-Warrior",
+    "level": 5
+  },
+  {
+    "id": 69,
+    "name": "Thousand Dragon",
+    "atk": 2400,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 70,
+    "name": "Fiend Kraken",
+    "atk": 1200,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 71,
+    "name": "Jellyfish",
+    "atk": 1200,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 72,
+    "name": "Cocoon of Evolution",
+    "atk": 0,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 3
+  },
+  {
+    "id": 73,
+    "name": "Kairyu-Shin",
+    "atk": 1800,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Sea Serpent",
+    "level": 5
+  },
+  {
+    "id": 74,
+    "name": "Giant Soldier of Stone",
+    "atk": 1300,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Rock",
+    "level": 3
+  },
+  {
+    "id": 75,
+    "name": "Man-Eating Plant",
+    "atk": 800,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 2
+  },
+  {
+    "id": 76,
+    "name": "Krokodilus",
+    "atk": 1100,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Reptile",
+    "level": 4
+  },
+  {
+    "id": 77,
+    "name": "Grappler",
+    "atk": 1300,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Reptile",
+    "level": 4
+  },
+  {
+    "id": 78,
+    "name": "Axe Raider",
+    "atk": 1700,
+    "def": 1150,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 79,
+    "name": "Megazowler",
+    "atk": 1800,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 6
+  },
+  {
+    "id": 80,
+    "name": "Uraby",
+    "atk": 1500,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 4
+  },
+  {
+    "id": 81,
+    "name": "Crawling Dragon #2",
+    "atk": 1600,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 4
+  },
+  {
+    "id": 82,
+    "name": "Red-Eyes B. Dragon",
+    "atk": 2400,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 83,
+    "name": "Castle of Dark Illusions",
+    "atk": 1930,
+    "def": 2500,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 84,
+    "name": "Reaper of the Cards",
+    "atk": 1380,
+    "def": 1930,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 85,
+    "name": "King of Yamimakai",
+    "atk": 2000,
+    "def": 1530,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 86,
+    "name": "Barox",
+    "atk": 1380,
+    "def": 1530,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 87,
+    "name": "Dark Chimera",
+    "atk": 1610,
+    "def": 1460,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 88,
+    "name": "Metal Guardian",
+    "atk": 1150,
+    "def": 2150,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 89,
+    "name": "Catapult Turtle",
+    "atk": 1000,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 90,
+    "name": "Gyakutenno Megami",
+    "atk": 1800,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 6
+  },
+  {
+    "id": 91,
+    "name": "Mystic Horseman",
+    "atk": 1300,
+    "def": 1550,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 92,
+    "name": "Rabid Horseman",
+    "atk": 2000,
+    "def": 1700,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 6
+  },
+  {
+    "id": 93,
+    "name": "Zanki",
+    "atk": 1500,
+    "def": 1700,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 94,
+    "name": "Crawling Dragon",
+    "atk": 1600,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 95,
+    "name": "Crass Clown",
+    "atk": 1350,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 96,
+    "name": "Armored Zombie",
+    "atk": 1500,
+    "def": 0,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 97,
+    "name": "Dragon Zombie",
+    "atk": 1600,
+    "def": 0,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 98,
+    "name": "Clown Zombie",
+    "atk": 1350,
+    "def": 0,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 2
+  },
+  {
+    "id": 99,
+    "name": "Pumpking the King of Ghosts",
+    "atk": 1800,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 100,
+    "name": "Battle Warrior",
+    "atk": 700,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 101,
+    "name": "Toad Master",
+    "atk": 1000,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 102,
+    "name": "Spirit of the Harp",
+    "atk": 800,
+    "def": 2000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 4
+  },
+  {
+    "id": 103,
+    "name": "Maha Vailo",
+    "atk": 1550,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 104,
+    "name": "Dancing Elf",
+    "atk": 300,
+    "def": 200,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fairy",
+    "level": 1
+  },
+  {
+    "id": 105,
+    "name": "Curl",
+    "atk": 900,
+    "def": 700,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 106,
+    "name": "Fireyarou",
+    "atk": 1300,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Pyro",
+    "level": 4
+  },
+  {
+    "id": 107,
+    "name": "Manga Ryu-Ran",
+    "atk": 2200,
+    "def": 2600,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 108,
+    "name": "Garnecia Elefantis",
+    "atk": 1150,
+    "def": 1150,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 4
+  },
+  {
+    "id": 109,
+    "name": "Octoberser",
+    "atk": 1600,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 110,
+    "name": "Monsturtle",
+    "atk": 800,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 111,
+    "name": "Crab Turtle",
+    "atk": 2550,
+    "def": 2500,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 112,
+    "name": "Flame Cerebrus",
+    "atk": 2100,
+    "def": 1800,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 113,
+    "name": "Misairuzame",
+    "atk": 1400,
+    "def": 1600,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Fish",
+    "level": 5
+  },
+  {
+    "id": 114,
+    "name": "Root Water",
+    "atk": 900,
+    "def": 800,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Fish",
+    "level": 3
+  },
+  {
+    "id": 115,
+    "name": "The Furious Sea King",
+    "atk": 800,
+    "def": 700,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 116,
+    "name": "Green Phantom King",
+    "atk": 1600,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 117,
+    "name": "Ray & Temperature",
+    "atk": 1000,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 3
+  },
+  {
+    "id": 118,
+    "name": "King Fog",
+    "atk": 1000,
+    "def": 900,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Fiend",
+    "level": 3
+  },
+  {
+    "id": 119,
+    "name": "Psychic Kappa",
+    "atk": 400,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 120,
+    "name": "Masaki the Legendary Swordsman",
+    "atk": 1100,
+    "def": 1100,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 121,
+    "name": "Dragoness the Wicked Knight",
+    "atk": 1200,
+    "def": 900,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 122,
+    "name": "Bio Plant",
+    "atk": 600,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 123,
+    "name": "One Who Hunts Souls",
+    "atk": 900,
+    "def": 800,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 2
+  },
+  {
+    "id": 124,
+    "name": "Obese Marmot of Nefariousness",
+    "atk": 750,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 125,
+    "name": "Dokuroizo the Grim Reaper",
+    "atk": 900,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 126,
+    "name": "Fire Reaper",
+    "atk": 700,
+    "def": 500,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 2
+  },
+  {
+    "id": 127,
+    "name": "Larvas",
+    "atk": 800,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 3
+  },
+  {
+    "id": 128,
+    "name": "Hard Armor",
+    "atk": 300,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 129,
+    "name": "Firegrass",
+    "atk": 700,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 2
+  },
+  {
+    "id": 130,
+    "name": "Man Eater",
+    "atk": 800,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 2
+  },
+  {
+    "id": 131,
+    "name": "Dig Beak",
+    "atk": 500,
+    "def": 800,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 2
+  },
+  {
+    "id": 132,
+    "name": "M-Warrior #1",
+    "atk": 1000,
+    "def": 500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 133,
+    "name": "M-Warrior #2",
+    "atk": 500,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 134,
+    "name": "Tainted Wisdom",
+    "atk": 1250,
+    "def": 800,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
+  },
+  {
+    "id": 135,
+    "name": "Guardian of the Labyrinth",
+    "atk": 1000,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 136,
+    "name": "Haniwa",
+    "atk": 500,
+    "def": 500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 137,
+    "name": "Yashinoki",
+    "atk": 800,
+    "def": 600,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 138,
+    "name": "Vishwar Randi",
+    "atk": 900,
+    "def": 700,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fairy",
+    "level": 2
+  },
+  {
+    "id": 139,
+    "name": "Lisark",
+    "atk": 1300,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 140,
+    "name": "Lord of the Lamp",
+    "atk": 1400,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 141,
+    "name": "The Judgement Hand",
+    "atk": 1400,
+    "def": 700,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
+  },
+  {
+    "id": 142,
+    "name": "Mysterious Puppeteer",
+    "atk": 1000,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 143,
+    "name": "Ancient One of the Deep Forest",
+    "atk": 1200,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 144,
+    "name": "Dark King of the Abyss",
+    "atk": 1200,
+    "def": 800,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
+  },
+  {
+    "id": 145,
+    "name": "Spirit of the Books",
+    "atk": 1200,
+    "def": 1200,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Rock",
+    "level": 4
+  },
+  {
+    "id": 146,
+    "name": "Water Magician",
+    "atk": 1400,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 147,
+    "name": "Ice Water",
+    "atk": 1150,
+    "def": 900,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 148,
+    "name": "Fairy of the Fountain",
+    "atk": 1100,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 149,
+    "name": "Amazon of the Seas",
+    "atk": 1300,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 150,
+    "name": "Peacock",
+    "atk": 1700,
+    "def": 1500,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 5
+  },
+  {
+    "id": 151,
+    "name": "FM Monster 151",
+    "atk": 2010,
+    "def": 2665,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 152,
+    "name": "FM Monster 152",
+    "atk": 2020,
+    "def": 2680,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 153,
+    "name": "FM Monster 153",
+    "atk": 2030,
+    "def": 2695,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 154,
+    "name": "FM Monster 154",
+    "atk": 2040,
+    "def": 2710,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 155,
+    "name": "FM Monster 155",
+    "atk": 2050,
+    "def": 2725,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 156,
+    "name": "FM Monster 156",
+    "atk": 2060,
+    "def": 2740,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 157,
+    "name": "FM Monster 157",
+    "atk": 2070,
+    "def": 2755,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 158,
+    "name": "FM Monster 158",
+    "atk": 2080,
+    "def": 2770,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 159,
+    "name": "FM Monster 159",
+    "atk": 2090,
+    "def": 2785,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 160,
+    "name": "FM Monster 160",
+    "atk": 2100,
+    "def": 400,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 161,
+    "name": "FM Monster 161",
+    "atk": 2110,
+    "def": 415,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 162,
+    "name": "FM Monster 162",
+    "atk": 2120,
+    "def": 430,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 163,
+    "name": "FM Monster 163",
+    "atk": 2130,
+    "def": 445,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 164,
+    "name": "FM Monster 164",
+    "atk": 2140,
+    "def": 460,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 165,
+    "name": "FM Monster 165",
+    "atk": 2150,
+    "def": 475,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 166,
+    "name": "FM Monster 166",
+    "atk": 2160,
+    "def": 490,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 167,
+    "name": "FM Monster 167",
+    "atk": 2170,
+    "def": 505,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 168,
+    "name": "FM Monster 168",
+    "atk": 2180,
+    "def": 520,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 169,
+    "name": "FM Monster 169",
+    "atk": 2190,
+    "def": 535,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 170,
+    "name": "FM Monster 170",
+    "atk": 2200,
+    "def": 550,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 171,
+    "name": "FM Monster 171",
+    "atk": 2210,
+    "def": 565,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 172,
+    "name": "FM Monster 172",
+    "atk": 2220,
+    "def": 580,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 173,
+    "name": "FM Monster 173",
+    "atk": 2230,
+    "def": 595,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 174,
+    "name": "FM Monster 174",
+    "atk": 2240,
+    "def": 610,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 175,
+    "name": "FM Monster 175",
+    "atk": 2250,
+    "def": 625,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 176,
+    "name": "FM Monster 176",
+    "atk": 2260,
+    "def": 640,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 177,
+    "name": "FM Monster 177",
+    "atk": 2270,
+    "def": 655,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 178,
+    "name": "FM Monster 178",
+    "atk": 2280,
+    "def": 670,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 179,
+    "name": "FM Monster 179",
+    "atk": 2290,
+    "def": 685,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 180,
+    "name": "FM Monster 180",
+    "atk": 2300,
+    "def": 700,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 181,
+    "name": "FM Monster 181",
+    "atk": 2310,
+    "def": 715,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 182,
+    "name": "FM Monster 182",
+    "atk": 2320,
+    "def": 730,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 183,
+    "name": "FM Monster 183",
+    "atk": 2330,
+    "def": 745,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 184,
+    "name": "FM Monster 184",
+    "atk": 2340,
+    "def": 760,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 185,
+    "name": "FM Monster 185",
+    "atk": 2350,
+    "def": 775,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 186,
+    "name": "FM Monster 186",
+    "atk": 2360,
+    "def": 790,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 187,
+    "name": "FM Monster 187",
+    "atk": 2370,
+    "def": 805,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 188,
+    "name": "FM Monster 188",
+    "atk": 2380,
+    "def": 820,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 189,
+    "name": "FM Monster 189",
+    "atk": 2390,
+    "def": 835,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 190,
+    "name": "FM Monster 190",
+    "atk": 2400,
+    "def": 850,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 191,
+    "name": "FM Monster 191",
+    "atk": 2410,
+    "def": 865,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 192,
+    "name": "FM Monster 192",
+    "atk": 2420,
+    "def": 880,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 193,
+    "name": "FM Monster 193",
+    "atk": 2430,
+    "def": 895,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 194,
+    "name": "FM Monster 194",
+    "atk": 2440,
+    "def": 910,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 195,
+    "name": "FM Monster 195",
+    "atk": 2450,
+    "def": 925,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 196,
+    "name": "FM Monster 196",
+    "atk": 2460,
+    "def": 940,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 197,
+    "name": "FM Monster 197",
+    "atk": 2470,
+    "def": 955,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 198,
+    "name": "FM Monster 198",
+    "atk": 2480,
+    "def": 970,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 199,
+    "name": "FM Monster 199",
+    "atk": 2490,
+    "def": 985,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 200,
+    "name": "FM Monster 200",
+    "atk": 2500,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 201,
+    "name": "FM Monster 201",
+    "atk": 2510,
+    "def": 1015,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 202,
+    "name": "FM Monster 202",
+    "atk": 2520,
+    "def": 1030,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 203,
+    "name": "FM Monster 203",
+    "atk": 2530,
+    "def": 1045,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 204,
+    "name": "FM Monster 204",
+    "atk": 2540,
+    "def": 1060,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 205,
+    "name": "FM Monster 205",
+    "atk": 2550,
+    "def": 1075,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 206,
+    "name": "FM Monster 206",
+    "atk": 2560,
+    "def": 1090,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 207,
+    "name": "FM Monster 207",
+    "atk": 2570,
+    "def": 1105,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 208,
+    "name": "FM Monster 208",
+    "atk": 2580,
+    "def": 1120,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 209,
+    "name": "FM Monster 209",
+    "atk": 2590,
+    "def": 1135,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 210,
+    "name": "FM Monster 210",
+    "atk": 2600,
+    "def": 1150,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 211,
+    "name": "FM Monster 211",
+    "atk": 2610,
+    "def": 1165,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 212,
+    "name": "FM Monster 212",
+    "atk": 2620,
+    "def": 1180,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 213,
+    "name": "FM Monster 213",
+    "atk": 2630,
+    "def": 1195,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 214,
+    "name": "FM Monster 214",
+    "atk": 2640,
+    "def": 1210,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 215,
+    "name": "FM Monster 215",
+    "atk": 2650,
+    "def": 1225,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 216,
+    "name": "FM Monster 216",
+    "atk": 2660,
+    "def": 1240,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 217,
+    "name": "FM Monster 217",
+    "atk": 2670,
+    "def": 1255,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 218,
+    "name": "FM Monster 218",
+    "atk": 2680,
+    "def": 1270,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 219,
+    "name": "FM Monster 219",
+    "atk": 2690,
+    "def": 1285,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 220,
+    "name": "FM Monster 220",
+    "atk": 2700,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 221,
+    "name": "FM Monster 221",
+    "atk": 2710,
+    "def": 1315,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 222,
+    "name": "FM Monster 222",
+    "atk": 2720,
+    "def": 1330,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 223,
+    "name": "FM Monster 223",
+    "atk": 2730,
+    "def": 1345,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 224,
+    "name": "FM Monster 224",
+    "atk": 2740,
+    "def": 1360,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 225,
+    "name": "FM Monster 225",
+    "atk": 2750,
+    "def": 1375,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 226,
+    "name": "FM Monster 226",
+    "atk": 2760,
+    "def": 1390,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 227,
+    "name": "FM Monster 227",
+    "atk": 2770,
+    "def": 1405,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 228,
+    "name": "FM Monster 228",
+    "atk": 2780,
+    "def": 1420,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 229,
+    "name": "FM Monster 229",
+    "atk": 2790,
+    "def": 1435,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 230,
+    "name": "FM Monster 230",
+    "atk": 2800,
+    "def": 1450,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 231,
+    "name": "FM Monster 231",
+    "atk": 2810,
+    "def": 1465,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 232,
+    "name": "FM Monster 232",
+    "atk": 2820,
+    "def": 1480,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 233,
+    "name": "FM Monster 233",
+    "atk": 2830,
+    "def": 1495,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 234,
+    "name": "FM Monster 234",
+    "atk": 2840,
+    "def": 1510,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 235,
+    "name": "FM Monster 235",
+    "atk": 2850,
+    "def": 1525,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 236,
+    "name": "FM Monster 236",
+    "atk": 2860,
+    "def": 1540,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 237,
+    "name": "FM Monster 237",
+    "atk": 2870,
+    "def": 1555,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 238,
+    "name": "FM Monster 238",
+    "atk": 2880,
+    "def": 1570,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 239,
+    "name": "FM Monster 239",
+    "atk": 2890,
+    "def": 1585,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 240,
+    "name": "FM Monster 240",
+    "atk": 2900,
+    "def": 1600,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 241,
+    "name": "FM Monster 241",
+    "atk": 2910,
+    "def": 1615,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 242,
+    "name": "FM Monster 242",
+    "atk": 2920,
+    "def": 1630,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 243,
+    "name": "FM Monster 243",
+    "atk": 2930,
+    "def": 1645,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 244,
+    "name": "FM Monster 244",
+    "atk": 2940,
+    "def": 1660,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 245,
+    "name": "FM Monster 245",
+    "atk": 2950,
+    "def": 1675,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 246,
+    "name": "FM Monster 246",
+    "atk": 2960,
+    "def": 1690,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 247,
+    "name": "FM Monster 247",
+    "atk": 2970,
+    "def": 1705,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 248,
+    "name": "FM Monster 248",
+    "atk": 2980,
+    "def": 1720,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 249,
+    "name": "FM Monster 249",
+    "atk": 2990,
+    "def": 1735,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 250,
+    "name": "FM Monster 250",
+    "atk": 500,
+    "def": 1750,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 251,
+    "name": "FM Monster 251",
+    "atk": 510,
+    "def": 1765,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 252,
+    "name": "FM Monster 252",
+    "atk": 520,
+    "def": 1780,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 253,
+    "name": "FM Monster 253",
+    "atk": 530,
+    "def": 1795,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 254,
+    "name": "FM Monster 254",
+    "atk": 540,
+    "def": 1810,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 255,
+    "name": "FM Monster 255",
+    "atk": 550,
+    "def": 1825,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 256,
+    "name": "FM Monster 256",
+    "atk": 560,
+    "def": 1840,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 257,
+    "name": "FM Monster 257",
+    "atk": 570,
+    "def": 1855,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 258,
+    "name": "FM Monster 258",
+    "atk": 580,
+    "def": 1870,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 259,
+    "name": "FM Monster 259",
+    "atk": 590,
+    "def": 1885,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 260,
+    "name": "FM Monster 260",
+    "atk": 600,
+    "def": 1900,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 261,
+    "name": "FM Monster 261",
+    "atk": 610,
+    "def": 1915,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 262,
+    "name": "FM Monster 262",
+    "atk": 620,
+    "def": 1930,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 263,
+    "name": "FM Monster 263",
+    "atk": 630,
+    "def": 1945,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 264,
+    "name": "FM Monster 264",
+    "atk": 640,
+    "def": 1960,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 265,
+    "name": "FM Monster 265",
+    "atk": 650,
+    "def": 1975,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 266,
+    "name": "FM Monster 266",
+    "atk": 660,
+    "def": 1990,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 267,
+    "name": "FM Monster 267",
+    "atk": 670,
+    "def": 2005,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 268,
+    "name": "FM Monster 268",
+    "atk": 680,
+    "def": 2020,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 269,
+    "name": "FM Monster 269",
+    "atk": 690,
+    "def": 2035,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 270,
+    "name": "FM Monster 270",
+    "atk": 700,
+    "def": 2050,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 271,
+    "name": "FM Monster 271",
+    "atk": 710,
+    "def": 2065,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 272,
+    "name": "FM Monster 272",
+    "atk": 720,
+    "def": 2080,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 273,
+    "name": "FM Monster 273",
+    "atk": 730,
+    "def": 2095,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 274,
+    "name": "FM Monster 274",
+    "atk": 740,
+    "def": 2110,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 275,
+    "name": "FM Monster 275",
+    "atk": 750,
+    "def": 2125,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 276,
+    "name": "FM Monster 276",
+    "atk": 760,
+    "def": 2140,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 277,
+    "name": "FM Monster 277",
+    "atk": 770,
+    "def": 2155,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 278,
+    "name": "FM Monster 278",
+    "atk": 780,
+    "def": 2170,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 279,
+    "name": "FM Monster 279",
+    "atk": 790,
+    "def": 2185,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 280,
+    "name": "FM Monster 280",
+    "atk": 800,
+    "def": 2200,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 281,
+    "name": "FM Monster 281",
+    "atk": 810,
+    "def": 2215,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 282,
+    "name": "FM Monster 282",
+    "atk": 820,
+    "def": 2230,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 283,
+    "name": "FM Monster 283",
+    "atk": 830,
+    "def": 2245,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 284,
+    "name": "FM Monster 284",
+    "atk": 840,
+    "def": 2260,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 285,
+    "name": "FM Monster 285",
+    "atk": 850,
+    "def": 2275,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 286,
+    "name": "FM Monster 286",
+    "atk": 860,
+    "def": 2290,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 287,
+    "name": "FM Monster 287",
+    "atk": 870,
+    "def": 2305,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 288,
+    "name": "FM Monster 288",
+    "atk": 880,
+    "def": 2320,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 289,
+    "name": "FM Monster 289",
+    "atk": 890,
+    "def": 2335,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 290,
+    "name": "FM Monster 290",
+    "atk": 900,
+    "def": 2350,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 291,
+    "name": "FM Monster 291",
+    "atk": 910,
+    "def": 2365,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 292,
+    "name": "FM Monster 292",
+    "atk": 920,
+    "def": 2380,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 293,
+    "name": "FM Monster 293",
+    "atk": 930,
+    "def": 2395,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 294,
+    "name": "FM Monster 294",
+    "atk": 940,
+    "def": 2410,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 295,
+    "name": "FM Monster 295",
+    "atk": 950,
+    "def": 2425,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 296,
+    "name": "FM Monster 296",
+    "atk": 960,
+    "def": 2440,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 297,
+    "name": "FM Monster 297",
+    "atk": 970,
+    "def": 2455,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 298,
+    "name": "FM Monster 298",
+    "atk": 980,
+    "def": 2470,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 299,
+    "name": "FM Monster 299",
+    "atk": 990,
+    "def": 2485,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 300,
+    "name": "FM Monster 300",
+    "atk": 1000,
+    "def": 2500,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 301,
+    "name": "FM Monster 301",
+    "atk": 1010,
+    "def": 2515,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 302,
+    "name": "FM Monster 302",
+    "atk": 1020,
+    "def": 2530,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 303,
+    "name": "FM Monster 303",
+    "atk": 1030,
+    "def": 2545,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 304,
+    "name": "FM Monster 304",
+    "atk": 1040,
+    "def": 2560,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 305,
+    "name": "FM Monster 305",
+    "atk": 1050,
+    "def": 2575,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 306,
+    "name": "FM Monster 306",
+    "atk": 1060,
+    "def": 2590,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 307,
+    "name": "FM Monster 307",
+    "atk": 1070,
+    "def": 2605,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 308,
+    "name": "FM Monster 308",
+    "atk": 1080,
+    "def": 2620,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 309,
+    "name": "FM Monster 309",
+    "atk": 1090,
+    "def": 2635,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 310,
+    "name": "FM Monster 310",
+    "atk": 1100,
+    "def": 2650,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 311,
+    "name": "FM Monster 311",
+    "atk": 1110,
+    "def": 2665,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 312,
+    "name": "FM Monster 312",
+    "atk": 1120,
+    "def": 2680,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 313,
+    "name": "FM Monster 313",
+    "atk": 1130,
+    "def": 2695,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 314,
+    "name": "FM Monster 314",
+    "atk": 1140,
+    "def": 2710,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 315,
+    "name": "FM Monster 315",
+    "atk": 1150,
+    "def": 2725,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 316,
+    "name": "FM Monster 316",
+    "atk": 1160,
+    "def": 2740,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 317,
+    "name": "FM Monster 317",
+    "atk": 1170,
+    "def": 2755,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 318,
+    "name": "FM Monster 318",
+    "atk": 1180,
+    "def": 2770,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 319,
+    "name": "FM Monster 319",
+    "atk": 1190,
+    "def": 2785,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 320,
+    "name": "FM Monster 320",
+    "atk": 1200,
+    "def": 400,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 321,
+    "name": "FM Monster 321",
+    "atk": 1210,
+    "def": 415,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 322,
+    "name": "FM Monster 322",
+    "atk": 1220,
+    "def": 430,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 323,
+    "name": "FM Monster 323",
+    "atk": 1230,
+    "def": 445,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 324,
+    "name": "FM Monster 324",
+    "atk": 1240,
+    "def": 460,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 325,
+    "name": "FM Monster 325",
+    "atk": 1250,
+    "def": 475,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 326,
+    "name": "FM Monster 326",
+    "atk": 1260,
+    "def": 490,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 327,
+    "name": "FM Monster 327",
+    "atk": 1270,
+    "def": 505,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 328,
+    "name": "FM Monster 328",
+    "atk": 1280,
+    "def": 520,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 329,
+    "name": "FM Monster 329",
+    "atk": 1290,
+    "def": 535,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 330,
+    "name": "FM Monster 330",
+    "atk": 1300,
+    "def": 550,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 331,
+    "name": "FM Monster 331",
+    "atk": 1310,
+    "def": 565,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 332,
+    "name": "FM Monster 332",
+    "atk": 1320,
+    "def": 580,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 333,
+    "name": "FM Monster 333",
+    "atk": 1330,
+    "def": 595,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 334,
+    "name": "FM Monster 334",
+    "atk": 1340,
+    "def": 610,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 335,
+    "name": "FM Monster 335",
+    "atk": 1350,
+    "def": 625,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 336,
+    "name": "FM Monster 336",
+    "atk": 1360,
+    "def": 640,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 337,
+    "name": "FM Monster 337",
+    "atk": 1370,
+    "def": 655,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 338,
+    "name": "FM Monster 338",
+    "atk": 1380,
+    "def": 670,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 339,
+    "name": "FM Monster 339",
+    "atk": 1390,
+    "def": 685,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 340,
+    "name": "FM Monster 340",
+    "atk": 1400,
+    "def": 700,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 341,
+    "name": "FM Monster 341",
+    "atk": 1410,
+    "def": 715,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 342,
+    "name": "FM Monster 342",
+    "atk": 1420,
+    "def": 730,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 343,
+    "name": "FM Monster 343",
+    "atk": 1430,
+    "def": 745,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 344,
+    "name": "FM Monster 344",
+    "atk": 1440,
+    "def": 760,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 345,
+    "name": "FM Monster 345",
+    "atk": 1450,
+    "def": 775,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 346,
+    "name": "FM Monster 346",
+    "atk": 1460,
+    "def": 790,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 347,
+    "name": "FM Monster 347",
+    "atk": 1470,
+    "def": 805,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 348,
+    "name": "FM Monster 348",
+    "atk": 1480,
+    "def": 820,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 349,
+    "name": "FM Monster 349",
+    "atk": 1490,
+    "def": 835,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 350,
+    "name": "FM Monster 350",
+    "atk": 1500,
+    "def": 850,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 351,
+    "name": "FM Monster 351",
+    "atk": 1510,
+    "def": 865,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 352,
+    "name": "FM Monster 352",
+    "atk": 1520,
+    "def": 880,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 353,
+    "name": "FM Monster 353",
+    "atk": 1530,
+    "def": 895,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 354,
+    "name": "FM Monster 354",
+    "atk": 1540,
+    "def": 910,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 355,
+    "name": "FM Monster 355",
+    "atk": 1550,
+    "def": 925,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 356,
+    "name": "FM Monster 356",
+    "atk": 1560,
+    "def": 940,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 357,
+    "name": "FM Monster 357",
+    "atk": 1570,
+    "def": 955,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 358,
+    "name": "FM Monster 358",
+    "atk": 1580,
+    "def": 970,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 359,
+    "name": "FM Monster 359",
+    "atk": 1590,
+    "def": 985,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 360,
+    "name": "FM Monster 360",
+    "atk": 1600,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 361,
+    "name": "FM Monster 361",
+    "atk": 1610,
+    "def": 1015,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 362,
+    "name": "FM Monster 362",
+    "atk": 1620,
+    "def": 1030,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 363,
+    "name": "FM Monster 363",
+    "atk": 1630,
+    "def": 1045,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 364,
+    "name": "FM Monster 364",
+    "atk": 1640,
+    "def": 1060,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 365,
+    "name": "FM Monster 365",
+    "atk": 1650,
+    "def": 1075,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 366,
+    "name": "FM Monster 366",
+    "atk": 1660,
+    "def": 1090,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 367,
+    "name": "FM Monster 367",
+    "atk": 1670,
+    "def": 1105,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 368,
+    "name": "FM Monster 368",
+    "atk": 1680,
+    "def": 1120,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 369,
+    "name": "FM Monster 369",
+    "atk": 1690,
+    "def": 1135,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 370,
+    "name": "FM Monster 370",
+    "atk": 1700,
+    "def": 1150,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 371,
+    "name": "FM Monster 371",
+    "atk": 1710,
+    "def": 1165,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 372,
+    "name": "FM Monster 372",
+    "atk": 1720,
+    "def": 1180,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 373,
+    "name": "FM Monster 373",
+    "atk": 1730,
+    "def": 1195,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 374,
+    "name": "FM Monster 374",
+    "atk": 1740,
+    "def": 1210,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 375,
+    "name": "FM Monster 375",
+    "atk": 1750,
+    "def": 1225,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 376,
+    "name": "FM Monster 376",
+    "atk": 1760,
+    "def": 1240,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 377,
+    "name": "FM Monster 377",
+    "atk": 1770,
+    "def": 1255,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 2
+  },
+  {
+    "id": 378,
+    "name": "FM Monster 378",
+    "atk": 1780,
+    "def": 1270,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 379,
+    "name": "FM Monster 379",
+    "atk": 1790,
+    "def": 1285,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 380,
+    "name": "FM Monster 380",
+    "atk": 1800,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 5
+  },
+  {
+    "id": 381,
+    "name": "FM Monster 381",
+    "atk": 1810,
+    "def": 1315,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 6
+  },
+  {
+    "id": 382,
+    "name": "FM Monster 382",
+    "atk": 1820,
+    "def": 1330,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 7
+  },
+  {
+    "id": 383,
+    "name": "FM Monster 383",
+    "atk": 1830,
+    "def": 1345,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 8
+  },
+  {
+    "id": 384,
+    "name": "FM Monster 384",
+    "atk": 1840,
+    "def": 1360,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 1
+  },
+  {
+    "id": 385,
+    "name": "FM Monster 385",
+    "atk": 1850,
+    "def": 1375,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 2
+  },
+  {
+    "id": 386,
+    "name": "FM Monster 386",
+    "atk": 1860,
+    "def": 1390,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 3
+  },
+  {
+    "id": 387,
+    "name": "FM Monster 387",
+    "atk": 1870,
+    "def": 1405,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 388,
+    "name": "FM Monster 388",
+    "atk": 1880,
+    "def": 1420,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 389,
+    "name": "FM Monster 389",
+    "atk": 1890,
+    "def": 1435,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 390,
+    "name": "FM Monster 390",
+    "atk": 1900,
+    "def": 1450,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 391,
+    "name": "FM Monster 391",
+    "atk": 1910,
+    "def": 1465,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 392,
+    "name": "FM Monster 392",
+    "atk": 1920,
+    "def": 1480,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Insect",
+    "level": 1
+  },
+  {
+    "id": 393,
+    "name": "FM Monster 393",
+    "atk": 1930,
+    "def": 1495,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Rock",
+    "level": 2
+  },
+  {
+    "id": 394,
+    "name": "FM Monster 394",
+    "atk": 1940,
+    "def": 1510,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Plant",
+    "level": 3
+  },
+  {
+    "id": 395,
+    "name": "FM Monster 395",
+    "atk": 1950,
+    "def": 1525,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Winged Beast",
+    "level": 4
+  },
+  {
+    "id": 396,
+    "name": "FM Monster 396",
+    "atk": 1960,
+    "def": 1540,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 397,
+    "name": "FM Monster 397",
+    "atk": 1970,
+    "def": 1555,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 398,
+    "name": "FM Monster 398",
+    "atk": 1980,
+    "def": 1570,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 399,
+    "name": "FM Monster 399",
+    "atk": 1990,
+    "def": 1585,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 400,
+    "name": "FM Monster 400",
+    "atk": 2000,
+    "def": 1600,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 1
+  },
+  {
+    "id": 401,
+    "name": "FM Fusion 401",
+    "atk": 2312,
+    "def": 3013,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 402,
+    "name": "FM Fusion 402",
+    "atk": 2324,
+    "def": 3026,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 403,
+    "name": "FM Fusion 403",
+    "atk": 2336,
+    "def": 3039,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 404,
+    "name": "FM Fusion 404",
+    "atk": 2348,
+    "def": 3052,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 405,
+    "name": "FM Fusion 405",
+    "atk": 2360,
+    "def": 3065,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 406,
+    "name": "FM Fusion 406",
+    "atk": 2372,
+    "def": 3078,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 407,
+    "name": "FM Fusion 407",
+    "atk": 2384,
+    "def": 3091,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 408,
+    "name": "FM Fusion 408",
+    "atk": 2396,
+    "def": 3104,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 409,
+    "name": "FM Fusion 409",
+    "atk": 2408,
+    "def": 3117,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 410,
+    "name": "FM Fusion 410",
+    "atk": 2420,
+    "def": 3130,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 411,
+    "name": "FM Fusion 411",
+    "atk": 2432,
+    "def": 3143,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 412,
+    "name": "FM Fusion 412",
+    "atk": 2444,
+    "def": 3156,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 413,
+    "name": "FM Fusion 413",
+    "atk": 2456,
+    "def": 3169,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 414,
+    "name": "FM Fusion 414",
+    "atk": 2468,
+    "def": 3182,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 415,
+    "name": "FM Fusion 415",
+    "atk": 2480,
+    "def": 3195,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 416,
+    "name": "FM Fusion 416",
+    "atk": 2492,
+    "def": 3208,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 417,
+    "name": "FM Fusion 417",
+    "atk": 2504,
+    "def": 3221,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 418,
+    "name": "FM Fusion 418",
+    "atk": 2516,
+    "def": 3234,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 419,
+    "name": "FM Fusion 419",
+    "atk": 2528,
+    "def": 3247,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 420,
+    "name": "FM Fusion 420",
+    "atk": 2540,
+    "def": 3260,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 421,
+    "name": "FM Fusion 421",
+    "atk": 2552,
+    "def": 3273,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 422,
+    "name": "FM Fusion 422",
+    "atk": 2564,
+    "def": 3286,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 423,
+    "name": "FM Fusion 423",
+    "atk": 2576,
+    "def": 3299,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 424,
+    "name": "FM Fusion 424",
+    "atk": 2588,
+    "def": 3312,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 425,
+    "name": "FM Fusion 425",
+    "atk": 2600,
+    "def": 3325,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 426,
+    "name": "FM Fusion 426",
+    "atk": 2612,
+    "def": 3338,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 427,
+    "name": "FM Fusion 427",
+    "atk": 2624,
+    "def": 3351,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 428,
+    "name": "FM Fusion 428",
+    "atk": 2636,
+    "def": 3364,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 429,
+    "name": "FM Fusion 429",
+    "atk": 2648,
+    "def": 3377,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 430,
+    "name": "FM Fusion 430",
+    "atk": 2660,
+    "def": 3390,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 431,
+    "name": "FM Fusion 431",
+    "atk": 2672,
+    "def": 3403,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 432,
+    "name": "FM Fusion 432",
+    "atk": 2684,
+    "def": 3416,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 433,
+    "name": "FM Fusion 433",
+    "atk": 2696,
+    "def": 3429,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 434,
+    "name": "FM Fusion 434",
+    "atk": 2708,
+    "def": 3442,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 435,
+    "name": "FM Fusion 435",
+    "atk": 2720,
+    "def": 3455,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 436,
+    "name": "FM Fusion 436",
+    "atk": 2732,
+    "def": 3468,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 437,
+    "name": "FM Fusion 437",
+    "atk": 2744,
+    "def": 3481,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 438,
+    "name": "FM Fusion 438",
+    "atk": 2756,
+    "def": 3494,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 439,
+    "name": "FM Fusion 439",
+    "atk": 2768,
+    "def": 3507,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 440,
+    "name": "FM Fusion 440",
+    "atk": 2780,
+    "def": 3520,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 441,
+    "name": "FM Fusion 441",
+    "atk": 2792,
+    "def": 3533,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 442,
+    "name": "FM Fusion 442",
+    "atk": 2804,
+    "def": 3546,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 443,
+    "name": "FM Fusion 443",
+    "atk": 2816,
+    "def": 3559,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 444,
+    "name": "FM Fusion 444",
+    "atk": 2828,
+    "def": 3572,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 445,
+    "name": "FM Fusion 445",
+    "atk": 2840,
+    "def": 3585,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 446,
+    "name": "FM Fusion 446",
+    "atk": 2852,
+    "def": 3598,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 447,
+    "name": "FM Fusion 447",
+    "atk": 2864,
+    "def": 3611,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 448,
+    "name": "FM Fusion 448",
+    "atk": 2876,
+    "def": 3624,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 449,
+    "name": "FM Fusion 449",
+    "atk": 2888,
+    "def": 3637,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 450,
+    "name": "FM Fusion 450",
+    "atk": 2900,
+    "def": 3650,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 451,
+    "name": "FM Fusion 451",
+    "atk": 2912,
+    "def": 3663,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 452,
+    "name": "FM Fusion 452",
+    "atk": 2924,
+    "def": 3676,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 453,
+    "name": "FM Fusion 453",
+    "atk": 2936,
+    "def": 3689,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 454,
+    "name": "FM Fusion 454",
+    "atk": 2948,
+    "def": 3702,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 455,
+    "name": "FM Fusion 455",
+    "atk": 2960,
+    "def": 3715,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 456,
+    "name": "FM Fusion 456",
+    "atk": 2972,
+    "def": 3728,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 457,
+    "name": "FM Fusion 457",
+    "atk": 2984,
+    "def": 3741,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 458,
+    "name": "FM Fusion 458",
+    "atk": 2996,
+    "def": 3754,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 459,
+    "name": "FM Fusion 459",
+    "atk": 3008,
+    "def": 3767,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 460,
+    "name": "FM Fusion 460",
+    "atk": 3020,
+    "def": 3780,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 461,
+    "name": "FM Fusion 461",
+    "atk": 3032,
+    "def": 3793,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 462,
+    "name": "FM Fusion 462",
+    "atk": 3044,
+    "def": 806,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 463,
+    "name": "FM Fusion 463",
+    "atk": 3056,
+    "def": 819,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 464,
+    "name": "FM Fusion 464",
+    "atk": 3068,
+    "def": 832,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 465,
+    "name": "FM Fusion 465",
+    "atk": 3080,
+    "def": 845,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 466,
+    "name": "FM Fusion 466",
+    "atk": 3092,
+    "def": 858,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 467,
+    "name": "FM Fusion 467",
+    "atk": 3104,
+    "def": 871,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 468,
+    "name": "FM Fusion 468",
+    "atk": 3116,
+    "def": 884,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 469,
+    "name": "FM Fusion 469",
+    "atk": 3128,
+    "def": 897,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 470,
+    "name": "FM Fusion 470",
+    "atk": 3140,
+    "def": 910,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 471,
+    "name": "FM Fusion 471",
+    "atk": 3152,
+    "def": 923,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 472,
+    "name": "FM Fusion 472",
+    "atk": 3164,
+    "def": 936,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 473,
+    "name": "FM Fusion 473",
+    "atk": 3176,
+    "def": 949,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 474,
+    "name": "FM Fusion 474",
+    "atk": 3188,
+    "def": 962,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 475,
+    "name": "FM Fusion 475",
+    "atk": 3200,
+    "def": 975,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 476,
+    "name": "FM Fusion 476",
+    "atk": 3212,
+    "def": 988,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 477,
+    "name": "FM Fusion 477",
+    "atk": 3224,
+    "def": 1001,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 478,
+    "name": "FM Fusion 478",
+    "atk": 3236,
+    "def": 1014,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 479,
+    "name": "FM Fusion 479",
+    "atk": 3248,
+    "def": 1027,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 480,
+    "name": "FM Fusion 480",
+    "atk": 3260,
+    "def": 1040,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 481,
+    "name": "FM Fusion 481",
+    "atk": 3272,
+    "def": 1053,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 482,
+    "name": "FM Fusion 482",
+    "atk": 3284,
+    "def": 1066,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 483,
+    "name": "FM Fusion 483",
+    "atk": 3296,
+    "def": 1079,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 484,
+    "name": "FM Fusion 484",
+    "atk": 3308,
+    "def": 1092,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 485,
+    "name": "FM Fusion 485",
+    "atk": 3320,
+    "def": 1105,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 486,
+    "name": "FM Fusion 486",
+    "atk": 3332,
+    "def": 1118,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 487,
+    "name": "FM Fusion 487",
+    "atk": 3344,
+    "def": 1131,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 488,
+    "name": "FM Fusion 488",
+    "atk": 3356,
+    "def": 1144,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 489,
+    "name": "FM Fusion 489",
+    "atk": 3368,
+    "def": 1157,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 490,
+    "name": "FM Fusion 490",
+    "atk": 3380,
+    "def": 1170,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 491,
+    "name": "FM Fusion 491",
+    "atk": 3392,
+    "def": 1183,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 492,
+    "name": "FM Fusion 492",
+    "atk": 3404,
+    "def": 1196,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 493,
+    "name": "FM Fusion 493",
+    "atk": 3416,
+    "def": 1209,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 494,
+    "name": "FM Fusion 494",
+    "atk": 3428,
+    "def": 1222,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 495,
+    "name": "FM Fusion 495",
+    "atk": 3440,
+    "def": 1235,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 496,
+    "name": "FM Fusion 496",
+    "atk": 3452,
+    "def": 1248,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 497,
+    "name": "FM Fusion 497",
+    "atk": 3464,
+    "def": 1261,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 498,
+    "name": "FM Fusion 498",
+    "atk": 3476,
+    "def": 1274,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 499,
+    "name": "FM Fusion 499",
+    "atk": 3488,
+    "def": 1287,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 500,
+    "name": "FM Fusion 500",
+    "atk": 3500,
+    "def": 1300,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 501,
+    "name": "FM Fusion 501",
+    "atk": 3512,
+    "def": 1313,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 502,
+    "name": "FM Fusion 502",
+    "atk": 3524,
+    "def": 1326,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 503,
+    "name": "FM Fusion 503",
+    "atk": 3536,
+    "def": 1339,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 504,
+    "name": "FM Fusion 504",
+    "atk": 3548,
+    "def": 1352,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 505,
+    "name": "FM Fusion 505",
+    "atk": 3560,
+    "def": 1365,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 506,
+    "name": "FM Fusion 506",
+    "atk": 3572,
+    "def": 1378,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 507,
+    "name": "FM Fusion 507",
+    "atk": 3584,
+    "def": 1391,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 508,
+    "name": "FM Fusion 508",
+    "atk": 3596,
+    "def": 1404,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 509,
+    "name": "FM Fusion 509",
+    "atk": 3608,
+    "def": 1417,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 510,
+    "name": "FM Fusion 510",
+    "atk": 3620,
+    "def": 1430,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 511,
+    "name": "FM Fusion 511",
+    "atk": 3632,
+    "def": 1443,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 512,
+    "name": "FM Fusion 512",
+    "atk": 3644,
+    "def": 1456,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 513,
+    "name": "FM Fusion 513",
+    "atk": 3656,
+    "def": 1469,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 514,
+    "name": "FM Fusion 514",
+    "atk": 3668,
+    "def": 1482,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 515,
+    "name": "FM Fusion 515",
+    "atk": 3680,
+    "def": 1495,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 516,
+    "name": "FM Fusion 516",
+    "atk": 3692,
+    "def": 1508,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 517,
+    "name": "FM Fusion 517",
+    "atk": 3704,
+    "def": 1521,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 518,
+    "name": "FM Fusion 518",
+    "atk": 3716,
+    "def": 1534,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 519,
+    "name": "FM Fusion 519",
+    "atk": 3728,
+    "def": 1547,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 520,
+    "name": "FM Fusion 520",
+    "atk": 3740,
+    "def": 1560,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 521,
+    "name": "FM Fusion 521",
+    "atk": 3752,
+    "def": 1573,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 522,
+    "name": "FM Fusion 522",
+    "atk": 3764,
+    "def": 1586,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 523,
+    "name": "FM Fusion 523",
+    "atk": 3776,
+    "def": 1599,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 524,
+    "name": "FM Fusion 524",
+    "atk": 3788,
+    "def": 1612,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 525,
+    "name": "FM Fusion 525",
+    "atk": 3800,
+    "def": 1625,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 526,
+    "name": "FM Fusion 526",
+    "atk": 3812,
+    "def": 1638,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 527,
+    "name": "FM Fusion 527",
+    "atk": 3824,
+    "def": 1651,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 528,
+    "name": "FM Fusion 528",
+    "atk": 3836,
+    "def": 1664,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 529,
+    "name": "FM Fusion 529",
+    "atk": 3848,
+    "def": 1677,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 530,
+    "name": "FM Fusion 530",
+    "atk": 3860,
+    "def": 1690,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 531,
+    "name": "FM Fusion 531",
+    "atk": 3872,
+    "def": 1703,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 532,
+    "name": "FM Fusion 532",
+    "atk": 3884,
+    "def": 1716,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 533,
+    "name": "FM Fusion 533",
+    "atk": 3896,
+    "def": 1729,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 534,
+    "name": "FM Fusion 534",
+    "atk": 3908,
+    "def": 1742,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 535,
+    "name": "FM Fusion 535",
+    "atk": 3920,
+    "def": 1755,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 536,
+    "name": "FM Fusion 536",
+    "atk": 3932,
+    "def": 1768,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 537,
+    "name": "FM Fusion 537",
+    "atk": 3944,
+    "def": 1781,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 538,
+    "name": "FM Fusion 538",
+    "atk": 3956,
+    "def": 1794,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 539,
+    "name": "FM Fusion 539",
+    "atk": 3968,
+    "def": 1807,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 540,
+    "name": "FM Fusion 540",
+    "atk": 3980,
+    "def": 1820,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 541,
+    "name": "FM Fusion 541",
+    "atk": 3992,
+    "def": 1833,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 542,
+    "name": "FM Fusion 542",
+    "atk": 4004,
+    "def": 1846,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 543,
+    "name": "FM Fusion 543",
+    "atk": 4016,
+    "def": 1859,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 544,
+    "name": "FM Fusion 544",
+    "atk": 4028,
+    "def": 1872,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 545,
+    "name": "FM Fusion 545",
+    "atk": 4040,
+    "def": 1885,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 546,
+    "name": "FM Fusion 546",
+    "atk": 4052,
+    "def": 1898,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 547,
+    "name": "FM Fusion 547",
+    "atk": 4064,
+    "def": 1911,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 548,
+    "name": "FM Fusion 548",
+    "atk": 4076,
+    "def": 1924,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 549,
+    "name": "FM Fusion 549",
+    "atk": 4088,
+    "def": 1937,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 550,
+    "name": "FM Fusion 550",
+    "atk": 4100,
+    "def": 1950,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 551,
+    "name": "FM Fusion 551",
+    "atk": 4112,
+    "def": 1963,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 552,
+    "name": "FM Fusion 552",
+    "atk": 4124,
+    "def": 1976,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 553,
+    "name": "FM Fusion 553",
+    "atk": 4136,
+    "def": 1989,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 554,
+    "name": "FM Fusion 554",
+    "atk": 4148,
+    "def": 2002,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 555,
+    "name": "FM Fusion 555",
+    "atk": 4160,
+    "def": 2015,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 556,
+    "name": "FM Fusion 556",
+    "atk": 4172,
+    "def": 2028,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 557,
+    "name": "FM Fusion 557",
+    "atk": 4184,
+    "def": 2041,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 558,
+    "name": "FM Fusion 558",
+    "atk": 4196,
+    "def": 2054,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 559,
+    "name": "FM Fusion 559",
+    "atk": 4208,
+    "def": 2067,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 560,
+    "name": "FM Fusion 560",
+    "atk": 4220,
+    "def": 2080,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 561,
+    "name": "FM Fusion 561",
+    "atk": 4232,
+    "def": 2093,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 562,
+    "name": "FM Fusion 562",
+    "atk": 4244,
+    "def": 2106,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 563,
+    "name": "FM Fusion 563",
+    "atk": 4256,
+    "def": 2119,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 564,
+    "name": "FM Fusion 564",
+    "atk": 4268,
+    "def": 2132,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 565,
+    "name": "FM Fusion 565",
+    "atk": 4280,
+    "def": 2145,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 566,
+    "name": "FM Fusion 566",
+    "atk": 4292,
+    "def": 2158,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 567,
+    "name": "FM Fusion 567",
+    "atk": 4304,
+    "def": 2171,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 568,
+    "name": "FM Fusion 568",
+    "atk": 4316,
+    "def": 2184,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 569,
+    "name": "FM Fusion 569",
+    "atk": 4328,
+    "def": 2197,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 570,
+    "name": "FM Fusion 570",
+    "atk": 4340,
+    "def": 2210,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 571,
+    "name": "FM Fusion 571",
+    "atk": 4352,
+    "def": 2223,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 572,
+    "name": "FM Fusion 572",
+    "atk": 4364,
+    "def": 2236,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 573,
+    "name": "FM Fusion 573",
+    "atk": 4376,
+    "def": 2249,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 574,
+    "name": "FM Fusion 574",
+    "atk": 4388,
+    "def": 2262,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 575,
+    "name": "FM Fusion 575",
+    "atk": 4400,
+    "def": 2275,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 576,
+    "name": "FM Fusion 576",
+    "atk": 4412,
+    "def": 2288,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 577,
+    "name": "FM Fusion 577",
+    "atk": 4424,
+    "def": 2301,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 578,
+    "name": "FM Fusion 578",
+    "atk": 4436,
+    "def": 2314,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 579,
+    "name": "FM Fusion 579",
+    "atk": 4448,
+    "def": 2327,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 580,
+    "name": "FM Fusion 580",
+    "atk": 4460,
+    "def": 2340,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 581,
+    "name": "FM Fusion 581",
+    "atk": 4472,
+    "def": 2353,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 582,
+    "name": "FM Fusion 582",
+    "atk": 4484,
+    "def": 2366,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 583,
+    "name": "FM Fusion 583",
+    "atk": 4496,
+    "def": 2379,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 584,
+    "name": "FM Fusion 584",
+    "atk": 1008,
+    "def": 2392,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 585,
+    "name": "FM Fusion 585",
+    "atk": 1020,
+    "def": 2405,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 586,
+    "name": "FM Fusion 586",
+    "atk": 1032,
+    "def": 2418,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 587,
+    "name": "FM Fusion 587",
+    "atk": 1044,
+    "def": 2431,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 588,
+    "name": "FM Fusion 588",
+    "atk": 1056,
+    "def": 2444,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 589,
+    "name": "FM Fusion 589",
+    "atk": 1068,
+    "def": 2457,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 590,
+    "name": "FM Fusion 590",
+    "atk": 1080,
+    "def": 2470,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 591,
+    "name": "FM Fusion 591",
+    "atk": 1092,
+    "def": 2483,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 592,
+    "name": "FM Fusion 592",
+    "atk": 1104,
+    "def": 2496,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 593,
+    "name": "FM Fusion 593",
+    "atk": 1116,
+    "def": 2509,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 594,
+    "name": "FM Fusion 594",
+    "atk": 1128,
+    "def": 2522,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 595,
+    "name": "FM Fusion 595",
+    "atk": 1140,
+    "def": 2535,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 596,
+    "name": "FM Fusion 596",
+    "atk": 1152,
+    "def": 2548,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 597,
+    "name": "FM Fusion 597",
+    "atk": 1164,
+    "def": 2561,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 598,
+    "name": "FM Fusion 598",
+    "atk": 1176,
+    "def": 2574,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 599,
+    "name": "FM Fusion 599",
+    "atk": 1188,
+    "def": 2587,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 600,
+    "name": "FM Fusion 600",
+    "atk": 1200,
+    "def": 2600,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 601,
+    "name": "FM Fusion 601",
+    "atk": 1212,
+    "def": 2613,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 602,
+    "name": "FM Fusion 602",
+    "atk": 1224,
+    "def": 2626,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 603,
+    "name": "FM Fusion 603",
+    "atk": 1236,
+    "def": 2639,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 604,
+    "name": "FM Fusion 604",
+    "atk": 1248,
+    "def": 2652,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 605,
+    "name": "FM Fusion 605",
+    "atk": 1260,
+    "def": 2665,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 606,
+    "name": "FM Fusion 606",
+    "atk": 1272,
+    "def": 2678,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 607,
+    "name": "FM Fusion 607",
+    "atk": 1284,
+    "def": 2691,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 608,
+    "name": "FM Fusion 608",
+    "atk": 1296,
+    "def": 2704,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 609,
+    "name": "FM Fusion 609",
+    "atk": 1308,
+    "def": 2717,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 610,
+    "name": "FM Fusion 610",
+    "atk": 1320,
+    "def": 2730,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 611,
+    "name": "FM Fusion 611",
+    "atk": 1332,
+    "def": 2743,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 612,
+    "name": "FM Fusion 612",
+    "atk": 1344,
+    "def": 2756,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 613,
+    "name": "FM Fusion 613",
+    "atk": 1356,
+    "def": 2769,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 614,
+    "name": "FM Fusion 614",
+    "atk": 1368,
+    "def": 2782,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 615,
+    "name": "FM Fusion 615",
+    "atk": 1380,
+    "def": 2795,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 616,
+    "name": "FM Fusion 616",
+    "atk": 1392,
+    "def": 2808,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 617,
+    "name": "FM Fusion 617",
+    "atk": 1404,
+    "def": 2821,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 6
+  },
+  {
+    "id": 618,
+    "name": "FM Fusion 618",
+    "atk": 1416,
+    "def": 2834,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 7
+  },
+  {
+    "id": 619,
+    "name": "FM Fusion 619",
+    "atk": 1428,
+    "def": 2847,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 8
+  },
+  {
+    "id": 620,
+    "name": "FM Fusion 620",
+    "atk": 1440,
+    "def": 2860,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 621,
+    "name": "FM Fusion 621",
+    "atk": 1452,
+    "def": 2873,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 622,
+    "name": "FM Fusion 622",
+    "atk": 1464,
+    "def": 2886,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 6
+  },
+  {
+    "id": 623,
+    "name": "FM Fusion 623",
+    "atk": 1476,
+    "def": 2899,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 7
+  },
+  {
+    "id": 624,
+    "name": "FM Fusion 624",
+    "atk": 1488,
+    "def": 2912,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 8
+  },
+  {
+    "id": 625,
+    "name": "FM Fusion 625",
+    "atk": 1500,
+    "def": 2925,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 4
+  },
+  {
+    "id": 626,
+    "name": "FM Fusion 626",
+    "atk": 1512,
+    "def": 2938,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 5
+  },
+  {
+    "id": 627,
+    "name": "FM Fusion 627",
+    "atk": 1524,
+    "def": 2951,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 6
+  },
+  {
+    "id": 628,
+    "name": "FM Fusion 628",
+    "atk": 1536,
+    "def": 2964,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 7
+  },
+  {
+    "id": 629,
+    "name": "FM Fusion 629",
+    "atk": 1548,
+    "def": 2977,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 8
+  },
+  {
+    "id": 630,
+    "name": "FM Fusion 630",
+    "atk": 1560,
+    "def": 2990,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 631,
+    "name": "FM Fusion 631",
+    "atk": 1572,
+    "def": 3003,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 5
+  },
+  {
+    "id": 632,
+    "name": "FM Fusion 632",
+    "atk": 1584,
+    "def": 3016,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 633,
+    "name": "FM Fusion 633",
+    "atk": 1596,
+    "def": 3029,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Spellcaster",
+    "level": 7
+  },
+  {
+    "id": 634,
+    "name": "FM Fusion 634",
+    "atk": 1608,
+    "def": 3042,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 8
+  },
+  {
+    "id": 635,
+    "name": "FM Fusion 635",
+    "atk": 1620,
+    "def": 3055,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
+  },
+  {
+    "id": 636,
+    "name": "FM Fusion 636",
+    "atk": 1632,
+    "def": 3068,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Fiend",
+    "level": 5
+  },
+  {
+    "id": 637,
+    "name": "FM Fusion 637",
+    "atk": 1644,
+    "def": 3081,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Aqua",
+    "level": 6
+  },
+  {
+    "id": 638,
+    "name": "FM Fusion 638",
+    "atk": 1656,
+    "def": 3094,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Zombie",
+    "level": 7
+  },
+  {
+    "id": 639,
+    "name": "FM Fusion 639",
+    "atk": 1668,
+    "def": 3107,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Machine",
+    "level": 8
+  },
+  {
+    "id": 640,
+    "name": "FM Fusion 640",
+    "atk": 1680,
+    "def": 3120,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Warrior",
+    "level": 4
+  },
+  {
+    "id": 641,
+    "name": "FM Fusion 641",
+    "atk": 1692,
+    "def": 3133,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Spellcaster",
+    "level": 5
+  },
+  {
+    "id": 642,
+    "name": "FM Fusion 642",
+    "atk": 1704,
+    "def": 3146,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Dragon",
+    "level": 6
+  },
+  {
+    "id": 643,
+    "name": "FM Fusion 643",
+    "atk": 1716,
+    "def": 3159,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Beast",
+    "level": 7
+  },
+  {
+    "id": 644,
+    "name": "FM Fusion 644",
+    "atk": 1728,
+    "def": 3172,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Fiend",
+    "level": 8
+  },
+  {
+    "id": 645,
+    "name": "FM Fusion 645",
+    "atk": 1740,
+    "def": 3185,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 4
+  },
+  {
+    "id": 646,
+    "name": "FM Fusion 646",
+    "atk": 1752,
+    "def": 3198,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Zombie",
+    "level": 5
+  },
+  {
+    "id": 647,
+    "name": "FM Fusion 647",
+    "atk": 1764,
+    "def": 3211,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Machine",
+    "level": 6
+  },
+  {
+    "id": 648,
+    "name": "FM Fusion 648",
+    "atk": 1776,
+    "def": 3224,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 7
+  },
+  {
+    "id": 649,
+    "name": "FM Fusion 649",
+    "atk": 1788,
+    "def": 3237,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 8
+  },
+  {
+    "id": 650,
+    "name": "FM Fusion 650",
+    "atk": 1800,
+    "def": 3250,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Dragon",
+    "level": 4
+  },
+  {
+    "id": 651,
+    "name": "FM Fusion 651",
+    "atk": 1812,
+    "def": 3263,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Beast",
+    "level": 5
+  },
+  {
+    "id": 652,
+    "name": "FM Fusion 652",
+    "atk": 1824,
+    "def": 3276,
+    "type": "Monster",
+    "attr": "WIND",
+    "race": "Fiend",
+    "level": 6
+  },
+  {
+    "id": 653,
+    "name": "FM Fusion 653",
+    "atk": 1836,
+    "def": 3289,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 7
+  },
+  {
+    "id": 654,
+    "name": "FM Fusion 654",
+    "atk": 1848,
+    "def": 3302,
+    "type": "Monster",
+    "attr": "LIGHT",
+    "race": "Zombie",
+    "level": 8
+  },
+  {
+    "id": 655,
+    "name": "FM Fusion 655",
+    "atk": 1860,
+    "def": 3315,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 4
+  },
+  {
+    "id": 656,
+    "name": "FM Fusion 656",
+    "atk": 1872,
+    "def": 3328,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
+    "level": 5
+  },
+  {
+    "id": 657,
+    "name": "Raigeki",
+    "type": "Spell"
+  },
+  {
+    "id": 658,
+    "name": "Dark Hole",
+    "type": "Spell"
+  },
+  {
+    "id": 659,
+    "name": "Swords of Revealing Light",
+    "type": "Spell"
+  },
+  {
+    "id": 660,
+    "name": "Pot of Greed",
+    "type": "Spell"
+  },
+  {
+    "id": 661,
+    "name": "Monster Reborn",
+    "type": "Spell"
+  },
+  {
+    "id": 662,
+    "name": "Harpie's Feather Duster",
+    "type": "Spell"
+  },
+  {
+    "id": 663,
+    "name": "Change of Heart",
+    "type": "Spell"
+  },
+  {
+    "id": 664,
+    "name": "Polymerization",
+    "type": "Spell"
+  },
+  {
+    "id": 665,
+    "name": "Sparks",
+    "type": "Spell"
+  },
+  {
+    "id": 666,
+    "name": "Hinotama",
+    "type": "Spell"
+  },
+  {
+    "id": 667,
+    "name": "Final Flame",
+    "type": "Spell"
+  },
+  {
+    "id": 668,
+    "name": "Ookazi",
+    "type": "Spell"
+  },
+  {
+    "id": 669,
+    "name": "Tremendous Fire",
+    "type": "Spell"
+  },
+  {
+    "id": 670,
+    "name": "Red Medicine",
+    "type": "Spell"
+  },
+  {
+    "id": 671,
+    "name": "Goblin's Secret Remedy",
+    "type": "Spell"
+  },
+  {
+    "id": 672,
+    "name": "Soul of the Pure",
+    "type": "Spell"
+  },
+  {
+    "id": 673,
+    "name": "Dian Keto the Cure Master",
+    "type": "Spell"
+  },
+  {
+    "id": 674,
+    "name": "Ancient Telescope",
+    "type": "Spell"
+  },
+  {
+    "id": 675,
+    "name": "Morale Boost",
+    "type": "Spell"
+  },
+  {
+    "id": 676,
+    "name": "Sogen",
+    "type": "Spell"
+  },
+  {
+    "id": 677,
+    "name": "Umi",
+    "type": "Spell"
+  },
+  {
+    "id": 678,
+    "name": "Yama",
+    "type": "Spell"
+  },
+  {
+    "id": 679,
+    "name": "Wasteland",
+    "type": "Spell"
+  },
+  {
+    "id": 680,
+    "name": "Forest",
+    "type": "Spell"
+  },
+  {
+    "id": 681,
+    "name": "Mountain",
+    "type": "Spell"
+  },
+  {
+    "id": 682,
+    "name": "Dark Magician Girl",
+    "type": "Spell"
+  },
+  {
+    "id": 683,
+    "name": "Sword of Dark Destruction",
+    "type": "Spell"
+  },
+  {
+    "id": 684,
+    "name": "Black Pendant",
+    "type": "Spell"
+  },
+  {
+    "id": 685,
+    "name": "Invigoration",
+    "type": "Spell"
+  },
+  {
+    "id": 686,
+    "name": "Follow Wind",
+    "type": "Spell"
+  },
+  {
+    "id": 687,
+    "name": "Trap Hole",
+    "type": "Trap"
+  },
+  {
+    "id": 688,
+    "name": "Mirror Force",
+    "type": "Trap"
+  },
+  {
+    "id": 689,
+    "name": "Reinforcements",
+    "type": "Trap"
+  },
+  {
+    "id": 690,
+    "name": "Castle Walls",
+    "type": "Trap"
+  },
+  {
+    "id": 691,
+    "name": "Ultimate Offering",
+    "type": "Trap"
+  },
+  {
+    "id": 692,
+    "name": "Waboku",
+    "type": "Trap"
+  },
+  {
+    "id": 693,
+    "name": "Enchanted Javelin",
+    "type": "Trap"
+  },
+  {
+    "id": 694,
+    "name": "Seven Tools of the Bandit",
+    "type": "Trap"
+  },
+  {
+    "id": 695,
+    "name": "Horn of Heaven",
+    "type": "Trap"
+  },
+  {
+    "id": 696,
+    "name": "Solemn Judgment",
+    "type": "Trap"
+  },
+  {
+    "id": 697,
+    "name": "Eatgaboon",
+    "type": "Trap"
+  },
+  {
+    "id": 698,
+    "name": "Call of the Haunted",
+    "type": "Trap"
+  },
+  {
+    "id": 699,
+    "name": "Gravity Bind",
+    "type": "Trap"
+  },
+  {
+    "id": 700,
+    "name": "Type Zero Magic Crusher",
+    "type": "Trap"
+  },
+  {
+    "id": 701,
+    "name": "Mega Ton Magical Cannon",
+    "type": "Trap"
+  },
+  {
+    "id": 702,
+    "name": "Acid Trap Hole",
+    "type": "Trap"
+  },
+  {
+    "id": 703,
+    "name": "Widespread Ruin",
+    "type": "Trap"
+  },
+  {
+    "id": 704,
+    "name": "Jar of Greed",
+    "type": "Trap"
+  },
+  {
+    "id": 705,
+    "name": "Reckless Greed",
+    "type": "Trap"
+  },
+  {
+    "id": 706,
+    "name": "Bottomless Trap Hole",
+    "type": "Trap"
+  },
+  {
+    "id": 707,
+    "name": "Torrential Tribute",
+    "type": "Trap"
+  },
+  {
+    "id": 708,
+    "name": "Magic Cylinder",
+    "type": "Trap"
+  },
+  {
+    "id": 709,
+    "name": "Sakuretsu Armor",
+    "type": "Trap"
+  },
+  {
+    "id": 710,
+    "name": "Dust Tornado",
+    "type": "Trap"
+  },
+  {
+    "id": 711,
+    "name": "Compulsory Evacuation Device",
+    "type": "Trap"
+  },
+  {
+    "id": 712,
+    "name": "Divine Wrath",
+    "type": "Trap"
+  },
+  {
+    "id": 713,
+    "name": "Nutrient Z",
+    "type": "Trap"
+  },
+  {
+    "id": 714,
+    "name": "Gift of The Mystical Elf",
+    "type": "Trap"
+  },
+  {
+    "id": 715,
+    "name": "Backup Soldier",
+    "type": "Trap"
+  },
+  {
+    "id": 716,
+    "name": "Staunch Defender",
+    "type": "Trap"
+  },
+  {
+    "id": 717,
+    "name": "The Reliable Guardian",
+    "type": "Trap"
+  },
+  {
+    "id": 718,
+    "name": "Just Desserts",
+    "type": "Trap"
+  },
+  {
+    "id": 719,
+    "name": "Ceasefire",
+    "type": "Trap"
+  },
+  {
+    "id": 720,
+    "name": "Dragon Treasure",
+    "type": "Trap"
+  },
+  {
+    "id": 721,
+    "name": "Malevolent Nuzzler",
+    "type": "Trap"
+  },
+  {
+    "id": 722,
+    "name": "Axe of Despair",
+    "type": "Trap"
+  }
+]

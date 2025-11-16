@@ -3,7 +3,17 @@ import { useSettingsStore } from '../store/settingsStore';
 
 export default function SettingsScreen() {
   const navigate = useNavigate();
-  const { checkerColor1, checkerColor2, setCheckerColor1, setCheckerColor2, resetToDefaults } = useSettingsStore();
+  const { 
+    checkerColor1, 
+    checkerColor2, 
+    musicEnabled,
+    musicVolume,
+    setCheckerColor1, 
+    setCheckerColor2,
+    setMusicEnabled,
+    setMusicVolume,
+    resetToDefaults 
+  } = useSettingsStore();
 
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
@@ -22,6 +32,75 @@ export default function SettingsScreen() {
 
       <h1 style={{ fontSize: 'clamp(16px, 4vw, 24px)', marginBottom: '20px' }}>Settings</h1>
 
+      {/* Music Settings */}
+      <div style={{ 
+        backgroundColor: '#1a1a1a', 
+        padding: '20px', 
+        borderRadius: '8px',
+        marginBottom: '20px'
+      }}>
+        <h2 style={{ fontSize: 'clamp(12px, 3vw, 18px)', marginBottom: '16px' }}>
+          Music
+        </h2>
+
+        <div style={{ marginBottom: '20px' }}>
+          <label style={{ 
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            fontSize: 'clamp(9px, 2.5vw, 12px)',
+            cursor: 'pointer',
+          }}>
+            <input
+              type="checkbox"
+              checked={musicEnabled}
+              onChange={(e) => setMusicEnabled(e.target.checked)}
+              style={{
+                width: '20px',
+                height: '20px',
+                cursor: 'pointer',
+              }}
+            />
+            Enable Background Music
+          </label>
+        </div>
+
+        <div style={{ marginBottom: '20px' }}>
+          <label style={{ 
+            display: 'block', 
+            marginBottom: '8px',
+            fontSize: 'clamp(9px, 2.5vw, 12px)'
+          }}>
+            Music Volume: {Math.round(musicVolume * 100)}%
+          </label>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={musicVolume * 100}
+            onChange={(e) => setMusicVolume(parseInt(e.target.value) / 100)}
+            disabled={!musicEnabled}
+            style={{
+              width: '100%',
+              cursor: musicEnabled ? 'pointer' : 'not-allowed',
+              opacity: musicEnabled ? 1 : 0.5,
+            }}
+          />
+        </div>
+
+        <div style={{ 
+          padding: '12px',
+          backgroundColor: '#0a0a0a',
+          borderRadius: '8px',
+          border: '2px solid #333',
+          fontSize: 'clamp(8px, 2vw, 10px)',
+          color: '#888'
+        }}>
+          ♪ A simple Yu-Gi-Oh themed melody will play in the background while you duel
+        </div>
+      </div>
+
+      {/* Board Appearance */}
       <div style={{ 
         backgroundColor: '#1a1a1a', 
         padding: '20px', 

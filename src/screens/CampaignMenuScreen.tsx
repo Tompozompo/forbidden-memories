@@ -31,6 +31,10 @@ function CampaignMenuScreen() {
     alert('Game saved successfully!');
   };
 
+  const handleSettings = () => {
+    navigate('/settings');
+  };
+
   const handleBackToMenu = () => {
     navigate('/');
   };
@@ -105,6 +109,7 @@ function CampaignMenuScreen() {
         <MenuButton onClick={handleBuildDeck} label="Build Deck" />
         <MenuButton onClick={handleLibrary} label="Library" />
         <MenuButton onClick={handleStore} label="Store" />
+        <MenuButton onClick={handleSettings} label="Settings" />
         <MenuButton onClick={handleSave} label="Save" />
       </div>
     </div>

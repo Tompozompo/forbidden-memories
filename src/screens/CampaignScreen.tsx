@@ -7,6 +7,10 @@ function CampaignScreen() {
     navigate('/campaign-menu');
   };
 
+  const handleSettings = () => {
+    navigate('/settings');
+  };
+
   return (
     <div style={{
       display: 'flex',
@@ -35,6 +39,31 @@ function CampaignScreen() {
         }}
       >
         ← Back
+      </button>
+
+      {/* Settings Button */}
+      <button
+        onClick={handleSettings}
+        style={{
+          position: 'absolute',
+          top: '16px',
+          right: '16px',
+          padding: '8px',
+          fontSize: '20px',
+          backgroundColor: '#444',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          width: '40px',
+          height: '40px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+        title="Settings"
+      >
+        ⚙️
       </button>
 
       {/* Under Construction Message */}

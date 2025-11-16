@@ -29,19 +29,7 @@ function MapScreen() {
   };
   
   const handleBackToMenu = () => {
-    navigate('/');
-  };
-  
-  const handleDeckEdit = () => {
-    navigate('/deck');
-  };
-
-  const handleShop = () => {
-    navigate('/shop');
-  };
-
-  const handleSettings = () => {
-    navigate('/settings');
+    navigate('/campaign-menu');
   };
 
   return (
@@ -82,84 +70,6 @@ function MapScreen() {
         }}>
           ★ {starchips} Starchips
         </div>
-      </div>
-
-      {/* Quick Access Buttons */}
-      <div style={{
-        display: 'flex',
-        gap: '12px',
-        marginBottom: '24px',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-      }}>
-        <button
-          onClick={handleDeckEdit}
-          style={{
-            padding: '12px 24px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            backgroundColor: '#4caf50',
-            color: '#fff',
-            border: '2px solid #fff',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'transform 0.2s',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          📝 Deck Editor
-        </button>
-        
-        <button
-          onClick={handleShop}
-          style={{
-            padding: '12px 24px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            backgroundColor: '#ff9800',
-            color: '#fff',
-            border: '2px solid #fff',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'transform 0.2s',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          🛒 Store
-        </button>
-        
-        <button
-          onClick={handleSettings}
-          style={{
-            padding: '12px 24px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            backgroundColor: '#2196f3',
-            color: '#fff',
-            border: '2px solid #fff',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'transform 0.2s',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          ⚙️ Settings
-        </button>
       </div>
       
       {/* Title */}

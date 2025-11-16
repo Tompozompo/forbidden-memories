@@ -3001,7 +3001,7 @@
   },
   {
     "id": 301,
-    "name": "Uraby",
+    "name": "Uraby (301)",
     "atk": 1500,
     "def": 800,
     "type": "Monster",
@@ -3011,7 +3011,7 @@
   },
   {
     "id": 302,
-    "name": "Crawling Dragon #2",
+    "name": "Crawling Dragon #2 (302)",
     "atk": 1600,
     "def": 1200,
     "type": "Monster",
@@ -3021,7 +3021,7 @@
   },
   {
     "id": 303,
-    "name": "Red-Eyes B. Dragon",
+    "name": "Red-Eyes B. Dragon (303)",
     "atk": 2400,
     "def": 2000,
     "type": "Monster",
@@ -3031,7 +3031,7 @@
   },
   {
     "id": 304,
-    "name": "Castle of Dark Illusions",
+    "name": "Castle of Dark Illusions (304)",
     "atk": 920,
     "def": 1930,
     "type": "Monster",
@@ -3041,7 +3041,7 @@
   },
   {
     "id": 305,
-    "name": "Reaper of the Cards",
+    "name": "Reaper of the Cards (305)",
     "atk": 1380,
     "def": 1930,
     "type": "Monster",
@@ -3051,7 +3051,7 @@
   },
   {
     "id": 306,
-    "name": "King of Yamimakai",
+    "name": "King of Yamimakai (306)",
     "atk": 2000,
     "def": 1530,
     "type": "Monster",
@@ -3061,7 +3061,7 @@
   },
   {
     "id": 307,
-    "name": "Barox",
+    "name": "Barox (307)",
     "atk": 1380,
     "def": 1530,
     "type": "Monster",
@@ -3071,7 +3071,7 @@
   },
   {
     "id": 308,
-    "name": "Dark Chimera",
+    "name": "Dark Chimera (308)",
     "atk": 1610,
     "def": 1460,
     "type": "Monster",
@@ -3081,7 +3081,7 @@
   },
   {
     "id": 309,
-    "name": "Metal Guardian",
+    "name": "Metal Guardian (309)",
     "atk": 1150,
     "def": 2150,
     "type": "Monster",
@@ -3091,7 +3091,7 @@
   },
   {
     "id": 310,
-    "name": "Catapult Turtle",
+    "name": "Catapult Turtle (310)",
     "atk": 1000,
     "def": 2000,
     "type": "Monster",
@@ -3101,7 +3101,7 @@
   },
   {
     "id": 311,
-    "name": "Gyakutenno Megami",
+    "name": "Gyakutenno Megami (311)",
     "atk": 1800,
     "def": 2000,
     "type": "Monster",
@@ -3111,7 +3111,7 @@
   },
   {
     "id": 312,
-    "name": "Mystic Horseman",
+    "name": "Mystic Horseman (312)",
     "atk": 1300,
     "def": 1550,
     "type": "Monster",
@@ -3121,7 +3121,7 @@
   },
   {
     "id": 313,
-    "name": "Rabid Horseman",
+    "name": "Rabid Horseman (313)",
     "atk": 2000,
     "def": 1700,
     "type": "Monster",
@@ -3131,7 +3131,7 @@
   },
   {
     "id": 314,
-    "name": "Zanki",
+    "name": "Zanki (314)",
     "atk": 1500,
     "def": 1700,
     "type": "Monster",
@@ -3141,7 +3141,7 @@
   },
   {
     "id": 315,
-    "name": "Crawling Dragon",
+    "name": "Crawling Dragon (315)",
     "atk": 1600,
     "def": 1400,
     "type": "Monster",
@@ -3151,7 +3151,7 @@
   },
   {
     "id": 316,
-    "name": "Crass Clown",
+    "name": "Crass Clown (316)",
     "atk": 1350,
     "def": 1400,
     "type": "Monster",
@@ -3161,7 +3161,7 @@
   },
   {
     "id": 317,
-    "name": "Armored Zombie",
+    "name": "Armored Zombie (317)",
     "atk": 1500,
     "def": 0,
     "type": "Monster",
@@ -3171,7 +3171,7 @@
   },
   {
     "id": 318,
-    "name": "Dragon Zombie",
+    "name": "Dragon Zombie (318)",
     "atk": 1600,
     "def": 0,
     "type": "Monster",
@@ -3181,7 +3181,7 @@
   },
   {
     "id": 319,
-    "name": "Clown Zombie",
+    "name": "Clown Zombie (319)",
     "atk": 1350,
     "def": 0,
     "type": "Monster",
@@ -3191,7 +3191,7 @@
   },
   {
     "id": 320,
-    "name": "Pumpking the King of Ghosts",
+    "name": "Pumpking the King of Ghosts (320)",
     "atk": 1800,
     "def": 2000,
     "type": "Monster",
@@ -3201,7 +3201,7 @@
   },
   {
     "id": 321,
-    "name": "Battle Warrior",
+    "name": "Battle Warrior (321)",
     "atk": 700,
     "def": 1000,
     "type": "Monster",
@@ -3251,7 +3251,7 @@
   },
   {
     "id": 326,
-    "name": "Firegrass",
+    "name": "Firegrass (326)",
     "atk": 700,
     "def": 600,
     "type": "Monster",
@@ -3261,7 +3261,7 @@
   },
   {
     "id": 327,
-    "name": "Psychic Kappa",
+    "name": "Psychic Kappa (327)",
     "atk": 400,
     "def": 1000,
     "type": "Monster",
@@ -3271,7 +3271,7 @@
   },
   {
     "id": 328,
-    "name": "Masaki the Legendary Swordsman",
+    "name": "Masaki the Legendary Swordsman (328)",
     "atk": 1100,
     "def": 1100,
     "type": "Monster",
@@ -3281,7 +3281,7 @@
   },
   {
     "id": 329,
-    "name": "Dragoness the Wicked Knight",
+    "name": "Dragoness the Wicked Knight (329)",
     "atk": 1200,
     "def": 900,
     "type": "Monster",
@@ -3291,7 +3291,7 @@
   },
   {
     "id": 330,
-    "name": "Bio Plant",
+    "name": "Bio Plant (330)",
     "atk": 600,
     "def": 1300,
     "type": "Monster",
@@ -3311,7 +3311,7 @@
   },
   {
     "id": 332,
-    "name": "Cyber Soldier",
+    "name": "Cyber Soldier (332)",
     "atk": 1500,
     "def": 1700,
     "type": "Monster",
@@ -3321,7 +3321,7 @@
   },
   {
     "id": 333,
-    "name": "Ooguchi",
+    "name": "Ooguchi (333)",
     "atk": 300,
     "def": 250,
     "type": "Monster",
@@ -3331,7 +3331,7 @@
   },
   {
     "id": 334,
-    "name": "Swordsman from a Foreign Land",
+    "name": "Swordsman from a Foreign Land (334)",
     "atk": 250,
     "def": 250,
     "type": "Monster",
@@ -3341,7 +3341,7 @@
   },
   {
     "id": 335,
-    "name": "Emperor of the Land and Sea",
+    "name": "Emperor of the Land and Sea (335)",
     "atk": 800,
     "def": 700,
     "type": "Monster",
@@ -3351,7 +3351,7 @@
   },
   {
     "id": 336,
-    "name": "Ushi Oni",
+    "name": "Ushi Oni (336)",
     "atk": 2150,
     "def": 1950,
     "type": "Monster",
@@ -3471,7 +3471,7 @@
   },
   {
     "id": 348,
-    "name": "Launcher Spider",
+    "name": "Launcher Spider (348)",
     "atk": 2200,
     "def": 2500,
     "type": "Monster",
@@ -3481,7 +3481,7 @@
   },
   {
     "id": 349,
-    "name": "Giga-Tech Wolf",
+    "name": "Giga-Tech Wolf (349)",
     "atk": 1200,
     "def": 1400,
     "type": "Monster",
@@ -3531,7 +3531,7 @@
   },
   {
     "id": 354,
-    "name": "Oni Tank T-34",
+    "name": "Oni Tank T-34 (354)",
     "atk": 1400,
     "def": 1700,
     "type": "Monster",
@@ -3541,7 +3541,7 @@
   },
   {
     "id": 355,
-    "name": "Cyber-Stein",
+    "name": "Cyber-Stein (355)",
     "atk": 700,
     "def": 500,
     "type": "Monster",
@@ -3561,7 +3561,7 @@
   },
   {
     "id": 357,
-    "name": "Launcher Spider",
+    "name": "Launcher Spider (357)",
     "atk": 2200,
     "def": 2500,
     "type": "Monster",
@@ -3591,7 +3591,7 @@
   },
   {
     "id": 360,
-    "name": "Rare Fish",
+    "name": "Rare Fish (360)",
     "atk": 1500,
     "def": 1200,
     "type": "Monster",
@@ -3601,7 +3601,7 @@
   },
   {
     "id": 361,
-    "name": "Mech Bass",
+    "name": "Mech Bass (361)",
     "atk": 1800,
     "def": 1500,
     "type": "Monster",
@@ -3611,7 +3611,7 @@
   },
   {
     "id": 362,
-    "name": "Bolt Escargot",
+    "name": "Bolt Escargot (362)",
     "atk": 1400,
     "def": 1500,
     "type": "Monster",
@@ -3631,7 +3631,7 @@
   },
   {
     "id": 364,
-    "name": "King Fog",
+    "name": "King Fog (364)",
     "atk": 1000,
     "def": 900,
     "type": "Monster",
@@ -3651,7 +3651,7 @@
   },
   {
     "id": 366,
-    "name": "Mega Thunderball",
+    "name": "Mega Thunderball (366)",
     "atk": 750,
     "def": 600,
     "type": "Monster",
@@ -3661,7 +3661,7 @@
   },
   {
     "id": 367,
-    "name": "Mabarrel",
+    "name": "Mabarrel (367)",
     "atk": 1200,
     "def": 1000,
     "type": "Monster",
@@ -3681,7 +3681,7 @@
   },
   {
     "id": 369,
-    "name": "Skelengel",
+    "name": "Skelengel (369)",
     "atk": 900,
     "def": 400,
     "type": "Monster",
@@ -3711,7 +3711,7 @@
   },
   {
     "id": 372,
-    "name": "Obese Marmot of Nefariousness",
+    "name": "Obese Marmot of Nefariousness (372)",
     "atk": 750,
     "def": 800,
     "type": "Monster",
@@ -3741,7 +3741,7 @@
   },
   {
     "id": 375,
-    "name": "Yamadron",
+    "name": "Yamadron (375)",
     "atk": 1600,
     "def": 1800,
     "type": "Monster",
@@ -3751,7 +3751,7 @@
   },
   {
     "id": 376,
-    "name": "Seiyaryu",
+    "name": "Seiyaryu (376)",
     "atk": 2500,
     "def": 2300,
     "type": "Monster",
@@ -3761,7 +3761,7 @@
   },
   {
     "id": 377,
-    "name": "Tri-Horned Dragon",
+    "name": "Tri-Horned Dragon (377)",
     "atk": 2850,
     "def": 2350,
     "type": "Monster",
@@ -3771,7 +3771,7 @@
   },
   {
     "id": 378,
-    "name": "Serpent Night Dragon",
+    "name": "Serpent Night Dragon (378)",
     "atk": 2350,
     "def": 2400,
     "type": "Monster",
@@ -3781,7 +3781,7 @@
   },
   {
     "id": 379,
-    "name": "Skelgon",
+    "name": "Skelgon (379)",
     "atk": 1700,
     "def": 1900,
     "type": "Monster",
@@ -3891,7 +3891,7 @@
   },
   {
     "id": 390,
-    "name": "The Furious Sea King",
+    "name": "The Furious Sea King (390)",
     "atk": 1800,
     "def": 1500,
     "type": "Monster",
@@ -3901,7 +3901,7 @@
   },
   {
     "id": 391,
-    "name": "Fire Reaper",
+    "name": "Fire Reaper (391)",
     "atk": 700,
     "def": 500,
     "type": "Monster",
@@ -3961,7 +3961,7 @@
   },
   {
     "id": 397,
-    "name": "Larvas",
+    "name": "Larvas (397)",
     "atk": 800,
     "def": 1000,
     "type": "Monster",
@@ -3971,7 +3971,7 @@
   },
   {
     "id": 398,
-    "name": "Hard Armor",
+    "name": "Hard Armor (398)",
     "atk": 300,
     "def": 1200,
     "type": "Monster",
@@ -3981,7 +3981,7 @@
   },
   {
     "id": 399,
-    "name": "Fireyarou",
+    "name": "Fireyarou (399)",
     "atk": 1300,
     "def": 1000,
     "type": "Monster",
@@ -4001,7 +4001,7 @@
   },
   {
     "id": 401,
-    "name": "Spirit of the Harp",
+    "name": "Spirit of the Harp (401)",
     "atk": 800,
     "def": 2000,
     "type": "Monster",
@@ -4011,7 +4011,7 @@
   },
   {
     "id": 402,
-    "name": "Silver Fang",
+    "name": "Silver Fang (402)",
     "atk": 1200,
     "def": 800,
     "type": "Monster",
@@ -4031,7 +4031,7 @@
   },
   {
     "id": 404,
-    "name": "Rainbow Flower",
+    "name": "Rainbow Flower (404)",
     "atk": 400,
     "def": 500,
     "type": "Monster",
@@ -4041,7 +4041,7 @@
   },
   {
     "id": 405,
-    "name": "Mushroom Man",
+    "name": "Mushroom Man (405)",
     "atk": 800,
     "def": 600,
     "type": "Monster",
@@ -4081,7 +4081,7 @@
   },
   {
     "id": 409,
-    "name": "Oscillo Hero #2",
+    "name": "Oscillo Hero #2 (409)",
     "atk": 1000,
     "def": 500,
     "type": "Monster",
@@ -4091,7 +4091,7 @@
   },
   {
     "id": 410,
-    "name": "Invader of the Throne",
+    "name": "Invader of the Throne (410)",
     "atk": 1350,
     "def": 1700,
     "type": "Monster",
@@ -4111,7 +4111,7 @@
   },
   {
     "id": 412,
-    "name": "Fairy's Gift",
+    "name": "Fairy's Gift (412)",
     "atk": 1400,
     "def": 1000,
     "type": "Monster",
@@ -4121,7 +4121,7 @@
   },
   {
     "id": 413,
-    "name": "Flame Cerebrus",
+    "name": "Flame Cerebrus (413)",
     "atk": 2100,
     "def": 1800,
     "type": "Monster",
@@ -4141,7 +4141,7 @@
   },
   {
     "id": 415,
-    "name": "Larvae Moth",
+    "name": "Larvae Moth (415)",
     "atk": 500,
     "def": 400,
     "type": "Monster",
@@ -4151,7 +4151,7 @@
   },
   {
     "id": 416,
-    "name": "Armored Lizard",
+    "name": "Armored Lizard (416)",
     "atk": 1500,
     "def": 1200,
     "type": "Monster",
@@ -4161,7 +4161,7 @@
   },
   {
     "id": 417,
-    "name": "Basic Insect",
+    "name": "Basic Insect (417)",
     "atk": 500,
     "def": 700,
     "type": "Monster",
@@ -4171,7 +4171,7 @@
   },
   {
     "id": 418,
-    "name": "Larvae Moth",
+    "name": "Larvae Moth (418)",
     "atk": 500,
     "def": 400,
     "type": "Monster",
@@ -4181,7 +4181,7 @@
   },
   {
     "id": 419,
-    "name": "Great Moth",
+    "name": "Great Moth (419)",
     "atk": 1200,
     "def": 900,
     "type": "Monster",
@@ -4191,7 +4191,7 @@
   },
   {
     "id": 420,
-    "name": "Kuriboh",
+    "name": "Kuriboh (420)",
     "atk": 300,
     "def": 200,
     "type": "Monster",
@@ -4201,7 +4201,7 @@
   },
   {
     "id": 421,
-    "name": "Mammoth Graveyard",
+    "name": "Mammoth Graveyard (421)",
     "atk": 1200,
     "def": 800,
     "type": "Monster",
@@ -4211,7 +4211,7 @@
   },
   {
     "id": 422,
-    "name": "Great White",
+    "name": "Great White (422)",
     "atk": 1600,
     "def": 800,
     "type": "Monster",
@@ -4221,7 +4221,7 @@
   },
   {
     "id": 423,
-    "name": "Wolf",
+    "name": "Wolf (423)",
     "atk": 1200,
     "def": 800,
     "type": "Monster",
@@ -4231,7 +4231,7 @@
   },
   {
     "id": 424,
-    "name": "Harpie Lady",
+    "name": "Harpie Lady (424)",
     "atk": 1300,
     "def": 1400,
     "type": "Monster",
@@ -4241,7 +4241,7 @@
   },
   {
     "id": 425,
-    "name": "Harpie Lady Sisters",
+    "name": "Harpie Lady Sisters (425)",
     "atk": 1950,
     "def": 2100,
     "type": "Monster",
@@ -4251,7 +4251,7 @@
   },
   {
     "id": 426,
-    "name": "Tiger Axe",
+    "name": "Tiger Axe (426)",
     "atk": 1300,
     "def": 1100,
     "type": "Monster",
@@ -4411,7 +4411,7 @@
   },
   {
     "id": 442,
-    "name": "Violet Crystal",
+    "name": "Violet Crystal (442)",
     "atk": 800,
     "def": 2000,
     "type": "Monster",
@@ -4481,7 +4481,7 @@
   },
   {
     "id": 449,
-    "name": "Launcher Spider",
+    "name": "Launcher Spider (449)",
     "atk": 2200,
     "def": 2500,
     "type": "Monster",
@@ -4521,7 +4521,7 @@
   },
   {
     "id": 453,
-    "name": "Steel Scorpion",
+    "name": "Steel Scorpion (453)",
     "atk": 250,
     "def": 300,
     "type": "Monster",
@@ -4531,7 +4531,7 @@
   },
   {
     "id": 454,
-    "name": "Dancing Elf",
+    "name": "Dancing Elf (454)",
     "atk": 300,
     "def": 200,
     "type": "Monster",
@@ -4551,7 +4551,7 @@
   },
   {
     "id": 456,
-    "name": "Shining Friendship",
+    "name": "Shining Friendship (456)",
     "atk": 1300,
     "def": 1100,
     "type": "Monster",
@@ -4601,7 +4601,7 @@
   },
   {
     "id": 461,
-    "name": "Spirit of the Books",
+    "name": "Spirit of the Books (461)",
     "atk": 1400,
     "def": 1200,
     "type": "Monster",
@@ -4641,7 +4641,7 @@
   },
   {
     "id": 465,
-    "name": "Bolt Penguin",
+    "name": "Bolt Penguin (465)",
     "atk": 1100,
     "def": 800,
     "type": "Monster",
@@ -4661,7 +4661,7 @@
   },
   {
     "id": 467,
-    "name": "Crab Turtle",
+    "name": "Crab Turtle (467)",
     "atk": 2550,
     "def": 2500,
     "type": "Monster",
@@ -4681,7 +4681,7 @@
   },
   {
     "id": 469,
-    "name": "Millennium Shield",
+    "name": "Millennium Shield (469)",
     "atk": 0,
     "def": 3000,
     "type": "Monster",
@@ -4771,7 +4771,7 @@
   },
   {
     "id": 478,
-    "name": "Muka Muka",
+    "name": "Muka Muka (478)",
     "atk": 600,
     "def": 300,
     "type": "Monster",
@@ -4791,7 +4791,7 @@
   },
   {
     "id": 480,
-    "name": "Bolt Escargot",
+    "name": "Bolt Escargot (480)",
     "atk": 1400,
     "def": 1500,
     "type": "Monster",
@@ -4811,7 +4811,7 @@
   },
   {
     "id": 482,
-    "name": "Succubus Knight",
+    "name": "Succubus Knight (482)",
     "atk": 1650,
     "def": 1300,
     "type": "Monster",
@@ -4831,7 +4831,7 @@
   },
   {
     "id": 484,
-    "name": "Kaminarikozou",
+    "name": "Kaminarikozou (484)",
     "atk": 700,
     "def": 600,
     "type": "Monster",
@@ -4841,7 +4841,7 @@
   },
   {
     "id": 485,
-    "name": "Meotoko",
+    "name": "Meotoko (485)",
     "atk": 700,
     "def": 600,
     "type": "Monster",
@@ -4871,7 +4871,7 @@
   },
   {
     "id": 488,
-    "name": "Haniwa",
+    "name": "Haniwa (488)",
     "atk": 500,
     "def": 500,
     "type": "Monster",
@@ -4881,7 +4881,7 @@
   },
   {
     "id": 489,
-    "name": "Yashinoki",
+    "name": "Yashinoki (489)",
     "atk": 800,
     "def": 600,
     "type": "Monster",
@@ -4891,7 +4891,7 @@
   },
   {
     "id": 490,
-    "name": "Vishwar Randi",
+    "name": "Vishwar Randi (490)",
     "atk": 900,
     "def": 700,
     "type": "Monster",
@@ -4921,7 +4921,7 @@
   },
   {
     "id": 493,
-    "name": "Monster Tamer",
+    "name": "Monster Tamer (493)",
     "atk": 1800,
     "def": 1600,
     "type": "Monster",
@@ -4941,7 +4941,7 @@
   },
   {
     "id": 495,
-    "name": "Swordstalker",
+    "name": "Swordstalker (495)",
     "atk": 2000,
     "def": 1600,
     "type": "Monster",
@@ -4951,7 +4951,7 @@
   },
   {
     "id": 496,
-    "name": "La Jinn the Mystical Genie of the Lamp",
+    "name": "La Jinn the Mystical Genie of the Lamp (496)",
     "atk": 1800,
     "def": 1000,
     "type": "Monster",
@@ -4991,7 +4991,7 @@
   },
   {
     "id": 500,
-    "name": "Millennium Golem",
+    "name": "Millennium Golem (500)",
     "atk": 2000,
     "def": 2200,
     "type": "Monster",
@@ -5031,7 +5031,7 @@
   },
   {
     "id": 504,
-    "name": "Super War-Lion",
+    "name": "Super War-Lion (504)",
     "atk": 2300,
     "def": 2100,
     "type": "Monster",
@@ -5081,7 +5081,7 @@
   },
   {
     "id": 509,
-    "name": "Larvas",
+    "name": "Larvas (509)",
     "atk": 800,
     "def": 1000,
     "type": "Monster",
@@ -5091,7 +5091,7 @@
   },
   {
     "id": 510,
-    "name": "Hard Armor",
+    "name": "Hard Armor (510)",
     "atk": 300,
     "def": 1200,
     "type": "Monster",
@@ -5101,7 +5101,7 @@
   },
   {
     "id": 511,
-    "name": "Fireyarou",
+    "name": "Fireyarou (511)",
     "atk": 1300,
     "def": 1000,
     "type": "Monster",
@@ -5111,7 +5111,7 @@
   },
   {
     "id": 512,
-    "name": "Dryad",
+    "name": "Dryad (512)",
     "atk": 1200,
     "def": 1400,
     "type": "Monster",
@@ -5161,7 +5161,7 @@
   },
   {
     "id": 517,
-    "name": "Minar",
+    "name": "Minar (517)",
     "atk": 1400,
     "def": 700,
     "type": "Monster",
@@ -5191,7 +5191,7 @@
   },
   {
     "id": 520,
-    "name": "Sword Arm of Dragon",
+    "name": "Sword Arm of Dragon (520)",
     "atk": 1750,
     "def": 2030,
     "type": "Monster",
@@ -5211,7 +5211,7 @@
   },
   {
     "id": 522,
-    "name": "Sengenjin",
+    "name": "Sengenjin (522)",
     "atk": 1500,
     "def": 1600,
     "type": "Monster",
@@ -5251,7 +5251,7 @@
   },
   {
     "id": 526,
-    "name": "Cyber Saurus",
+    "name": "Cyber Saurus (526)",
     "atk": 1800,
     "def": 1400,
     "type": "Monster",
@@ -5291,7 +5291,7 @@
   },
   {
     "id": 530,
-    "name": "Green Phantom King",
+    "name": "Green Phantom King (530)",
     "atk": 1600,
     "def": 1800,
     "type": "Monster",
@@ -5301,7 +5301,7 @@
   },
   {
     "id": 531,
-    "name": "Patrol Robo",
+    "name": "Patrol Robo (531)",
     "atk": 1100,
     "def": 900,
     "type": "Monster",
@@ -5331,7 +5331,7 @@
   },
   {
     "id": 534,
-    "name": "Milus Radiant",
+    "name": "Milus Radiant (534)",
     "atk": 300,
     "def": 250,
     "type": "Monster",
@@ -5341,7 +5341,7 @@
   },
   {
     "id": 535,
-    "name": "Ill Witch",
+    "name": "Ill Witch (535)",
     "atk": 800,
     "def": 500,
     "type": "Monster",
@@ -5401,7 +5401,7 @@
   },
   {
     "id": 541,
-    "name": "Water Magician",
+    "name": "Water Magician (541)",
     "atk": 1400,
     "def": 1000,
     "type": "Monster",
@@ -5431,7 +5431,7 @@
   },
   {
     "id": 544,
-    "name": "Monsturtle",
+    "name": "Monsturtle (544)",
     "atk": 800,
     "def": 1000,
     "type": "Monster",
@@ -5471,7 +5471,7 @@
   },
   {
     "id": 548,
-    "name": "Dark Plant",
+    "name": "Dark Plant (548)",
     "atk": 300,
     "def": 400,
     "type": "Monster",
@@ -5481,7 +5481,7 @@
   },
   {
     "id": 549,
-    "name": "Anthrosaurus",
+    "name": "Anthrosaurus (549)",
     "atk": 1500,
     "def": 800,
     "type": "Monster",
@@ -5491,7 +5491,7 @@
   },
   {
     "id": 550,
-    "name": "Drooling Lizard",
+    "name": "Drooling Lizard (550)",
     "atk": 900,
     "def": 800,
     "type": "Monster",
@@ -5521,7 +5521,7 @@
   },
   {
     "id": 553,
-    "name": "Nekogal #2",
+    "name": "Nekogal #2 (553)",
     "atk": 1900,
     "def": 2000,
     "type": "Monster",
@@ -5541,7 +5541,7 @@
   },
   {
     "id": 555,
-    "name": "High Tide Gyojin",
+    "name": "High Tide Gyojin (555)",
     "atk": 1650,
     "def": 1300,
     "type": "Monster",
@@ -5551,7 +5551,7 @@
   },
   {
     "id": 556,
-    "name": "Rogue Doll",
+    "name": "Rogue Doll (556)",
     "atk": 1600,
     "def": 1000,
     "type": "Monster",
@@ -5591,7 +5591,7 @@
   },
   {
     "id": 560,
-    "name": "Frenzied Panda",
+    "name": "Frenzied Panda (560)",
     "atk": 1200,
     "def": 1000,
     "type": "Monster",
@@ -5621,7 +5621,7 @@
   },
   {
     "id": 563,
-    "name": "Armored Rat",
+    "name": "Armored Rat (563)",
     "atk": 950,
     "def": 1100,
     "type": "Monster",
@@ -5641,7 +5641,7 @@
   },
   {
     "id": 565,
-    "name": "Sengenjin",
+    "name": "Sengenjin (565)",
     "atk": 1500,
     "def": 1600,
     "type": "Monster",
@@ -5651,7 +5651,7 @@
   },
   {
     "id": 566,
-    "name": "Flower Wolf",
+    "name": "Flower Wolf (566)",
     "atk": 1800,
     "def": 1400,
     "type": "Monster",
@@ -5661,7 +5661,7 @@
   },
   {
     "id": 567,
-    "name": "Oscillo Hero #2",
+    "name": "Oscillo Hero #2 (567)",
     "atk": 1000,
     "def": 500,
     "type": "Monster",
@@ -5671,7 +5671,7 @@
   },
   {
     "id": 568,
-    "name": "Invader of the Throne",
+    "name": "Invader of the Throne (568)",
     "atk": 1350,
     "def": 1700,
     "type": "Monster",
@@ -5711,7 +5711,7 @@
   },
   {
     "id": 572,
-    "name": "Super War-Lion",
+    "name": "Super War-Lion (572)",
     "atk": 2300,
     "def": 2100,
     "type": "Monster",
@@ -5721,7 +5721,7 @@
   },
   {
     "id": 573,
-    "name": "Yamadron",
+    "name": "Yamadron (573)",
     "atk": 1600,
     "def": 1800,
     "type": "Monster",
@@ -5761,7 +5761,7 @@
   },
   {
     "id": 577,
-    "name": "Tripwire Beast",
+    "name": "Tripwire Beast (577)",
     "atk": 1200,
     "def": 1300,
     "type": "Monster",
@@ -5801,7 +5801,7 @@
   },
   {
     "id": 581,
-    "name": "Barox",
+    "name": "Barox (581)",
     "atk": 1380,
     "def": 1530,
     "type": "Monster",
@@ -5881,7 +5881,7 @@
   },
   {
     "id": 589,
-    "name": "Waterdragon Fairy",
+    "name": "Waterdragon Fairy (589)",
     "atk": 1100,
     "def": 700,
     "type": "Monster",
@@ -5891,7 +5891,7 @@
   },
   {
     "id": 590,
-    "name": "Jinzo #7",
+    "name": "Jinzo #7 (590)",
     "atk": 500,
     "def": 400,
     "type": "Monster",
@@ -5921,7 +5921,7 @@
   },
   {
     "id": 593,
-    "name": "Anthrosaurus",
+    "name": "Anthrosaurus (593)",
     "atk": 1500,
     "def": 800,
     "type": "Monster",
@@ -5931,7 +5931,7 @@
   },
   {
     "id": 594,
-    "name": "Drooling Lizard",
+    "name": "Drooling Lizard (594)",
     "atk": 900,
     "def": 800,
     "type": "Monster",
@@ -5951,7 +5951,7 @@
   },
   {
     "id": 596,
-    "name": "Koumori Dragon",
+    "name": "Koumori Dragon (596)",
     "atk": 1500,
     "def": 1200,
     "type": "Monster",
@@ -5961,7 +5961,7 @@
   },
   {
     "id": 597,
-    "name": "Boo Koo",
+    "name": "Boo Koo (597)",
     "atk": 650,
     "def": 500,
     "type": "Monster",
@@ -5971,7 +5971,7 @@
   },
   {
     "id": 598,
-    "name": "Flower Wolf",
+    "name": "Flower Wolf (598)",
     "atk": 1800,
     "def": 1400,
     "type": "Monster",
@@ -5981,7 +5981,7 @@
   },
   {
     "id": 599,
-    "name": "Sengenjin",
+    "name": "Sengenjin (599)",
     "atk": 1500,
     "def": 1600,
     "type": "Monster",
@@ -5991,7 +5991,7 @@
   },
   {
     "id": 600,
-    "name": "Toon Alligator",
+    "name": "Toon Alligator (600)",
     "atk": 800,
     "def": 1600,
     "type": "Monster",
@@ -6001,563 +6001,563 @@
   },
   {
     "id": 601,
-    "name": "FM Fusion 601",
-    "atk": 1212,
-    "def": 2613,
+    "name": "Baby Dragon (601)",
+    "atk": 1200,
+    "def": 700,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Spellcaster",
-    "level": 5
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 3
   },
   {
     "id": 602,
-    "name": "FM Fusion 602",
-    "atk": 1224,
-    "def": 2626,
+    "name": "Ryu-Ran",
+    "atk": 2200,
+    "def": 2600,
     "type": "Monster",
     "attr": "FIRE",
     "race": "Dragon",
-    "level": 6
+    "level": 7
   },
   {
     "id": 603,
-    "name": "FM Fusion 603",
-    "atk": 1236,
-    "def": 2639,
+    "name": "Mystic Lamp (603)",
+    "atk": 800,
+    "def": 600,
     "type": "Monster",
-    "attr": "WATER",
-    "race": "Beast",
-    "level": 7
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 1
   },
   {
     "id": 604,
-    "name": "FM Fusion 604",
-    "atk": 1248,
-    "def": 2652,
+    "name": "Swordsman from a Distant Land",
+    "atk": 250,
+    "def": 250,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Fiend",
-    "level": 8
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 1
   },
   {
     "id": 605,
-    "name": "FM Fusion 605",
-    "atk": 1260,
-    "def": 2665,
+    "name": "Ancient Tool (605)",
+    "atk": 1700,
+    "def": 1400,
     "type": "Monster",
     "attr": "EARTH",
-    "race": "Aqua",
-    "level": 4
+    "race": "Machine",
+    "level": 5
   },
   {
     "id": 606,
-    "name": "FM Fusion 606",
-    "atk": 1272,
-    "def": 2678,
+    "name": "Faith Bird (606)",
+    "atk": 1500,
+    "def": 1100,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Zombie",
-    "level": 5
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 4
   },
   {
     "id": 607,
-    "name": "FM Fusion 607",
-    "atk": 1284,
-    "def": 2691,
+    "name": "Orion the Battle King (607)",
+    "atk": 1800,
+    "def": 1500,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Machine",
-    "level": 6
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 5
   },
   {
     "id": 608,
-    "name": "FM Fusion 608",
-    "atk": 1296,
-    "def": 2704,
+    "name": "Ansatsu (608)",
+    "atk": 1700,
+    "def": 1200,
     "type": "Monster",
-    "attr": "FIRE",
+    "attr": "EARTH",
     "race": "Warrior",
-    "level": 7
+    "level": 5
   },
   {
     "id": 609,
-    "name": "FM Fusion 609",
-    "atk": 1308,
-    "def": 2717,
+    "name": "LaMoon (609)",
+    "atk": 1200,
+    "def": 1700,
     "type": "Monster",
     "attr": "WATER",
-    "race": "Spellcaster",
-    "level": 8
+    "race": "Aqua",
+    "level": 5
   },
   {
     "id": 610,
-    "name": "FM Fusion 610",
-    "atk": 1320,
-    "def": 2730,
+    "name": "Nemuriko (610)",
+    "atk": 800,
+    "def": 700,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Dragon",
-    "level": 4
+    "attr": "DARK",
+    "race": "Spellcaster",
+    "level": 3
   },
   {
     "id": 611,
-    "name": "FM Fusion 611",
-    "atk": 1332,
-    "def": 2743,
-    "type": "Monster",
-    "attr": "EARTH",
-    "race": "Beast",
-    "level": 5
-  },
-  {
-    "id": 612,
-    "name": "FM Fusion 612",
-    "atk": 1344,
-    "def": 2756,
+    "name": "Weather Control (611)",
+    "atk": 1300,
+    "def": 1200,
     "type": "Monster",
     "attr": "LIGHT",
-    "race": "Fiend",
-    "level": 6
-  },
-  {
-    "id": 613,
-    "name": "FM Fusion 613",
-    "atk": 1356,
-    "def": 2769,
-    "type": "Monster",
-    "attr": "DARK",
-    "race": "Aqua",
-    "level": 7
-  },
-  {
-    "id": 614,
-    "name": "FM Fusion 614",
-    "atk": 1368,
-    "def": 2782,
-    "type": "Monster",
-    "attr": "FIRE",
-    "race": "Zombie",
-    "level": 8
-  },
-  {
-    "id": 615,
-    "name": "FM Fusion 615",
-    "atk": 1380,
-    "def": 2795,
-    "type": "Monster",
-    "attr": "WATER",
-    "race": "Machine",
+    "race": "Fairy",
     "level": 4
   },
   {
-    "id": 616,
-    "name": "FM Fusion 616",
-    "atk": 1392,
-    "def": 2808,
+    "id": 612,
+    "name": "Octoberser (612)",
+    "atk": 1600,
+    "def": 1400,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Warrior",
+    "attr": "WATER",
+    "race": "Aqua",
     "level": 5
   },
   {
-    "id": 617,
-    "name": "FM Fusion 617",
-    "atk": 1404,
-    "def": 2821,
+    "id": 613,
+    "name": "The 13th Grave (613)",
+    "atk": 1200,
+    "def": 900,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
+  },
+  {
+    "id": 614,
+    "name": "Charubin the Fire Knight (614)",
+    "atk": 1100,
+    "def": 800,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Pyro",
+    "level": 3
+  },
+  {
+    "id": 615,
+    "name": "Mystical Capture Chain",
+    "atk": 700,
+    "def": 700,
     "type": "Monster",
     "attr": "EARTH",
-    "race": "Spellcaster",
-    "level": 6
+    "race": "Warrior",
+    "level": 2
+  },
+  {
+    "id": 616,
+    "name": "Fiend Castle",
+    "atk": 1300,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
+  },
+  {
+    "id": 617,
+    "name": "Dark Bat",
+    "atk": 1000,
+    "def": 1000,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
   },
   {
     "id": 618,
-    "name": "FM Fusion 618",
-    "atk": 1416,
-    "def": 2834,
+    "name": "Bone Mouse",
+    "atk": 400,
+    "def": 300,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Dragon",
-    "level": 7
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 1
   },
   {
     "id": 619,
-    "name": "FM Fusion 619",
-    "atk": 1428,
-    "def": 2847,
+    "name": "Root Water (619)",
+    "atk": 900,
+    "def": 850,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Beast",
-    "level": 8
+    "attr": "WATER",
+    "race": "Fish",
+    "level": 3
   },
   {
     "id": 620,
-    "name": "FM Fusion 620",
-    "atk": 1440,
-    "def": 2860,
+    "name": "Fiend Reflection #2",
+    "atk": 1100,
+    "def": 1400,
     "type": "Monster",
-    "attr": "FIRE",
-    "race": "Fiend",
+    "attr": "LIGHT",
+    "race": "Winged Beast",
     "level": 4
   },
   {
     "id": 621,
-    "name": "FM Fusion 621",
-    "atk": 1452,
-    "def": 2873,
+    "name": "King of Yamimakai (621)",
+    "atk": 2000,
+    "def": 1530,
     "type": "Monster",
-    "attr": "WATER",
-    "race": "Aqua",
+    "attr": "DARK",
+    "race": "Fiend",
     "level": 5
   },
   {
     "id": 622,
-    "name": "FM Fusion 622",
-    "atk": 1464,
-    "def": 2886,
+    "name": "Summoned Skull (622)",
+    "atk": 2500,
+    "def": 1200,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Zombie",
+    "attr": "DARK",
+    "race": "Fiend",
     "level": 6
   },
   {
     "id": 623,
-    "name": "FM Fusion 623",
-    "atk": 1476,
-    "def": 2899,
+    "name": "Barrel Dragon (623)",
+    "atk": 2600,
+    "def": 2200,
     "type": "Monster",
-    "attr": "EARTH",
+    "attr": "DARK",
     "race": "Machine",
     "level": 7
   },
   {
     "id": 624,
-    "name": "FM Fusion 624",
-    "atk": 1488,
-    "def": 2912,
+    "name": "Barrel Rock",
+    "atk": 1000,
+    "def": 1300,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Warrior",
-    "level": 8
+    "attr": "EARTH",
+    "race": "Rock",
+    "level": 4
   },
   {
     "id": 625,
-    "name": "FM Fusion 625",
-    "atk": 1500,
-    "def": 2925,
+    "name": "Giant Red Seasnake (625)",
+    "atk": 1800,
+    "def": 800,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Spellcaster",
+    "attr": "WATER",
+    "race": "Aqua",
     "level": 4
   },
   {
     "id": 626,
-    "name": "FM Fusion 626",
-    "atk": 1512,
-    "def": 2938,
+    "name": "Spike Seadra (626)",
+    "atk": 1600,
+    "def": 1300,
     "type": "Monster",
-    "attr": "FIRE",
-    "race": "Dragon",
+    "attr": "WATER",
+    "race": "Fish",
     "level": 5
   },
   {
     "id": 627,
-    "name": "FM Fusion 627",
-    "atk": 1524,
-    "def": 2951,
+    "name": "30,000-Year White Turtle (627)",
+    "atk": 1250,
+    "def": 2100,
     "type": "Monster",
     "attr": "WATER",
-    "race": "Beast",
-    "level": 6
+    "race": "Aqua",
+    "level": 5
   },
   {
     "id": 628,
-    "name": "FM Fusion 628",
-    "atk": 1536,
-    "def": 2964,
+    "name": "Kappa Avenger (628)",
+    "atk": 1200,
+    "def": 900,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Fiend",
-    "level": 7
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
   },
   {
     "id": 629,
-    "name": "FM Fusion 629",
-    "atk": 1548,
-    "def": 2977,
+    "name": "Aqua Snake",
+    "atk": 1050,
+    "def": 1050,
     "type": "Monster",
-    "attr": "EARTH",
+    "attr": "WATER",
     "race": "Aqua",
-    "level": 8
+    "level": 3
   },
   {
     "id": 630,
-    "name": "FM Fusion 630",
-    "atk": 1560,
-    "def": 2990,
+    "name": "Giant Fish",
+    "atk": 1200,
+    "def": 800,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Zombie",
+    "attr": "WATER",
+    "race": "Fish",
     "level": 4
   },
   {
     "id": 631,
-    "name": "FM Fusion 631",
-    "atk": 1572,
-    "def": 3003,
+    "name": "Mech Mole Zombie (631)",
+    "atk": 500,
+    "def": 400,
     "type": "Monster",
     "attr": "DARK",
-    "race": "Machine",
-    "level": 5
+    "race": "Zombie",
+    "level": 2
   },
   {
     "id": 632,
-    "name": "FM Fusion 632",
-    "atk": 1584,
-    "def": 3016,
+    "name": "Happy Lover (632)",
+    "atk": 800,
+    "def": 500,
     "type": "Monster",
-    "attr": "FIRE",
-    "race": "Warrior",
-    "level": 6
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 2
   },
   {
     "id": 633,
-    "name": "FM Fusion 633",
-    "atk": 1596,
-    "def": 3029,
+    "name": "Penguin Knight (633)",
+    "atk": 900,
+    "def": 800,
     "type": "Monster",
     "attr": "WATER",
-    "race": "Spellcaster",
-    "level": 7
+    "race": "Aqua",
+    "level": 3
   },
   {
     "id": 634,
-    "name": "FM Fusion 634",
-    "atk": 1608,
-    "def": 3042,
+    "name": "Petit Moth",
+    "atk": 300,
+    "def": 200,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Dragon",
-    "level": 8
+    "attr": "EARTH",
+    "race": "Insect",
+    "level": 1
   },
   {
     "id": 635,
-    "name": "FM Fusion 635",
-    "atk": 1620,
-    "def": 3055,
+    "name": "King Fog (635)",
+    "atk": 1000,
+    "def": 900,
     "type": "Monster",
-    "attr": "EARTH",
-    "race": "Beast",
-    "level": 4
+    "attr": "WATER",
+    "race": "Fiend",
+    "level": 3
   },
   {
     "id": 636,
-    "name": "FM Fusion 636",
-    "atk": 1632,
-    "def": 3068,
+    "name": "Kanikabuto (636)",
+    "atk": 650,
+    "def": 900,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Fiend",
-    "level": 5
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
   },
   {
     "id": 637,
-    "name": "FM Fusion 637",
-    "atk": 1644,
-    "def": 3081,
+    "name": "Electric Lizard",
+    "atk": 850,
+    "def": 800,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Aqua",
-    "level": 6
+    "attr": "LIGHT",
+    "race": "Thunder",
+    "level": 3
   },
   {
     "id": 638,
-    "name": "FM Fusion 638",
-    "atk": 1656,
-    "def": 3094,
+    "name": "Kagemusha of the Blue Flame",
+    "atk": 800,
+    "def": 400,
     "type": "Monster",
     "attr": "FIRE",
-    "race": "Zombie",
-    "level": 7
+    "race": "Warrior",
+    "level": 2
   },
   {
     "id": 639,
-    "name": "FM Fusion 639",
-    "atk": 1668,
-    "def": 3107,
+    "name": "Flame Viper (639)",
+    "atk": 400,
+    "def": 450,
     "type": "Monster",
-    "attr": "WATER",
-    "race": "Machine",
-    "level": 8
+    "attr": "FIRE",
+    "race": "Pyro",
+    "level": 2
   },
   {
     "id": 640,
-    "name": "FM Fusion 640",
-    "atk": 1680,
-    "def": 3120,
-    "type": "Monster",
-    "attr": "WIND",
-    "race": "Warrior",
-    "level": 4
-  },
-  {
-    "id": 641,
-    "name": "FM Fusion 641",
-    "atk": 1692,
-    "def": 3133,
+    "name": "Royal Guard (640)",
+    "atk": 1900,
+    "def": 1500,
     "type": "Monster",
     "attr": "EARTH",
-    "race": "Spellcaster",
-    "level": 5
-  },
-  {
-    "id": 642,
-    "name": "FM Fusion 642",
-    "atk": 1704,
-    "def": 3146,
-    "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Dragon",
+    "race": "Machine",
     "level": 6
   },
   {
-    "id": 643,
-    "name": "FM Fusion 643",
-    "atk": 1716,
-    "def": 3159,
+    "id": 641,
+    "name": "Machine King Prototype",
+    "atk": 1600,
+    "def": 1500,
     "type": "Monster",
-    "attr": "DARK",
-    "race": "Beast",
-    "level": 7
-  },
-  {
-    "id": 644,
-    "name": "FM Fusion 644",
-    "atk": 1728,
-    "def": 3172,
-    "type": "Monster",
-    "attr": "FIRE",
-    "race": "Fiend",
-    "level": 8
-  },
-  {
-    "id": 645,
-    "name": "FM Fusion 645",
-    "atk": 1740,
-    "def": 3185,
-    "type": "Monster",
-    "attr": "WATER",
-    "race": "Aqua",
+    "attr": "EARTH",
+    "race": "Machine",
     "level": 4
   },
   {
-    "id": 646,
-    "name": "FM Fusion 646",
-    "atk": 1752,
-    "def": 3198,
+    "id": 642,
+    "name": "Giant Turtle Who Feeds on Flames",
+    "atk": 1400,
+    "def": 1800,
     "type": "Monster",
-    "attr": "WIND",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 5
+  },
+  {
+    "id": 643,
+    "name": "Turtle Raccoon (643)",
+    "atk": 700,
+    "def": 900,
+    "type": "Monster",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
+  },
+  {
+    "id": 644,
+    "name": "Zombyra the Dark",
+    "atk": 2100,
+    "def": 500,
+    "type": "Monster",
+    "attr": "DARK",
     "race": "Zombie",
+    "level": 4
+  },
+  {
+    "id": 645,
+    "name": "Crawling Dragon (645)",
+    "atk": 1600,
+    "def": 1400,
+    "type": "Monster",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 5
+  },
+  {
+    "id": 646,
+    "name": "Flame Swordsman (646)",
+    "atk": 1800,
+    "def": 1600,
+    "type": "Monster",
+    "attr": "FIRE",
+    "race": "Warrior",
     "level": 5
   },
   {
     "id": 647,
-    "name": "FM Fusion 647",
-    "atk": 1764,
-    "def": 3211,
+    "name": "Time Wizard (647)",
+    "atk": 500,
+    "def": 400,
     "type": "Monster",
-    "attr": "EARTH",
-    "race": "Machine",
-    "level": 6
+    "attr": "LIGHT",
+    "race": "Spellcaster",
+    "level": 2
   },
   {
     "id": 648,
-    "name": "FM Fusion 648",
-    "atk": 1776,
-    "def": 3224,
+    "name": "Thousand Dragon (648)",
+    "atk": 2400,
+    "def": 2000,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Warrior",
+    "attr": "WIND",
+    "race": "Dragon",
     "level": 7
   },
   {
     "id": 649,
-    "name": "FM Fusion 649",
-    "atk": 1788,
-    "def": 3237,
+    "name": "Dark Magician Girl",
+    "atk": 2000,
+    "def": 1700,
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 8
+    "level": 6
   },
   {
     "id": 650,
-    "name": "FM Fusion 650",
-    "atk": 1800,
-    "def": 3250,
+    "name": "Sengenjin (650)",
+    "atk": 1500,
+    "def": 1600,
     "type": "Monster",
-    "attr": "FIRE",
-    "race": "Dragon",
+    "attr": "EARTH",
+    "race": "Warrior",
     "level": 4
   },
   {
     "id": 651,
-    "name": "FM Fusion 651",
-    "atk": 1812,
-    "def": 3263,
+    "name": "Crab Turtle (651)",
+    "atk": 2550,
+    "def": 2500,
     "type": "Monster",
     "attr": "WATER",
-    "race": "Beast",
-    "level": 5
+    "race": "Aqua",
+    "level": 8
   },
   {
     "id": 652,
-    "name": "FM Fusion 652",
-    "atk": 1824,
-    "def": 3276,
+    "name": "Slot Machine (652)",
+    "atk": 2000,
+    "def": 2300,
     "type": "Monster",
-    "attr": "WIND",
-    "race": "Fiend",
-    "level": 6
-  },
-  {
-    "id": 653,
-    "name": "FM Fusion 653",
-    "atk": 1836,
-    "def": 3289,
-    "type": "Monster",
-    "attr": "EARTH",
-    "race": "Aqua",
+    "attr": "DARK",
+    "race": "Machine",
     "level": 7
   },
   {
-    "id": 654,
-    "name": "FM Fusion 654",
-    "atk": 1848,
-    "def": 3302,
+    "id": 653,
+    "name": "Hungry Burger",
+    "atk": 2000,
+    "def": 1850,
     "type": "Monster",
-    "attr": "LIGHT",
-    "race": "Zombie",
+    "attr": "DARK",
+    "race": "Warrior",
+    "level": 6
+  },
+  {
+    "id": 654,
+    "name": "Zera the Mant (654)",
+    "atk": 2800,
+    "def": 2300,
+    "type": "Monster",
+    "attr": "DARK",
+    "race": "Fiend",
     "level": 8
   },
   {
     "id": 655,
-    "name": "FM Fusion 655",
-    "atk": 1860,
-    "def": 3315,
+    "name": "Metal Guardian (655)",
+    "atk": 1150,
+    "def": 2150,
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 4
+    "level": 5
   },
   {
     "id": 656,
-    "name": "FM Fusion 656",
-    "atk": 1872,
-    "def": 3328,
+    "name": "Cyber Harpie",
+    "atk": 1800,
+    "def": 1300,
     "type": "Monster",
-    "attr": "FIRE",
-    "race": "Warrior",
-    "level": 5
+    "attr": "WIND",
+    "race": "Winged Beast",
+    "level": 4
   },
   {
     "id": 657,

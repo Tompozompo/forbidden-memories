@@ -118,6 +118,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
         position: 'relative',
         boxSizing: 'border-box',
         fontFamily: 'Arial, sans-serif',
+        overflow: 'hidden',
         ...style,
       }}
     >
@@ -131,6 +132,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
           background: 'rgba(0,0,0,0.1)',
           padding: '1px 2px',
           borderRadius: '2px',
+          overflow: 'hidden',
         }}
       >
         <div
@@ -142,6 +144,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
             textOverflow: 'ellipsis',
             whiteSpace: 'nowrap',
             flex: 1,
+            minWidth: 0,
           }}
           title={card.name}
         >
@@ -160,6 +163,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
               alignItems: 'center',
               justifyContent: 'center',
               border: '1px solid rgba(0,0,0,0.2)',
+              flexShrink: 0,
             }}
             title={card.attr}
           >
@@ -203,13 +207,24 @@ export default function Card({ card, size = 'medium', className = '', style = {}
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            overflow: 'hidden',
           }}
         >
-          <span style={{ fontWeight: 'bold' }}>
+          <span style={{ fontWeight: 'bold', minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             {raceSymbol} {card.race}
           </span>
           {card.level && (
-            <span style={{ color: '#ffa500', fontWeight: 'bold' }}>
+            <span style={{ 
+              color: '#ffa500', 
+              fontWeight: 'bold',
+              marginLeft: '2px',
+              minWidth: 0,
+              overflow: 'hidden',
+              textOverflow: 'clip',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
+              maxWidth: '50%',
+            }}>
               {'★'.repeat(Math.min(card.level, 12))}
             </span>
           )}

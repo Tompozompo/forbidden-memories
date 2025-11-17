@@ -51,6 +51,29 @@ def parse_ogmonsters_line(line):
         if card_type == "Magic":
             card['type'] = "Spell"
         
+        # For Equip cards (which are spells)
+        if card_type == "Equip":
+            card['type'] = "Spell"
+        
+        # For Field cards (which are spells)
+        if card_type == "Field":
+            card['type'] = "Spell"
+        
+        # Fix misclassified card 702 (Warrior should be Monster with Warrior race)
+        if card_id == 702:
+            card['type'] = "Monster"
+            if len(parts) >= 7:
+                card['race'] = "Warrior"
+                level_str = parts[3] if parts[3] else ""
+                atk_str = parts[4] if parts[4] else ""
+                def_str = parts[5] if parts[5] else ""
+                if level_str.isdigit():
+                    card['level'] = int(level_str)
+                if atk_str.replace(',', '').isdigit():
+                    card['atk'] = int(atk_str.replace(',', ''))
+                if def_str.replace(',', '').isdigit():
+                    card['def'] = int(def_str.replace(',', ''))
+        
         return card
     except (ValueError, IndexError) as e:
         print(f"Warning: Could not parse line: {line[:50]}... Error: {e}")

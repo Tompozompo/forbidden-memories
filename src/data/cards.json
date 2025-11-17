@@ -6567,7 +6567,11 @@
   {
     "id": 702,
     "name": "Hungry BurMutMonster",
-    "type": "Monster"
+    "type": "Monster",
+    "race": "Warrior",
+    "level": 6,
+    "atk": 2000,
+    "def": 1850
   },
   {
     "id": 703,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { Card as CardType } from '../types';
 import { getCardText } from '../data/cardEffects';
 
@@ -55,6 +55,8 @@ const RACE_SYMBOLS: Record<string, string> = {
 
 export default function Card({ card, size = 'medium', className = '', style = {}, showTooltip = true }: CardProps) {
   const [showText, setShowText] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
   const isMonster = card.type === 'Monster';
   const isSpell = card.type === 'Spell';
   const isTrap = card.type === 'Trap';
@@ -62,6 +64,36 @@ export default function Card({ card, size = 'medium', className = '', style = {}
   // Get card effect text
   const cardText = (isSpell || isTrap) ? getCardText(card.id) : (card.text || '');
   const hasText = !!cardText;
+
+  // Handle touch device detection and tooltip toggle
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (!isTouchDevice) {
+      setIsTouchDevice(true);
+    }
+    if (hasText && showTooltip) {
+      e.preventDefault(); // Prevent accidental scrolling while tapping
+      setShowText(prev => !prev); // Toggle tooltip on tap
+    }
+  };
+
+  // Close tooltip when clicking outside on touch devices
+  useEffect(() => {
+    if (!isTouchDevice || !showText) return;
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (cardRef.current && !cardRef.current.contains(event.target as Node)) {
+        setShowText(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isTouchDevice, showText]);
 
   // Size-based styling - using max-width to maintain aspect ratio
   const sizes = {
@@ -111,6 +143,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
 
   return (
     <div
+      ref={cardRef}
       className={className}
       style={{
         width: '100%',
@@ -130,10 +163,9 @@ export default function Card({ card, size = 'medium', className = '', style = {}
         cursor: hasText && showTooltip ? 'help' : 'default',
         ...style,
       }}
-      onMouseEnter={() => hasText && showTooltip && setShowText(true)}
-      onMouseLeave={() => hasText && showTooltip && setShowText(false)}
-      onTouchStart={() => hasText && showTooltip && setShowText(true)}
-      onTouchEnd={() => hasText && showTooltip && setShowText(false)}
+      onMouseEnter={() => !isTouchDevice && hasText && showTooltip && setShowText(true)}
+      onMouseLeave={() => !isTouchDevice && hasText && showTooltip && setShowText(false)}
+      onTouchStart={handleTouchStart}
     >
       {/* Tooltip for card text */}
       {showText && hasText && showTooltip && (

@@ -1,5 +1,6 @@
 import type { Card } from '../types';
 import { useSettingsStore } from '../store/settingsStore';
+import CardComponent from './Card';
 
 interface SpellTrapZoneProps {
   player: 0 | 1;
@@ -29,8 +30,8 @@ export default function SpellTrapZone({ cards, isActive }: SpellTrapZoneProps) {
             }}
           >
             {card ? (
-              <div style={{ textAlign: 'center', color: card.type === 'Spell' ? '#2a8' : '#a52', fontSize: 'clamp(12px, 3vw, 16px)' }}>
-                {card.type === 'Spell' ? '🔮' : '⚠️'}
+              <div style={{ width: '100%', height: '100%' }}>
+                <CardComponent card={card} size="small" style={{ width: '100%', height: '100%' }} />
               </div>
             ) : (
               <span style={{ color: '#444' }}>—</span>

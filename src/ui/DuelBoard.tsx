@@ -266,7 +266,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     setAttackPreview(null);
   };
 
-  const handleCardClick = (card: Card) => {
+  const handleCardClick = (card: Card, event?: React.MouseEvent) => {
     // If in spell target mode, cancel it when clicking a different card
     if (spellTargetMode && selectedSpell !== card.id) {
       setSpellTargetMode(false);
@@ -279,6 +279,16 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
       if ((card.type === 'Spell' || card.type === 'Trap') && state.turn === 0) {
         const effect = getCardEffect(card.id);
         
+        // Check if shift key is held or right-click - SET the card
+        if (event && (event.shiftKey || event.button === 2)) {
+          event.preventDefault();
+          dispatch({
+            type: 'SET_SPELL_TRAP',
+            cardId: card.id,
+          });
+          return;
+        }
+        
         if (effect) {
           // Check if this is an equip spell that needs a target
           if (effect.type.startsWith('equip_')) {
@@ -287,6 +297,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
               setSelectedSpell(card.id);
               setSpellTargetMode(true);
             }
+          } else if (effect.type === 'field') {
+            // Field spells should be SET (placed in spell/trap zone)
+            dispatch({
+              type: 'SET_SPELL_TRAP',
+              cardId: card.id,
+            });
           } else {
             // Non-equip spells can be activated directly
             dispatch({
@@ -294,6 +310,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
               cardId: card.id,
             });
           }
+        } else {
+          // No effect defined - just set it
+          dispatch({
+            type: 'SET_SPELL_TRAP',
+            cardId: card.id,
+          });
         }
       }
       return;
@@ -332,9 +354,47 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     setSelectedForFusion([]);
   };
 
+  // Get active field card background
+  const getFieldBackground = () => {
+    // Check if any field spell is active (check both players' spell/trap zones)
+    for (let p = 0; p < 2; p++) {
+      for (const card of state.spellTraps[p]) {
+        if (card) {
+          const effect = getCardEffect(card.id);
+          if (effect?.type === 'field') {
+            // Map field card IDs to backgrounds
+            switch (card.id) {
+              case 334: // Umi
+                return 'linear-gradient(180deg, #1a4d6d 0%, #0a2540 50%, #041a30 100%)';
+              case 330: // Forest
+                return 'linear-gradient(180deg, #2d5016 0%, #1a3010 50%, #0f1f08 100%)';
+              case 331: // Wasteland
+                return 'linear-gradient(180deg, #5a4a3a 0%, #3a2a1a 50%, #2a1a0a 100%)';
+              case 332: // Mountain
+                return 'linear-gradient(180deg, #4a3a3a 0%, #2a1a1a 50%, #1a0a0a 100%)';
+              case 335: // Yami
+                return 'linear-gradient(180deg, #2a1a3a 0%, #1a0a2a 50%, #0a001a 100%)';
+              default:
+                return null;
+            }
+          }
+        }
+      }
+    }
+    return null;
+  };
+
+  const fieldBackground = getFieldBackground();
 
   return (
-    <div style={{ padding: '4px', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ 
+      padding: '4px', 
+      width: '100%', 
+      maxWidth: '800px', 
+      margin: '0 auto',
+      background: fieldBackground || undefined,
+      transition: 'background 0.5s ease',
+    }}>
       {/* Header Info - Yu-Gi-Oh Style */}
       <div style={{ 
         display: 'flex', 
@@ -551,7 +611,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                     borderRadius: '4px',
                     boxSizing: 'border-box',
                   }}
-                  onClick={() => handleCardClick(c)}
+                  onClick={(e) => handleCardClick(c, e)}
+                  onContextMenu={(e) => handleCardClick(c, e)}
                 >
                   <DraggableCard 
                     card={c} 
@@ -573,7 +634,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                     borderRadius: '4px',
                     boxSizing: 'border-box',
                   }}
-                  onClick={() => handleCardClick(c)}
+                  onClick={(e) => handleCardClick(c, e)}
+                  onContextMenu={(e) => handleCardClick(c, e)}
                 >
                   <CardComponent card={c} size="small" style={{ width: '100%', height: '100%' }} />
                 </div>

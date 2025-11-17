@@ -59,6 +59,7 @@ type Action =
   | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' }
   | { type: 'ATTACK'; attackerId: number; targetPos: number }
   | { type: 'ACTIVATE_SPELL'; cardId: number; targetZone?: number }
+  | { type: 'SET_SPELL_TRAP'; cardId: number }
   | { type: 'END_TURN' };
 
 export function duelReducer(state: DuelState, action: Action): DuelState {
@@ -330,6 +331,46 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
           i === player ? [...g, card] : g
         ) as [Card[], Card[]];
         newState = { ...newState, graves: newGraves };
+      }
+      
+      return newState;
+    }
+    case 'SET_SPELL_TRAP': {
+      const player = state.turn;
+      const card = state.hands[player].find(c => c.id === action.cardId);
+      
+      if (!card || (card.type !== 'Spell' && card.type !== 'Trap')) {
+        return state; // Invalid card
+      }
+      
+      // Find first empty slot in spell/trap zone
+      const emptySlot = state.spellTraps[player].findIndex(slot => slot === null);
+      if (emptySlot === -1) {
+        return state; // No empty slots
+      }
+      
+      // Remove card from hand
+      const newHands = state.hands.map((h, i) =>
+        i === player ? h.filter(c => c.id !== action.cardId) : h
+      ) as [Card[], Card[]];
+      
+      // Place card in spell/trap zone
+      const newSpellTraps = state.spellTraps.map(s => [...s]) as [(Card | null)[], (Card | null)[]];
+      newSpellTraps[player][emptySlot] = card;
+      
+      // For field spells, activate immediately
+      const effect = getCardEffect(card.id);
+      let newState = { ...state, hands: newHands, spellTraps: newSpellTraps };
+      
+      if (effect && effect.type === 'field') {
+        // Field spells are continuous and take effect immediately
+        const newActiveEffects = [...state.activeEffects, {
+          effectId: `${card.id}-${Date.now()}`,
+          cardId: card.id,
+          effect,
+          player,
+        }];
+        newState = { ...newState, activeEffects: newActiveEffects };
       }
       
       return newState;

@@ -115,6 +115,13 @@ export const CARD_EFFECTS: Record<number, CardEffect> = {
   688: { cardId: 688, type: 'trap_damage', description: 'When your opponent would gain Life Points, they take that amount as damage instead.', targetType: 'opponent', condition: 'heal' },
   689: { cardId: 689, type: 'trap_negate', description: 'Negate the effects of all Spell Cards on the field until your next turn.', targetType: 'all', condition: 'any' },
   690: { cardId: 690, type: 'utility', description: 'This card does nothing. It is a fake trap.', targetType: 'self' },
+
+  // Field Spell Cards
+  330: { cardId: 330, type: 'field', description: 'All Insect, Beast, Plant, and Beast-Warrior monsters gain 200 ATK and DEF.', value: 200, targetType: 'all' },
+  331: { cardId: 331, type: 'field', description: 'All Dinosaur, Zombie, and Rock monsters gain 200 ATK and DEF.', value: 200, targetType: 'all' },
+  332: { cardId: 332, type: 'field', description: 'All Dragon, Winged Beast, and Thunder monsters gain 200 ATK and DEF.', value: 200, targetType: 'all' },
+  334: { cardId: 334, type: 'field', description: 'All Fish, Sea Serpent, Thunder, and Aqua monsters gain 200 ATK and DEF.', value: 200, targetType: 'all' },
+  335: { cardId: 335, type: 'field', description: 'All Fiend and Spellcaster monsters gain 200 ATK and DEF.', value: 200, targetType: 'all' },
 };
 
 // Get effect for a card

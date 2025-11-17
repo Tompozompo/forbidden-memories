@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../store/settingsStore';
+import { useSaveStore } from '../store/saveStore';
 
 export default function SettingsScreen() {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ export default function SettingsScreen() {
     setMusicVolume,
     resetToDefaults 
   } = useSettingsStore();
+  
+  const { unlockAllCards, ownedCards } = useSaveStore();
 
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
@@ -319,6 +322,52 @@ export default function SettingsScreen() {
           >
             Grayscale
           </button>
+        </div>
+      </div>
+
+      {/* Developer Section */}
+      <div style={{ 
+        backgroundColor: '#1a1a1a', 
+        padding: '20px', 
+        borderRadius: '8px',
+        marginBottom: '20px',
+        border: '2px solid #cc6600'
+      }}>
+        <h2 style={{ 
+          fontSize: 'clamp(12px, 3vw, 18px)', 
+          marginBottom: '16px',
+          color: '#cc6600'
+        }}>
+          Developer Tools
+        </h2>
+
+        <div style={{ marginBottom: '16px' }}>
+          <button
+            onClick={() => {
+              unlockAllCards();
+              alert('All 722 cards unlocked!');
+            }}
+            style={{
+              fontSize: 'clamp(9px, 2.5vw, 12px)',
+              padding: '12px 24px',
+              cursor: 'pointer',
+              backgroundColor: '#cc6600',
+              width: '100%',
+            }}
+          >
+            🔓 Unlock All Cards
+          </button>
+        </div>
+
+        <div style={{ 
+          padding: '12px',
+          backgroundColor: '#0a0a0a',
+          borderRadius: '8px',
+          border: '2px solid #333',
+          fontSize: 'clamp(8px, 2vw, 10px)',
+          color: '#888'
+        }}>
+          ⚙️ Current owned cards: {ownedCards.length} / 722
         </div>
       </div>
     </div>

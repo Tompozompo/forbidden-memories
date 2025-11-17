@@ -34,6 +34,7 @@ const ATTR_SYMBOLS: Record<string, string> = {
 const RACE_SYMBOLS: Record<string, string> = {
   Warrior: '⚔️',
   Beast: '🦁',
+  'Beast-Warrior': '🐺',
   Dragon: '🐉',
   Spellcaster: '🪄',
   Zombie: '💀',
@@ -48,7 +49,8 @@ const RACE_SYMBOLS: Record<string, string> = {
   Dinosaur: '🦖',
   Fish: '🐟',
   Thunder: '⚡',
-  Winged: '🦅',
+  'Winged Beast': '🦅',
+  'Sea Serpent': '🐍',
   Fairy: '🧚',
   Angel: '👼',
 };
@@ -160,7 +162,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
         boxSizing: 'border-box',
         fontFamily: 'Arial, sans-serif',
         overflow: 'hidden',
-        cursor: hasText && showTooltip ? 'help' : 'default',
+        cursor: hasText && showTooltip ? 'pointer' : 'default',
         ...style,
       }}
       onMouseEnter={() => !isTouchDevice && hasText && showTooltip && setShowText(true)}
@@ -176,25 +178,26 @@ export default function Card({ card, size = 'medium', className = '', style = {}
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 1000,
-            backgroundColor: 'rgba(0, 0, 0, 0.95)',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
             color: '#fff',
-            padding: '8px 12px',
+            padding: '10px 12px',
             borderRadius: '4px',
-            fontSize: '12px',
+            fontSize: '14px',
             maxWidth: '300px',
             width: 'max-content',
             minWidth: '200px',
             textAlign: 'left',
-            boxShadow: '0 4px 8px rgba(0,0,0,0.5)',
-            border: `2px solid ${getFrameColor()}`,
-            marginTop: '4px',
+            marginTop: '8px',
             lineHeight: '1.4',
+            fontFamily: 'Arial, sans-serif',
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
           }}
         >
-          <div style={{ fontWeight: 'bold', marginBottom: '4px', color: getFrameColor() }}>
+          <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
             {card.name}
           </div>
-          <div style={{ fontSize: '11px' }}>
+          <div>
             {cardText}
           </div>
         </div>

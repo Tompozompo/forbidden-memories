@@ -31,18 +31,27 @@ In the original game, every card and duelist had **two Guardian Stars** assigned
 - Bonuses ranged from **+500 ATK/DEF** (strong advantage) to **-500 ATK/DEF** (disadvantage)
 - Neutral matchups had no bonus
 
-**Compatibility Chart (Simplified):**
-The system used an astrological "dominance" hierarchy:
-- **Sun** dominated **Moon** and **Mercury**
-- **Moon** dominated **Neptune** and **Pluto**
-- **Mercury** dominated **Venus** and **Mars**
-- **Venus** dominated **Jupiter** and **Saturn**
-- **Mars** dominated **Uranus** and **Neptune**
-- **Jupiter** dominated **Sun** and **Moon**
-- **Saturn** dominated **Mercury** and **Venus**
-- **Uranus** dominated **Mars** and **Jupiter**
-- **Neptune** dominated **Saturn** and **Uranus**
-- **Pluto** dominated **Sun** and **Neptune**
+**Compatibility Chart:**
+
+The original system had each Guardian Star dominate exactly **2 other stars** in an asymmetric pattern:
+
+| Guardian Star | Dominates (Wins Against) | Dominated By (Loses To) |
+|---------------|--------------------------|-------------------------|
+| ☉ **Sun** | ☽ Moon, ☿ Mercury | ♃ Jupiter, ♇ Pluto |
+| ☽ **Moon** | ♆ Neptune, ♇ Pluto | ☉ Sun, ♃ Jupiter |
+| ☿ **Mercury** | ♀ Venus, ♂ Mars | ☉ Sun, ♄ Saturn |
+| ♀ **Venus** | ♃ Jupiter, ♄ Saturn | ☿ Mercury, ♄ Saturn |
+| ♂ **Mars** | ♅ Uranus, ♆ Neptune | ☿ Mercury, ♅ Uranus |
+| ♃ **Jupiter** | ☉ Sun, ☽ Moon | ♀ Venus, ♅ Uranus |
+| ♄ **Saturn** | ☿ Mercury, ♀ Venus | ♀ Venus, ♆ Neptune |
+| ♅ **Uranus** | ♂ Mars, ♃ Jupiter | ♂ Mars, ♆ Neptune |
+| ♆ **Neptune** | ♄ Saturn, ♅ Uranus | ☽ Moon, ♂ Mars |
+| ♇ **Pluto** | ☉ Sun, ♆ Neptune | ☽ Moon |
+
+**Key Pattern:**
+- Each star beats exactly 2 others (+500 ATK/DEF bonus)
+- Each star loses to 1-2 others (-500 ATK/DEF penalty)
+- Remaining matchups are neutral (no bonus)
 
 ### Why It Was Problematic
 
@@ -55,59 +64,118 @@ The system used an astrological "dominance" hierarchy:
 
 ---
 
-## Proposed Alternative: Element Affinity System
+## Proposed Alternative 1: Combat Style System (10 Types)
+
+### Core Concept
+
+Replace the zodiac-themed Guardian Stars with **Combat Styles** or **Attack Types** - keeping the strategic depth of 10 types where each defeats exactly 2 others, but with modern, intuitive naming that feels like different fighting techniques or elemental attacks.
+
+### The 10 Combat Styles
+
+1. **Flame** 🔥 - Aggressive fire-based attacks
+2. **Torrent** 🌊 - Overwhelming water/flow techniques  
+3. **Tremor** 🌍 - Earth-shattering ground attacks
+4. **Gale** 💨 - Swift wind-based strikes
+5. **Radiance** ✨ - Holy/light energy blasts
+6. **Shadow** 🌑 - Dark/void absorption techniques
+7. **Bolt** ⚡ - Electric/lightning strikes
+8. **Venom** ☠️ - Poison/corrosive attacks
+9. **Frost** ❄️ - Ice/freezing techniques
+10. **Impact** 💥 - Physical/kinetic force
+
+### Combat Style Matchup Table
+
+Each style dominates exactly **2 other styles** (like the original Guardian Stars):
+
+| Combat Style | Dominates (Wins Against) | Dominated By (Loses To) |
+|--------------|--------------------------|-------------------------|
+| 🔥 **Flame** | ❄️ Frost, 💨 Gale | 🌊 Torrent, 🌍 Tremor |
+| 🌊 **Torrent** | 🔥 Flame, 🌍 Tremor | 💨 Gale, ❄️ Frost |
+| 🌍 **Tremor** | ⚡ Bolt, 🔥 Flame | 🌊 Torrent, ❄️ Frost |
+| 💨 **Gale** | 🌊 Torrent, ☠️ Venom | 🔥 Flame, ⚡ Bolt |
+| ✨ **Radiance** | 🌑 Shadow, ☠️ Venom | 💥 Impact, 🌑 Shadow |
+| 🌑 **Shadow** | ✨ Radiance, 💥 Impact | ✨ Radiance, ❄️ Frost |
+| ⚡ **Bolt** | 🌊 Torrent, 💥 Impact | 🌍 Tremor, 💨 Gale |
+| ☠️ **Venom** | 💥 Impact, 🌍 Tremor | ✨ Radiance, 💨 Gale |
+| ❄️ **Frost** | 💨 Gale, 🌊 Torrent | 🔥 Flame, 🌍 Tremor |
+| 💥 **Impact** | 🌍 Tremor, ❄️ Frost | ⚡ Bolt, ☠️ Venom, 🌑 Shadow |
+
+**Key Features:**
+- Each style beats exactly 2 others (+500 ATK/DEF)
+- Each style loses to 2-3 others (-500 ATK/DEF)
+- Remaining matchups are neutral
+- Strategic depth: Every style has counters and advantages
+- **Conceptual shift**: These represent *how* a monster attacks, not just what element it is
+
+### Alternative 10-Element Names
+
+If you prefer different theming, here are variations:
+
+**Fantasy/Mystical:**
+- Flame, Tide, Stone, Gale, Radiance, Shadow, Thunder, Toxin, Glacier, Force
+
+**Combat Techniques:**
+- Inferno Strike, Wave Crash, Quake Smash, Wind Cutter, Light Beam, Dark Pulse, Shock Bolt, Acid Splash, Ice Shard, Power Slam
+
+**Elemental Forces:**
+- Blaze, Surge, Quake, Tempest, Luster, Void, Spark, Blight, Chill, Crush
+
+**Short & Punchy (recommended for UI):**
+- Flame, Wave, Quake, Wind, Light, Dark, Bolt, Bane, Frost, Crush
+
+### How Cards Get Combat Styles
+
+**Option A: Dual Combat Styles (Like Original)**
+- Each card gets 2 combat styles (e.g., Blue-Eyes: Radiance/Frost)
+- Allows for nuanced strategy and unique combinations
+- Requires manual assignment for all cards
+
+**Option B: Derived from Card Properties**
+- Primary style: Based on card attribute (FIRE → Flame, WATER → Torrent, etc.)
+- Secondary style: Based on card race/type (Dragon → Impact, Spellcaster → Shadow, etc.)
+- Can be auto-generated with option for manual overrides
+
+**Option C: Visual/Flavor Based**
+- Assign based on card artwork and flavor
+- Example: Blue-Eyes White Dragon → Radiance (light) + Frost (white/ice aesthetic)
+- More work but most thematic
+
+---
+
+## Proposed Alternative 2: Simplified Element Affinity System (6 Types)
 
 ### Core Concept
 
 Replace Guardian Stars with **Element Types** that mirror the existing card attributes (EARTH, WATER, FIRE, WIND, LIGHT, DARK) and create intuitive type matchups inspired by Pokémon.
 
-### The 8 Element Types
+### The 6 Element Types
 
-1. **Fire** 🔥 (replaces Sun/Mars)
-2. **Water** 💧 (replaces Moon/Neptune)
-3. **Earth** 🌍 (replaces Saturn/Pluto)
-4. **Wind** 🌪️ (replaces Mercury/Uranus)
-5. **Light** ✨ (replaces Venus/Jupiter)
-6. **Dark** 🌑 (replaces existing Dark attribute)
-7. **Thunder** ⚡ (new - for electric/storm themed cards)
-8. **Nature** 🌿 (new - for plant/beast themed cards)
+1. **Fire** 🔥
+2. **Water** 💧
+3. **Earth** 🌍
+4. **Wind** 🌪️
+5. **Light** ✨
+6. **Dark** 🌑
 
-**Note:** Could reduce to 6 core types (Fire, Water, Earth, Wind, Light, Dark) for simplicity.
+### Type Effectiveness Chart
 
-### Type Effectiveness Chart (Pokémon-Inspired)
+Each element beats **1 other element** in a simple cycle:
 
-**Super Effective (+500 ATK/DEF):**
-- **Fire** beats **Nature**, **Earth**
-- **Water** beats **Fire**, **Earth**
-- **Earth** beats **Thunder**, **Wind**
-- **Wind** beats **Nature**, **Water**
-- **Thunder** beats **Water**, **Wind**
-- **Nature** beats **Water**, **Earth**
-- **Light** beats **Dark**
-- **Dark** beats **Light**
+| Element Type | Beats (Super Effective) | Weak To (Not Effective) |
+|--------------|-------------------------|-------------------------|
+| 🔥 **Fire** | 💨 Wind | 💧 Water |
+| 💧 **Water** | 🔥 Fire | 🌍 Earth |
+| 🌍 **Earth** | 💧 Water | 💨 Wind |
+| 💨 **Wind** | 🌍 Earth | 🔥 Fire |
+| ✨ **Light** | 🌑 Dark | 🌑 Dark |
+| 🌑 **Dark** | ✨ Light | ✨ Light |
 
-**Not Very Effective (-300 ATK/DEF):**
-- **Fire** weak to **Water**, **Earth**
-- **Water** weak to **Thunder**, **Nature**
-- **Earth** weak to **Water**, **Nature**
-- **Wind** weak to **Thunder**, **Earth**
-- **Thunder** weak to **Earth**, **Wind**
-- **Nature** weak to **Fire**, **Wind**
-- **Light** weak to **Dark**
-- **Dark** weak to **Light**
+**Key Features:**
+- Simple elemental cycle: Fire > Wind > Earth > Water > Fire
+- Light ↔ Dark mutual advantage
+- Each element has 1 advantage, 1 disadvantage, 4 neutral matchups
 
-**Neutral (no bonus):**
-- All other matchups
-
-### Simplified 6-Type Version (Recommended)
-
-To match existing card attributes exactly:
-
-**Types:** Fire, Water, Earth, Wind, Light, Dark
-
-**Effectiveness:**
-- **Fire** > **Wind** > **Earth** > **Water** > **Fire** (elemental cycle)
-- **Light** ↔ **Dark** (mutual super effective)
+**Note:** This is simpler than the 10-type system (only 1 advantage per type instead of 2), making it easier to learn but less strategically complex.
 
 **Bonus Values:**
 - Advantage: **+400 ATK/DEF**
@@ -116,30 +184,56 @@ To match existing card attributes exactly:
 
 ---
 
-## Implementation Recommendations
+## Comparison: 10-Type vs 6-Type Systems
 
-### Option 1: Dual-Type System (Like Guardian Stars)
+| Aspect | 10 Combat Styles | 6 Element Types |
+|--------|------------------|-----------------|
+| **Strategic Depth** | High (each beats 2, loses to 2-3) | Medium (each beats 1, loses to 1) |
+| **Learning Curve** | Moderate (10 to memorize) | Easy (6 elements, simple cycle) |
+| **Original Authenticity** | Matches original structure | Simplified from original |
+| **Card Assignment** | Requires dual assignment | Can use existing attributes |
+| **Balance Complexity** | More nuanced counters | Straightforward matchups |
+| **Implementation Time** | 1-2 weeks | 3-5 days |
+| **Best For** | Players who loved original depth | New/casual players |
 
-Each card gets **2 Element Types** (Primary + Secondary):
-- Primary type: 100% effectiveness calculation
-- Secondary type: 50% effectiveness calculation
+---
+
+## Implementation Approaches
+
+### For 10-Type Combat Style System
+
+**Dual Combat Styles (Recommended for 10-type):**
+Each card gets **2 Combat Styles** (Primary + Secondary):
+- Primary style: 100% effectiveness calculation
+- Secondary style: 50% effectiveness calculation  
 - Total bonus is averaged
 
-**Example:**
-- Blue-Eyes White Dragon: Light/Wind
-- Dark Magician: Dark/Light
-- Red-Eyes Black Dragon: Fire/Dark
+**Example Assignments:**
+- Blue-Eyes White Dragon: Radiance/Frost (holy light + icy white aesthetic)
+- Dark Magician: Shadow/Bolt (dark magic + energy blasts)
+- Red-Eyes Black Dragon: Flame/Shadow (fire breath + dark power)
+- Celtic Guardian: Impact/Gale (physical warrior + swift strikes)
+
+**Assignment Methods:**
+1. **Manual Curation** - Hand-pick styles based on card art/flavor (most thematic)
+2. **Formula-Based** - Primary from attribute, Secondary from race/level
+3. **Hybrid** - Auto-generate with manual overrides for iconic cards
 
 **Pros:**
-- Maintains the depth of the original system
-- Allows for more strategic deckbuilding
-- Interesting edge cases and counters
+- Matches original Guardian Star structure (2 per card)
+- High strategic depth and deck-building variety
+- Each card feels unique with its style combination
 
 **Cons:**
-- Still somewhat complex
-- Requires assigning 2 types per card (1400+ assignments)
+- Requires assigning 1400+ style pairs
+- More complex for new players
+- Balance requires extensive playtesting
 
-### Option 2: Single-Type System (Simplified)
+---
+
+### For 6-Type Element System
+
+**Single Element Type (Recommended for 6-type):**
 
 Each card gets **1 Element Type** based on its card attribute:
 - FIRE attribute → Fire type
@@ -238,36 +332,88 @@ Use shapes or colors:
 
 ## Discussion Questions for Decision
 
-1. **How many types?** 6 (match attributes) vs 8 (add variety) vs 10 (match original)
-2. **Single or dual-type?** Simple (1 type per card) vs strategic depth (2 types)
-3. **Naming scheme?** Elements (Fire/Water) vs Fantasy (Flame/Tide) vs Sci-fi (Thermal/Hydro)
-4. **Bonus magnitude?** Conservative (+300/-150) vs Moderate (+400/-200) vs Aggressive (+500/-300)
-5. **Auto-assign vs manual?** Use existing attributes vs manually assign for flavor
+1. **How many types?** 10 (match original depth) vs 6 (simplified, match attributes)
+2. **Single or dual-type?** 10-type requires dual assignment, 6-type can use single
+3. **Naming scheme?** Combat Styles (Flame/Torrent/Tremor) vs Elements (Fire/Water/Earth)
+4. **Bonus magnitude?** Original (+500/-500) vs Moderate (+400/-200) vs Conservative (+300/-150)
+5. **Auto-assign vs manual?** Formula-based with overrides vs fully manual vs attribute-based
 6. **UI prominence?** Subtle icons vs bold type indicators vs full type battle animations
 
 ---
 
-## My Recommendation
+## Recommendations
 
-**Go with the Simplified 6-Type System (Option 2) with Pokémon-style naming:**
+### Option A: 10-Type Combat Style System (For Original FM Fans)
 
-- **Types:** Fire 🔥, Water 💧, Earth 🌍, Wind 🌪️, Light ✨, Dark 🌑
-- **Effectiveness:** Fire > Wind > Earth > Water > Fire, Light ↔ Dark
-- **Bonuses:** +400 advantage, -200 disadvantage
-- **Auto-assign:** Use existing card `attr` field
-- **Display:** Simple colored icons + type name on card
+**Best if you want:**
+- Maximum strategic depth
+- Each style defeats exactly 2 others (like original)
+- More variety in deck building
+- The feel of the original Guardian Star system with better names
+
+**Implementation:**
+- **System:** 10 Combat Styles (Flame, Torrent, Tremor, Gale, Radiance, Shadow, Bolt, Venom, Frost, Impact)
+- **Assignment:** Dual styles per card (Primary + Secondary)
+- **Bonuses:** +500/-500 (authentic to original) OR +400/-200 (more balanced)
+- **Complexity:** High strategic depth, moderate learning curve
+- **Timeline:** 1-2 weeks implementation
+
+**Why This Works:**
+- Preserves what made the original system strategically interesting
+- Modern, intuitive names replace confusing zodiac symbols
+- "Combat Style" framing makes sense: *how* your monster attacks, not just *what* it is
+- Allows for creative card design (Blue-Eyes could be Radiance/Frost for thematic flavor)
+
+---
+
+### Option B: 6-Type Element System (For Accessibility)
+
+**Best if you want:**
+- Maximum accessibility for new players
+- Simple implementation using existing data
+- Clear, universally understood type names
+- Quick to ship and iterate on
+
+**Implementation:**
+- **System:** 6 Element Types (Fire, Water, Earth, Wind, Light, Dark)
+- **Assignment:** Single type from existing `attr` field
+- **Bonuses:** +400/-200 (balanced)
+- **Complexity:** Low learning curve, medium strategic depth
+- **Timeline:** 3-5 days implementation
+
+**Why This Works:**
+- Zero data migration needed (uses existing attributes)
+- Pokémon-proven effectiveness model
+- Easy to explain to anyone
+- Can always expand to dual-types later if players want more depth
+
+---
+
+## My Updated Recommendation
+
+**Start with 10-Type Combat Style System (Option A)**
+
+Based on your feedback that you:
+- Like the "each defeats 2 others" pattern
+- Don't like zodiac names but appreciate the 10-type structure  
+- See this as combat/attack styles rather than just attributes
+- Want depth and strategy
+
+**Recommended Approach:**
+- **Styles:** Flame 🔥, Torrent 🌊, Tremor 🌍, Gale 💨, Radiance ✨, Shadow 🌑, Bolt ⚡, Venom ☠️, Frost ❄️, Impact 💥
+- **Assignment:** Dual styles (Primary from attribute + Secondary from race/theme)
+- **Bonuses:** +400/-200 (slightly toned down from original for balance)
+- **Implementation:** Formula-based assignment with manual overrides for iconic cards
 
 **Why:**
-- Intuitive and immediately understandable
-- Minimal data work (just map attributes to types)
-- Easy to explain to new players
-- Strong strategic depth from simple foundation
-- Clean UI integration
-- Pokémon-proven type effectiveness model
+- Honors the original system's strategic complexity
+- Modern, thematic names that make intuitive sense
+- "How you attack" concept adds flavor layer
+- Room to expand to 12+ styles in future updates
+- More interesting than simple elemental cycle
 
-**Future Enhancement:**
-- Later, add optional "affinity" field for special cards to gain dual-type mechanics
-- Start simple, expand complexity only if players want it
+**Alternative for Quick MVP:**
+If you want to ship faster, implement the 6-type system first, then add the 10-type layer as a v2 feature.
 
 ---
 

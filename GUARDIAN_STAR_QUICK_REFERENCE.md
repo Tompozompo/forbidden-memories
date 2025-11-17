@@ -7,20 +7,65 @@ The original Yu-Gi-Oh! Forbidden Memories Guardian Star system used 10 **astrolo
 - Required memorizing a complex 10x10 compatibility chart
 - Were hidden in tiny icons with zero explanation
 - Gave +500/-500 ATK/DEF bonuses based on obscure astrology rules
+- **But:** Each star defeated exactly 2 others, creating strategic depth
 
 **Result:** Confusing, inaccessible, but strategically interesting
 
 ---
 
-## The Clean Alternative: Element Affinity System
+## Two Main Approaches
 
-Replace guardian stars with **element types** that match existing card attributes and use Pokémon-style type effectiveness.
+### Approach A: 10-Type Combat Style System
+Keep the original structure (10 types, each defeats 2 others) but with modern, intuitive names.
+
+### Approach B: 6-Type Element System  
+Simplify to 6 types with easy rock-paper-scissors matchups using existing attributes.
 
 ---
 
-## Naming Options
+## 🏆 Approach A: 10 Combat Styles (UPDATED RECOMMENDATION)
 
-### 🏆 Option 1: Classic Elements (RECOMMENDED)
+**Types:** Flame 🔥 • Torrent 🌊 • Tremor 🌍 • Gale 💨 • Radiance ✨ • Shadow 🌑 • Bolt ⚡ • Venom ☠️ • Frost ❄️ • Impact 💥
+
+**Matchup Pattern (Each Defeats 2):**
+
+| Combat Style | Beats | Beaten By |
+|--------------|-------|-----------|
+| 🔥 Flame | ❄️ Frost, 💨 Gale | 🌊 Torrent, 🌍 Tremor |
+| 🌊 Torrent | 🔥 Flame, 🌍 Tremor | 💨 Gale, ❄️ Frost |
+| 🌍 Tremor | ⚡ Bolt, 🔥 Flame | 🌊 Torrent, ❄️ Frost |
+| 💨 Gale | 🌊 Torrent, ☠️ Venom | 🔥 Flame, ⚡ Bolt |
+| ✨ Radiance | 🌑 Shadow, ☠️ Venom | 💥 Impact, 🌑 Shadow |
+| 🌑 Shadow | ✨ Radiance, 💥 Impact | ✨ Radiance, ❄️ Frost |
+| ⚡ Bolt | 🌊 Torrent, 💥 Impact | 🌍 Tremor, 💨 Gale |
+| ☠️ Venom | 💥 Impact, 🌍 Tremor | ✨ Radiance, 💨 Gale |
+| ❄️ Frost | 💨 Gale, 🌊 Torrent | 🔥 Flame, 🌍 Tremor |
+| 💥 Impact | 🌍 Tremor, ❄️ Frost | ⚡ Bolt, ☠️ Venom, 🌑 Shadow |
+
+**Pros:**
+- Maintains original Guardian Star structure and depth
+- Each style defeats exactly 2 others (+500 ATK/DEF or +400 balanced)
+- Modern, intuitive names replace zodiac symbols
+- "Combat Style" = *how* your monster attacks (not just what element)
+- High strategic variety with dual-style assignments
+
+**Cons:**
+- Requires assigning 2 styles per card (~1400 assignments)
+- More complex to learn than 6-type system
+- 1-2 weeks implementation time
+
+**Example Assignments:**
+- Blue-Eyes White Dragon: Radiance/Frost (holy light + icy aesthetic)
+- Dark Magician: Shadow/Bolt (dark magic + energy)
+- Blackland Fire Dragon: Flame/Shadow (fire + darkness)
+
+**Best For:** Players who want the original Guardian Star depth with better names
+
+---
+
+## Approach B: 6 Element Types (Simple Alternative)
+
+### 🏆 Option 1: Classic Elements
 **Types:** Fire 🔥 • Water 💧 • Earth 🌍 • Wind 🌪️ • Light ✨ • Dark 🌑
 
 **Pros:**
@@ -112,7 +157,7 @@ Dark  1.0   1.0    1.0   1.0    1.5   1.0
 - **0.7x** = Not Very Effective (-30% damage or -200 flat penalty)
 - **1.0x** = Neutral (no change)
 
-**Simple Cycle:**
+**Simple Cycle (6-Type System):**
 - Fire > Wind > Earth > Water > Fire (elemental wheel)
 - Light ↔ Dark (mutual advantage)
 
@@ -120,59 +165,107 @@ Dark  1.0   1.0    1.0   1.0    1.5   1.0
 
 ## Comparison Table
 
-| Aspect | Original Stars | Classic Elements | Fantasy | Sci-Fi | Zodiac Lite | Colors |
-|--------|----------------|------------------|---------|--------|-------------|--------|
-| **Clarity** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ |
-| **Intuitive** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
-| **Thematic** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ | ⭐ |
-| **Unique** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐ |
-| **Easy to Implement** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Accessibility** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Aspect | Original Stars | 10 Combat Styles | 6 Classic Elements | 6 Fantasy Elements |
+|--------|----------------|------------------|--------------------|--------------------|
+| **Strategic Depth** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **Clarity** | ⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Intuitive** | ⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Thematic** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Unique** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+| **Easy to Implement** | ⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Accessibility** | ⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Learning Curve** | Hard | Medium | Easy | Easy |
+| **Implementation** | N/A | 1-2 weeks | 3-5 days | 3-5 days |
 
 ---
 
-## Recommended Decision
+## Updated Recommendation
 
-### 🏆 Go with Classic Elements (Option 1)
+### 🏆 Option A: 10-Type Combat Style System (RECOMMENDED)
 
-**Rationale:**
-1. **Zero friction** - players understand Fire/Water instantly
-2. **Perfect mapping** - uses existing ATTR field, no data migration
-3. **Proven model** - Pokémon has validated this for 25+ years
-4. **Accessible** - even non-gamers get it
-5. **Thematic** - matches Yu-Gi-Oh's elemental magic aesthetic
+Based on feedback that you:
+- Like the "each defeats 2 others" pattern from the original
+- Don't like zodiac names but appreciate 10-type depth
+- See this as "how monsters attack" rather than just elemental attributes
+- Want strategic complexity and variety
 
-**Implementation:** 2-3 days of work
-**User confusion:** Near zero
-**Strategic depth:** High (thanks to type triangle)
+**Recommended Setup:**
+- **Styles:** Flame, Torrent, Tremor, Gale, Radiance, Shadow, Bolt, Venom, Frost, Impact
+- **Assignment:** Dual styles per card (Primary + Secondary)
+- **Bonuses:** +400/-200 (balanced) or +500/-500 (authentic)
+- **Implementation:** 1-2 weeks with formula-based assignment + manual overrides
+
+**Why This Works:**
+- Maintains what made Guardian Stars strategically interesting
+- Modern names replace confusing astrology
+- "Combat Style" framing = how your monster attacks (adds flavor layer)
+- Room to expand to 12+ styles long-term
+- Each card feels unique with style combinations
+
+**Next Steps:**
+1. Finalize the 10 style names (Flame vs Fire, Torrent vs Wave, etc.)
+2. Decide on bonus values (+500/-500 vs +400/-200)
+3. Create assignment formula (Primary from attribute, Secondary from race/level/flavor)
+4. Manually override iconic cards for thematic fit
 
 ---
 
-## Alternative Recommendation
+### 🥈 Option B: 6-Type Element System (Quick Alternative)
 
-### 🥈 Fantasy Elements (Option 2) - If You Want More Flavor
+If you want to ship faster or test waters:
 
-Use **Flame, Tide, Stone, Gale, Radiance, Shadow** if you want:
-- Slightly more mystical/epic vibe
-- Distance from Pokémon comparisons
-- Unique terminology
+**Use Classic Elements:** Fire, Water, Earth, Wind, Light, Dark
+- Single type from existing `attr` field
+- Simple cycle: Fire > Wind > Earth > Water > Fire
+- 3-5 days implementation
+- Can upgrade to 10-type dual system later
 
-**Trade-off:** Minor increase in cognitive load for new players
+**Best for:** Testing the concept before committing to full complexity
 
 ---
 
-## How to Decide
+## How to Decide Between 10-Type vs 6-Type
 
 Ask yourself:
 
-1. **"Do I want maximum accessibility?"** → Classic Elements
-2. **"Do I want unique flavor?"** → Fantasy Elements or Sci-Fi
-3. **"Do I want to honor the original?"** → Zodiac Lite (but don't)
-4. **"Do I want abstract simplicity?"** → Colors (but boring)
+1. **"Do I want the original Guardian Star depth?"** → 10 Combat Styles
+2. **"Do I want maximum accessibility for new players?"** → 6 Elements  
+3. **"Do I have 1-2 weeks to implement?"** → 10 Combat Styles
+4. **"Do I need to ship in 3-5 days?"** → 6 Elements
+5. **"Should combat styles be separate from attributes?"** → 10 Combat Styles
+6. **"Can I expand to more than 10 styles in future?"** → Yes with 10 Combat Styles
 
 ---
 
-## Sample Card Examples (Classic Elements)
+## Sample Card Examples (10 Combat Styles)
+
+```
+Blue-Eyes White Dragon
+✨🌑 Radiance/Frost
+ATK: 3000 / DEF: 2500
+────────────────────
+Primary: Radiance (holy light)
+Secondary: Frost (icy white)
+
+Beats: Shadow, Venom, Gale, Torrent
+Loses to: Impact, Shadow, Flame, Tremor
+```
+
+```
+Dark Magician  
+🌑⚡ Shadow/Bolt
+ATK: 2500 / DEF: 2100
+────────────────────
+Primary: Shadow (dark magic)
+Secondary: Bolt (energy attacks)
+
+Beats: Radiance, Impact, Torrent
+Loses to: Radiance, Frost, Tremor, Gale
+```
+
+---
+
+## Sample Card Examples (6 Elements)
 
 ```
 Blue-Eyes White Dragon

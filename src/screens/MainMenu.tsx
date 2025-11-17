@@ -9,7 +9,7 @@ function MainMenu() {
   
   const handleNewJourney = () => {
     resetGame();
-    navigate('/campaign-menu');
+    navigate('/card-opening');
   };
   
   const handleContinue = () => {

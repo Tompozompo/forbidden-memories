@@ -7,11 +7,14 @@ import CardComponent from '../ui/Card';
 
 const allCards = cards as Card[];
 
+type SortOption = 'id' | 'name' | 'atk' | 'def' | 'level';
+
 function DeckEditScreen() {
   const navigate = useNavigate();
   const { currentDeck, ownedCards, saveGame } = useSaveStore();
   const [deck, setDeck] = useState<(number | null)[]>(Array(20).fill(null));
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortBy, setSortBy] = useState<SortOption>('id');
 
   // Initialize deck from store
   useEffect(() => {
@@ -31,6 +34,23 @@ function DeckEditScreen() {
   const filteredCards = ownedCardObjects.filter(card =>
     card.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const sortedCards = [...filteredCards].sort((a, b) => {
+    switch (sortBy) {
+      case 'id':
+        return a.id - b.id;
+      case 'name':
+        return a.name.localeCompare(b.name);
+      case 'atk':
+        return (b.atk ?? -1) - (a.atk ?? -1);
+      case 'def':
+        return (b.def ?? -1) - (a.def ?? -1);
+      case 'level':
+        return (b.level ?? -1) - (a.level ?? -1);
+      default:
+        return 0;
+    }
+  });
 
   const handleCardClick = (cardId: number, slotIndex: number) => {
     const newDeck = [...deck];
@@ -135,6 +155,43 @@ function DeckEditScreen() {
               fontSize: '14px',
             }}
           />
+
+          {/* Sort Options */}
+          <div style={{
+            display: 'flex',
+            gap: '4px',
+            marginBottom: '12px',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+          }}>
+            <span style={{ color: '#aaa', fontSize: '12px' }}>Sort:</span>
+            {([
+              { value: 'id', label: '#' },
+              { value: 'name', label: 'Name' },
+              { value: 'atk', label: 'ATK' },
+              { value: 'def', label: 'DEF' },
+              { value: 'level', label: 'Lvl' },
+            ] as const).map((option) => (
+              <button
+                key={option.value}
+                onClick={() => setSortBy(option.value)}
+                style={{
+                  padding: '6px 10px',
+                  fontSize: '12px',
+                  fontWeight: sortBy === option.value ? 'bold' : 'normal',
+                  backgroundColor: sortBy === option.value ? '#4caf50' : '#555',
+                  color: '#fff',
+                  border: '1px solid',
+                  borderColor: sortBy === option.value ? '#fff' : '#666',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                }}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
           
           <div style={{
             maxHeight: '500px',
@@ -144,7 +201,7 @@ function DeckEditScreen() {
             gap: '8px',
             justifyItems: 'center',
           }}>
-            {filteredCards.map((card) => {
+            {sortedCards.map((card) => {
               // Check if card is already in deck
               const usedSlots = deck.map((id, idx) => id === card.id ? idx : -1).filter(idx => idx !== -1);
               const availableSlot = deck.findIndex(id => id === null);

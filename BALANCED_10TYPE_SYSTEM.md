@@ -4,57 +4,70 @@ This document presents a **perfectly symmetrical** 10-type system where each Com
 
 ## Visual Cycle Graph
 
-```
-                    Radiance ✨
-                   /          \
-              beats           beats
-               /                \
-          Shadow 🌑           Gale 💨
-            /  \               /  \
-       beats  beats       beats  beats
-         /      \         /        \
-     Bolt ⚡   Radiance  Torrent 🌊  Frost ❄️
-       |                    |         |
-    beats                beats     beats
-       |                    |         |
-   Impact 💥            Tremor 🌍   Venom ☠️
-       |                    |         |
-    beats                beats     beats
-       |                    |         |
-   Flame 🔥              Bolt ⚡   Radiance ✨
-       \      /         \        /
-       beats beats       beats beats
-         \    /           \    /
-        Frost ❄️          Shadow 🌑
-           \                /
-           beats        beats
-              \          /
-             Venom ☠️  Gale 💨
-                  \  /
-                 beats
-                    |
-                Impact 💥
-```
-
-## Circular Representation
+This graph shows all "beats" relationships. Each Combat Style points to the 2 styles it defeats.
 
 ```
-           Flame 🔥
-              ↓ ↓
-         Frost   Venom
-           ↓       ↓
-        Gale      Impact
-          ↓         ↓
-       Torrent    Bolt
-          ↓         ↓
-       Tremor    Shadow
-          ↓   ↘  ↙  ↓
-         Bolt   Radiance
-            ↘  ↙
-           Shadow
-              ↓
-         (back to Gale)
+         Flame 🔥 ────────────┐
+          ├─────────┐         │
+          ↓         ↓         │
+        Frost ❄️  Venom ☠️    │
+          ├─────┐   ├────┐    │
+          ↓     │   ↓    │    │
+        Gale 💨 │ Radiance ✨ │
+          ├───┐ │   │  ├───┐ │
+          ↓   │ │   ↓  ↓   │ │
+      Torrent🌊│ │ Shadow🌑│ │
+          ├─┐ │ │   ├──┐  │ │
+          ↓ │ │ │   ↓  │  │ │
+      Tremor🌍│ │ Bolt ⚡│  │ │
+          │ │ │ │   │  │  │ │
+          ↓ │ │ └───┼──┘  │ │
+      Radiance ✨  Impact💥 │ │
+                   │  │    │ │
+                   ↓  └────┘ │
+                Torrent 🌊   │
+                   │         │
+                   └─────────┘
 ```
+
+## Simplified Beat Chains
+
+Each Combat Style beats exactly 2 others. Here are the relationships in list form:
+
+```
+Flame 🔥    ──beats──→  Frost ❄️, Venom ☠️
+Torrent 🌊  ──beats──→  Flame 🔥, Tremor 🌍
+Tremor 🌍   ──beats──→  Bolt ⚡, Radiance ✨
+Gale 💨     ──beats──→  Torrent 🌊, Shadow 🌑
+Radiance ✨ ──beats──→  Shadow 🌑, Gale 💨
+Shadow 🌑   ──beats──→  Radiance ✨, Bolt ⚡
+Bolt ⚡     ──beats──→  Impact 💥, Frost ❄️
+Venom ☠️    ──beats──→  Radiance ✨, Impact 💥
+Frost ❄️    ──beats──→  Gale 💨, Venom ☠️
+Impact 💥   ──beats──→  Flame 🔥, Torrent 🌊
+```
+
+## Circular Arrangement
+
+Visualizing the 10 types arranged in a circle with beat arrows:
+
+```
+                    Flame 🔥
+                   ↙ ↓    ↘
+              Impact      Frost
+                ↓  ↘      ↙  ↓
+              Torrent    Gale
+                ↓  ↘    ↙  ↓
+              Tremor   Shadow
+                ↓    ↘ ↙   ↓
+               Bolt   Radiance
+                ↓  ↘  ↙  ↓
+               Frost  Venom
+                   ↘ ↙
+                  Impact
+```
+
+Each type sends arrows to 2 others (clockwise/counter-clockwise or across the circle).
 
 ## Complete Matchup Table
 

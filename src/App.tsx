@@ -12,6 +12,7 @@ import DuelScreen from './screens/DuelScreen';
 import DeckEditScreen from './screens/DeckEditScreen';
 import ShopScreen from './screens/ShopScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import CardPackOpeningScreenWrapper from './screens/CardPackOpeningScreenWrapper';
 
 function App() {
   const { loadGame } = useSaveStore();
@@ -63,6 +64,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainMenu />} />
+      <Route path="/card-opening" element={<CardPackOpeningScreenWrapper />} />
       <Route path="/campaign-menu" element={<CampaignMenuScreen />} />
       <Route path="/campaign" element={<CampaignScreen />} />
       <Route path="/library" element={<LibraryScreen />} />

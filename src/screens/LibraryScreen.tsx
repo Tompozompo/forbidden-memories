@@ -6,10 +6,13 @@ import CardComponent from '../ui/Card';
 
 const allCards = cards as Card[];
 
+type SortOption = 'id' | 'name' | 'atk' | 'def' | 'level';
+
 function LibraryScreen() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState<'All' | 'Monster' | 'Spell' | 'Trap'>('All');
+  const [sortBy, setSortBy] = useState<SortOption>('id');
 
   const handleBack = () => {
     navigate('/campaign-menu');
@@ -19,6 +22,23 @@ function LibraryScreen() {
     const matchesSearch = card.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesType = filterType === 'All' || card.type === filterType;
     return matchesSearch && matchesType;
+  });
+
+  const sortedCards = [...filteredCards].sort((a, b) => {
+    switch (sortBy) {
+      case 'id':
+        return a.id - b.id;
+      case 'name':
+        return a.name.localeCompare(b.name);
+      case 'atk':
+        return (b.atk ?? -1) - (a.atk ?? -1);
+      case 'def':
+        return (b.def ?? -1) - (a.def ?? -1);
+      case 'level':
+        return (b.level ?? -1) - (a.level ?? -1);
+      default:
+        return 0;
+    }
   });
 
   return (
@@ -118,6 +138,44 @@ function LibraryScreen() {
         </div>
       </div>
 
+      {/* Sort Options */}
+      <div style={{
+        display: 'flex',
+        gap: '8px',
+        marginBottom: '16px',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <span style={{ color: '#aaa', fontSize: '14px' }}>Sort by:</span>
+        {([
+          { value: 'id', label: 'Card #' },
+          { value: 'name', label: 'Name' },
+          { value: 'atk', label: 'ATK' },
+          { value: 'def', label: 'DEF' },
+          { value: 'level', label: 'Level' },
+        ] as const).map((option) => (
+          <button
+            key={option.value}
+            onClick={() => setSortBy(option.value)}
+            style={{
+              padding: '8px 12px',
+              fontSize: '13px',
+              fontWeight: sortBy === option.value ? 'bold' : 'normal',
+              backgroundColor: sortBy === option.value ? '#4caf50' : '#555',
+              color: '#fff',
+              border: '1px solid',
+              borderColor: sortBy === option.value ? '#fff' : '#666',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              transition: 'all 0.2s',
+            }}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
+
       {/* Card Count */}
       <div style={{
         textAlign: 'center',
@@ -125,7 +183,7 @@ function LibraryScreen() {
         fontSize: '16px',
         color: '#aaa',
       }}>
-        Showing {filteredCards.length} of {allCards.length} cards
+        Showing {sortedCards.length} of {allCards.length} cards
       </div>
 
       {/* Cards Grid */}
@@ -136,7 +194,7 @@ function LibraryScreen() {
         maxWidth: '1200px',
         margin: '0 auto',
       }}>
-        {filteredCards.map((card) => (
+        {sortedCards.map((card) => (
           <div
             key={card.id}
             style={{
@@ -164,7 +222,7 @@ function LibraryScreen() {
       </div>
 
       {/* No Results */}
-      {filteredCards.length === 0 && (
+      {sortedCards.length === 0 && (
         <div style={{
           textAlign: 'center',
           fontSize: '18px',

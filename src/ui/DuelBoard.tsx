@@ -1,6 +1,7 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
 import { initialDuel, duelReducer, type DuelState } from '../engine/duel';
 import { getAIAction } from '../engine/ai';
+import { getCardEffect } from '../data/cardEffects';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
 import SpellTrapZone from './SpellTrapZone';
@@ -33,6 +34,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   const [selectedForFusion, setSelectedForFusion] = useState<number[]>([]); // Track cards selected for fusion
   const [fuseMode, setFuseMode] = useState(false); // Track if we're in fusion selection mode
   const gameOverTriggered = useRef(false); // Prevent multiple game-over triggers
+  const [selectedSpell, setSelectedSpell] = useState<number | null>(null); // Selected spell card to activate
+  const [spellTargetMode, setSpellTargetMode] = useState(false); // Waiting for spell target selection
 
   // Check for victory/defeat conditions
   useEffect(() => {
@@ -190,11 +193,26 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   };
 
   const handleFieldZoneClick = (player: 0 | 1, zoneIndex: number, card: Card | null) => {
+    const currentPlayer = state.turn;
+    
+    // If in spell target mode, select the target for the spell
+    if (spellTargetMode && selectedSpell !== null && player === currentPlayer) {
+      if (card) {
+        // Activate spell with target
+        dispatch({
+          type: 'ACTIVATE_SPELL',
+          cardId: selectedSpell,
+          targetZone: zoneIndex,
+        });
+        setSelectedSpell(null);
+        setSpellTargetMode(false);
+      }
+      return;
+    }
+    
     // Can only attack during Battle phase
     if (state.phase !== 'Battle') return;
 
-    const currentPlayer = state.turn;
-    
     if (player === currentPlayer) {
       // Clicking own monster - select as attacker
       if (card) {
@@ -248,16 +266,45 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     setAttackPreview(null);
   };
 
-  const handleCardClick = (cardId: number) => {
-    // Only allow card selection in fuse mode
-    if (!fuseMode || state.turn !== 0) return;
+  const handleCardClick = (card: Card) => {
+    // If in spell target mode, cancel it when clicking a different card
+    if (spellTargetMode && selectedSpell !== card.id) {
+      setSpellTargetMode(false);
+      setSelectedSpell(null);
+    }
     
-    if (selectedForFusion.includes(cardId)) {
+    // Only allow card selection in fuse mode
+    if (!fuseMode || state.turn !== 0) {
+      // Check if this is a spell/trap card
+      if ((card.type === 'Spell' || card.type === 'Trap') && state.turn === 0) {
+        const effect = getCardEffect(card.id);
+        
+        if (effect) {
+          // Check if this is an equip spell that needs a target
+          if (effect.type.startsWith('equip_')) {
+            // Check if there are any monsters on field
+            if (state.fields[0].some(m => m !== null)) {
+              setSelectedSpell(card.id);
+              setSpellTargetMode(true);
+            }
+          } else {
+            // Non-equip spells can be activated directly
+            dispatch({
+              type: 'ACTIVATE_SPELL',
+              cardId: card.id,
+            });
+          }
+        }
+      }
+      return;
+    }
+    
+    if (selectedForFusion.includes(card.id)) {
       // Deselect card
-      setSelectedForFusion(selectedForFusion.filter(id => id !== cardId));
+      setSelectedForFusion(selectedForFusion.filter(id => id !== card.id));
     } else if (selectedForFusion.length < 2) {
       // Select card (max 2)
-      setSelectedForFusion([...selectedForFusion, cardId]);
+      setSelectedForFusion([...selectedForFusion, card.id]);
     }
   };
 
@@ -378,6 +425,15 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
         </div>
       )}
 
+      {/* Spell target mode banner */}
+      {spellTargetMode && selectedSpell && (
+        <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#1d9e74', border: '2px solid #2ac99a', borderRadius: '4px', textAlign: 'center' }}>
+          <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>
+            Select a monster to equip the spell card
+          </span>
+        </div>
+      )}
+
       {/* First turn attack restriction banner */}
       {state.turnCount === 1 && state.phase === 'Battle' && state.turn === 0 && (
         <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#cc0000', border: '2px solid #ff4444', borderRadius: '4px', textAlign: 'center' }}>
@@ -436,6 +492,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
           highlightedZone={attackPreview && state.turn === 0 ? attackPreview.targetPos : null}
           attackingZone={attackingZone?.player === 1 ? attackingZone.zone : null}
           defendingZone={defendingZone?.player === 1 ? defendingZone.zone : null}
+          equippedCards={state.equippedCards}
         />
       </div>
 
@@ -455,6 +512,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
           highlightedZone={attackPreview && state.turn === 1 ? attackPreview.targetPos : null}
           attackingZone={attackingZone?.player === 0 ? attackingZone.zone : null}
           defendingZone={defendingZone?.player === 0 ? defendingZone.zone : null}
+          equippedCards={state.equippedCards}
         />
 
         {/* Player Spell/Trap Zone (Behind/Below Monster Zone) */}
@@ -475,9 +533,11 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
             {state.hands[0].map((c: Card, i) => {
               const isFusing = fusingCards.includes(c.id);
               const isSelectedForFusion = selectedForFusion.includes(c.id);
+              const isSelectedSpell = selectedSpell === c.id;
+              const isSpellOrTrap = c.type === 'Spell' || c.type === 'Trap';
               const zIndex = i; // Rightmost card has highest z-index
               
-              return state.turn === 0 && !state.hasSummoned[0] ? (
+              return state.turn === 0 && !state.hasSummoned[0] && c.type === 'Monster' ? (
                 <div 
                   key={i} 
                   className={isFusing ? 'flash burst' : ''}
@@ -491,7 +551,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                     borderRadius: '4px',
                     boxSizing: 'border-box',
                   }}
-                  onClick={() => handleCardClick(c.id)}
+                  onClick={() => handleCardClick(c)}
                 >
                   <DraggableCard 
                     card={c} 
@@ -508,12 +568,12 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                     display: 'inline-block',
                     zIndex,
                     margin: 0,
-                    cursor: fuseMode && state.turn === 0 ? 'pointer' : 'default',
-                    border: isSelectedForFusion ? '3px solid #ffaa00' : 'none',
+                    cursor: (fuseMode || (isSpellOrTrap && state.turn === 0)) ? 'pointer' : 'default',
+                    border: isSelectedForFusion ? '3px solid #ffaa00' : isSelectedSpell ? '3px solid #1d9e74' : 'none',
                     borderRadius: '4px',
                     boxSizing: 'border-box',
                   }}
-                  onClick={() => handleCardClick(c.id)}
+                  onClick={() => handleCardClick(c)}
                 >
                   <CardComponent card={c} size="small" style={{ width: '100%', height: '100%' }} />
                 </div>

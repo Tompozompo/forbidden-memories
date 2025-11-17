@@ -18,3 +18,14 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# Agent-generated files (task summaries, verification reports, etc.)
+TASK_*.md
+*_SUMMARY.md
+*SUMMARY.md
+VERIFICATION*.md
+VERIFICATION*.csv
+VERIFICATION*.html
+*_TO_REPLACE.txt
+QUICK_START.md
+HOW_TO_*.md

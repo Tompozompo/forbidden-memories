@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import type { Card as CardType } from '../types';
+import { getCardText } from '../data/cardEffects';
 
 interface CardProps {
   card: CardType;
   size?: 'small' | 'medium' | 'large';
   className?: string;
   style?: React.CSSProperties;
+  showTooltip?: boolean;
 }
 
 // Attribute color mapping
@@ -50,10 +53,15 @@ const RACE_SYMBOLS: Record<string, string> = {
   Angel: '👼',
 };
 
-export default function Card({ card, size = 'medium', className = '', style = {} }: CardProps) {
+export default function Card({ card, size = 'medium', className = '', style = {}, showTooltip = true }: CardProps) {
+  const [showText, setShowText] = useState(false);
   const isMonster = card.type === 'Monster';
   const isSpell = card.type === 'Spell';
   const isTrap = card.type === 'Trap';
+  
+  // Get card effect text
+  const cardText = (isSpell || isTrap) ? getCardText(card.id) : (card.text || '');
+  const hasText = !!cardText;
 
   // Size-based styling - using max-width to maintain aspect ratio
   const sizes = {
@@ -119,9 +127,47 @@ export default function Card({ card, size = 'medium', className = '', style = {}
         boxSizing: 'border-box',
         fontFamily: 'Arial, sans-serif',
         overflow: 'hidden',
+        cursor: hasText && showTooltip ? 'help' : 'default',
         ...style,
       }}
+      onMouseEnter={() => hasText && showTooltip && setShowText(true)}
+      onMouseLeave={() => hasText && showTooltip && setShowText(false)}
+      onTouchStart={() => hasText && showTooltip && setShowText(true)}
+      onTouchEnd={() => hasText && showTooltip && setShowText(false)}
     >
+      {/* Tooltip for card text */}
+      {showText && hasText && showTooltip && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 1000,
+            backgroundColor: 'rgba(0, 0, 0, 0.95)',
+            color: '#fff',
+            padding: '8px 12px',
+            borderRadius: '4px',
+            fontSize: '12px',
+            maxWidth: '300px',
+            width: 'max-content',
+            minWidth: '200px',
+            textAlign: 'left',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.5)',
+            border: `2px solid ${getFrameColor()}`,
+            marginTop: '4px',
+            lineHeight: '1.4',
+          }}
+        >
+          <div style={{ fontWeight: 'bold', marginBottom: '4px', color: getFrameColor() }}>
+            {card.name}
+          </div>
+          <div style={{ fontSize: '11px' }}>
+            {cardText}
+          </div>
+        </div>
+      )}
+      
       {/* Header: Name and Attribute */}
       <div
         style={{

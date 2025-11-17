@@ -1,5 +1,7 @@
 import { checkFusion } from './fusions';
 import type { Card } from '../types';
+import { applyEffect, type ActiveEffect } from './effects';
+import { getCardEffect } from '../data/cardEffects';
 
 // Fisher-Yates shuffle
 export function shuffle<T>(arr: T[]): T[] {
@@ -23,6 +25,8 @@ export interface DuelState {
   phase: 'Draw' | 'Standby' | 'Main' | 'Battle' | 'End';
   hasSummoned: [boolean, boolean];
   hasAttacked: [boolean, boolean];
+  activeEffects: ActiveEffect[]; // Active spell/trap effects
+  equippedCards: Map<string, number>; // Map of "player-zone" to equipped spell card ID
 }
 
 export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
@@ -42,6 +46,8 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
     phase: 'Draw',
     hasSummoned: [false, false],
     hasAttacked: [false, false],
+    activeEffects: [],
+    equippedCards: new Map(),
   };
 };
 
@@ -52,6 +58,7 @@ type Action =
   | { type: 'FUSE'; matA: number; matB: number; allCards: Card[] }
   | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' }
   | { type: 'ATTACK'; attackerId: number; targetPos: number }
+  | { type: 'ACTIVATE_SPELL'; cardId: number; targetZone?: number }
   | { type: 'END_TURN' };
 
 export function duelReducer(state: DuelState, action: Action): DuelState {
@@ -132,20 +139,44 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       }
       
       // find attacker on current player's field
-      const attacker = state.fields[player].find(c => c?.id === action.attackerId);
-      if (!attacker || !attacker.atk) return state;
+      const attackerIdx = state.fields[player].findIndex(c => c?.id === action.attackerId);
+      const attacker = state.fields[player][attackerIdx];
+      if (!attacker || attacker.atk === undefined) return state;
       
       // check if target position has a monster
       const defender = state.fields[opponent][action.targetPos];
       
+      // Calculate ATK with equipped spells
+      let attackerAtk = attacker.atk;
+      const attackerEquipKey = `${player}-${attackerIdx}`;
+      const attackerEquipId = state.equippedCards.get(attackerEquipKey);
+      if (attackerEquipId) {
+        const equipEffect = getCardEffect(attackerEquipId);
+        if (equipEffect && (equipEffect.type === 'equip_atk' || equipEffect.type === 'equip_both')) {
+          attackerAtk += equipEffect.value || 0;
+        }
+      }
+      
       let newLp = [...state.lp] as [number, number];
       let newFields = state.fields.map(f => [...f]) as [(Card | null)[], (Card | null)[]];
       let newGraves = state.graves.map(g => [...g]) as [Card[], Card[]];
+      let newEquippedCards = new Map(state.equippedCards);
+      let newActiveEffects = [...state.activeEffects];
+      let newSpellTraps = state.spellTraps.map(s => [...s]) as [(Card | null)[], (Card | null)[]];
       
       if (defender && defender.atk !== undefined) {
         // Monster vs Monster battle (PS1 style - both take damage)
-        const attackerAtk = attacker.atk;
-        const defenderAtk = defender.atk;
+        let defenderAtk = defender.atk;
+        
+        // Calculate defender ATK with equipped spells
+        const defenderEquipKey = `${opponent}-${action.targetPos}`;
+        const defenderEquipId = state.equippedCards.get(defenderEquipKey);
+        if (defenderEquipId) {
+          const equipEffect = getCardEffect(defenderEquipId);
+          if (equipEffect && (equipEffect.type === 'equip_atk' || equipEffect.type === 'equip_both')) {
+            defenderAtk += equipEffect.value || 0;
+          }
+        }
         
         // Apply battle damage to both players
         newLp[player] -= defenderAtk;
@@ -154,30 +185,80 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         // Destroy monsters if ATK is higher than opponent's
         if (attackerAtk < defenderAtk) {
           // Attacker destroyed
-          const attackerIdx = newFields[player].findIndex(c => c?.id === action.attackerId);
-          if (attackerIdx !== -1) {
-            newGraves[player].push(attacker);
-            newFields[player][attackerIdx] = null;
+          newGraves[player].push(attacker);
+          newFields[player][attackerIdx] = null;
+          
+          // Remove equipped card
+          if (attackerEquipId) {
+            newEquippedCards.delete(attackerEquipKey);
+            newActiveEffects = newActiveEffects.filter(e => 
+              !(e.targetPlayer === player && e.targetZone === attackerIdx)
+            );
+            // Send equip spell to graveyard
+            const equipIdx = newSpellTraps[player].findIndex(c => c?.id === attackerEquipId);
+            if (equipIdx !== -1) {
+              const equipCard = newSpellTraps[player][equipIdx];
+              if (equipCard) newGraves[player].push(equipCard);
+              newSpellTraps[player][equipIdx] = null;
+            }
           }
         }
         if (defenderAtk < attackerAtk) {
           // Defender destroyed
           newGraves[opponent].push(defender);
           newFields[opponent][action.targetPos] = null;
+          
+          // Remove equipped card
+          if (defenderEquipId) {
+            newEquippedCards.delete(defenderEquipKey);
+            newActiveEffects = newActiveEffects.filter(e => 
+              !(e.targetPlayer === opponent && e.targetZone === action.targetPos)
+            );
+            // Send equip spell to graveyard
+            const equipIdx = newSpellTraps[opponent].findIndex(c => c?.id === defenderEquipId);
+            if (equipIdx !== -1) {
+              const equipCard = newSpellTraps[opponent][equipIdx];
+              if (equipCard) newGraves[opponent].push(equipCard);
+              newSpellTraps[opponent][equipIdx] = null;
+            }
+          }
         }
         if (attackerAtk === defenderAtk) {
           // Both destroyed
-          const attackerIdx = newFields[player].findIndex(c => c?.id === action.attackerId);
-          if (attackerIdx !== -1) {
-            newGraves[player].push(attacker);
-            newFields[player][attackerIdx] = null;
-          }
+          newGraves[player].push(attacker);
+          newFields[player][attackerIdx] = null;
           newGraves[opponent].push(defender);
           newFields[opponent][action.targetPos] = null;
+          
+          // Remove both equipped cards
+          if (attackerEquipId) {
+            newEquippedCards.delete(attackerEquipKey);
+            newActiveEffects = newActiveEffects.filter(e => 
+              !(e.targetPlayer === player && e.targetZone === attackerIdx)
+            );
+            const equipIdx = newSpellTraps[player].findIndex(c => c?.id === attackerEquipId);
+            if (equipIdx !== -1) {
+              const equipCard = newSpellTraps[player][equipIdx];
+              if (equipCard) newGraves[player].push(equipCard);
+              newSpellTraps[player][equipIdx] = null;
+            }
+          }
+          if (defenderEquipId) {
+            newEquippedCards.delete(defenderEquipKey);
+            newActiveEffects = newActiveEffects.filter(e => 
+              !(e.targetPlayer === opponent && e.targetZone === action.targetPos)
+            );
+            const equipIdx = newSpellTraps[opponent].findIndex(c => c?.id === defenderEquipId);
+            if (equipIdx !== -1) {
+              const equipCard = newSpellTraps[opponent][equipIdx];
+              if (equipCard) newGraves[opponent].push(equipCard);
+              newSpellTraps[opponent][equipIdx] = null;
+            }
+          }
         }
       } else {
-        // Direct attack - reduce opponent LP by attacker's ATK
-        newLp[opponent] -= attacker.atk;
+        // Direct attack - reduce opponent LP by attacker's ATK (with equipment bonuses)
+        newLp[opponent] -= attackerAtk;
       }
       
       // Set hasAttacked to true for the current player
@@ -190,8 +271,68 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
         lp: newLp, 
         fields: newFields, 
         graves: newGraves,
-        hasAttacked: newHasAttacked
+        hasAttacked: newHasAttacked,
+        equippedCards: newEquippedCards,
+        activeEffects: newActiveEffects,
+        spellTraps: newSpellTraps
       };
+    }
+    case 'ACTIVATE_SPELL': {
+      const player = state.turn;
+      const card = state.hands[player].find(c => c.id === action.cardId);
+      
+      if (!card || (card.type !== 'Spell' && card.type !== 'Trap')) {
+        return state; // Invalid card
+      }
+      
+      const effect = getCardEffect(card.id);
+      if (!effect) {
+        return state; // No effect defined
+      }
+      
+      // Remove card from hand
+      const newHands = state.hands.map((h, i) =>
+        i === player ? h.filter(c => c.id !== action.cardId) : h
+      ) as [Card[], Card[]];
+      
+      // Apply the effect
+      let newState = applyEffect(state, card.id, player, undefined, action.targetZone);
+      newState = { ...newState, hands: newHands };
+      
+      // For equip spells, keep the card in spell/trap zone
+      if (effect.type.startsWith('equip_') && action.targetZone !== undefined) {
+        const newSpellTraps = state.spellTraps.map(s => [...s]) as [(Card | null)[], (Card | null)[]];
+        const emptySlot = newSpellTraps[player].findIndex(slot => slot === null);
+        
+        if (emptySlot !== -1) {
+          newSpellTraps[player][emptySlot] = card;
+          newState = { ...newState, spellTraps: newSpellTraps };
+          
+          // Track which monster this equip is attached to
+          const newEquippedCards = new Map(state.equippedCards);
+          newEquippedCards.set(`${player}-${action.targetZone}`, card.id);
+          newState = { ...newState, equippedCards: newEquippedCards };
+          
+          // Add to active effects
+          const newActiveEffects = [...state.activeEffects, {
+            effectId: `${card.id}-${Date.now()}`,
+            cardId: card.id,
+            effect,
+            player,
+            targetPlayer: player,
+            targetZone: action.targetZone,
+          }];
+          newState = { ...newState, activeEffects: newActiveEffects };
+        }
+      } else {
+        // For non-equip spells, send to graveyard after activation
+        const newGraves = state.graves.map((g, i) =>
+          i === player ? [...g, card] : g
+        ) as [Card[], Card[]];
+        newState = { ...newState, graves: newGraves };
+      }
+      
+      return newState;
     }
     case 'END_TURN': {
       // Flip turn to the other player

@@ -52,14 +52,19 @@ Should be (from wiki):
 ID 151: <Look up what card #151 actually is>
 ```
 
-## 🛠️ Alternative: Give Me Wiki Data
+## 🛠️ Alternative: Automated Import
 
-Can't do manual work? Provide me with:
-- Saved HTML of the wiki page, OR
-- Copy-pasted card list, OR  
-- Screenshot/PDF of the card table
+**Copy wiki table → Auto-fix!**
 
-And I can parse it automatically!
+1. Copy the card table from the wiki page
+2. Save to a text file (tab-separated format)
+3. Run:
+   ```bash
+   cd scripts
+   python3 parse_wiki_data.py wiki_cards.txt
+   ```
+
+The parser will automatically update all cards!
 
 ## ❓ Questions?
 

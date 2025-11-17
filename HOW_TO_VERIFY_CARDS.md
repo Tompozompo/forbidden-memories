@@ -47,12 +47,32 @@ After removing duplicates, we have **688 unique cards** instead of 722, meaning 
 4. Blue cards = Already verified
 5. Green cards = OK but not yet verified
 
-### Option 3: Provide the Wiki Data
+### Option 3: Automated Wiki Data Import
 
-If you can access the wiki, you can:
-1. Save the wiki page as HTML
-2. Or copy-paste the card table into a text file
-3. Provide it, and a script can parse it automatically
+If you can access the wiki and copy the card table:
+
+1. **Copy the wiki table data**
+   - Visit: https://yugioh.fandom.com/wiki/List_of_Yu-Gi-Oh!_Forbidden_Memories_cards
+   - Copy the entire card table (tab-separated format)
+   - Save to a text file (e.g., `wiki_cards.txt`)
+
+2. **Run the parser**
+   ```bash
+   cd scripts
+   python3 parse_wiki_data.py wiki_cards.txt
+   ```
+
+3. **Verify the changes**
+   ```bash
+   npm run build
+   npm run dev
+   ```
+
+The parser expects tab-separated data in this format:
+```
+ID  Name  Type  Race  Level  ATK  DEF  Password  Cost
+001 Blue-eyes White Dragon  Monster Dragon  8 3000  2500  89631139  999,999
+```
 
 ## List of Cards Needing Replacement
 

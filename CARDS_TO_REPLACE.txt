@@ -1,0 +1,44 @@
+Cards That Need Replacement
+============================
+
+Total: 34 cards
+
+Card IDs:
+151, 152, 155, 159, 160, 161, 162, 164, 165, 166, 183, 184, 202, 207, 224, 231, 241, 243, 254, 264, 270, 274, 282, 283, 286, 300, 669, 682, 683, 684, 685, 686, 720, 721
+
+Detailed List:
+
+ID 151: Krokodilus - Duplicate of ID 76
+ID 152: Toad Master - Duplicate of ID 101
+ID 155: Fissure - Wrong Type (should be Spell)
+ID 159: Mystic Horseman - Duplicate of ID 91
+ID 160: Rabid Horseman - Duplicate of ID 92
+ID 161: Zanki - Duplicate of ID 93
+ID 162: Crawling Dragon - Duplicate of ID 94
+ID 164: Armored Lizard - Duplicate of ID 51
+ID 165: Firegrass - Duplicate of ID 129
+ID 166: Man-Eating Plant - Duplicate of ID 75
+ID 183: Flame Cerebrus - Duplicate of ID 112
+ID 184: Mushroom Man - Duplicate of ID 8
+ID 202: Swamp Battleguard - Duplicate of ID 12
+ID 207: Catapult Turtle - Duplicate of ID 89
+ID 224: Dancing Elf - Duplicate of ID 104
+ID 231: Fireyarou - Duplicate of ID 106
+ID 241: Octoberser - Duplicate of ID 109
+ID 243: Charubin the Fire Knight - Duplicate of ID 170
+ID 254: Beaver Warrior - Duplicate of ID 27
+ID 264: Beaver Warrior - Duplicate of ID 27
+ID 270: Maha Vailo - Duplicate of ID 103
+ID 274: Oscillo Hero #2 - Duplicate of ID 45
+ID 282: Psychic Kappa - Duplicate of ID 119
+ID 283: Masaki the Legendary Swordsman - Duplicate of ID 120
+ID 286: Lord of the Lamp - Duplicate of ID 140
+ID 300: Megazowler - Duplicate of ID 79
+ID 669: Tremendous Fire - Duplicate of ID 532
+ID 682: Dark Magician Girl - Duplicate of ID 649
+ID 683: Sword of Dark Destruction - Duplicate of ID 445
+ID 684: Black Pendant - Duplicate of ID 443
+ID 685: Invigoration - Duplicate of ID 430
+ID 686: Follow Wind - Duplicate of ID 433
+ID 720: Dragon Treasure - Duplicate of ID 435
+ID 721: Malevolent Nuzzler - Duplicate of ID 441

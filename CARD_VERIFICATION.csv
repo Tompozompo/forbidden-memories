@@ -1,0 +1,723 @@
+ID,Name,ATK,DEF,Type,Attribute,Race,Level,Status,Notes
+1,Blue-Eyes White Dragon,3000,2500,Monster,LIGHT,Dragon,8,VERIFIED,Confirmed accurate
+2,Mystical Elf,800,2000,Monster,LIGHT,Spellcaster,4,VERIFIED,Confirmed accurate
+3,Hitotsu-Me Giant,1200,1000,Monster,EARTH,Beast-Warrior,4,VERIFIED,Confirmed accurate
+4,Baby Dragon,1200,700,Monster,WIND,Dragon,3,VERIFIED,Confirmed accurate
+5,Ryu-Kishin,1000,500,Monster,DARK,Fiend,3,VERIFIED,Confirmed accurate
+6,Feral Imp,1300,1400,Monster,DARK,Fiend,4,VERIFIED,Confirmed accurate
+7,"Winged Dragon, Guardian of the Fortress #1",1400,1200,Monster,WIND,Dragon,4,VERIFIED,Confirmed accurate
+8,Mushroom Man,800,600,Monster,EARTH,Plant,2,VERIFIED,Confirmed accurate
+9,Shadow Specter,500,200,Monster,DARK,Zombie,1,VERIFIED,Confirmed accurate
+10,Blackland Fire Dragon,1500,800,Monster,DARK,Dragon,4,VERIFIED,Confirmed accurate
+11,Sword Arm of Dragon,1750,2030,Monster,EARTH,Dinosaur,6,VERIFIED,Confirmed accurate
+12,Swamp Battleguard,1800,1500,Monster,EARTH,Warrior,5,VERIFIED,Confirmed accurate
+13,Tyhone,1200,1400,Monster,WIND,Winged Beast,4,VERIFIED,Confirmed accurate
+14,Battle Steer,1800,1300,Monster,EARTH,Beast-Warrior,5,VERIFIED,Confirmed accurate
+15,Flame Swordsman,1800,1600,Monster,FIRE,Warrior,5,VERIFIED,Confirmed accurate
+16,Time Wizard,500,400,Monster,LIGHT,Spellcaster,2,VERIFIED,Confirmed accurate
+17,Right Leg of the Forbidden One,200,300,Monster,DARK,Spellcaster,1,VERIFIED,Confirmed accurate
+18,Left Leg of the Forbidden One,200,300,Monster,DARK,Spellcaster,1,VERIFIED,Confirmed accurate
+19,Right Arm of the Forbidden One,200,300,Monster,DARK,Spellcaster,1,VERIFIED,Confirmed accurate
+20,Left Arm of the Forbidden One,200,300,Monster,DARK,Spellcaster,1,VERIFIED,Confirmed accurate
+21,Exodia the Forbidden One,1000,1000,Monster,DARK,Spellcaster,3,VERIFIED,Confirmed accurate
+22,Summoned Skull,2500,1200,Monster,DARK,Fiend,6,VERIFIED,Confirmed accurate
+23,The Wicked Worm Beast,1400,700,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+24,Skull Servant,300,200,Monster,DARK,Zombie,1,VERIFIED,Confirmed accurate
+25,Horn Imp,1300,1000,Monster,DARK,Fiend,4,VERIFIED,Confirmed accurate
+26,Battle Ox,1700,1000,Monster,EARTH,Beast-Warrior,4,VERIFIED,Confirmed accurate
+27,Beaver Warrior,1200,1500,Monster,EARTH,Beast-Warrior,4,VERIFIED,Confirmed accurate
+28,Rock Ogre Grotto #1,800,1200,Monster,EARTH,Rock,3,VERIFIED,Confirmed accurate
+29,Mountain Warrior,600,1000,Monster,EARTH,Beast-Warrior,3,VERIFIED,Confirmed accurate
+30,Zombie Warrior,1200,900,Monster,DARK,Zombie,3,VERIFIED,Confirmed accurate
+31,Koumori Dragon,1500,1200,Monster,DARK,Dragon,4,VERIFIED,Confirmed accurate
+32,Two-Headed King Rex,1600,1200,Monster,EARTH,Dinosaur,4,VERIFIED,Confirmed accurate
+33,Judge Man,2200,1500,Monster,EARTH,Warrior,6,VERIFIED,Confirmed accurate
+34,Saggi the Dark Clown,600,1500,Monster,DARK,Spellcaster,3,VERIFIED,Confirmed accurate
+35,Dark Magician,2500,2100,Monster,DARK,Spellcaster,7,VERIFIED,Confirmed accurate
+36,The Snake Hair,1500,1200,Monster,DARK,Zombie,4,VERIFIED,Confirmed accurate
+37,Gaia The Fierce Knight,2300,2100,Monster,EARTH,Warrior,7,VERIFIED,Confirmed accurate
+38,Gaia The Dragon Champion,2600,2100,Monster,WIND,Dragon,7,VERIFIED,Confirmed accurate
+39,Curse of Dragon,2000,1500,Monster,DARK,Dragon,5,VERIFIED,Confirmed accurate
+40,Dragon Piper,200,1800,Monster,EARTH,Aqua,2,VERIFIED,Confirmed accurate
+41,Celtic Guardian,1400,1200,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+42,Illusionist Faceless Mage,1200,2200,Monster,DARK,Spellcaster,5,VERIFIED,Confirmed accurate
+43,Karbonala Warrior,1500,1200,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+44,Rogue Doll,1600,1000,Monster,LIGHT,Spellcaster,4,VERIFIED,Confirmed accurate
+45,Oscillo Hero #2,1000,500,Monster,EARTH,Warrior,3,VERIFIED,Confirmed accurate
+46,Griffore,1200,1500,Monster,EARTH,Beast,4,VERIFIED,Confirmed accurate
+47,Torike,1200,600,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+48,Sangan,1000,600,Monster,DARK,Fiend,3,VERIFIED,Confirmed accurate
+49,Big Insect,1200,1500,Monster,EARTH,Insect,4,VERIFIED,Confirmed accurate
+50,Basic Insect,500,700,Monster,EARTH,Insect,2,VERIFIED,Confirmed accurate
+51,Armored Lizard,1500,1200,Monster,EARTH,Reptile,4,VERIFIED,Confirmed accurate
+52,Hercules Beetle,1500,2000,Monster,EARTH,Insect,5,VERIFIED,Confirmed accurate
+53,Killer Needle,1200,1000,Monster,WIND,Insect,4,VERIFIED,Confirmed accurate
+54,Gokibore,1200,1400,Monster,EARTH,Insect,4,VERIFIED,Confirmed accurate
+55,Giant Flea,1500,1200,Monster,EARTH,Insect,4,VERIFIED,Confirmed accurate
+56,Larvae Moth,500,400,Monster,EARTH,Insect,2,VERIFIED,Confirmed accurate
+57,Great Moth,2600,2500,Monster,EARTH,Insect,8,VERIFIED,Confirmed accurate
+58,Kuriboh,300,200,Monster,DARK,Fiend,1,VERIFIED,Confirmed accurate
+59,Mammoth Graveyard,1200,800,Monster,EARTH,Dinosaur,3,VERIFIED,Confirmed accurate
+60,Great White,1600,800,Monster,WATER,Fish,4,VERIFIED,Confirmed accurate
+61,Wolf,1200,800,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+62,Harpie Lady,1300,1400,Monster,WIND,Winged Beast,4,VERIFIED,Confirmed accurate
+63,Harpie Lady Sisters,1950,2100,Monster,WIND,Winged Beast,6,VERIFIED,Confirmed accurate
+64,Tiger Axe,1300,1100,Monster,EARTH,Beast-Warrior,4,VERIFIED,Confirmed accurate
+65,Silver Fang,1200,800,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+66,Kojikocy,1500,1200,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+67,Perfectly Ultimate Great Moth,3500,3000,Monster,EARTH,Insect,8,VERIFIED,Confirmed accurate
+68,Garoozis,1800,1500,Monster,FIRE,Beast-Warrior,5,VERIFIED,Confirmed accurate
+69,Thousand Dragon,2400,2000,Monster,WIND,Dragon,7,VERIFIED,Confirmed accurate
+70,Fiend Kraken,1200,1400,Monster,WATER,Aqua,4,VERIFIED,Confirmed accurate
+71,Jellyfish,1200,1500,Monster,WATER,Aqua,4,VERIFIED,Confirmed accurate
+72,Cocoon of Evolution,0,2000,Monster,EARTH,Insect,3,VERIFIED,Confirmed accurate
+73,Kairyu-Shin,1800,1500,Monster,WATER,Sea Serpent,5,VERIFIED,Confirmed accurate
+74,Giant Soldier of Stone,1300,2000,Monster,EARTH,Rock,3,VERIFIED,Confirmed accurate
+75,Man-Eating Plant,800,600,Monster,EARTH,Plant,2,VERIFIED,Confirmed accurate
+76,Krokodilus,1100,1200,Monster,WATER,Reptile,4,VERIFIED,Confirmed accurate
+77,Grappler,1300,1200,Monster,EARTH,Reptile,4,VERIFIED,Confirmed accurate
+78,Axe Raider,1700,1150,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+79,Megazowler,1800,2000,Monster,EARTH,Dinosaur,6,VERIFIED,Confirmed accurate
+80,Uraby,1500,800,Monster,EARTH,Dinosaur,4,VERIFIED,Confirmed accurate
+81,Crawling Dragon #2,1600,1200,Monster,EARTH,Dinosaur,4,VERIFIED,Confirmed accurate
+82,Red-Eyes B. Dragon,2400,2000,Monster,DARK,Dragon,7,VERIFIED,Confirmed accurate
+83,Castle of Dark Illusions,1930,2500,Monster,DARK,Fiend,4,VERIFIED,Confirmed accurate
+84,Reaper of the Cards,1380,1930,Monster,DARK,Fiend,5,VERIFIED,Confirmed accurate
+85,King of Yamimakai,2000,1530,Monster,DARK,Fiend,5,VERIFIED,Confirmed accurate
+86,Barox,1380,1530,Monster,DARK,Fiend,5,VERIFIED,Confirmed accurate
+87,Dark Chimera,1610,1460,Monster,DARK,Fiend,5,VERIFIED,Confirmed accurate
+88,Metal Guardian,1150,2150,Monster,DARK,Machine,5,VERIFIED,Confirmed accurate
+89,Catapult Turtle,1000,2000,Monster,WATER,Aqua,5,VERIFIED,Confirmed accurate
+90,Gyakutenno Megami,1800,2000,Monster,LIGHT,Fairy,6,VERIFIED,Confirmed accurate
+91,Mystic Horseman,1300,1550,Monster,EARTH,Beast,4,VERIFIED,Confirmed accurate
+92,Rabid Horseman,2000,1700,Monster,EARTH,Beast-Warrior,6,VERIFIED,Confirmed accurate
+93,Zanki,1500,1700,Monster,DARK,Warrior,5,VERIFIED,Confirmed accurate
+94,Crawling Dragon,1600,1400,Monster,EARTH,Dragon,5,VERIFIED,Confirmed accurate
+95,Crass Clown,1350,1400,Monster,DARK,Fiend,4,VERIFIED,Confirmed accurate
+96,Armored Zombie,1500,0,Monster,DARK,Zombie,3,VERIFIED,Confirmed accurate
+97,Dragon Zombie,1600,0,Monster,DARK,Zombie,3,VERIFIED,Confirmed accurate
+98,Clown Zombie,1350,0,Monster,DARK,Zombie,2,VERIFIED,Confirmed accurate
+99,Pumpking the King of Ghosts,1800,2000,Monster,DARK,Zombie,6,VERIFIED,Confirmed accurate
+100,Battle Warrior,700,1000,Monster,EARTH,Warrior,3,VERIFIED,Confirmed accurate
+101,Toad Master,1000,1000,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+102,Spirit of the Harp,800,2000,Monster,LIGHT,Fairy,4,VERIFIED,Confirmed accurate
+103,Maha Vailo,1550,1400,Monster,LIGHT,Spellcaster,4,VERIFIED,Confirmed accurate
+104,Dancing Elf,300,200,Monster,WIND,Fairy,1,VERIFIED,Confirmed accurate
+105,Curl,900,700,Monster,WATER,Aqua,2,VERIFIED,Confirmed accurate
+106,Fireyarou,1300,1000,Monster,FIRE,Pyro,4,VERIFIED,Confirmed accurate
+107,Manga Ryu-Ran,2200,2600,Monster,FIRE,Dragon,7,VERIFIED,Confirmed accurate
+108,Garnecia Elefantis,1150,1150,Monster,EARTH,Beast-Warrior,4,VERIFIED,Confirmed accurate
+109,Octoberser,1600,1200,Monster,WATER,Aqua,4,VERIFIED,Confirmed accurate
+110,Monsturtle,800,1000,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+111,Crab Turtle,2550,2500,Monster,WATER,Aqua,8,VERIFIED,Confirmed accurate
+112,Flame Cerebrus,2100,1800,Monster,FIRE,Beast,6,VERIFIED,Confirmed accurate
+113,Misairuzame,1400,1600,Monster,WATER,Fish,5,VERIFIED,Confirmed accurate
+114,Root Water,900,800,Monster,WATER,Fish,3,VERIFIED,Confirmed accurate
+115,The Furious Sea King,800,700,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+116,Green Phantom King,1600,1300,Monster,EARTH,Plant,3,VERIFIED,Confirmed accurate
+117,Ray & Temperature,1000,1000,Monster,LIGHT,Fairy,3,VERIFIED,Confirmed accurate
+118,King Fog,1000,900,Monster,WATER,Fiend,3,VERIFIED,Confirmed accurate
+119,Psychic Kappa,400,1000,Monster,WATER,Aqua,2,VERIFIED,Confirmed accurate
+120,Masaki the Legendary Swordsman,1100,1100,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+121,Dragoness the Wicked Knight,1200,900,Monster,WIND,Warrior,3,VERIFIED,Confirmed accurate
+122,Bio Plant,600,1300,Monster,WATER,Plant,3,VERIFIED,Confirmed accurate
+123,One Who Hunts Souls,900,800,Monster,DARK,Fiend,2,VERIFIED,Confirmed accurate
+124,Obese Marmot of Nefariousness,750,800,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+125,Dokuroizo the Grim Reaper,900,1200,Monster,DARK,Zombie,3,VERIFIED,Confirmed accurate
+126,Fire Reaper,700,500,Monster,FIRE,Zombie,2,VERIFIED,Confirmed accurate
+127,Larvas,800,1000,Monster,EARTH,Beast,3,VERIFIED,Confirmed accurate
+128,Hard Armor,300,1200,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+129,Firegrass,700,600,Monster,EARTH,Plant,2,VERIFIED,Confirmed accurate
+130,Man Eater,800,600,Monster,EARTH,Plant,2,VERIFIED,Confirmed accurate
+131,Dig Beak,500,800,Monster,EARTH,Beast,2,VERIFIED,Confirmed accurate
+132,M-Warrior #1,1000,500,Monster,EARTH,Warrior,3,VERIFIED,Confirmed accurate
+133,M-Warrior #2,500,1000,Monster,EARTH,Warrior,3,VERIFIED,Confirmed accurate
+134,Tainted Wisdom,1250,800,Monster,DARK,Fiend,3,VERIFIED,Confirmed accurate
+135,Guardian of the Labyrinth,1000,1200,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+136,Haniwa,500,500,Monster,EARTH,Rock,2,VERIFIED,Confirmed accurate
+137,Yashinoki,800,600,Monster,EARTH,Plant,3,VERIFIED,Confirmed accurate
+138,Vishwar Randi,900,700,Monster,DARK,Fairy,2,VERIFIED,Confirmed accurate
+139,Lisark,1300,1300,Monster,DARK,Beast,4,VERIFIED,Confirmed accurate
+140,Lord of the Lamp,1400,1200,Monster,DARK,Fiend,4,VERIFIED,Confirmed accurate
+141,The Judgement Hand,1400,700,Monster,EARTH,Warrior,3,VERIFIED,Confirmed accurate
+142,Mysterious Puppeteer,1000,1500,Monster,EARTH,Warrior,4,VERIFIED,Confirmed accurate
+143,Ancient One of the Deep Forest,1200,1400,Monster,EARTH,Beast,4,VERIFIED,Confirmed accurate
+144,Dark King of the Abyss,1200,800,Monster,DARK,Fiend,3,VERIFIED,Confirmed accurate
+145,Spirit of the Books,1200,1200,Monster,EARTH,Rock,4,VERIFIED,Confirmed accurate
+146,Water Magician,1400,1000,Monster,WATER,Aqua,4,VERIFIED,Confirmed accurate
+147,Ice Water,1150,900,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+148,Fairy of the Fountain,1100,1000,Monster,WATER,Aqua,3,VERIFIED,Confirmed accurate
+149,Amazon of the Seas,1300,1400,Monster,WATER,Aqua,4,VERIFIED,Confirmed accurate
+150,Peacock,1700,1500,Monster,WIND,Winged Beast,5,VERIFIED,Confirmed accurate
+151,Krokodilus,1100,1200,Monster,WATER,Reptile,4,NEEDS REPLACEMENT,Duplicate or incorrect
+152,Toad Master,1000,1000,Monster,WATER,Aqua,3,NEEDS REPLACEMENT,Duplicate or incorrect
+153,Skelgon,1700,1900,Monster,EARTH,Dinosaur,5,OK,
+154,Petite Dragon,600,700,Monster,WIND,Dragon,2,OK,
+155,Fissure,1500,1100,Monster,EARTH,Rock,4,NEEDS REPLACEMENT,Duplicate or incorrect
+156,Gator Dragon,1800,1500,Monster,WATER,Reptile,5,OK,
+157,Slot Machine,2000,2300,Monster,DARK,Machine,7,OK,
+158,Bickuribox,2300,2000,Monster,DARK,Fiend,7,OK,
+159,Mystic Horseman,1300,1550,Monster,EARTH,Beast,4,NEEDS REPLACEMENT,Duplicate or incorrect
+160,Rabid Horseman,2000,1700,Monster,EARTH,Beast-Warrior,6,NEEDS REPLACEMENT,Duplicate or incorrect
+161,Zanki,1500,1700,Monster,DARK,Warrior,5,NEEDS REPLACEMENT,Duplicate or incorrect
+162,Crawling Dragon,1600,1400,Monster,EARTH,Dragon,5,NEEDS REPLACEMENT,Duplicate or incorrect
+163,Croc the Dark Clown,1850,0,Monster,DARK,Warrior,4,OK,
+164,Armored Lizard,1500,1200,Monster,EARTH,Reptile,4,NEEDS REPLACEMENT,Duplicate or incorrect
+165,Firegrass,700,600,Monster,EARTH,Plant,2,NEEDS REPLACEMENT,Duplicate or incorrect
+166,Man-Eating Plant,800,600,Monster,EARTH,Plant,2,NEEDS REPLACEMENT,Duplicate or incorrect
+167,Darkworld Thorns,1200,900,Monster,DARK,Plant,3,OK,
+168,Anthrosaurus,1500,1200,Monster,EARTH,Dinosaur,4,OK,
+169,Drooling Lizard,900,800,Monster,EARTH,Reptile,3,OK,
+170,Charubin the Fire Knight,1100,800,Monster,FIRE,Pyro,3,OK,
+171,Turtle Raccoon,700,900,Monster,WATER,Aqua,3,OK,
+172,Boo Koo,650,500,Monster,DARK,Spellcaster,2,OK,
+173,Flower Wolf,1800,1400,Monster,EARTH,Beast,5,OK,
+174,Wicked Dragon with the Ersatz Head,900,900,Monster,WIND,Dragon,3,OK,
+175,Prevent Rat,500,2000,Monster,EARTH,Beast,4,OK,
+176,Dimensional Warrior,1200,1000,Monster,LIGHT,Warrior,4,OK,
+177,Stone Armadiller,800,1200,Monster,EARTH,Rock,3,OK,
+178,Three-Legged Zombies,1100,800,Monster,DARK,Zombie,3,OK,
+179,Zera the Mant,2800,2300,Monster,DARK,Fiend,8,OK,
+180,Flying Penguin,1200,1000,Monster,WATER,Aqua,4,OK,
+181,Millennium Shield,0,3000,Monster,EARTH,Warrior,5,OK,
+182,Fairy's Gift,1400,1000,Monster,LIGHT,Spellcaster,4,OK,
+183,Flame Cerebrus,2100,1800,Monster,FIRE,Pyro,6,NEEDS REPLACEMENT,Duplicate or incorrect
+184,Mushroom Man,800,600,Monster,EARTH,Plant,2,NEEDS REPLACEMENT,Duplicate or incorrect
+185,Blue-Eyes Silver Zombie,2200,1800,Monster,DARK,Zombie,6,OK,
+186,Wicked Mirror,700,600,Monster,DARK,Rock,2,OK,
+187,High Tide Gyojin,1650,1300,Monster,WATER,Aqua,5,OK,
+188,Kanikabuto,650,900,Monster,WATER,Aqua,3,OK,
+189,Zarigun,600,700,Monster,WATER,Aqua,2,OK,
+190,Mech Bass,1800,1500,Monster,WATER,Machine,5,OK,
+191,Mega Thunderball,750,600,Monster,LIGHT,Thunder,3,OK,
+192,Bolt Escargot,1400,1500,Monster,LIGHT,Thunder,5,OK,
+193,Bolt Penguin,1100,800,Monster,LIGHT,Thunder,3,OK,
+194,Jinzo #7,500,400,Monster,DARK,Machine,2,OK,
+195,Amphibian Beast,1850,1400,Monster,WATER,Aqua,6,OK,
+196,Tripwire Beast,1200,1300,Monster,EARTH,Thunder,4,OK,
+197,Milus Radiant,300,250,Monster,EARTH,Beast,1,OK,
+198,Flame Viper,400,450,Monster,FIRE,Pyro,2,OK,
+199,Skelengel,900,400,Monster,LIGHT,Fairy,2,OK,
+200,Muka Muka,600,300,Monster,EARTH,Rock,2,OK,
+201,Lava Battleguard,1550,1800,Monster,FIRE,Warrior,5,OK,
+202,Swamp Battleguard,1800,1500,Monster,EARTH,Warrior,5,NEEDS REPLACEMENT,Duplicate or incorrect
+203,Giant Red Seasnake,1800,800,Monster,WATER,Aqua,4,OK,
+204,Spike Seadra,1600,1300,Monster,WATER,Sea Serpent,5,OK,
+205,"30,000-Year White Turtle",1250,2100,Monster,WATER,Aqua,5,OK,
+206,Kappa Avenger,1200,900,Monster,WATER,Aqua,3,OK,
+207,Catapult Turtle,1000,2000,Monster,WATER,Aqua,5,NEEDS REPLACEMENT,Duplicate or incorrect
+208,Takriminos,1500,1200,Monster,WATER,Sea Serpent,4,OK,
+209,Flying Fish,800,500,Monster,WATER,Fish,3,OK,
+210,Invader of the Throne,1350,1700,Monster,DARK,Warrior,4,OK,
+211,Monster Tamer,1800,1600,Monster,EARTH,Warrior,5,OK,
+212,Gale Dogra,650,600,Monster,EARTH,Beast,2,OK,
+213,Turu-Purun,450,500,Monster,WATER,Aqua,2,OK,
+214,Turtle Bird,1900,1700,Monster,WATER,Aqua,6,OK,
+215,Kamionwizard,1300,1100,Monster,DARK,Spellcaster,4,OK,
+216,Cyber Saurus,1800,1400,Monster,EARTH,Machine,4,OK,
+217,Cyber Soldier,1500,1700,Monster,DARK,Machine,5,OK,
+218,Shovel Crusher,900,1200,Monster,EARTH,Machine,3,OK,
+219,Mechanicalsnail,800,1000,Monster,DARK,Machine,3,OK,
+220,Bat,300,350,Monster,DARK,Fiend,1,OK,
+221,Giga-Tech Wolf,1200,1400,Monster,DARK,Machine,4,OK,
+222,Cyber-Stein,700,500,Monster,DARK,Machine,2,OK,
+223,Steel Scorpion,250,300,Monster,EARTH,Machine,1,OK,
+224,Dancing Elf,300,200,Monster,WIND,Fairy,1,NEEDS REPLACEMENT,Duplicate or incorrect
+225,Ocubeam,1550,1650,Monster,LIGHT,Fairy,5,OK,
+226,Leghul,300,350,Monster,DARK,Zombie,1,OK,
+227,Ooguchi,300,250,Monster,EARTH,Reptile,1,OK,
+228,Swordsman from a Foreign Land,250,250,Monster,EARTH,Warrior,1,OK,
+229,Emperor of the Land and Sea,800,700,Monster,WATER,Fish,3,OK,
+230,Ushi Oni,2150,1950,Monster,DARK,Fiend,6,OK,
+231,Fireyarou,1300,1000,Monster,FIRE,Pyro,4,NEEDS REPLACEMENT,Duplicate or incorrect
+232,Ganigumo,600,800,Monster,EARTH,Insect,2,OK,
+233,Dark Plant,300,400,Monster,DARK,Plant,1,OK,
+234,Ancient Tool,1700,1400,Monster,EARTH,Machine,5,OK,
+235,Faith Bird,1500,1100,Monster,WIND,Winged Beast,4,OK,
+236,Orion the Battle King,1800,1500,Monster,LIGHT,Warrior,5,OK,
+237,Ansatsu,1700,1200,Monster,EARTH,Warrior,5,OK,
+238,LaMoon,1200,1700,Monster,WATER,Aqua,5,OK,
+239,Nemuriko,800,700,Monster,DARK,Spellcaster,3,OK,
+240,Weather Control,1000,900,Monster,LIGHT,Fairy,3,OK,
+241,Octoberser,1600,1400,Monster,WATER,Aqua,5,NEEDS REPLACEMENT,Duplicate or incorrect
+242,The 13th Grave,1200,900,Monster,DARK,Zombie,3,OK,
+243,Charubin the Fire Knight,1100,800,Monster,FIRE,Pyro,3,NEEDS REPLACEMENT,Duplicate or incorrect
+244,Flame Manipulator,900,1000,Monster,FIRE,Spellcaster,3,OK,
+245,Wood Clown,800,1200,Monster,EARTH,Warrior,3,OK,
+246,Curtain of the Dark Ones,600,500,Monster,DARK,Spellcaster,2,OK,
+247,Kaminarikozou,700,600,Monster,LIGHT,Thunder,2,OK,
+248,Meotoko,700,600,Monster,EARTH,Beast,2,OK,
+249,Neck Hunter,1750,1900,Monster,DARK,Fiend,6,OK,
+250,Mushroom Man #2,1250,800,Monster,EARTH,Plant,3,OK,
+251,Watershed Divinity,1500,1600,Monster,WATER,Fairy,5,OK,
+252,Bladefly,600,700,Monster,WIND,Insect,2,OK,
+253,Embryonic Beast,500,750,Monster,EARTH,Fiend,3,OK,
+254,Beaver Warrior,1200,1500,Monster,EARTH,Beast-Warrior,4,NEEDS REPLACEMENT,Duplicate or incorrect
+255,Empress Mantis,1200,1400,Monster,WIND,Insect,4,OK,
+256,Ghost of a Grudge,1300,1800,Monster,DARK,Zombie,4,OK,
+257,Wodan the Resident of the Forest,900,1200,Monster,EARTH,Warrior,3,OK,
+258,Nekogal #2,1900,2000,Monster,EARTH,Beast-Warrior,6,OK,
+259,Mon Larvas,1300,1400,Monster,EARTH,Beast,4,OK,
+260,Flying Kamakiri #2,800,900,Monster,WIND,Insect,3,OK,
+261,Insect Soldiers of the Sky,1000,800,Monster,WIND,Insect,3,OK,
+262,Armored Rat,950,1100,Monster,EARTH,Beast,3,OK,
+263,Scorpion of the Desert,1100,1000,Monster,EARTH,Insect,3,OK,
+264,Beaver Warrior,1200,1500,Monster,EARTH,Beast-Warrior,4,NEEDS REPLACEMENT,Duplicate or incorrect
+265,Mech Mole Zombie,500,400,Monster,DARK,Zombie,2,OK,
+266,Happy Lover,800,500,Monster,LIGHT,Fairy,2,OK,
+267,Penguin Knight,900,800,Monster,WATER,Aqua,3,OK,
+268,Petit Angel,600,900,Monster,LIGHT,Fairy,3,OK,
+269,Winged Cleaver,700,700,Monster,EARTH,Warrior,2,OK,
+270,Maha Vailo,1550,1400,Monster,LIGHT,Spellcaster,4,NEEDS REPLACEMENT,Duplicate or incorrect
+271,Rainbow Flower,400,500,Monster,EARTH,Plant,2,OK,
+272,Barrel Lily,1100,1000,Monster,EARTH,Plant,3,OK,
+273,Mabarrel,1000,900,Monster,DARK,Machine,3,OK,
+274,Oscillo Hero #2,1000,500,Monster,EARTH,Warrior,3,NEEDS REPLACEMENT,Duplicate or incorrect
+275,Millennium Golem,2000,2200,Monster,EARTH,Rock,6,OK,
+276,Destroyer Golem,1500,1000,Monster,EARTH,Rock,4,OK,
+277,Barrel Dragon,2600,2200,Monster,DARK,Machine,7,OK,
+278,Minomushi Warrior,1300,1200,Monster,EARTH,Rock,4,OK,
+279,Oni Tank T-34,1400,1700,Monster,DARK,Machine,4,OK,
+280,Launcher Spider,2200,2500,Monster,FIRE,Machine,7,OK,
+281,Shining Friendship,0,0,Monster,LIGHT,Fairy,1,OK,
+282,Psychic Kappa,400,1000,Monster,WATER,Aqua,2,NEEDS REPLACEMENT,Duplicate or incorrect
+283,Masaki the Legendary Swordsman,1100,1100,Monster,EARTH,Warrior,4,NEEDS REPLACEMENT,Duplicate or incorrect
+284,Swordstalker,2000,1600,Monster,DARK,Warrior,6,OK,
+285,La Jinn the Mystical Genie of the Lamp,1800,1000,Monster,DARK,Fiend,4,OK,
+286,Lord of the Lamp,1400,1200,Monster,DARK,Fiend,4,NEEDS REPLACEMENT,Duplicate or incorrect
+287,Minar,1400,1200,Monster,WATER,Aqua,4,OK,
+288,Kamakiriman,1150,1400,Monster,WIND,Insect,4,OK,
+289,Mechaleon,800,600,Monster,EARTH,Reptile,2,OK,
+290,Mega Sonic Eye,1500,1800,Monster,DARK,Machine,5,OK,
+291,Super War-Lion,2300,2100,Monster,EARTH,Beast,7,OK,
+292,Yamadron,1600,1800,Monster,FIRE,Dragon,5,OK,
+293,Seiyaryu,2500,2300,Monster,LIGHT,Dragon,7,OK,
+294,Tri-Horned Dragon,2850,2350,Monster,DARK,Dragon,8,OK,
+295,Serpent Night Dragon,2350,2400,Monster,DARK,Dragon,7,OK,
+296,Skull Guardian,2050,2500,Monster,LIGHT,Warrior,7,OK,
+297,Tri-Horn Dragon,2850,2350,Monster,DARK,Dragon,8,OK,
+298,Skull Knight,2650,2250,Monster,DARK,Warrior,7,OK,
+299,Rare Fish,1500,1200,Monster,WATER,Fish,4,OK,
+300,Megazowler,1800,2000,Monster,EARTH,Dinosaur,6,NEEDS REPLACEMENT,Duplicate or incorrect
+301,Uraby (301),1500,800,Monster,EARTH,Dinosaur,4,OK,
+302,Crawling Dragon #2 (302),1600,1200,Monster,EARTH,Dinosaur,5,OK,
+303,Red-Eyes B. Dragon (303),2400,2000,Monster,DARK,Dragon,7,OK,
+304,Castle of Dark Illusions (304),920,1930,Monster,DARK,Fiend,4,OK,
+305,Reaper of the Cards (305),1380,1930,Monster,DARK,Fiend,5,OK,
+306,King of Yamimakai (306),2000,1530,Monster,DARK,Fiend,5,OK,
+307,Barox (307),1380,1530,Monster,DARK,Fiend,5,OK,
+308,Dark Chimera (308),1610,1460,Monster,DARK,Fiend,5,OK,
+309,Metal Guardian (309),1150,2150,Monster,DARK,Machine,5,OK,
+310,Catapult Turtle (310),1000,2000,Monster,WATER,Aqua,5,OK,
+311,Gyakutenno Megami (311),1800,2000,Monster,LIGHT,Fairy,6,OK,
+312,Mystic Horseman (312),1300,1550,Monster,EARTH,Beast,4,OK,
+313,Rabid Horseman (313),2000,1700,Monster,EARTH,Beast-Warrior,6,OK,
+314,Zanki (314),1500,1700,Monster,EARTH,Warrior,5,OK,
+315,Crawling Dragon (315),1600,1400,Monster,EARTH,Dinosaur,5,OK,
+316,Crass Clown (316),1350,1400,Monster,DARK,Fiend,4,OK,
+317,Armored Zombie (317),1500,0,Monster,DARK,Zombie,3,OK,
+318,Dragon Zombie (318),1600,0,Monster,DARK,Zombie,3,OK,
+319,Clown Zombie (319),1350,0,Monster,DARK,Zombie,2,OK,
+320,Pumpking the King of Ghosts (320),1800,2000,Monster,DARK,Zombie,6,OK,
+321,Battle Warrior (321),700,1000,Monster,EARTH,Warrior,3,OK,
+322,Wings of Wicked Flame,700,600,Monster,FIRE,Winged Beast,2,OK,
+323,Dark Artist,600,1400,Monster,DARK,Fiend,3,OK,
+324,Change Slime,400,300,Monster,WATER,Aqua,1,OK,
+325,Moon Envoy,1100,1000,Monster,LIGHT,Warrior,4,OK,
+326,Firegrass (326),700,600,Monster,FIRE,Plant,2,OK,
+327,Psychic Kappa (327),400,1000,Monster,WATER,Aqua,2,OK,
+328,Masaki the Legendary Swordsman (328),1100,1100,Monster,EARTH,Warrior,4,OK,
+329,Dragoness the Wicked Knight (329),1200,900,Monster,WIND,Warrior,3,OK,
+330,Bio Plant (330),600,1300,Monster,WATER,Plant,3,OK,
+331,One-Eyed Shield Dragon,700,1300,Monster,WIND,Dragon,3,OK,
+332,Cyber Soldier (332),1500,1700,Monster,DARK,Machine,5,OK,
+333,Ooguchi (333),300,250,Monster,EARTH,Aqua,1,OK,
+334,Swordsman from a Foreign Land (334),250,250,Monster,EARTH,Warrior,1,OK,
+335,Emperor of the Land and Sea (335),800,700,Monster,WATER,Aqua,3,OK,
+336,Ushi Oni (336),2150,1950,Monster,DARK,Fiend,6,OK,
+337,Monster Eye,250,350,Monster,DARK,Fiend,1,OK,
+338,Leogun,1750,1550,Monster,EARTH,Beast,5,OK,
+339,Tatsunootoshigo,1350,1600,Monster,WATER,Dragon,5,OK,
+340,Saber Slasher,1450,1500,Monster,EARTH,Warrior,5,OK,
+341,Yaiba Robo,1000,800,Monster,EARTH,Machine,4,OK,
+342,Machine King,2200,2000,Monster,EARTH,Machine,6,OK,
+343,Giant Mech-Soldier,1750,1900,Monster,EARTH,Machine,6,OK,
+344,Metal Dragon,1850,1700,Monster,WIND,Machine,5,OK,
+345,Mechanicalchaser,1850,800,Monster,DARK,Machine,4,OK,
+346,Blocker,850,1800,Monster,DARK,Machine,4,OK,
+347,Giltia the D. Knight,1850,1500,Monster,DARK,Warrior,5,OK,
+348,Launcher Spider (348),2200,2500,Monster,FIRE,Machine,7,OK,
+349,Giga-Tech Wolf (349),1200,1400,Monster,DARK,Machine,4,OK,
+350,Cyber Soldier of Darkworld,1400,1200,Monster,DARK,Machine,4,OK,
+351,Fortress Whale,2350,2150,Monster,WATER,Fish,7,OK,
+352,Daedalus,1850,1700,Monster,WATER,Fairy,6,OK,
+353,Succubus Knight,1650,1300,Monster,DARK,Warrior,5,OK,
+354,Oni Tank T-34 (354),1400,1700,Monster,DARK,Machine,4,OK,
+355,Cyber-Stein (355),700,500,Monster,DARK,Machine,2,OK,
+356,Plate Armor,1500,1300,Monster,EARTH,Warrior,5,OK,
+357,Launcher Spider (357),2200,2500,Monster,FIRE,Machine,7,OK,
+358,Armored Starfish,850,1400,Monster,WATER,Aqua,4,OK,
+359,Hourglass of Life,700,600,Monster,DARK,Fairy,2,OK,
+360,Rare Fish (360),1500,1200,Monster,WATER,Fish,4,OK,
+361,Mech Bass (361),1800,1500,Monster,WATER,Machine,5,OK,
+362,Bolt Escargot (362),1400,1500,Monster,WATER,Aqua,5,OK,
+363,Spiked Snail,700,1300,Monster,WATER,Aqua,3,OK,
+364,King Fog (364),1000,900,Monster,WATER,Fiend,3,OK,
+365,Crazy Fish,1600,1200,Monster,WATER,Fish,4,OK,
+366,Mega Thunderball (366),750,600,Monster,LIGHT,Thunder,3,OK,
+367,Mabarrel (367),1200,1000,Monster,DARK,Aqua,4,OK,
+368,Corroding Shark,1100,700,Monster,WATER,Zombie,3,OK,
+369,Skelengel (369),900,400,Monster,LIGHT,Fairy,2,OK,
+370,Wow Warrior,1250,900,Monster,EARTH,Fish,4,OK,
+371,Fairy Dragon,1100,1200,Monster,WIND,Dragon,4,OK,
+372,Obese Marmot of Nefariousness (372),750,800,Monster,EARTH,Beast,3,OK,
+373,Dark Elf,2000,800,Monster,DARK,Spellcaster,4,OK,
+374,Winged Dragon Guardian of the Fortress,1400,1200,Monster,WIND,Dragon,4,OK,
+375,Yamadron (375),1600,1800,Monster,FIRE,Dragon,5,OK,
+376,Seiyaryu (376),2500,2300,Monster,LIGHT,Dragon,7,OK,
+377,Tri-Horned Dragon (377),2850,2350,Monster,DARK,Dragon,8,OK,
+378,Serpent Night Dragon (378),2350,2400,Monster,DARK,Dragon,7,OK,
+379,Skelgon (379),1700,1900,Monster,DARK,Dragon,5,OK,
+380,Darkfire Dragon,1500,1250,Monster,DARK,Dragon,4,OK,
+381,Parrot Dragon,2000,1300,Monster,WIND,Dragon,5,OK,
+382,Dark-Eyes Illusionist,0,0,Monster,DARK,Spellcaster,2,OK,
+383,Toon Alligator,800,1600,Monster,WATER,Reptile,4,OK,
+384,Rude Kaiser,1800,1600,Monster,EARTH,Beast-Warrior,5,OK,
+385,Parry the Tactician,1200,1400,Monster,EARTH,Warrior,4,OK,
+386,Sengenjin,1500,1600,Monster,EARTH,Warrior,4,OK,
+387,Sasuke Samurai,800,400,Monster,EARTH,Warrior,2,OK,
+388,Great Long Nose,1900,1600,Monster,EARTH,Beast,5,OK,
+389,Otohime,1800,2000,Monster,WATER,Fairy,6,OK,
+390,The Furious Sea King (390),1800,1500,Monster,WATER,Aqua,5,OK,
+391,Fire Reaper (391),700,500,Monster,FIRE,Zombie,2,OK,
+392,Hyo,800,900,Monster,WATER,Aqua,3,OK,
+393,Doron,900,500,Monster,WATER,Fairy,3,OK,
+394,Fiend's Hand,600,600,Monster,DARK,Fiend,2,OK,
+395,Witty Phantom,1400,1300,Monster,DARK,Fiend,4,OK,
+396,Souleater,1200,0,Monster,DARK,Zombie,3,OK,
+397,Larvas (397),800,1000,Monster,EARTH,Beast,3,OK,
+398,Hard Armor (398),300,1200,Monster,EARTH,Warrior,3,OK,
+399,Fireyarou (399),1300,1000,Monster,FIRE,Pyro,4,OK,
+400,Dryad,1200,1400,Monster,EARTH,Plant,4,OK,
+401,Spirit of the Harp (401),800,2000,Monster,LIGHT,Fairy,4,OK,
+402,Silver Fang (402),1200,800,Monster,EARTH,Beast,3,OK,
+403,Griggle,350,300,Monster,EARTH,Plant,1,OK,
+404,Rainbow Flower (404),400,500,Monster,EARTH,Plant,2,OK,
+405,Mushroom Man (405),800,600,Monster,EARTH,Plant,2,OK,
+406,Prisman,800,1000,Monster,LIGHT,Rock,3,OK,
+407,Lady of Faith,1100,800,Monster,LIGHT,Spellcaster,3,OK,
+408,Twin Long Rods #2,900,700,Monster,WATER,Aqua,3,OK,
+409,Oscillo Hero #2 (409),1000,500,Monster,EARTH,Warrior,3,OK,
+410,Invader of the Throne (410),1350,1700,Monster,DARK,Warrior,4,OK,
+411,Thousand-Eyes Idol,0,0,Monster,DARK,Spellcaster,1,OK,
+412,Fairy's Gift (412),1400,1000,Monster,LIGHT,Spellcaster,4,OK,
+413,Flame Cerebrus (413),2100,1800,Monster,FIRE,Pyro,6,OK,
+414,Flame Ghost,1000,800,Monster,FIRE,Zombie,3,OK,
+415,Larvae Moth (415),500,400,Monster,EARTH,Insect,2,OK,
+416,Armored Lizard (416),1500,1200,Monster,EARTH,Reptile,4,OK,
+417,Basic Insect (417),500,700,Monster,EARTH,Insect,2,OK,
+418,Larvae Moth (418),500,400,Monster,EARTH,Insect,2,OK,
+419,Great Moth (419),1200,900,Monster,EARTH,Insect,4,OK,
+420,Kuriboh (420),300,200,Monster,DARK,Fiend,1,OK,
+421,Mammoth Graveyard (421),1200,800,Monster,EARTH,Dinosaur,3,OK,
+422,Great White (422),1600,800,Monster,WATER,Fish,4,OK,
+423,Wolf (423),1200,800,Monster,EARTH,Beast,3,OK,
+424,Harpie Lady (424),1300,1400,Monster,WIND,Winged Beast,4,OK,
+425,Harpie Lady Sisters (425),1950,2100,Monster,WIND,Winged Beast,6,OK,
+426,Tiger Axe (426),1300,1100,Monster,EARTH,Beast-Warrior,4,OK,
+427,Silver Bow and Arrow,1500,1600,Monster,LIGHT,Fairy,4,OK,
+428,Violet Crystal,800,2000,Monster,EARTH,Dragon,4,OK,
+429,Book of Secret Arts,1000,1000,Monster,DARK,Spellcaster,3,OK,
+430,Invigoration,600,600,Monster,EARTH,Fairy,1,OK,
+431,Machine Conversion Factory,1500,1500,Monster,DARK,Machine,5,OK,
+432,Raise Body Heat,1000,1000,Monster,FIRE,Dinosaur,3,OK,
+433,Follow Wind,1200,1000,Monster,WIND,Fairy,3,OK,
+434,Power of Kaishin,1000,800,Monster,WATER,Aqua,2,OK,
+435,Dragon Treasure,1100,1800,Monster,EARTH,Dragon,4,OK,
+436,Electro-Whip,1000,500,Monster,LIGHT,Thunder,3,OK,
+437,Cyber Shield,800,2000,Monster,DARK,Machine,4,OK,
+438,Elegant Egotist,1300,1400,Monster,WIND,Winged Beast,4,OK,
+439,Mystical Moon,1100,1400,Monster,LIGHT,Beast,3,OK,
+440,Stop Defense,1000,1000,Monster,EARTH,Warrior,3,OK,
+441,Malevolent Nuzzler,1400,1600,Monster,DARK,Fiend,4,OK,
+442,Violet Crystal (442),800,2000,Monster,EARTH,Dragon,4,OK,
+443,Black Pendant,1200,1000,Monster,DARK,Fiend,3,OK,
+444,Salamandra,1500,1000,Monster,FIRE,Pyro,4,OK,
+445,Sword of Dark Destruction,1400,800,Monster,DARK,Fiend,4,OK,
+446,Dark Energy,1000,500,Monster,DARK,Fiend,2,OK,
+447,Laser Cannon Armor,1600,1800,Monster,LIGHT,Machine,5,OK,
+448,Insect Armor with Laser Cannon,2400,1400,Monster,EARTH,Insect,5,OK,
+449,Launcher Spider (449),2200,2500,Monster,FIRE,Machine,7,OK,
+450,Zoa,2600,1900,Monster,DARK,Fiend,7,OK,
+451,Metalzoa,3000,2300,Monster,DARK,Machine,8,OK,
+452,Zone Eater,250,200,Monster,DARK,Fiend,1,OK,
+453,Steel Scorpion (453),250,300,Monster,EARTH,Machine,2,OK,
+454,Dancing Elf (454),300,200,Monster,WIND,Fairy,1,OK,
+455,Oscillo Hero,1250,700,Monster,EARTH,Warrior,3,OK,
+456,Shining Friendship (456),1300,1100,Monster,LIGHT,Fairy,4,OK,
+457,Fusionist,900,700,Monster,EARTH,Beast,3,OK,
+458,Thunder Dragon,1600,1500,Monster,LIGHT,Thunder,5,OK,
+459,Roaring Ocean Snake,1600,1400,Monster,WATER,Aqua,4,OK,
+460,Star Boy,550,500,Monster,WATER,Aqua,2,OK,
+461,Spirit of the Books (461),1400,1200,Monster,LIGHT,Fairy,4,OK,
+462,Stain Storm,1800,1600,Monster,WATER,Aqua,4,OK,
+463,Tail Swipe,1650,1350,Monster,EARTH,Dinosaur,5,OK,
+464,Turtle Tiger,1000,1500,Monster,WATER,Aqua,4,OK,
+465,Bolt Penguin (465),1100,800,Monster,WATER,Aqua,3,OK,
+466,Monstrous Bird,2000,1900,Monster,WIND,Winged Beast,6,OK,
+467,Crab Turtle (467),2550,2500,Monster,WATER,Aqua,8,OK,
+468,Mikazukinoyaiba,800,700,Monster,EARTH,Beast,2,OK,
+469,Millennium Shield (469),0,3000,Monster,EARTH,Warrior,5,OK,
+470,Fairy Guardian,1000,1000,Monster,LIGHT,Fairy,4,OK,
+471,Magician of Faith,300,400,Monster,LIGHT,Spellcaster,1,OK,
+472,Witch of the Black Forest,1100,1200,Monster,DARK,Spellcaster,4,OK,
+473,Ill Witch,800,500,Monster,DARK,Spellcaster,2,OK,
+474,Waterdragon Fairy,1100,700,Monster,WATER,Aqua,3,OK,
+475,Ancient Elf,1450,1200,Monster,LIGHT,Spellcaster,4,OK,
+476,Beautiful Beast Trainer,1750,1500,Monster,EARTH,Warrior,5,OK,
+477,Water Element,900,1600,Monster,WATER,Aqua,4,OK,
+478,Muka Muka (478),600,300,Monster,EARTH,Rock,2,OK,
+479,Sand Stone,1300,1600,Monster,EARTH,Rock,5,OK,
+480,Bolt Escargot (480),1400,1500,Monster,WATER,Aqua,5,OK,
+481,Brave Scizzar,1300,1000,Monster,EARTH,Insect,4,OK,
+482,Succubus Knight (482),1650,1300,Monster,DARK,Warrior,5,OK,
+483,Patrol Robo,1100,900,Monster,EARTH,Machine,3,OK,
+484,Kaminarikozou (484),700,600,Monster,LIGHT,Thunder,2,OK,
+485,Meotoko (485),700,600,Monster,EARTH,Beast,2,OK,
+486,Frenzied Panda,1200,1000,Monster,EARTH,Beast,4,OK,
+487,Air Marmot of Nefariousness,400,600,Monster,EARTH,Beast,2,OK,
+488,Haniwa (488),500,500,Monster,EARTH,Rock,2,OK,
+489,Yashinoki (489),800,600,Monster,EARTH,Plant,3,OK,
+490,Vishwar Randi (490),900,700,Monster,DARK,Fairy,2,OK,
+491,Summons Gate Guardian,3750,3400,Monster,DARK,Warrior,11,OK,
+492,Dungeon Worm,1800,1500,Monster,EARTH,Insect,5,OK,
+493,Monster Tamer (493),1800,1600,Monster,EARTH,Warrior,5,OK,
+494,Ryu-Kishin Powered,1600,1200,Monster,DARK,Fiend,4,OK,
+495,Swordstalker (495),2000,1600,Monster,DARK,Warrior,6,OK,
+496,La Jinn the Mystical Genie of the Lamp (496),1800,1000,Monster,DARK,Fiend,4,OK,
+497,Blue-Eyes Ultimate Dragon,4500,3800,Monster,LIGHT,Dragon,12,OK,
+498,Toon Summoned Skull,2500,1200,Monster,DARK,Fiend,6,OK,
+499,Toon Mermaid,1400,1500,Monster,WATER,Aqua,4,OK,
+500,Millennium Golem (500),2000,2200,Monster,EARTH,Rock,6,OK,
+501,Magician of Black Chaos,2800,2600,Monster,DARK,Spellcaster,8,OK,
+502,Black Luster Soldier,3000,2500,Monster,EARTH,Warrior,8,OK,
+503,Gaia the Dragon Champion,2600,2100,Monster,WIND,Dragon,7,OK,
+504,Super War-Lion (504),2300,2100,Monster,EARTH,Beast,7,OK,
+505,Nekogal #1,1100,900,Monster,EARTH,Beast-Warrior,3,OK,
+506,Sleeping Lion,700,1700,Monster,EARTH,Beast,4,OK,
+507,Preventing Rat,500,2000,Monster,EARTH,Beast,4,OK,
+508,Mucus Yolk,0,100,Monster,WATER,Aqua,1,OK,
+509,Larvas (509),800,1000,Monster,EARTH,Beast,3,OK,
+510,Hard Armor (510),300,1200,Monster,EARTH,Warrior,3,OK,
+511,Fireyarou (511),1300,1000,Monster,FIRE,Pyro,4,OK,
+512,Dryad (512),1200,1400,Monster,EARTH,Plant,4,OK,
+513,Beautiful Headhuntress,1600,800,Monster,EARTH,Warrior,4,OK,
+514,Weather Report,950,1500,Monster,WATER,Aqua,4,OK,
+515,Stim-Pack,1200,1400,Monster,EARTH,Machine,3,OK,
+516,Royal Guard,1900,1500,Monster,EARTH,Machine,6,OK,
+517,Minar (517),1400,700,Monster,DARK,Fiend,4,OK,
+518,Kurama,800,800,Monster,WIND,Winged Beast,3,OK,
+519,Legendary Sword,1700,1500,Monster,EARTH,Warrior,5,OK,
+520,Sword Arm of Dragon (520),1750,2030,Monster,EARTH,Dinosaur,6,OK,
+521,Goddess with the Third Eye,1200,1000,Monster,LIGHT,Fairy,4,OK,
+522,Sengenjin (522),1500,1600,Monster,EARTH,Warrior,4,OK,
+523,Garvas,2000,1700,Monster,FIRE,Pyro,6,OK,
+524,Yado Karu,900,1700,Monster,WATER,Aqua,4,OK,
+525,Super Roboyarou,1200,1400,Monster,EARTH,Machine,4,OK,
+526,Cyber Saurus (526),1800,1400,Monster,EARTH,Machine,4,OK,
+527,Bracchio-raidus,2200,2000,Monster,WATER,Dinosaur,6,OK,
+528,Laughing Flower,900,500,Monster,EARTH,Plant,2,OK,
+529,Bean Soldier,1400,1300,Monster,EARTH,Plant,4,OK,
+530,Green Phantom King (530),1600,1800,Monster,EARTH,Plant,3,OK,
+531,Patrol Robo (531),1100,900,Monster,EARTH,Machine,3,OK,
+532,Tremendous Fire,1000,1000,Monster,FIRE,Pyro,3,OK,
+533,Pot the Trick,400,400,Monster,EARTH,Rock,2,OK,
+534,Milus Radiant (534),300,250,Monster,EARTH,Beast,1,OK,
+535,Ill Witch (535),800,500,Monster,DARK,Spellcaster,2,OK,
+536,The Melting Red Shadow,500,700,Monster,WATER,Aqua,2,OK,
+537,Madjinn Gunn,600,800,Monster,DARK,Fiend,2,OK,
+538,Gust,800,600,Monster,WIND,Winged Beast,2,OK,
+539,Blast Juggler,1000,900,Monster,FIRE,Machine,3,OK,
+540,Goddess of Whim,950,700,Monster,LIGHT,Fairy,3,OK,
+541,Water Magician (541),1400,1000,Monster,WATER,Aqua,4,OK,
+542,Water Girl,1250,1000,Monster,WATER,Aqua,4,OK,
+543,Fire Eye,800,600,Monster,FIRE,Pyro,2,OK,
+544,Monsturtle (544),800,1000,Monster,WATER,Aqua,3,OK,
+545,Claw Reacher,1000,800,Monster,DARK,Fiend,3,OK,
+546,Phantom Dewan,700,600,Monster,DARK,Spellcaster,2,OK,
+547,Arlownay,800,1000,Monster,EARTH,Plant,3,OK,
+548,Dark Plant (548),300,400,Monster,DARK,Plant,1,OK,
+549,Anthrosaurus (549),1500,800,Monster,EARTH,Dinosaur,4,OK,
+550,Drooling Lizard (550),900,800,Monster,EARTH,Reptile,3,OK,
+551,Trakadon,1300,800,Monster,EARTH,Dinosaur,4,OK,
+552,Fiend Reflection #1,1400,1800,Monster,LIGHT,Winged Beast,4,OK,
+553,Nekogal #2 (553),1900,2000,Monster,EARTH,Beast-Warrior,6,OK,
+554,Eldeen,950,1000,Monster,LIGHT,Spellcaster,3,OK,
+555,High Tide Gyojin (555),1650,1300,Monster,WATER,Aqua,4,OK,
+556,Rogue Doll (556),1600,1000,Monster,LIGHT,Spellcaster,4,OK,
+557,Twin-Headed Wolf,1500,1200,Monster,EARTH,Beast,4,OK,
+558,Penguin Soldier,750,500,Monster,WATER,Aqua,2,OK,
+559,Petit Dragon,600,700,Monster,WIND,Dragon,2,OK,
+560,Frenzied Panda (560),1200,1000,Monster,EARTH,Beast,4,OK,
+561,Air Eater,2100,1600,Monster,WIND,Fiend,6,OK,
+562,8 Claws Scorpion,300,200,Monster,DARK,Insect,2,OK,
+563,Armored Rat (563),950,1100,Monster,EARTH,Beast,3,OK,
+564,Gatekeeper,1500,1800,Monster,DARK,Machine,5,OK,
+565,Sengenjin (565),1500,1600,Monster,EARTH,Warrior,4,OK,
+566,Flower Wolf (566),1800,1400,Monster,EARTH,Beast,5,OK,
+567,Oscillo Hero #2 (567),1000,500,Monster,EARTH,Warrior,3,OK,
+568,Invader of the Throne (568),1350,1700,Monster,DARK,Warrior,4,OK,
+569,Mystical Sheep #1,1150,900,Monster,EARTH,Beast,3,OK,
+570,Stuffed Animal,1200,900,Monster,EARTH,Warrior,3,OK,
+571,Megasonic Eye,1500,1800,Monster,DARK,Machine,5,OK,
+572,Super War-Lion (572),2300,2100,Monster,EARTH,Beast,7,OK,
+573,Yamadron (573),1600,1800,Monster,FIRE,Dragon,5,OK,
+574,Man-Eating Black Shark,2100,1300,Monster,WATER,Fish,5,OK,
+575,Enchanting Mermaid,1200,900,Monster,WATER,Aqua,3,OK,
+576,Fire Kraken,1600,1500,Monster,WATER,Aqua,4,OK,
+577,Tripwire Beast (577),1200,1300,Monster,EARTH,Thunder,4,OK,
+578,Suijin,2500,2400,Monster,WATER,Aqua,7,OK,
+579,Sanga of the Thunder,2600,2200,Monster,LIGHT,Thunder,7,OK,
+580,Kazejin,2400,2200,Monster,WIND,Spellcaster,7,OK,
+581,Barox (581),1380,1530,Monster,DARK,Fiend,5,OK,
+582,Mystic Lamp,800,600,Monster,DARK,Spellcaster,1,OK,
+583,Togex,600,400,Monster,DARK,Reptile,2,OK,
+584,Chow Len the Prophet,900,1400,Monster,LIGHT,Spellcaster,3,OK,
+585,Supporter in the Shadow,1000,1000,Monster,EARTH,Warrior,2,OK,
+586,Trial of Nightmare,900,900,Monster,DARK,Fiend,4,OK,
+587,Timeater,1900,1700,Monster,DARK,Fiend,6,OK,
+588,Gate Deeg,1000,1200,Monster,DARK,Fiend,3,OK,
+589,Waterdragon Fairy (589),1100,700,Monster,WATER,Aqua,3,OK,
+590,Jinzo #7 (590),500,400,Monster,DARK,Machine,2,OK,
+591,Dice Armadillo,1650,1800,Monster,EARTH,Beast,5,OK,
+592,Dark Shade,1000,1000,Monster,DARK,Fiend,3,OK,
+593,Anthrosaurus (593),1500,800,Monster,EARTH,Dinosaur,4,OK,
+594,Drooling Lizard (594),900,800,Monster,EARTH,Reptile,3,OK,
+595,Ameba,300,350,Monster,WATER,Aqua,1,OK,
+596,Koumori Dragon (596),1500,1200,Monster,DARK,Dragon,4,OK,
+597,Boo Koo (597),650,500,Monster,DARK,Spellcaster,2,OK,
+598,Flower Wolf (598),1800,1400,Monster,EARTH,Beast,5,OK,
+599,Sengenjin (599),1500,1600,Monster,EARTH,Warrior,4,OK,
+600,Toon Alligator (600),800,1600,Monster,WATER,Reptile,4,OK,
+601,Baby Dragon (601),1200,700,Monster,WIND,Dragon,3,OK,
+602,Ryu-Ran,2200,2600,Monster,FIRE,Dragon,7,OK,
+603,Mystic Lamp (603),800,600,Monster,DARK,Spellcaster,1,OK,
+604,Swordsman from a Distant Land,250,250,Monster,EARTH,Warrior,1,OK,
+605,Ancient Tool (605),1700,1400,Monster,EARTH,Machine,5,OK,
+606,Faith Bird (606),1500,1100,Monster,WIND,Winged Beast,4,OK,
+607,Orion the Battle King (607),1800,1500,Monster,LIGHT,Fairy,5,OK,
+608,Ansatsu (608),1700,1200,Monster,EARTH,Warrior,5,OK,
+609,LaMoon (609),1200,1700,Monster,WATER,Aqua,5,OK,
+610,Nemuriko (610),800,700,Monster,DARK,Spellcaster,3,OK,
+611,Weather Control (611),1300,1200,Monster,LIGHT,Fairy,4,OK,
+612,Octoberser (612),1600,1400,Monster,WATER,Aqua,5,OK,
+613,The 13th Grave (613),1200,900,Monster,DARK,Zombie,3,OK,
+614,Charubin the Fire Knight (614),1100,800,Monster,FIRE,Pyro,3,OK,
+615,Mystical Capture Chain,700,700,Monster,EARTH,Warrior,2,OK,
+616,Fiend Castle,1300,1000,Monster,DARK,Fiend,4,OK,
+617,Dark Bat,1000,1000,Monster,DARK,Fiend,3,OK,
+618,Bone Mouse,400,300,Monster,DARK,Zombie,1,OK,
+619,Root Water (619),900,850,Monster,WATER,Fish,3,OK,
+620,Fiend Reflection #2,1100,1400,Monster,LIGHT,Winged Beast,4,OK,
+621,King of Yamimakai (621),2000,1530,Monster,DARK,Fiend,5,OK,
+622,Summoned Skull (622),2500,1200,Monster,DARK,Fiend,6,OK,
+623,Barrel Dragon (623),2600,2200,Monster,DARK,Machine,7,OK,
+624,Barrel Rock,1000,1300,Monster,EARTH,Rock,4,OK,
+625,Giant Red Seasnake (625),1800,800,Monster,WATER,Aqua,4,OK,
+626,Spike Seadra (626),1600,1300,Monster,WATER,Fish,5,OK,
+627,"30,000-Year White Turtle (627)",1250,2100,Monster,WATER,Aqua,5,OK,
+628,Kappa Avenger (628),1200,900,Monster,WATER,Aqua,3,OK,
+629,Aqua Snake,1050,1050,Monster,WATER,Aqua,3,OK,
+630,Giant Fish,1200,800,Monster,WATER,Fish,4,OK,
+631,Mech Mole Zombie (631),500,400,Monster,DARK,Zombie,2,OK,
+632,Happy Lover (632),800,500,Monster,LIGHT,Fairy,2,OK,
+633,Penguin Knight (633),900,800,Monster,WATER,Aqua,3,OK,
+634,Petit Moth,300,200,Monster,EARTH,Insect,1,OK,
+635,King Fog (635),1000,900,Monster,WATER,Fiend,3,OK,
+636,Kanikabuto (636),650,900,Monster,WATER,Aqua,3,OK,
+637,Electric Lizard,850,800,Monster,LIGHT,Thunder,3,OK,
+638,Kagemusha of the Blue Flame,800,400,Monster,FIRE,Warrior,2,OK,
+639,Flame Viper (639),400,450,Monster,FIRE,Pyro,2,OK,
+640,Royal Guard (640),1900,1500,Monster,EARTH,Machine,6,OK,
+641,Machine King Prototype,1600,1500,Monster,EARTH,Machine,4,OK,
+642,Giant Turtle Who Feeds on Flames,1400,1800,Monster,WATER,Aqua,5,OK,
+643,Turtle Raccoon (643),700,900,Monster,WATER,Aqua,3,OK,
+644,Zombyra the Dark,2100,500,Monster,DARK,Zombie,4,OK,
+645,Crawling Dragon (645),1600,1400,Monster,EARTH,Dinosaur,5,OK,
+646,Flame Swordsman (646),1800,1600,Monster,FIRE,Warrior,5,OK,
+647,Time Wizard (647),500,400,Monster,LIGHT,Spellcaster,2,OK,
+648,Thousand Dragon (648),2400,2000,Monster,WIND,Dragon,7,OK,
+649,Dark Magician Girl,2000,1700,Monster,DARK,Spellcaster,6,OK,
+650,Sengenjin (650),1500,1600,Monster,EARTH,Warrior,4,OK,
+651,Crab Turtle (651),2550,2500,Monster,WATER,Aqua,8,OK,
+652,Slot Machine (652),2000,2300,Monster,DARK,Machine,7,OK,
+653,Hungry Burger,2000,1850,Monster,DARK,Warrior,6,OK,
+654,Zera the Mant (654),2800,2300,Monster,DARK,Fiend,8,OK,
+655,Metal Guardian (655),1150,2150,Monster,DARK,Machine,5,OK,
+656,Cyber Harpie,1800,1300,Monster,WIND,Winged Beast,4,OK,
+657,Raigeki,,,Spell,,,,OK,
+658,Dark Hole,,,Spell,,,,OK,
+659,Swords of Revealing Light,,,Spell,,,,OK,
+660,Pot of Greed,,,Spell,,,,OK,
+661,Monster Reborn,,,Spell,,,,OK,
+662,Harpie's Feather Duster,,,Spell,,,,OK,
+663,Change of Heart,,,Spell,,,,OK,
+664,Polymerization,,,Spell,,,,OK,
+665,Sparks,,,Spell,,,,OK,
+666,Hinotama,,,Spell,,,,OK,
+667,Final Flame,,,Spell,,,,OK,
+668,Ookazi,,,Spell,,,,OK,
+669,Tremendous Fire,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+670,Red Medicine,,,Spell,,,,OK,
+671,Goblin's Secret Remedy,,,Spell,,,,OK,
+672,Soul of the Pure,,,Spell,,,,OK,
+673,Dian Keto the Cure Master,,,Spell,,,,OK,
+674,Ancient Telescope,,,Spell,,,,OK,
+675,Morale Boost,,,Spell,,,,OK,
+676,Sogen,,,Spell,,,,OK,
+677,Umi,,,Spell,,,,OK,
+678,Yama,,,Spell,,,,OK,
+679,Wasteland,,,Spell,,,,OK,
+680,Forest,,,Spell,,,,OK,
+681,Mountain,,,Spell,,,,OK,
+682,Dark Magician Girl,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+683,Sword of Dark Destruction,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+684,Black Pendant,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+685,Invigoration,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+686,Follow Wind,,,Spell,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+687,Trap Hole,,,Trap,,,,OK,
+688,Mirror Force,,,Trap,,,,OK,
+689,Reinforcements,,,Trap,,,,OK,
+690,Castle Walls,,,Trap,,,,OK,
+691,Ultimate Offering,,,Trap,,,,OK,
+692,Waboku,,,Trap,,,,OK,
+693,Enchanted Javelin,,,Trap,,,,OK,
+694,Seven Tools of the Bandit,,,Trap,,,,OK,
+695,Horn of Heaven,,,Trap,,,,OK,
+696,Solemn Judgment,,,Trap,,,,OK,
+697,Eatgaboon,,,Trap,,,,OK,
+698,Call of the Haunted,,,Trap,,,,OK,
+699,Gravity Bind,,,Trap,,,,OK,
+700,Type Zero Magic Crusher,,,Trap,,,,OK,
+701,Mega Ton Magical Cannon,,,Trap,,,,OK,
+702,Acid Trap Hole,,,Trap,,,,OK,
+703,Widespread Ruin,,,Trap,,,,OK,
+704,Jar of Greed,,,Trap,,,,OK,
+705,Reckless Greed,,,Trap,,,,OK,
+706,Bottomless Trap Hole,,,Trap,,,,OK,
+707,Torrential Tribute,,,Trap,,,,OK,
+708,Magic Cylinder,,,Trap,,,,OK,
+709,Sakuretsu Armor,,,Trap,,,,OK,
+710,Dust Tornado,,,Trap,,,,OK,
+711,Compulsory Evacuation Device,,,Trap,,,,OK,
+712,Divine Wrath,,,Trap,,,,OK,
+713,Nutrient Z,,,Trap,,,,OK,
+714,Gift of The Mystical Elf,,,Trap,,,,OK,
+715,Backup Soldier,,,Trap,,,,OK,
+716,Staunch Defender,,,Trap,,,,OK,
+717,The Reliable Guardian,,,Trap,,,,OK,
+718,Just Desserts,,,Trap,,,,OK,
+719,Ceasefire,,,Trap,,,,OK,
+720,Dragon Treasure,,,Trap,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+721,Malevolent Nuzzler,,,Trap,,,,NEEDS REPLACEMENT,Duplicate or incorrect
+722,Axe of Despair,,,Trap,,,,OK,

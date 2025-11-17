@@ -3002,116 +3002,192 @@
   {
     "id": 301,
     "name": "Legendary Sword",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1500,
+    "def": 800,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 4
   },
   {
     "id": 302,
     "name": "Sword of Dark Destruction",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1600,
+    "def": 1200,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 5
   },
   {
     "id": 303,
     "name": "Dark Energy",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 2400,
+    "def": 2000,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Dragon",
+    "level": 7
   },
   {
     "id": 304,
     "name": "Axe of Despair",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 920,
+    "def": 1930,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
   },
   {
     "id": 305,
     "name": "Laser Cannon Armor",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1380,
+    "def": 1930,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
   },
   {
     "id": 306,
     "name": "Insect Armor with Laser Cannon",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 2000,
+    "def": 1530,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
   },
   {
     "id": 307,
     "name": "Elf's Light",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1380,
+    "def": 1530,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
   },
   {
     "id": 308,
     "name": "Beast Fangs",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1610,
+    "def": 1460,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 5
   },
   {
     "id": 309,
     "name": "Steel Shell",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1150,
+    "def": 2150,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 5
   },
   {
     "id": 310,
     "name": "Vile Germs",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 1000,
+    "def": 2000,
+    "type": "Equip",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 5
   },
   {
     "id": 311,
     "name": "Black Pendant",
-    "type": "Spell",
-    "attr": "LIGHT"
+    "atk": 1800,
+    "def": 2000,
+    "type": "Equip",
+    "attr": "LIGHT",
+    "race": "Fairy",
+    "level": 6
   },
   {
     "id": 312,
     "name": "Silver Bow and Arrow",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1300,
+    "def": 1550,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Beast",
+    "level": 4
   },
   {
     "id": 313,
     "name": "Horn of Light",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 2000,
+    "def": 1700,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Beast-Warrior",
+    "level": 6
   },
   {
     "id": 314,
     "name": "Horn of the Unicorn",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1500,
+    "def": 1700,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 5
   },
   {
     "id": 315,
     "name": "Dragon Treasure",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1600,
+    "def": 1400,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Dinosaur",
+    "level": 5
   },
   {
     "id": 316,
     "name": "Electro-whip",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1350,
+    "def": 1400,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 4
   },
   {
     "id": 317,
     "name": "Cyber Shield",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1500,
+    "def": 0,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
   },
   {
     "id": 318,
     "name": "Elegant Egotist",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1600,
+    "def": 0,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 3
   },
   {
     "id": 319,
     "name": "Mystical Moon",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1350,
+    "def": 0,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Zombie",
+    "level": 2
   },
   {
     "id": 320,
@@ -3122,50 +3198,82 @@
   {
     "id": 321,
     "name": "Malevolent Nuzzler",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 700,
+    "def": 1000,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 3
   },
   {
     "id": 322,
     "name": "Violet Crystal",
-    "type": "Spell",
-    "attr": "FIRE"
+    "atk": 700,
+    "def": 600,
+    "type": "Equip",
+    "attr": "FIRE",
+    "race": "Winged Beast",
+    "level": 2
   },
   {
     "id": 323,
     "name": "Book of Secret Arts",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 600,
+    "def": 1400,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 3
   },
   {
     "id": 324,
     "name": "Invigoration",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 400,
+    "def": 300,
+    "type": "Equip",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 1
   },
   {
     "id": 325,
     "name": "Machine Conversion Factory",
-    "type": "Spell",
-    "attr": "LIGHT"
+    "atk": 1100,
+    "def": 1000,
+    "type": "Equip",
+    "attr": "LIGHT",
+    "race": "Warrior",
+    "level": 4
   },
   {
     "id": 326,
     "name": "Raise Body Heat",
-    "type": "Spell",
-    "attr": "FIRE"
+    "atk": 700,
+    "def": 600,
+    "type": "Equip",
+    "attr": "FIRE",
+    "race": "Plant",
+    "level": 2
   },
   {
     "id": 327,
     "name": "Follow Wind",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 400,
+    "def": 1000,
+    "type": "Equip",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 2
   },
   {
     "id": 328,
     "name": "Power of Kaishin",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 1100,
+    "def": 1100,
+    "type": "Equip",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 4
   },
   {
     "id": 329,
@@ -3176,38 +3284,62 @@
   {
     "id": 330,
     "name": "Forest",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 600,
+    "def": 1300,
+    "type": "Field",
+    "attr": "WATER",
+    "race": "Plant",
+    "level": 3
   },
   {
     "id": 331,
     "name": "Wasteland",
-    "type": "Spell",
-    "attr": "WIND"
+    "atk": 700,
+    "def": 1300,
+    "type": "Field",
+    "attr": "WIND",
+    "race": "Dragon",
+    "level": 3
   },
   {
     "id": 332,
     "name": "Mountain",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 1500,
+    "def": 1700,
+    "type": "Field",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 5
   },
   {
     "id": 333,
     "name": "Sogen",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 300,
+    "def": 250,
+    "type": "Field",
+    "attr": "EARTH",
+    "race": "Aqua",
+    "level": 1
   },
   {
     "id": 334,
     "name": "Umi",
-    "type": "Spell",
-    "attr": "EARTH"
+    "atk": 250,
+    "def": 250,
+    "type": "Field",
+    "attr": "EARTH",
+    "race": "Warrior",
+    "level": 1
   },
   {
     "id": 335,
     "name": "Yami",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 800,
+    "def": 700,
+    "type": "Field",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 3
   },
   {
     "id": 336,
@@ -6302,14 +6434,22 @@
   {
     "id": 651,
     "name": "Kunai with Chain",
-    "type": "Spell",
-    "attr": "WATER"
+    "atk": 2550,
+    "def": 2500,
+    "type": "Equip",
+    "attr": "WATER",
+    "race": "Aqua",
+    "level": 8
   },
   {
     "id": 652,
     "name": "Magical Labyrinth",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 2000,
+    "def": 2300,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Machine",
+    "level": 7
   },
   {
     "id": 653,
@@ -6320,8 +6460,12 @@
   {
     "id": 654,
     "name": "Salamandra",
-    "type": "Spell",
-    "attr": "DARK"
+    "atk": 2800,
+    "def": 2300,
+    "type": "Equip",
+    "attr": "DARK",
+    "race": "Fiend",
+    "level": 8
   },
   {
     "id": 655,
@@ -6338,17 +6482,17 @@
   {
     "id": 657,
     "name": "Megamorph",
-    "type": "Spell"
+    "type": "Equip"
   },
   {
     "id": 658,
     "name": "Metalmorph",
-    "type": "Spell"
+    "type": "Equip"
   },
   {
     "id": 659,
     "name": "Winged Trumpeter",
-    "type": "Spell"
+    "type": "Equip"
   },
   {
     "id": 660,
@@ -6393,7 +6537,7 @@
   {
     "id": 668,
     "name": "Bright Castle",
-    "type": "Spell"
+    "type": "Equip"
   },
   {
     "id": 669,
@@ -6567,7 +6711,7 @@
   {
     "id": 702,
     "name": "Hungry BurMutMonster",
-    "type": "Monster"
+    "type": "Warrior"
   },
   {
     "id": 703,

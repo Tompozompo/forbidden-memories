@@ -11,7 +11,8 @@ interface CardPackOpeningScreenProps {
 
 function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
   const navigate = useNavigate();
-  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [currentGroupIndex, setCurrentGroupIndex] = useState(-1);
+  const [currentCardInGroup, setCurrentCardInGroup] = useState(-1);
   const [isComplete, setIsComplete] = useState(false);
   const [skipAnimation, setSkipAnimation] = useState(false);
   
@@ -19,26 +20,65 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
     .map(id => cardsData.find(c => c.id === id))
     .filter(c => c !== undefined) as CardType[];
 
-  // Auto-advance through cards
+  // Randomly select one card to be the "rare" card (guaranteed rare)
+  const [rareCardIndex] = useState(() => Math.floor(Math.random() * cards.length));
+
+  // Group cards into 4 groups of 5
+  const cardGroups = [
+    cards.slice(0, 5),
+    cards.slice(5, 10),
+    cards.slice(10, 15),
+    cards.slice(15, 20),
+  ];
+
+  // Calculate current overall card index
+  const currentIndex = currentGroupIndex >= 0 && currentCardInGroup >= 0
+    ? currentGroupIndex * 5 + currentCardInGroup
+    : -1;
+
+  // Auto-advance through card groups
   useEffect(() => {
     if (skipAnimation) {
-      setCurrentIndex(cards.length - 1);
+      setCurrentGroupIndex(3);
+      setCurrentCardInGroup(4);
       setIsComplete(true);
       return;
     }
 
-    if (currentIndex < cards.length - 1) {
+    // Start showing first group
+    if (currentGroupIndex === -1) {
       const timer = setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-      }, 800); // Show each card for 800ms
+        setCurrentGroupIndex(0);
+        setCurrentCardInGroup(0);
+      }, 500);
       return () => clearTimeout(timer);
-    } else if (currentIndex === cards.length - 1) {
+    }
+
+    // Advance within current group
+    if (currentCardInGroup < 4) {
+      const timer = setTimeout(() => {
+        setCurrentCardInGroup(prev => prev + 1);
+      }, 600); // Show each card for 600ms
+      return () => clearTimeout(timer);
+    }
+
+    // Move to next group after a pause
+    if (currentCardInGroup === 4 && currentGroupIndex < 3) {
+      const timer = setTimeout(() => {
+        setCurrentGroupIndex(prev => prev + 1);
+        setCurrentCardInGroup(0);
+      }, 1200); // Pause between groups
+      return () => clearTimeout(timer);
+    }
+
+    // Complete animation
+    if (currentGroupIndex === 3 && currentCardInGroup === 4) {
       const timer = setTimeout(() => {
         setIsComplete(true);
       }, 1000);
       return () => clearTimeout(timer);
     }
-  }, [currentIndex, cards.length, skipAnimation]);
+  }, [currentGroupIndex, currentCardInGroup, skipAnimation]);
 
   // Animation for card reveal
   const cardAnimation = useSpring({
@@ -54,6 +94,27 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
     config: { duration: 3000 },
     loop: true,
   });
+
+  // Determine if current card is the rare card
+  const isRareCard = currentIndex === rareCardIndex;
+
+  // Get color scheme for current card
+  const getCardGlow = () => {
+    if (isRareCard) {
+      return {
+        shadowColor: 'rgba(138, 43, 226, 0.8)', // Purple glow for rare
+        borderColor: '#8a2be2',
+        glowIntensity: '0 0 30px rgba(138, 43, 226, 0.8), 0 0 60px rgba(138, 43, 226, 0.5)',
+      };
+    }
+    return {
+      shadowColor: 'rgba(255, 215, 0, 0.5)',
+      borderColor: '#ffd700',
+      glowIntensity: '0 0 20px rgba(255, 215, 0, 0.5)',
+    };
+  };
+
+  const cardGlow = getCardGlow();
 
   const handleContinue = () => {
     navigate('/campaign-menu');
@@ -95,12 +156,28 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
         fontWeight: 'bold',
         marginBottom: '32px',
         textAlign: 'center',
-        textShadow: '0 0 20px rgba(255, 215, 0, 0.8)',
-        color: '#ffd700',
+        textShadow: isRareCard 
+          ? '0 0 20px rgba(138, 43, 226, 0.8)'
+          : '0 0 20px rgba(255, 215, 0, 0.8)',
+        color: isRareCard ? '#ba55d3' : '#ffd700',
         zIndex: 1,
+        transition: 'all 0.5s ease',
       }}>
-        🎴 STARTER DECK RECEIVED! 🎴
+        {isRareCard ? '✨ RARE CARD! ✨' : '🎴 STARTER DECK RECEIVED! 🎴'}
       </div>
+
+      {/* Group indicator */}
+      {currentGroupIndex >= 0 && (
+        <div style={{
+          fontSize: '16px',
+          fontWeight: 'bold',
+          marginBottom: '16px',
+          color: '#aaa',
+          zIndex: 1,
+        }}>
+          Pack {currentGroupIndex + 1} of 4
+        </div>
+      )}
 
       {/* Card display area */}
       <div style={{
@@ -119,10 +196,23 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
             alignItems: 'center',
             gap: '16px',
           }}>
+            {isRareCard && (
+              <div style={{
+                fontSize: '24px',
+                fontWeight: 'bold',
+                color: '#ba55d3',
+                textShadow: '0 0 10px rgba(138, 43, 226, 0.8)',
+                marginBottom: '8px',
+                animation: 'pulse 1s infinite',
+              }}>
+                ⭐ RARE ⭐
+              </div>
+            )}
             <div style={{
               transform: 'scale(2.5)',
               transformOrigin: 'center',
-              filter: 'drop-shadow(0 0 20px rgba(255, 215, 0, 0.5))',
+              filter: `drop-shadow(${cardGlow.glowIntensity})`,
+              transition: 'filter 0.5s ease',
             }}>
               <Card card={cards[currentIndex]} size="large" showTooltip={false} />
             </div>
@@ -135,51 +225,74 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
         marginTop: '32px',
         fontSize: '18px',
         fontWeight: 'bold',
-        color: '#ffd700',
+        color: isRareCard ? '#ba55d3' : '#ffd700',
         zIndex: 1,
+        transition: 'color 0.5s ease',
       }}>
-        {currentIndex >= 0 ? `${currentIndex + 1} / ${cards.length}` : 'Opening pack...'}
+        {currentIndex >= 0 ? `${currentIndex + 1} / ${cards.length}` : 'Opening packs...'}
       </div>
 
-      {/* Card grid preview */}
+      {/* Card grid preview - 4 groups of 5 */}
       <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(40px, 1fr))',
-        gap: '8px',
-        maxWidth: '600px',
-        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '12px',
         marginTop: '24px',
         padding: '16px',
         background: 'rgba(0, 0, 0, 0.3)',
         borderRadius: '8px',
         zIndex: 1,
       }}>
-        {cards.map((card, index) => (
+        {cardGroups.map((group, groupIdx) => (
           <div
-            key={card.id}
+            key={groupIdx}
             style={{
-              width: '40px',
-              height: '56px',
-              borderRadius: '4px',
-              background: index <= currentIndex
-                ? 'linear-gradient(135deg, #ffd700 0%, #ffed4e 100%)'
-                : 'rgba(255, 255, 255, 0.1)',
-              border: index === currentIndex
-                ? '2px solid #ffd700'
-                : index < currentIndex
-                ? '2px solid #888'
-                : '2px solid rgba(255, 255, 255, 0.2)',
-              boxShadow: index <= currentIndex
-                ? '0 0 10px rgba(255, 215, 0, 0.5)'
-                : 'none',
-              transition: 'all 0.3s ease',
               display: 'flex',
-              alignItems: 'center',
+              gap: '8px',
               justifyContent: 'center',
-              fontSize: '20px',
             }}
           >
-            {index <= currentIndex && '✓'}
+            {group.map((card, cardIdx) => {
+              const absoluteIndex = groupIdx * 5 + cardIdx;
+              const isRevealed = absoluteIndex <= currentIndex;
+              const isCurrent = absoluteIndex === currentIndex;
+              const isRare = absoluteIndex === rareCardIndex;
+
+              return (
+                <div
+                  key={card.id}
+                  style={{
+                    width: '40px',
+                    height: '56px',
+                    borderRadius: '4px',
+                    background: isRevealed
+                      ? isRare
+                        ? 'linear-gradient(135deg, #ba55d3 0%, #9370db 100%)'
+                        : 'linear-gradient(135deg, #ffd700 0%, #ffed4e 100%)'
+                      : 'rgba(255, 255, 255, 0.1)',
+                    border: isCurrent
+                      ? isRare
+                        ? '2px solid #ba55d3'
+                        : '2px solid #ffd700'
+                      : isRevealed
+                      ? '2px solid #888'
+                      : '2px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: isRevealed
+                      ? isRare
+                        ? '0 0 15px rgba(138, 43, 226, 0.6)'
+                        : '0 0 10px rgba(255, 215, 0, 0.5)'
+                      : 'none',
+                    transition: 'all 0.3s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '20px',
+                  }}
+                >
+                  {isRevealed && (isRare ? '⭐' : '✓')}
+                </div>
+              );
+            })}
           </div>
         ))}
       </div>

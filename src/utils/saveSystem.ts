@@ -15,7 +15,29 @@ const DEFAULT_SAVE: GameSave = {
   starchips: 0,
   beatenIds: [],
   currentDeck: [],
-  ownedCards: Array.from({ length: 20 }, (_, i) => i + 1), // Start with first 20 cards
+  // Starting deck based on original game - mix of weak monsters
+  ownedCards: [
+    9,   // Shadow Specter
+    24,  // Skull Servant
+    58,  // Kuriboh
+    8,   // Mushroom Man
+    5,   // Ryu-kishin
+    50,  // Basic Insect
+    105, // Tomozaurus
+    9,   // Shadow Specter (duplicate)
+    24,  // Skull Servant (duplicate)
+    29,  // Mountain Warrior
+    123, // Dark Plant
+    130, // Weather Control
+    137, // Mystery Hand
+    192, // Key Mace
+    202, // Air Marmot of Nefariousness
+    207, // Droll Bird
+    210, // Hinotama Soul
+    211, // Kaminarikozou
+    212, // Meotoko
+    237, // Haniwa
+  ],
 };
 
 /**

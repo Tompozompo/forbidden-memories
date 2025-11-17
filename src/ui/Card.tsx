@@ -34,6 +34,7 @@ const ATTR_SYMBOLS: Record<string, string> = {
 const RACE_SYMBOLS: Record<string, string> = {
   Warrior: '⚔️',
   Beast: '🦁',
+  'Beast-Warrior': '🐺',
   Dragon: '🐉',
   Spellcaster: '🪄',
   Zombie: '💀',
@@ -48,7 +49,8 @@ const RACE_SYMBOLS: Record<string, string> = {
   Dinosaur: '🦖',
   Fish: '🐟',
   Thunder: '⚡',
-  Winged: '🦅',
+  'Winged Beast': '🦅',
+  'Sea Serpent': '🐍',
   Fairy: '🧚',
   Angel: '👼',
 };
@@ -176,7 +178,7 @@ export default function Card({ card, size = 'medium', className = '', style = {}
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 1000,
-            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
             color: '#fff',
             padding: '10px 12px',
             borderRadius: '4px',
@@ -188,6 +190,8 @@ export default function Card({ card, size = 'medium', className = '', style = {}
             marginTop: '8px',
             lineHeight: '1.4',
             fontFamily: 'Arial, sans-serif',
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
           }}
         >
           <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>

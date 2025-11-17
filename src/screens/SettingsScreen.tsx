@@ -16,7 +16,7 @@ export default function SettingsScreen() {
     resetToDefaults 
   } = useSettingsStore();
   
-  const { unlockAllCards, ownedCards } = useSaveStore();
+  const { unlockAllCards, unlockAllDuelists, addStarchips, ownedCards, beatenIds, starchips } = useSaveStore();
 
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
@@ -359,6 +359,42 @@ export default function SettingsScreen() {
           </button>
         </div>
 
+        <div style={{ marginBottom: '16px' }}>
+          <button
+            onClick={() => {
+              unlockAllDuelists();
+              alert('All 25 free duelists unlocked!');
+            }}
+            style={{
+              fontSize: 'clamp(9px, 2.5vw, 12px)',
+              padding: '12px 24px',
+              cursor: 'pointer',
+              backgroundColor: '#cc6600',
+              width: '100%',
+            }}
+          >
+            🎯 Unlock All Free Duelists
+          </button>
+        </div>
+
+        <div style={{ marginBottom: '16px' }}>
+          <button
+            onClick={() => {
+              addStarchips(1000);
+              alert('Added 1000 starchips!');
+            }}
+            style={{
+              fontSize: 'clamp(9px, 2.5vw, 12px)',
+              padding: '12px 24px',
+              cursor: 'pointer',
+              backgroundColor: '#cc6600',
+              width: '100%',
+            }}
+          >
+            ★ Give 1000 Starchips
+          </button>
+        </div>
+
         <div style={{ 
           padding: '12px',
           backgroundColor: '#0a0a0a',
@@ -367,7 +403,9 @@ export default function SettingsScreen() {
           fontSize: 'clamp(8px, 2vw, 10px)',
           color: '#888'
         }}>
-          ⚙️ Current owned cards: {ownedCards.length} / 722
+          <div>⚙️ Current owned cards: {ownedCards.length} / 722</div>
+          <div>⚙️ Free duelists beaten: {beatenIds.length} / 25</div>
+          <div>⚙️ Starchips: {starchips}</div>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ interface SaveStore extends GameSave {
   addBeatenId: (id: number) => void;
   addOwnedCard: (cardId: number) => void;
   unlockAllCards: () => void;
+  unlockAllDuelists: () => void;
 }
 
 export const useSaveStore = create<SaveStore>((set, get) => ({
@@ -61,5 +62,12 @@ export const useSaveStore = create<SaveStore>((set, get) => ({
     const allCards = Array.from({ length: 722 }, (_, i) => i + 1);
     set({ ownedCards: allCards });
     saveSave({ ownedCards: allCards });
+  },
+  
+  unlockAllDuelists: () => {
+    // Unlock all duelists (NPCs) from 1 to 25
+    const allDuelists = Array.from({ length: 25 }, (_, i) => i + 1);
+    set({ beatenIds: allDuelists });
+    saveSave({ beatenIds: allDuelists });
   },
 }));

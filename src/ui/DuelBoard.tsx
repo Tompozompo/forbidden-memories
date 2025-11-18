@@ -336,53 +336,59 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
       setFusingCards([...selectedForFusion]);
       
       // Chain fuse: fuse first two, then fuse result with third, etc.
-      const performChainFusion = async (cardIds: number[], currentState: DuelState) => {
-        if (cardIds.length < 2) {
+      const performChainFusion = (cardIds: number[], index: number = 0) => {
+        if (index >= cardIds.length - 1) {
           // Done fusing
-          setFusingCards([]);
-          setSelectedForFusion([]);
-          setFuseMode(false);
+          setTimeout(() => {
+            setFusingCards([]);
+            setSelectedForFusion([]);
+            setFuseMode(false);
+          }, 600);
           return;
         }
         
-        // Fuse first two cards
-        const mat1 = cardIds[0];
-        const mat2 = cardIds[1];
+        // Fuse current pair (index and index+1)
+        const mat1 = cardIds[index];
+        const mat2 = cardIds[index + 1];
         const resultId = checkFusion(mat1, mat2);
         
         if (!resultId) {
           // Fusion failed - just clear and exit
-          setFusingCards([]);
-          setSelectedForFusion([]);
-          setFuseMode(false);
+          setTimeout(() => {
+            setFusingCards([]);
+            setSelectedForFusion([]);
+            setFuseMode(false);
+          }, 600);
           return;
         }
         
-        // Wait for animation
-        await new Promise(resolve => setTimeout(resolve, 600));
-        
-        // Dispatch the fusion
-        dispatch({ type: 'FUSE', matA: mat1, matB: mat2, allCards });
-        
-        // If there are more cards to fuse
-        if (cardIds.length > 2) {
-          // The result card is now in the hand, continue chaining with result + next card
-          const remainingCards = cardIds.slice(2);
+        // Wait for animation then dispatch fusion
+        setTimeout(() => {
+          dispatch({ type: 'FUSE', matA: mat1, matB: mat2, allCards });
           
-          // Wait a bit for state to update
-          await new Promise(resolve => setTimeout(resolve, 100));
-          
-          // Continue chain fusion with result card and remaining cards
-          performChainFusion([resultId, ...remainingCards], currentState);
-        } else {
-          // Last fusion complete
-          setFusingCards([]);
-          setSelectedForFusion([]);
-          setFuseMode(false);
-        }
+          // If there are more cards to fuse, replace the two fused cards with the result and continue
+          if (index + 2 < cardIds.length) {
+            // Create new array: cards before fusion, result, cards after fusion
+            const newCardIds = [
+              ...cardIds.slice(0, index),
+              resultId,
+              ...cardIds.slice(index + 2)
+            ];
+            
+            // Continue chain fusion with the new array
+            performChainFusion(newCardIds, index);
+          } else {
+            // Last fusion complete
+            setTimeout(() => {
+              setFusingCards([]);
+              setSelectedForFusion([]);
+              setFuseMode(false);
+            }, 600);
+          }
+        }, 600);
       };
       
-      performChainFusion(selectedForFusion, state);
+      performChainFusion(selectedForFusion);
     }
   };
 

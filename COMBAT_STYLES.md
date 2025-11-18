@@ -1,7 +1,7 @@
 # Combat Styles System - Final Specification
 
 **Status**: Ready for implementation  
-**Last Updated**: 2025-11-17
+**Last Updated**: 2025-11-18
 
 ---
 
@@ -453,7 +453,7 @@ function getTypeMultiplier(
 
 ---
 
-**Document Version**: 2.0 - Fixed Balance Issues  
+**Document Version**: 2.1 - Expanded Alternative 3 Options  
 **Last Updated**: 2025-11-18  
 **Status**: Ready for Implementation ✅  
-**Note**: Original table had reciprocal relationship errors. All alternatives are now perfectly balanced.
+**Note**: Added Alternative 3a and 3b to provide more classic element variants. All 5 alternatives are perfectly balanced.

@@ -8,4 +8,5 @@ export interface Card {
   race?: string;
   level?: number;
   text?: string;
+  rarity?: "Common" | "Rare" | "Super Rare" | "Ultra Rare";
 }

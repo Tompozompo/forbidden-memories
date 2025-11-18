@@ -7,7 +7,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Dragon",
-    "level": 8
+    "level": 8,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Dragon",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 15,
@@ -147,7 +161,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 16,
@@ -157,7 +172,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 17,
@@ -167,7 +183,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 18,
@@ -177,7 +194,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 19,
@@ -187,7 +205,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 20,
@@ -197,7 +216,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 21,
@@ -207,7 +227,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 22,
@@ -217,7 +238,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 23,
@@ -227,7 +249,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 24,
@@ -237,7 +260,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 25,
@@ -247,7 +271,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 26,
@@ -257,7 +282,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 27,
@@ -267,7 +293,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 28,
@@ -277,7 +304,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 29,
@@ -287,7 +315,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 30,
@@ -297,7 +326,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 31,
@@ -307,7 +337,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 32,
@@ -317,7 +348,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 33,
@@ -327,7 +359,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 34,
@@ -337,7 +370,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 35,
@@ -347,7 +381,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 36,
@@ -357,7 +392,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 37,
@@ -367,7 +403,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 38,
@@ -377,7 +414,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Warrior",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 39,
@@ -387,7 +425,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 5
+    "level": 5,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 40,
@@ -397,7 +436,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Pyro",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 41,
@@ -407,7 +447,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 42,
@@ -417,7 +458,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 43,
@@ -427,7 +469,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 44,
@@ -437,7 +480,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 45,
@@ -447,7 +491,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Thunder",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 46,
@@ -457,7 +502,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 47,
@@ -467,7 +513,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 48,
@@ -477,7 +524,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 49,
@@ -487,7 +535,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 50,
@@ -497,7 +546,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 51,
@@ -507,7 +557,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Reptile",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 52,
@@ -517,7 +568,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 5
+    "level": 5,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 53,
@@ -527,7 +579,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 54,
@@ -537,7 +590,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 55,
@@ -547,7 +601,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 56,
@@ -557,7 +612,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 57,
@@ -567,7 +623,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 8
+    "level": 8,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 58,
@@ -577,7 +634,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 59,
@@ -587,7 +645,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 60,
@@ -597,7 +656,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 61,
@@ -607,7 +667,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 62,
@@ -617,7 +678,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 63,
@@ -627,7 +689,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Winged Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 64,
@@ -637,7 +700,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 65,
@@ -647,7 +711,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 66,
@@ -657,7 +722,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 67,
@@ -667,7 +733,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 8
+    "level": 8,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 68,
@@ -677,7 +744,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Beast-Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 69,
@@ -687,7 +755,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 70,
@@ -697,7 +766,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 71,
@@ -707,7 +777,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 72,
@@ -717,7 +788,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 73,
@@ -727,7 +799,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Sea Serpent",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 74,
@@ -737,7 +810,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Rare"
   },
   {
     "id": 75,
@@ -747,7 +821,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 76,
@@ -757,7 +832,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Reptile",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 77,
@@ -767,7 +843,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Reptile",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 78,
@@ -777,7 +854,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 79,
@@ -787,7 +865,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 80,
@@ -797,7 +876,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 81,
@@ -807,7 +887,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 82,
@@ -817,7 +898,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 83,
@@ -827,7 +909,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 84,
@@ -837,7 +920,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 85,
@@ -847,7 +931,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 86,
@@ -857,7 +942,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 87,
@@ -867,7 +953,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 88,
@@ -877,7 +964,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 89,
@@ -887,7 +975,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 90,
@@ -897,7 +986,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fairy",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 91,
@@ -907,7 +997,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 92,
@@ -917,7 +1008,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast-Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 93,
@@ -927,7 +1019,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 94,
@@ -937,7 +1030,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dragon",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 95,
@@ -947,7 +1041,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 96,
@@ -957,7 +1052,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Rare"
   },
   {
     "id": 97,
@@ -967,7 +1063,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Rare"
   },
   {
     "id": 98,
@@ -977,7 +1074,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Rare"
   },
   {
     "id": 99,
@@ -987,7 +1085,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 100,
@@ -997,7 +1096,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 101,
@@ -1007,7 +1107,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Pyro",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 102,
@@ -1017,7 +1118,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 103,
@@ -1027,7 +1129,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 104,
@@ -1037,7 +1140,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 105,
@@ -1047,7 +1151,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Dinosaur",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 106,
@@ -1057,7 +1162,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 107,
@@ -1067,7 +1173,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Warrior",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 108,
@@ -1077,7 +1184,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 109,
@@ -1087,7 +1195,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fairy",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 110,
@@ -1097,7 +1206,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 111,
@@ -1107,7 +1217,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fairy",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 112,
@@ -1117,7 +1228,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 113,
@@ -1127,7 +1239,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 114,
@@ -1137,7 +1250,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 115,
@@ -1147,7 +1261,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 116,
@@ -1157,7 +1272,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 117,
@@ -1167,7 +1283,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 118,
@@ -1177,7 +1294,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 119,
@@ -1187,7 +1305,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 120,
@@ -1197,7 +1316,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 121,
@@ -1207,7 +1327,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 122,
@@ -1217,7 +1338,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Dragon",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 123,
@@ -1227,7 +1349,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Plant",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 124,
@@ -1237,7 +1360,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 125,
@@ -1247,7 +1371,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 126,
@@ -1257,7 +1382,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fairy",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 127,
@@ -1267,7 +1393,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 128,
@@ -1277,7 +1404,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 129,
@@ -1287,7 +1415,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 130,
@@ -1297,7 +1426,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 131,
@@ -1307,7 +1437,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 132,
@@ -1317,7 +1448,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 133,
@@ -1327,7 +1459,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Pyro",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 134,
@@ -1337,7 +1470,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 135,
@@ -1347,7 +1481,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 136,
@@ -1357,7 +1492,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 137,
@@ -1367,7 +1503,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 138,
@@ -1377,7 +1514,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 139,
@@ -1387,7 +1525,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 140,
@@ -1397,7 +1536,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 141,
@@ -1407,7 +1547,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 142,
@@ -1417,7 +1558,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 143,
@@ -1427,7 +1569,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 144,
@@ -1437,7 +1580,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 145,
@@ -1447,7 +1591,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 146,
@@ -1457,7 +1602,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 147,
@@ -1467,7 +1613,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 148,
@@ -1477,7 +1624,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 149,
@@ -1487,7 +1635,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 150,
@@ -1497,7 +1646,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 151,
@@ -1507,7 +1657,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 152,
@@ -1517,7 +1668,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 153,
@@ -1527,7 +1679,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 154,
@@ -1537,7 +1690,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 155,
@@ -1547,7 +1701,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 156,
@@ -1557,7 +1712,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 157,
@@ -1567,7 +1723,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 158,
@@ -1577,7 +1734,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 159,
@@ -1587,7 +1745,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 160,
@@ -1597,7 +1756,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 161,
@@ -1607,7 +1767,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 162,
@@ -1617,7 +1778,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 163,
@@ -1627,7 +1789,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 164,
@@ -1637,7 +1800,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 165,
@@ -1647,7 +1811,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 166,
@@ -1657,7 +1822,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 167,
@@ -1667,7 +1833,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Rock",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 168,
@@ -1677,7 +1844,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 169,
@@ -1687,7 +1855,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 170,
@@ -1697,7 +1866,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fairy",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 171,
@@ -1707,7 +1877,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 172,
@@ -1717,7 +1888,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 173,
@@ -1727,7 +1899,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 174,
@@ -1737,7 +1910,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 175,
@@ -1747,7 +1921,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 176,
@@ -1757,7 +1932,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Pyro",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 177,
@@ -1767,7 +1943,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 178,
@@ -1777,7 +1954,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 179,
@@ -1787,7 +1965,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 180,
@@ -1797,7 +1976,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 181,
@@ -1807,7 +1987,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 182,
@@ -1817,7 +1998,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 183,
@@ -1827,7 +2009,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 184,
@@ -1837,7 +2020,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 185,
@@ -1847,7 +2031,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 186,
@@ -1857,7 +2042,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 187,
@@ -1867,7 +2053,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 188,
@@ -1877,7 +2064,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 189,
@@ -1887,7 +2075,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 190,
@@ -1897,7 +2086,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 191,
@@ -1907,7 +2097,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Thunder",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 192,
@@ -1917,7 +2108,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fairy",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 193,
@@ -1927,7 +2119,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 194,
@@ -1937,7 +2130,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 195,
@@ -1947,7 +2141,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 196,
@@ -1957,7 +2152,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 197,
@@ -1967,7 +2163,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 198,
@@ -1977,7 +2174,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 199,
@@ -1987,7 +2185,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 200,
@@ -1997,7 +2196,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dragon",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 201,
@@ -2007,7 +2207,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 202,
@@ -2017,7 +2218,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 203,
@@ -2027,7 +2229,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 204,
@@ -2037,7 +2240,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 205,
@@ -2047,7 +2251,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 206,
@@ -2057,7 +2262,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 207,
@@ -2067,7 +2273,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 208,
@@ -2077,7 +2284,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 209,
@@ -2087,7 +2295,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 210,
@@ -2097,7 +2306,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Pyro",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 211,
@@ -2107,7 +2317,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Thunder",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 212,
@@ -2117,7 +2328,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 213,
@@ -2127,7 +2339,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 214,
@@ -2137,7 +2350,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 215,
@@ -2147,7 +2361,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 216,
@@ -2157,7 +2372,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 217,
@@ -2167,7 +2383,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 9
+    "level": 9,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 218,
@@ -2177,7 +2394,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 219,
@@ -2187,7 +2405,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast-Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 220,
@@ -2197,7 +2416,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 221,
@@ -2207,7 +2427,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 222,
@@ -2217,7 +2438,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 223,
@@ -2227,7 +2449,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 224,
@@ -2237,7 +2460,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 225,
@@ -2247,7 +2471,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 226,
@@ -2257,7 +2482,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 227,
@@ -2267,7 +2493,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 228,
@@ -2277,7 +2504,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 229,
@@ -2287,7 +2515,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 230,
@@ -2297,7 +2526,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 231,
@@ -2307,7 +2537,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 232,
@@ -2317,7 +2548,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 233,
@@ -2327,7 +2559,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 234,
@@ -2337,7 +2570,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 235,
@@ -2347,7 +2581,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 236,
@@ -2357,7 +2592,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 237,
@@ -2367,7 +2603,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 238,
@@ -2377,7 +2614,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 239,
@@ -2387,7 +2625,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 240,
@@ -2397,7 +2636,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 241,
@@ -2407,7 +2647,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 242,
@@ -2417,7 +2658,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 243,
@@ -2427,7 +2669,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 244,
@@ -2437,7 +2680,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 245,
@@ -2447,7 +2691,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 246,
@@ -2457,7 +2702,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 247,
@@ -2467,7 +2713,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fish",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 248,
@@ -2477,7 +2724,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 249,
@@ -2487,7 +2735,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 250,
@@ -2497,7 +2746,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 251,
@@ -2507,7 +2757,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fish",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 252,
@@ -2517,7 +2768,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 253,
@@ -2527,7 +2779,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 254,
@@ -2537,7 +2790,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 255,
@@ -2547,7 +2801,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 256,
@@ -2557,7 +2812,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 257,
@@ -2567,7 +2823,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 258,
@@ -2577,7 +2834,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 259,
@@ -2587,7 +2845,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 260,
@@ -2597,7 +2856,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 261,
@@ -2607,7 +2867,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 262,
@@ -2617,7 +2878,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 263,
@@ -2627,7 +2889,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 264,
@@ -2637,7 +2900,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 265,
@@ -2647,7 +2911,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 266,
@@ -2657,7 +2922,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 267,
@@ -2667,7 +2933,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 268,
@@ -2677,7 +2944,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 269,
@@ -2687,7 +2955,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 270,
@@ -2697,7 +2966,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 271,
@@ -2707,7 +2977,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 272,
@@ -2717,7 +2988,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 273,
@@ -2727,7 +2999,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 274,
@@ -2737,7 +3010,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 275,
@@ -2747,7 +3021,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 276,
@@ -2757,7 +3032,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 277,
@@ -2767,7 +3043,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 278,
@@ -2777,7 +3054,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 279,
@@ -2787,7 +3065,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 280,
@@ -2797,7 +3076,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 281,
@@ -2807,7 +3087,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 282,
@@ -2817,7 +3098,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 283,
@@ -2827,7 +3109,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 284,
@@ -2837,7 +3120,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 285,
@@ -2847,7 +3131,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Reptile",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 286,
@@ -2857,7 +3142,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 287,
@@ -2867,7 +3153,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast-Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 288,
@@ -2877,7 +3164,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 289,
@@ -2887,7 +3175,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 290,
@@ -2897,7 +3186,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 291,
@@ -2907,7 +3197,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Pyro",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 292,
@@ -2917,7 +3208,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 293,
@@ -2927,7 +3219,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 294,
@@ -2937,7 +3230,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 295,
@@ -2947,7 +3241,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 296,
@@ -2957,7 +3252,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Dragon",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 297,
@@ -2967,7 +3263,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 298,
@@ -2977,7 +3274,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 299,
@@ -2987,7 +3285,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 300,
@@ -2997,307 +3296,358 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Winged Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 301,
     "name": "Legendary Sword",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 302,
     "name": "Sword of Dark Destruction",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 303,
     "name": "Dark Energy",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 304,
     "name": "Axe of Despair",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 305,
     "name": "Laser Cannon Armor",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 306,
     "name": "Insect Armor with Laser Cannon",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 307,
     "name": "Elf's Light",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 308,
     "name": "Beast Fangs",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 309,
     "name": "Steel Shell",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 310,
     "name": "Vile Germs",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Super Rare"
   },
   {
     "id": 311,
     "name": "Black Pendant",
     "type": "Spell",
-    "attr": "LIGHT"
+    "attr": "LIGHT",
+    "rarity": "Super Rare"
   },
   {
     "id": 312,
     "name": "Silver Bow and Arrow",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 313,
     "name": "Horn of Light",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 314,
     "name": "Horn of the Unicorn",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 315,
     "name": "Dragon Treasure",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 316,
     "name": "Electro-whip",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 317,
     "name": "Cyber Shield",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 318,
     "name": "Elegant Egotist",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 319,
     "name": "Mystical Moon",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 320,
     "name": "Stop Defense",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 321,
     "name": "Malevolent Nuzzler",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 322,
     "name": "Violet Crystal",
     "type": "Spell",
-    "attr": "FIRE"
+    "attr": "FIRE",
+    "rarity": "Super Rare"
   },
   {
     "id": 323,
     "name": "Book of Secret Arts",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 324,
     "name": "Invigoration",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Super Rare"
   },
   {
     "id": 325,
     "name": "Machine Conversion Factory",
     "type": "Spell",
-    "attr": "LIGHT"
+    "attr": "LIGHT",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 326,
     "name": "Raise Body Heat",
     "type": "Spell",
-    "attr": "FIRE"
+    "attr": "FIRE",
+    "rarity": "Super Rare"
   },
   {
     "id": 327,
     "name": "Follow Wind",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Super Rare"
   },
   {
     "id": 328,
     "name": "Power of Kaishin",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Super Rare"
   },
   {
     "id": 329,
     "name": "Dragon Capture Jar",
     "type": "Spell",
-    "attr": "WIND"
+    "attr": "WIND",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 330,
     "name": "Forest",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Common"
   },
   {
     "id": 331,
     "name": "Wasteland",
     "type": "Spell",
-    "attr": "WIND"
+    "attr": "WIND",
+    "rarity": "Common"
   },
   {
     "id": 332,
     "name": "Mountain",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Common"
   },
   {
     "id": 333,
     "name": "Sogen",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Common"
   },
   {
     "id": 334,
     "name": "Umi",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Common"
   },
   {
     "id": 335,
     "name": "Yami",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Common"
   },
   {
     "id": 336,
     "name": "Dark Hole",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 337,
     "name": "Raigeki",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 338,
     "name": "Mooyan Curry",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 339,
     "name": "Red Medicine",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Common"
   },
   {
     "id": 340,
     "name": "Goblin's Secret Remedy",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 341,
     "name": "Soul of the Pure",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 342,
     "name": "Dian Keto the Cure Master",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 343,
     "name": "Sparks",
     "type": "Spell",
-    "attr": "EARTH"
+    "attr": "EARTH",
+    "rarity": "Common"
   },
   {
     "id": 344,
     "name": "Hinotama",
     "type": "Spell",
-    "attr": "WIND"
+    "attr": "WIND",
+    "rarity": "Common"
   },
   {
     "id": 345,
     "name": "Final Flame",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 346,
     "name": "Ookazi",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 347,
     "name": "Tremendous Fire",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 348,
     "name": "Swords of Revealing Light",
     "type": "Spell",
-    "attr": "FIRE"
+    "attr": "FIRE",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 349,
     "name": "Spellbinding Circle",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 350,
     "name": "Dark-piercing Light",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 351,
@@ -3307,7 +3657,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 352,
@@ -3317,7 +3668,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 353,
@@ -3327,7 +3679,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Sea Serpent",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 354,
@@ -3337,7 +3690,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 355,
@@ -3347,7 +3701,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 356,
@@ -3357,7 +3712,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 7
+    "level": 7,
+    "rarity": "Common"
   },
   {
     "id": 357,
@@ -3367,7 +3723,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Dragon",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 358,
@@ -3377,7 +3734,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Super Rare"
   },
   {
     "id": 359,
@@ -3387,7 +3745,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 360,
@@ -3397,7 +3756,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 8
+    "level": 8,
+    "rarity": "Common"
   },
   {
     "id": 361,
@@ -3407,7 +3767,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 362,
@@ -3417,7 +3778,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 363,
@@ -3427,7 +3789,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 364,
@@ -3437,7 +3800,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 8
+    "level": 8,
+    "rarity": "Common"
   },
   {
     "id": 365,
@@ -3447,7 +3811,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Common"
   },
   {
     "id": 366,
@@ -3457,7 +3822,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Rock",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 367,
@@ -3467,7 +3833,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 368,
@@ -3477,7 +3844,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Zombie",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 369,
@@ -3487,7 +3855,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 370,
@@ -3497,7 +3866,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 371,
@@ -3507,7 +3877,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Thunder",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 372,
@@ -3517,7 +3888,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 373,
@@ -3527,7 +3899,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 374,
@@ -3537,7 +3910,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Warrior",
-    "level": 11
+    "level": 11,
+    "rarity": "Common"
   },
   {
     "id": 375,
@@ -3547,7 +3921,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Insect",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 376,
@@ -3557,7 +3932,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 377,
@@ -3567,7 +3943,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 378,
@@ -3577,7 +3954,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 379,
@@ -3587,7 +3965,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 380,
@@ -3597,7 +3976,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 12
+    "level": 12,
+    "rarity": "Common"
   },
   {
     "id": 381,
@@ -3607,7 +3987,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Reptile",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 382,
@@ -3617,7 +3998,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast-Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 383,
@@ -3627,7 +4009,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Dragon",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 384,
@@ -3637,7 +4020,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 385,
@@ -3647,7 +4031,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 7
+    "level": 7,
+    "rarity": "Super Rare"
   },
   {
     "id": 386,
@@ -3657,7 +4042,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 387,
@@ -3667,7 +4053,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 388,
@@ -3677,7 +4064,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 389,
@@ -3687,7 +4075,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 390,
@@ -3697,7 +4086,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 391,
@@ -3707,7 +4097,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fiend",
-    "level": 7
+    "level": 7,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 392,
@@ -3717,7 +4108,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 8
+    "level": 8,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 393,
@@ -3727,7 +4119,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 394,
@@ -3737,7 +4130,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 395,
@@ -3747,7 +4141,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 396,
@@ -3757,7 +4152,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 397,
@@ -3767,7 +4163,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 398,
@@ -3777,7 +4174,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 399,
@@ -3787,7 +4185,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Warrior",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 400,
@@ -3797,7 +4196,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Reptile",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 401,
@@ -3807,7 +4207,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 402,
@@ -3817,7 +4218,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 403,
@@ -3827,7 +4229,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 404,
@@ -3837,7 +4240,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 405,
@@ -3847,7 +4251,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 406,
@@ -3857,7 +4262,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 407,
@@ -3867,7 +4273,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Machine",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 408,
@@ -3877,7 +4284,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 409,
@@ -3887,7 +4295,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 410,
@@ -3897,7 +4306,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 411,
@@ -3907,7 +4317,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 412,
@@ -3917,7 +4328,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 413,
@@ -3927,7 +4339,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 414,
@@ -3937,7 +4350,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Machine",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 415,
@@ -3947,7 +4361,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 416,
@@ -3957,7 +4372,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 417,
@@ -3967,7 +4383,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 418,
@@ -3977,7 +4394,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 419,
@@ -3987,7 +4405,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 420,
@@ -3997,7 +4416,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 421,
@@ -4007,7 +4427,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 422,
@@ -4017,7 +4438,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 423,
@@ -4027,7 +4449,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 424,
@@ -4037,7 +4460,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Dragon",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 425,
@@ -4047,7 +4471,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Thunder",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 426,
@@ -4057,7 +4482,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 7
+    "level": 7,
+    "rarity": "Super Rare"
   },
   {
     "id": 427,
@@ -4067,7 +4493,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Dragon",
-    "level": 7
+    "level": 7,
+    "rarity": "Super Rare"
   },
   {
     "id": 428,
@@ -4077,7 +4504,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 429,
@@ -4087,7 +4515,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 430,
@@ -4097,7 +4526,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 431,
@@ -4107,7 +4537,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 432,
@@ -4117,7 +4548,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 433,
@@ -4127,7 +4559,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 434,
@@ -4137,7 +4570,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 435,
@@ -4147,7 +4581,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 436,
@@ -4157,7 +4592,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fish",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 437,
@@ -4167,7 +4603,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 438,
@@ -4177,7 +4614,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 439,
@@ -4187,7 +4625,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 440,
@@ -4197,7 +4636,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 441,
@@ -4207,7 +4647,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 442,
@@ -4217,7 +4658,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Sea Serpent",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 443,
@@ -4227,7 +4669,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Sea Serpent",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 444,
@@ -4237,7 +4680,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 445,
@@ -4247,7 +4691,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 446,
@@ -4257,7 +4702,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 447,
@@ -4267,7 +4713,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 448,
@@ -4277,7 +4724,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Sea Serpent",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 449,
@@ -4287,7 +4735,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 450,
@@ -4297,7 +4746,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 451,
@@ -4307,7 +4757,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 452,
@@ -4317,7 +4768,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 453,
@@ -4327,7 +4779,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 454,
@@ -4337,7 +4790,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Rock",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 455,
@@ -4347,7 +4801,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 456,
@@ -4357,7 +4812,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 457,
@@ -4367,7 +4823,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 458,
@@ -4377,7 +4834,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Thunder",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 459,
@@ -4387,7 +4845,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Thunder",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 460,
@@ -4397,7 +4856,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Thunder",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 461,
@@ -4407,7 +4867,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Thunder",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 462,
@@ -4417,7 +4878,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Thunder",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 463,
@@ -4427,7 +4889,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Thunder",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 464,
@@ -4437,7 +4900,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 465,
@@ -4447,7 +4911,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 466,
@@ -4457,7 +4922,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 467,
@@ -4467,7 +4933,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 468,
@@ -4477,7 +4944,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Winged Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 469,
@@ -4487,7 +4955,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 470,
@@ -4497,7 +4966,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 471,
@@ -4507,7 +4977,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 472,
@@ -4517,7 +4988,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 473,
@@ -4527,7 +4999,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Pyro",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 474,
@@ -4537,7 +5010,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 475,
@@ -4547,7 +5021,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Reptile",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 476,
@@ -4557,7 +5032,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 477,
@@ -4567,7 +5043,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 478,
@@ -4577,7 +5054,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 479,
@@ -4587,17 +5065,19 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 480,
-    "name": "Kuwagata \u03b1",
+    "name": "Kuwagata α",
     "atk": 1250,
     "def": 1000,
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 481,
@@ -4607,7 +5087,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 482,
@@ -4617,7 +5098,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dinosaur",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 483,
@@ -4627,7 +5109,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 484,
@@ -4637,7 +5120,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 485,
@@ -4647,7 +5131,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 486,
@@ -4657,7 +5142,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 487,
@@ -4667,7 +5153,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 488,
@@ -4677,7 +5164,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 489,
@@ -4687,7 +5175,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 490,
@@ -4697,7 +5186,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 491,
@@ -4707,7 +5197,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Winged Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 492,
@@ -4717,7 +5208,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 493,
@@ -4727,7 +5219,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 494,
@@ -4737,7 +5230,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 495,
@@ -4747,7 +5241,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 496,
@@ -4757,7 +5252,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 497,
@@ -4767,7 +5263,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 498,
@@ -4777,7 +5274,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 499,
@@ -4787,7 +5285,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 1
+    "level": 1,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 500,
@@ -4797,7 +5296,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 501,
@@ -4807,7 +5307,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 502,
@@ -4817,7 +5318,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 503,
@@ -4827,7 +5329,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 504,
@@ -4837,7 +5340,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 505,
@@ -4847,7 +5351,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 506,
@@ -4857,7 +5362,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 507,
@@ -4867,7 +5373,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 508,
@@ -4877,7 +5384,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 509,
@@ -4887,7 +5395,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 510,
@@ -4897,7 +5406,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 511,
@@ -4907,7 +5417,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Plant",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 512,
@@ -4917,7 +5428,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 513,
@@ -4927,7 +5439,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 514,
@@ -4937,7 +5450,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 515,
@@ -4947,7 +5461,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 516,
@@ -4957,7 +5472,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 517,
@@ -4967,7 +5483,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Rock",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 518,
@@ -4977,7 +5494,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Aqua",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 519,
@@ -4987,7 +5505,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 520,
@@ -4997,7 +5516,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 521,
@@ -5007,7 +5527,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Winged Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 522,
@@ -5017,7 +5538,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Winged Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 523,
@@ -5027,7 +5549,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 524,
@@ -5037,7 +5560,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 525,
@@ -5047,7 +5571,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 526,
@@ -5057,7 +5582,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 527,
@@ -5067,7 +5593,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 528,
@@ -5077,7 +5604,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 529,
@@ -5087,7 +5615,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Pyro",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 530,
@@ -5097,7 +5626,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 531,
@@ -5107,7 +5637,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 532,
@@ -5117,7 +5648,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 533,
@@ -5127,7 +5659,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 534,
@@ -5137,7 +5670,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 535,
@@ -5147,7 +5681,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Insect",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 536,
@@ -5157,7 +5692,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Reptile",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 537,
@@ -5167,7 +5703,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Thunder",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 538,
@@ -5177,7 +5714,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Winged Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 539,
@@ -5187,7 +5725,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Zombie",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 540,
@@ -5197,7 +5736,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fairy",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 541,
@@ -5207,7 +5747,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 542,
@@ -5217,7 +5758,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 543,
@@ -5227,7 +5769,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 544,
@@ -5237,7 +5780,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 545,
@@ -5247,7 +5791,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 546,
@@ -5257,7 +5802,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 547,
@@ -5267,7 +5813,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 548,
@@ -5277,7 +5824,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 549,
@@ -5287,7 +5835,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 550,
@@ -5297,7 +5846,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 551,
@@ -5307,7 +5857,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 552,
@@ -5317,7 +5868,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 553,
@@ -5327,7 +5879,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 554,
@@ -5337,7 +5890,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 555,
@@ -5347,7 +5901,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Dragon",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 556,
@@ -5357,7 +5912,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Zombie",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 557,
@@ -5367,7 +5923,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 558,
@@ -5377,7 +5934,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Rock",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 559,
@@ -5387,7 +5945,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 560,
@@ -5397,7 +5956,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 561,
@@ -5407,7 +5967,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 562,
@@ -5417,7 +5978,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 563,
@@ -5427,7 +5989,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 564,
@@ -5437,7 +6000,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 565,
@@ -5447,7 +6011,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 566,
@@ -5457,7 +6022,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Reptile",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 567,
@@ -5467,7 +6033,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 568,
@@ -5477,7 +6044,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dinosaur",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 569,
@@ -5487,7 +6055,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Reptile",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 570,
@@ -5497,7 +6066,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Dinosaur",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 571,
@@ -5507,7 +6077,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 6
+    "level": 6,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 572,
@@ -5517,7 +6088,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 573,
@@ -5527,7 +6099,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Dinosaur",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 574,
@@ -5537,7 +6110,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 575,
@@ -5547,7 +6121,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 576,
@@ -5557,7 +6132,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 577,
@@ -5567,7 +6143,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Winged Beast",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 578,
@@ -5577,7 +6154,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Common"
   },
   {
     "id": 579,
@@ -5587,7 +6165,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 580,
@@ -5597,7 +6176,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Machine",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 581,
@@ -5607,7 +6187,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 582,
@@ -5617,7 +6198,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 583,
@@ -5627,7 +6209,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 584,
@@ -5637,7 +6220,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 585,
@@ -5647,7 +6231,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 586,
@@ -5657,7 +6242,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 587,
@@ -5667,7 +6253,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 588,
@@ -5677,7 +6264,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Plant",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 589,
@@ -5687,7 +6275,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Plant",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 590,
@@ -5697,7 +6286,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Reptile",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 591,
@@ -5707,7 +6297,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Rock",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 592,
@@ -5717,7 +6308,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 593,
@@ -5727,7 +6319,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 594,
@@ -5737,7 +6330,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Plant",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 595,
@@ -5747,7 +6341,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 596,
@@ -5757,7 +6352,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Zombie",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 597,
@@ -5767,7 +6363,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 598,
@@ -5777,7 +6374,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 599,
@@ -5787,7 +6385,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 600,
@@ -5797,7 +6396,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fiend",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 601,
@@ -5807,7 +6407,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Fairy",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 602,
@@ -5817,7 +6418,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 603,
@@ -5827,7 +6429,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Dragon",
-    "level": 4
+    "level": 4,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 604,
@@ -5837,7 +6440,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 605,
@@ -5847,7 +6451,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 606,
@@ -5857,7 +6462,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 607,
@@ -5867,7 +6473,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 608,
@@ -5877,7 +6484,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fairy",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 609,
@@ -5887,7 +6495,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Insect",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 610,
@@ -5897,7 +6506,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Thunder",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 611,
@@ -5907,7 +6517,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Fiend",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 612,
@@ -5917,7 +6528,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 613,
@@ -5927,7 +6539,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Thunder",
-    "level": 7
+    "level": 7,
+    "rarity": "Super Rare"
   },
   {
     "id": 614,
@@ -5937,7 +6550,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Insect",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 615,
@@ -5947,7 +6561,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 616,
@@ -5957,7 +6572,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fairy",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 617,
@@ -5967,7 +6583,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Fish",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 618,
@@ -5977,7 +6594,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 619,
@@ -5987,7 +6605,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 620,
@@ -5997,7 +6616,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Plant",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 621,
@@ -6007,7 +6627,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 622,
@@ -6017,7 +6638,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 623,
@@ -6027,7 +6649,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Rock",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 624,
@@ -6037,7 +6660,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 625,
@@ -6047,7 +6671,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 626,
@@ -6057,7 +6682,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fish",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 627,
@@ -6067,7 +6693,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast-Warrior",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 628,
@@ -6077,7 +6704,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Spellcaster",
-    "level": 2
+    "level": 2,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 629,
@@ -6087,7 +6715,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 630,
@@ -6097,7 +6726,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Reptile",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 631,
@@ -6107,7 +6737,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Spellcaster",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 632,
@@ -6117,7 +6748,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Rock",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 633,
@@ -6127,7 +6759,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Fairy",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 634,
@@ -6137,7 +6770,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 635,
@@ -6147,7 +6781,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Warrior",
-    "level": 1
+    "level": 1,
+    "rarity": "Common"
   },
   {
     "id": 636,
@@ -6157,7 +6792,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Winged Beast",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 637,
@@ -6167,7 +6803,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Plant",
-    "level": 6
+    "level": 6,
+    "rarity": "Rare"
   },
   {
     "id": 638,
@@ -6177,7 +6814,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Plant",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 639,
@@ -6187,7 +6825,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 640,
@@ -6197,7 +6836,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Insect",
-    "level": 3
+    "level": 3,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 641,
@@ -6207,7 +6847,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Warrior",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 642,
@@ -6217,7 +6858,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Beast",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 643,
@@ -6227,7 +6869,8 @@
     "type": "Monster",
     "attr": "WATER",
     "race": "Machine",
-    "level": 4
+    "level": 4,
+    "rarity": "Common"
   },
   {
     "id": 644,
@@ -6237,7 +6880,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Pyro",
-    "level": 2
+    "level": 2,
+    "rarity": "Common"
   },
   {
     "id": 645,
@@ -6247,7 +6891,8 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Machine",
-    "level": 6
+    "level": 6,
+    "rarity": "Super Rare"
   },
   {
     "id": 646,
@@ -6257,7 +6902,8 @@
     "type": "Monster",
     "attr": "FIRE",
     "race": "Aqua",
-    "level": 3
+    "level": 3,
+    "rarity": "Common"
   },
   {
     "id": 647,
@@ -6267,7 +6913,8 @@
     "type": "Monster",
     "attr": "LIGHT",
     "race": "Aqua",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 648,
@@ -6277,7 +6924,8 @@
     "type": "Monster",
     "attr": "WIND",
     "race": "Machine",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 649,
@@ -6287,7 +6935,8 @@
     "type": "Monster",
     "attr": "DARK",
     "race": "Warrior",
-    "level": 4
+    "level": 4,
+    "rarity": "Rare"
   },
   {
     "id": 650,
@@ -6297,263 +6946,314 @@
     "type": "Monster",
     "attr": "EARTH",
     "race": "Fiend",
-    "level": 5
+    "level": 5,
+    "rarity": "Rare"
   },
   {
     "id": 651,
     "name": "Kunai with Chain",
     "type": "Spell",
-    "attr": "WATER"
+    "attr": "WATER",
+    "rarity": "Super Rare"
   },
   {
     "id": 652,
     "name": "Magical Labyrinth",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Common"
   },
   {
     "id": 653,
     "name": "Warrior Elimination",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 654,
     "name": "Salamandra",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Super Rare"
   },
   {
     "id": 655,
     "name": "Cursebreaker",
     "type": "Spell",
-    "attr": "DARK"
+    "attr": "DARK",
+    "rarity": "Common"
   },
   {
     "id": 656,
     "name": "Eternal Rest",
     "type": "Spell",
-    "attr": "WIND"
+    "attr": "WIND",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 657,
     "name": "Megamorph",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 658,
     "name": "Metalmorph",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 659,
     "name": "Winged Trumpeter",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Super Rare"
   },
   {
     "id": 660,
     "name": "Stain Storm",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 661,
     "name": "Crush Card",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 662,
     "name": "Eradicating Aerosol",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 663,
     "name": "Breath of Light",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 664,
     "name": "Eternal Draught",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 665,
     "name": "Curse of Millennium Shield",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 666,
     "name": "Yamadron Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 667,
     "name": "Gate Guardian Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 668,
     "name": "Bright Castle",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Super Rare"
   },
   {
     "id": 669,
     "name": "Shadow Spell",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 670,
     "name": "Black Luster Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 671,
     "name": "Zera Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 672,
     "name": "Harpie's Feather Duster",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 673,
     "name": "War-lion Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 674,
     "name": "Beastry Mirror Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 675,
     "name": "Ultimate Dragon",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 676,
     "name": "Commencement Dance",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 677,
     "name": "Hamburger Recipe",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 678,
     "name": "Revival of Sennen Genjin",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 679,
     "name": "Novox's Prayer",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 680,
     "name": "Curse of Tri-Horned Dragon",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 681,
     "name": "House of Adhesive Tape",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 682,
     "name": "Eatgaboon",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 683,
     "name": "Bear Trap",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 684,
     "name": "Invisible Wire",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 685,
     "name": "Acid Trap Hole",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 686,
     "name": "Widespread Ruin",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 687,
     "name": "Goblin Fan",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 688,
     "name": "Bad Reaction to Simochi",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 689,
     "name": "Reverse Trap",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 690,
     "name": "Fake Trap",
-    "type": "Trap"
+    "type": "Trap",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 691,
     "name": "Revived of Serpent Night Dragon",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 692,
     "name": "Turtle Oath",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 693,
     "name": "Contruct of Mask",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 694,
     "name": "Resurrection of Chakra",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 695,
     "name": "Puppet Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 696,
     "name": "Javelin Beetle Pact",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Ultra Rare"
   },
   {
     "id": 697,
     "name": "Garma Sword Oath",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 698,
     "name": "Cosmo Queen's Prayer",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 699,
     "name": "Revival of Skeleton Rider",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 700,
     "name": "Fortress Whale's Oath",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Common"
   },
   {
     "id": 701,
@@ -6562,7 +7262,8 @@
     "race": "Warrior",
     "level": 6,
     "atk": 1950,
-    "def": 1850
+    "def": 1850,
+    "rarity": "Common"
   },
   {
     "id": 702,
@@ -6571,7 +7272,8 @@
     "race": "Warrior",
     "level": 6,
     "atk": 2000,
-    "def": 1850
+    "def": 1850,
+    "rarity": "Common"
   },
   {
     "id": 703,
@@ -6580,7 +7282,8 @@
     "race": "Beast-Warrior",
     "level": 8,
     "atk": 2750,
-    "def": 2500
+    "def": 2500,
+    "rarity": "Common"
   },
   {
     "id": 704,
@@ -6589,7 +7292,8 @@
     "race": "Warrior",
     "level": 7,
     "atk": 2050,
-    "def": 2500
+    "def": 2500,
+    "rarity": "Common"
   },
   {
     "id": 705,
@@ -6598,7 +7302,8 @@
     "race": "Dragon",
     "level": 8,
     "atk": 2850,
-    "def": 2350
+    "def": 2350,
+    "rarity": "Common"
   },
   {
     "id": 706,
@@ -6607,7 +7312,8 @@
     "race": "Dragon",
     "level": 7,
     "atk": 2350,
-    "def": 2400
+    "def": 2400,
+    "rarity": "Common"
   },
   {
     "id": 707,
@@ -6616,7 +7322,8 @@
     "race": "Spellcaster",
     "level": 7,
     "atk": 2650,
-    "def": 2250
+    "def": 2250,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 708,
@@ -6625,7 +7332,8 @@
     "race": "Spellcaster",
     "level": 8,
     "atk": 2900,
-    "def": 2450
+    "def": 2450,
+    "rarity": "Common"
   },
   {
     "id": 709,
@@ -6634,7 +7342,8 @@
     "race": "Fiend",
     "level": 7,
     "atk": 2450,
-    "def": 2000
+    "def": 2000,
+    "rarity": "Common"
   },
   {
     "id": 710,
@@ -6643,7 +7352,8 @@
     "race": "Aqua",
     "level": 8,
     "atk": 2550,
-    "def": 2500
+    "def": 2500,
+    "rarity": "Common"
   },
   {
     "id": 711,
@@ -6652,7 +7362,8 @@
     "race": "Dragon",
     "level": 7,
     "atk": 2200,
-    "def": 2350
+    "def": 2350,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 712,
@@ -6661,7 +7372,8 @@
     "race": "Dragon",
     "level": 6,
     "atk": 1800,
-    "def": 2000
+    "def": 2000,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 713,
@@ -6670,7 +7382,8 @@
     "race": "Dragon",
     "level": 8,
     "atk": 3500,
-    "def": 2000
+    "def": 2000,
+    "rarity": "Common"
   },
   {
     "id": 714,
@@ -6679,7 +7392,8 @@
     "race": "Beast",
     "level": 6,
     "atk": 2250,
-    "def": 1800
+    "def": 1800,
+    "rarity": "Ultra Rare"
   },
   {
     "id": 715,
@@ -6688,7 +7402,8 @@
     "race": "Fiend",
     "level": 7,
     "atk": 2000,
-    "def": 2350
+    "def": 2350,
+    "rarity": "Common"
   },
   {
     "id": 716,
@@ -6697,7 +7412,8 @@
     "race": "Warrior",
     "level": 7,
     "atk": 2550,
-    "def": 2150
+    "def": 2150,
+    "rarity": "Common"
   },
   {
     "id": 717,
@@ -6706,7 +7422,8 @@
     "race": "Insect",
     "level": 8,
     "atk": 2450,
-    "def": 2550
+    "def": 2550,
+    "rarity": "Common"
   },
   {
     "id": 718,
@@ -6715,7 +7432,8 @@
     "race": "Fish",
     "level": 7,
     "atk": 2350,
-    "def": 2150
+    "def": 2150,
+    "rarity": "Common"
   },
   {
     "id": 719,
@@ -6724,7 +7442,8 @@
     "race": "Zombie",
     "level": 6,
     "atk": 1900,
-    "def": 1850
+    "def": 1850,
+    "rarity": "Common"
   },
   {
     "id": 720,
@@ -6733,12 +7452,14 @@
     "race": "Spellcaster",
     "level": 6,
     "atk": 2000,
-    "def": 1800
+    "def": 1800,
+    "rarity": "Common"
   },
   {
     "id": 721,
     "name": "Dark Magic Ritual",
-    "type": "Spell"
+    "type": "Spell",
+    "rarity": "Rare"
   },
   {
     "id": 722,
@@ -6747,6 +7468,7 @@
     "race": "Spellcaster",
     "level": 8,
     "atk": 2800,
-    "def": 2600
+    "def": 2600,
+    "rarity": "Common"
   }
 ]

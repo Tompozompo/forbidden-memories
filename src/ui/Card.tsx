@@ -55,6 +55,21 @@ const RACE_SYMBOLS: Record<string, string> = {
   Angel: '👼',
 };
 
+// Rarity colors and symbols
+const RARITY_COLORS: Record<string, string> = {
+  Common: '#808080',
+  Rare: '#4169E1',
+  'Super Rare': '#9932CC',
+  'Ultra Rare': '#FFD700',
+};
+
+const RARITY_SYMBOLS: Record<string, string> = {
+  Common: '●',
+  Rare: '◆',
+  'Super Rare': '★',
+  'Ultra Rare': '✦',
+};
+
 export default function Card({ card, size = 'medium', className = '', style = {}, showTooltip = true }: CardProps) {
   const [showText, setShowText] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -142,6 +157,8 @@ export default function Card({ card, size = 'medium', className = '', style = {}
   const attrColor = card.attr ? ATTR_COLORS[card.attr] : '#888';
   const attrSymbol = card.attr ? ATTR_SYMBOLS[card.attr] : '';
   const raceSymbol = card.race ? RACE_SYMBOLS[card.race] : '';
+  const rarityColor = card.rarity ? RARITY_COLORS[card.rarity] : '#888';
+  const raritySymbol = card.rarity ? RARITY_SYMBOLS[card.rarity] : '';
 
   return (
     <div
@@ -231,6 +248,21 @@ export default function Card({ card, size = 'medium', className = '', style = {}
         >
           {card.name}
         </div>
+        {card.rarity && (
+          <div
+            style={{
+              fontSize: sizeStyle.fontSize,
+              marginLeft: '2px',
+              color: rarityColor,
+              fontWeight: 'bold',
+              flexShrink: 0,
+              textShadow: '0 0 2px rgba(0,0,0,0.5)',
+            }}
+            title={card.rarity}
+          >
+            {raritySymbol}
+          </div>
+        )}
         {isMonster && card.attr && (
           <div
             style={{

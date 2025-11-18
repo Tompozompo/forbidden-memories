@@ -401,16 +401,26 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       const newHasSummoned: [boolean, boolean] = [false, false];
       const newHasAttacked: [boolean, boolean] = [false, false];
       
-      // Draw 1 card for the new player
+      // Draw back to 5 cards for the new player
       const deck = state.decks[newTurn];
-      if (!deck || deck.length === 0) {
-        // No card to draw, just flip turn
+      const hand = state.hands[newTurn];
+      const currentHandSize = hand.length;
+      const targetHandSize = 5;
+      
+      // Calculate how many cards to draw (draw up to 5, but not more)
+      const cardsToDraw = Math.max(0, targetHandSize - currentHandSize);
+      const actualDrawCount = Math.min(cardsToDraw, deck.length);
+      
+      if (actualDrawCount === 0) {
+        // No cards to draw, just flip turn
         return { ...state, turn: newTurn, turnCount: newTurnCount, phase: 'Draw', hasSummoned: newHasSummoned, hasAttacked: newHasAttacked };
       }
       
-      const [card, ...rest] = deck;
-      const newDecks = state.decks.map((d, i) => (i === newTurn ? rest : d)) as [Card[], Card[]];
-      const newHands = state.hands.map((h, i) => (i === newTurn ? [...h, card] : h)) as [Card[], Card[]];
+      // Draw the cards
+      const drawnCards = deck.slice(0, actualDrawCount);
+      const remainingDeck = deck.slice(actualDrawCount);
+      const newDecks = state.decks.map((d, i) => (i === newTurn ? remainingDeck : d)) as [Card[], Card[]];
+      const newHands = state.hands.map((h, i) => (i === newTurn ? [...h, ...drawnCards] : h)) as [Card[], Card[]];
       
       return { 
         ...state, 

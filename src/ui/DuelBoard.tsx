@@ -2,6 +2,7 @@ import { useEffect, useReducer, useRef, useState } from 'react';
 import { initialDuel, duelReducer, type DuelState } from '../engine/duel';
 import { getAIAction } from '../engine/ai';
 import { getCardEffect } from '../data/cardEffects';
+import { checkFusion } from '../engine/fusions';
 import type { Card } from '../types';
 import FieldZone from './FieldZone';
 import SpellTrapZone from './SpellTrapZone';
@@ -319,8 +320,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     if (selectedForFusion.includes(card.id)) {
       // Deselect card
       setSelectedForFusion(selectedForFusion.filter(id => id !== card.id));
-    } else if (selectedForFusion.length < 2) {
-      // Select card (max 2)
+    } else {
+      // Select card (no limit)
       setSelectedForFusion([...selectedForFusion, card.id]);
     }
   };
@@ -330,17 +331,64 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
       // Enter fusion mode
       setFuseMode(true);
       setSelectedForFusion([]);
-    } else if (selectedForFusion.length === 2) {
-      // Execute fusion
+    } else if (selectedForFusion.length >= 2) {
+      // Execute chain fusion
       setFusingCards([...selectedForFusion]);
       
-      // Wait for animation before dispatching
-      setTimeout(() => {
-        dispatch({ type: 'FUSE', matA: selectedForFusion[0], matB: selectedForFusion[1], allCards });
-        setFusingCards([]);
-        setSelectedForFusion([]);
-        setFuseMode(false);
-      }, 600);
+      // Chain fuse: fuse first two, then fuse result with third, etc.
+      const performChainFusion = (cardIds: number[], index: number = 0) => {
+        if (index >= cardIds.length - 1) {
+          // Done fusing
+          setTimeout(() => {
+            setFusingCards([]);
+            setSelectedForFusion([]);
+            setFuseMode(false);
+          }, 600);
+          return;
+        }
+        
+        // Fuse current pair (index and index+1)
+        const mat1 = cardIds[index];
+        const mat2 = cardIds[index + 1];
+        const resultId = checkFusion(mat1, mat2);
+        
+        if (!resultId) {
+          // Fusion failed - just clear and exit
+          setTimeout(() => {
+            setFusingCards([]);
+            setSelectedForFusion([]);
+            setFuseMode(false);
+          }, 600);
+          return;
+        }
+        
+        // Wait for animation then dispatch fusion
+        setTimeout(() => {
+          dispatch({ type: 'FUSE', matA: mat1, matB: mat2, allCards });
+          
+          // If there are more cards to fuse, replace the two fused cards with the result and continue
+          if (index + 2 < cardIds.length) {
+            // Create new array: cards before fusion, result, cards after fusion
+            const newCardIds = [
+              ...cardIds.slice(0, index),
+              resultId,
+              ...cardIds.slice(index + 2)
+            ];
+            
+            // Continue chain fusion with the new array
+            performChainFusion(newCardIds, index);
+          } else {
+            // Last fusion complete
+            setTimeout(() => {
+              setFusingCards([]);
+              setSelectedForFusion([]);
+              setFuseMode(false);
+            }, 600);
+          }
+        }, 600);
+      };
+      
+      performChainFusion(selectedForFusion);
     }
   };
 
@@ -475,7 +523,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
       {fuseMode && (
         <div style={{ margin: '4px 0', padding: '6px', backgroundColor: '#ff8800', border: '2px solid #ffaa00', borderRadius: '4px', textAlign: 'center' }}>
           <span style={{ fontSize: 'clamp(9px, 2.5vw, 12px)', fontWeight: 'bold' }}>
-            Fusion Mode: Select 2 cards from your hand ({selectedForFusion.length}/2 selected)
+            Fusion Mode: Select 2+ cards from your hand ({selectedForFusion.length} selected)
           </span>
         </div>
       )}
@@ -711,11 +759,11 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
           <>
             <button
               style={{ 
-                backgroundColor: selectedForFusion.length === 2 ? '#ff8800' : '#666',
+                backgroundColor: selectedForFusion.length >= 2 ? '#ff8800' : '#666',
                 padding: '10px 12px', 
                 fontSize: 'clamp(8px, 2vw, 11px)',
                 fontWeight: 'bold',
-                cursor: selectedForFusion.length === 2 ? 'pointer' : 'not-allowed',
+                cursor: selectedForFusion.length >= 2 ? 'pointer' : 'not-allowed',
                 borderRadius: '4px',
                 border: 'none',
                 color: 'white',
@@ -723,7 +771,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                 minWidth: '100px'
               }}
               onClick={handleFuseClick}
-              disabled={selectedForFusion.length !== 2}
+              disabled={selectedForFusion.length < 2}
             >
               ⚡ Confirm Fusion
             </button>

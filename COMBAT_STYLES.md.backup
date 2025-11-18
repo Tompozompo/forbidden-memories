@@ -30,7 +30,7 @@ This document specifies the **10-type Combat Style system** that replaces the or
 | 5 | **Radiance** | ✨ | LIGHT | Purifying light energy |
 | 6 | **Shadow** | 🌑 | DARK | Intangible darkness |
 | 7 | **Bolt** | ⚡ | *(none)* | Electrical energy |
-| 8 | **Plant** | 🌿 | *(none)* | Natural growth, vegetation |
+| 8 | **Venom** | ☠️ | *(none)* | Corrosive poison/acid |
 | 9 | **Frost** | ❄️ | *(none)* | Freezing cold, ice |
 | 10 | **Impact** | 💥 | *(none)* | Physical force, crushing |
 
@@ -48,26 +48,26 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 | Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
 |--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Plant | Torrent, Bolt | Quake, Gale, Radiance, Shadow, Impact |
-| **Torrent** 🌊 | Flame, Impact | Quake, Impact | Gale, Radiance, Shadow, Bolt, Plant, Frost |
-| **Quake** 🌍 | Bolt, Torrent | Gale, Plant | Flame, Radiance, Shadow, Frost, Impact |
-| **Gale** 💨 | Quake, Shadow | Radiance, Frost | Flame, Torrent, Bolt, Plant, Impact |
-| **Radiance** ✨ | Gale, Plant | Shadow, Plant | Flame, Torrent, Quake, Bolt, Frost, Impact |
-| **Shadow** 🌑 | Radiance, Impact | Gale, Bolt | Flame, Torrent, Quake, Plant, Frost |
-| **Bolt** ⚡ | Flame, Shadow | Quake, Frost | Torrent, Gale, Radiance, Plant, Impact |
-| **Plant** 🌿 | Quake, Radiance | Flame, Radiance | Torrent, Gale, Shadow, Bolt, Frost, Impact |
-| **Frost** ❄️ | Gale, Bolt | Flame, Impact | Torrent, Quake, Radiance, Shadow, Plant |
-| **Impact** 💥 | Torrent, Frost | Torrent, Shadow | Flame, Quake, Gale, Radiance, Bolt, Plant |
+| **Flame** 🔥 | Frost, Venom | Torrent, Bolt | Quake, Gale, Radiance, Shadow, Impact |
+| **Torrent** 🌊 | Flame, Impact | Quake, Impact | Gale, Radiance, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Torrent | Gale, Venom | Flame, Radiance, Shadow, Frost, Impact |
+| **Gale** 💨 | Quake, Shadow | Radiance, Frost | Flame, Torrent, Bolt, Venom, Impact |
+| **Radiance** ✨ | Gale, Venom | Shadow, Venom | Flame, Torrent, Quake, Bolt, Frost, Impact |
+| **Shadow** 🌑 | Radiance, Impact | Gale, Bolt | Flame, Torrent, Quake, Venom, Frost |
+| **Bolt** ⚡ | Flame, Shadow | Quake, Frost | Torrent, Gale, Radiance, Venom, Impact |
+| **Venom** ☠️ | Quake, Radiance | Flame, Radiance | Torrent, Gale, Shadow, Bolt, Frost, Impact |
+| **Frost** ❄️ | Gale, Bolt | Flame, Impact | Torrent, Quake, Radiance, Shadow, Venom |
+| **Impact** 💥 | Torrent, Frost | Torrent, Shadow | Flame, Quake, Gale, Radiance, Bolt, Venom |
 
 **Thematic Logic:**
-- Fire melts ice and burns vegetation
+- Fire melts ice and burns away toxins
 - Water extinguishes fire and shapes/erodes solid impact  
 - Earth grounds electricity and absorbs water
 - Wind carves earth and disperses shadow
-- Light illuminates wind paths and withers plants
+- Light illuminates wind paths and purifies poison
 - Shadow shrouds light and makes impact miss
 - Lightning ignites fire and pierces shadow
-- Plant grows through earth and blocks light
+- Venom corrodes earth and poisons light
 - Frost freezes wind and conducts electricity away
 - Impact crushes water and shatters ice
 
@@ -79,26 +79,26 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 | Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
 |--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Plant | Torrent, Impact | Quake, Gale, Radiance, Shadow, Bolt |
-| **Torrent** 🌊 | Flame, Radiance | Gale, Impact | Quake, Shadow, Bolt, Plant, Frost |
-| **Quake** 🌍 | Bolt, Impact | Shadow, Plant | Flame, Torrent, Gale, Radiance, Frost |
-| **Gale** 💨 | Torrent, Shadow | Bolt, Frost | Flame, Quake, Radiance, Plant, Impact |
-| **Radiance** ✨ | Shadow, Frost | Torrent, Plant | Flame, Quake, Gale, Bolt, Impact |
-| **Shadow** 🌑 | Quake, Plant | Gale, Radiance | Flame, Torrent, Bolt, Frost, Impact |
-| **Bolt** ⚡ | Gale, Impact | Quake, Frost | Flame, Torrent, Radiance, Shadow, Plant |
-| **Plant** 🌿 | Radiance, Quake | Flame, Shadow | Torrent, Gale, Bolt, Frost, Impact |
-| **Frost** ❄️ | Bolt, Gale | Flame, Radiance | Torrent, Quake, Shadow, Plant, Impact |
-| **Impact** 💥 | Flame, Torrent | Quake, Bolt | Gale, Radiance, Shadow, Plant, Frost |
+| **Flame** 🔥 | Frost, Venom | Torrent, Impact | Quake, Gale, Radiance, Shadow, Bolt |
+| **Torrent** 🌊 | Flame, Radiance | Gale, Impact | Quake, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Impact | Shadow, Venom | Flame, Torrent, Gale, Radiance, Frost |
+| **Gale** 💨 | Torrent, Shadow | Bolt, Frost | Flame, Quake, Radiance, Venom, Impact |
+| **Radiance** ✨ | Shadow, Frost | Torrent, Venom | Flame, Quake, Gale, Bolt, Impact |
+| **Shadow** 🌑 | Quake, Venom | Gale, Radiance | Flame, Torrent, Bolt, Frost, Impact |
+| **Bolt** ⚡ | Gale, Impact | Quake, Frost | Flame, Torrent, Radiance, Shadow, Venom |
+| **Venom** ☠️ | Radiance, Quake | Flame, Shadow | Torrent, Gale, Bolt, Frost, Impact |
+| **Frost** ❄️ | Bolt, Gale | Flame, Radiance | Torrent, Quake, Shadow, Venom, Impact |
+| **Impact** 💥 | Flame, Torrent | Quake, Bolt | Gale, Radiance, Shadow, Venom, Frost |
 
 **Thematic Logic:**
-- Fire melts ice and burns vegetation
+- Fire melts ice and burns toxins
 - Water extinguishes fire and floods light
 - Earth grounds electricity and crushes with impact
 - Wind disperses water and scatters shadows  
 - Light reveals darkness and freezes shadows solid
-- Shadow seeps through earth and obscures awareness
+- Shadow seeps through earth and poisons awareness
 - Lightning energizes air and disrupts solid matter
-- Plant purifies light and grows through earth
+- Venom purifies light and corrodes earth
 - Frost conducts electricity and freezes air
 - Impact smashes fire and crushes water
 
@@ -110,28 +110,28 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 | Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
 |--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Gale | Torrent, Quake | Radiance, Shadow, Bolt, Plant, Impact |
-| **Torrent** 🌊 | Flame, Quake | Shadow, Bolt | Gale, Radiance, Plant, Frost, Impact |
-| **Quake** 🌍 | Bolt, Flame | Torrent, Shadow | Gale, Radiance, Plant, Frost, Impact |
-| **Gale** 💨 | Shadow, Plant | Flame, Frost | Torrent, Quake, Radiance, Bolt, Impact |
-| **Radiance** ✨ | Shadow, Impact | Plant, Frost | Flame, Torrent, Quake, Gale, Bolt |
-| **Shadow** 🌑 | Quake, Torrent | Gale, Radiance | Flame, Bolt, Plant, Frost, Impact |
-| **Bolt** ⚡ | Torrent, Frost | Quake, Impact | Flame, Gale, Radiance, Shadow, Plant |
-| **Plant** 🌿 | Radiance, Impact | Gale, Impact | Flame, Torrent, Quake, Shadow, Bolt, Frost |
-| **Frost** ❄️ | Gale, Radiance | Flame, Bolt | Torrent, Quake, Shadow, Plant, Impact |
-| **Impact** 💥 | Bolt, Plant | Radiance, Plant | Flame, Torrent, Quake, Gale, Shadow, Frost |
+| **Flame** 🔥 | Frost, Gale | Torrent, Quake | Radiance, Shadow, Bolt, Venom, Impact |
+| **Torrent** 🌊 | Flame, Quake | Shadow, Bolt | Gale, Radiance, Venom, Frost, Impact |
+| **Quake** 🌍 | Bolt, Flame | Torrent, Shadow | Gale, Radiance, Venom, Frost, Impact |
+| **Gale** 💨 | Shadow, Venom | Flame, Frost | Torrent, Quake, Radiance, Bolt, Impact |
+| **Radiance** ✨ | Shadow, Impact | Venom, Frost | Flame, Torrent, Quake, Gale, Bolt |
+| **Shadow** 🌑 | Quake, Torrent | Gale, Radiance | Flame, Bolt, Venom, Frost, Impact |
+| **Bolt** ⚡ | Torrent, Frost | Quake, Impact | Flame, Gale, Radiance, Shadow, Venom |
+| **Venom** ☠️ | Radiance, Impact | Gale, Impact | Flame, Torrent, Quake, Shadow, Bolt, Frost |
+| **Frost** ❄️ | Gale, Radiance | Flame, Bolt | Torrent, Quake, Shadow, Venom, Impact |
+| **Impact** 💥 | Bolt, Venom | Radiance, Venom | Flame, Torrent, Quake, Gale, Shadow, Frost |
 
 **Thematic Logic:**
 - Fire melts ice and consumes wind's oxygen
 - Water extinguishes fire and erodes earth
 - Earth grounds electricity and smothers fire  
-- Wind disperses shadow and scatters vegetation
+- Wind disperses shadow and carries poison away
 - Light reveals darkness and obstructs impact
 - Shadow seeps through earth and absorbs water
 - Lightning conducts through water and freezes into frost
-- Plant pierces light and entangles through impact
+- Venom pierces light and corrodes through impact
 - Frost freezes wind and reflects light
-- Impact disrupts electricity and crushes vegetation
+- Impact disrupts electricity and crushes poison
 
 ---
 
@@ -141,27 +141,27 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 | Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
 |--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Plant | Torrent, Quake | Gale, Radiance, Shadow, Bolt, Impact |
-| **Torrent** 🌊 | Flame, Impact | Gale, Impact | Quake, Radiance, Shadow, Bolt, Plant, Frost |
-| **Quake** 🌍 | Bolt, Flame | Gale, Impact | Torrent, Radiance, Shadow, Plant, Frost |
-| **Gale** 💨 | Quake, Torrent | Bolt, Plant | Flame, Radiance, Shadow, Frost, Impact |
-| **Radiance** ✨ | Shadow, Impact | Shadow, Plant | Flame, Torrent, Quake, Gale, Bolt, Frost |
-| **Shadow** 🌑 | Radiance, Bolt | Radiance, Frost | Flame, Torrent, Quake, Gale, Plant, Impact |
-| **Bolt** ⚡ | Gale, Frost | Quake, Shadow | Flame, Torrent, Radiance, Plant, Impact |
-| **Plant** 🌿 | Radiance, Gale | Flame, Frost | Torrent, Quake, Shadow, Bolt, Impact |
-| **Frost** ❄️ | Shadow, Plant | Flame, Bolt | Torrent, Quake, Gale, Radiance, Impact |
-| **Impact** 💥 | Torrent, Quake | Torrent, Radiance | Flame, Gale, Shadow, Bolt, Plant, Frost |
+| **Flame** 🔥 | Frost, Venom | Torrent, Quake | Gale, Radiance, Shadow, Bolt, Impact |
+| **Torrent** 🌊 | Flame, Impact | Gale, Impact | Quake, Radiance, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Flame | Gale, Impact | Torrent, Radiance, Shadow, Venom, Frost |
+| **Gale** 💨 | Quake, Torrent | Bolt, Venom | Flame, Radiance, Shadow, Frost, Impact |
+| **Radiance** ✨ | Shadow, Impact | Shadow, Venom | Flame, Torrent, Quake, Gale, Bolt, Frost |
+| **Shadow** 🌑 | Radiance, Bolt | Radiance, Frost | Flame, Torrent, Quake, Gale, Venom, Impact |
+| **Bolt** ⚡ | Gale, Frost | Quake, Shadow | Flame, Torrent, Radiance, Venom, Impact |
+| **Venom** ☠️ | Radiance, Gale | Flame, Frost | Torrent, Quake, Shadow, Bolt, Impact |
+| **Frost** ❄️ | Shadow, Venom | Flame, Bolt | Torrent, Quake, Gale, Radiance, Impact |
+| **Impact** 💥 | Torrent, Quake | Torrent, Radiance | Flame, Gale, Shadow, Bolt, Venom, Frost |
 
 **Thematic Logic:**
-- Fire melts ice and burns vegetation
+- Fire melts ice and burns away toxins
 - Water extinguishes fire and shapes physical matter
 - Earth grounds electricity and smothers fire
 - Wind carves earth and disperses water
 - Light reveals darkness and obstructs physical impact
 - Shadow shrouds light and conducts electricity
 - Lightning energizes wind and freezes into frost
-- Plant pierces light and is carried by wind
-- Frost freezes shadow and withers plants
+- Venom pierces light and is carried by wind
+- Frost freezes shadow and neutralizes poison
 - Impact crushes water and shatters earth
 
 ---
@@ -172,26 +172,26 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 | Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
 |--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Shadow | Torrent, Bolt | Quake, Gale, Radiance, Plant, Impact |
-| **Torrent** 🌊 | Flame, Radiance | Quake, Frost | Gale, Shadow, Bolt, Plant, Impact |
-| **Quake** 🌍 | Bolt, Torrent | Gale, Impact | Flame, Radiance, Shadow, Plant, Frost |
-| **Gale** 💨 | Quake, Plant | Frost, Impact | Flame, Torrent, Radiance, Shadow, Bolt |
-| **Radiance** ✨ | Shadow, Plant | Torrent, Plant | Flame, Quake, Gale, Bolt, Frost, Impact |
-| **Shadow** 🌑 | Impact, Bolt | Flame, Radiance | Torrent, Quake, Gale, Plant, Frost |
-| **Bolt** ⚡ | Frost, Flame | Quake, Shadow | Torrent, Gale, Radiance, Plant, Impact |
-| **Plant** 🌿 | Impact, Radiance | Gale, Radiance | Flame, Torrent, Quake, Shadow, Bolt, Frost |
-| **Frost** ❄️ | Gale, Torrent | Flame, Bolt | Quake, Radiance, Shadow, Plant, Impact |
-| **Impact** 💥 | Gale, Quake | Shadow, Plant | Flame, Torrent, Radiance, Bolt, Frost |
+| **Flame** 🔥 | Frost, Shadow | Torrent, Bolt | Quake, Gale, Radiance, Venom, Impact |
+| **Torrent** 🌊 | Flame, Radiance | Quake, Frost | Gale, Shadow, Bolt, Venom, Impact |
+| **Quake** 🌍 | Bolt, Torrent | Gale, Impact | Flame, Radiance, Shadow, Venom, Frost |
+| **Gale** 💨 | Quake, Venom | Frost, Impact | Flame, Torrent, Radiance, Shadow, Bolt |
+| **Radiance** ✨ | Shadow, Venom | Torrent, Venom | Flame, Quake, Gale, Bolt, Frost, Impact |
+| **Shadow** 🌑 | Impact, Bolt | Flame, Radiance | Torrent, Quake, Gale, Venom, Frost |
+| **Bolt** ⚡ | Frost, Flame | Quake, Shadow | Torrent, Gale, Radiance, Venom, Impact |
+| **Venom** ☠️ | Impact, Radiance | Gale, Radiance | Flame, Torrent, Quake, Shadow, Bolt, Frost |
+| **Frost** ❄️ | Gale, Torrent | Flame, Bolt | Quake, Radiance, Shadow, Venom, Impact |
+| **Impact** 💥 | Gale, Quake | Shadow, Venom | Flame, Torrent, Radiance, Bolt, Frost |
 
 **Thematic Logic:**
 - Fire melts ice and engulfs shadow
 - Water extinguishes fire and floods light
 - Earth grounds electricity and absorbs water
-- Wind carves earth and scatters vegetation
-- Light reveals darkness and withers plants
+- Wind carves earth and carries poison away
+- Light reveals darkness and purifies poison
 - Shadow disrupts physical matter and conducts electricity
 - Lightning freezes into frost and ignites fire
-- Plant entangles physical matter and blocks light
+- Venom corrodes physical matter and pierces light
 - Frost freezes wind and solidifies water
 - Impact disrupts wind and shatters earth
 
@@ -252,7 +252,7 @@ When a monster's Attribute matches its Combat Style:
 
 **STAB Effect**: Enables the maximum ×2.0 super advantage multiplier when both types win.
 
-**No STAB**: The 4 unmatched styles (Bolt, Plant, Frost, Impact) can achieve ×1.5 maximum advantage but have more flexibility.
+**No STAB**: The 4 unmatched styles (Bolt, Venom, Frost, Impact) can achieve ×1.5 maximum advantage but have more flexibility.
 
 ---
 
@@ -263,7 +263,7 @@ When a monster's Attribute matches its Combat Style:
 ```typescript
 export type CombatStyle = 
   | 'Flame' | 'Torrent' | 'Quake' | 'Gale' | 'Radiance'
-  | 'Shadow' | 'Bolt' | 'Plant' | 'Frost' | 'Impact';
+  | 'Shadow' | 'Bolt' | 'Venom' | 'Frost' | 'Impact';
 
 export type Attribute = 
   | 'FIRE' | 'WATER' | 'EARTH' | 'WIND' | 'LIGHT' | 'DARK';
@@ -278,7 +278,7 @@ export interface TypeEffectiveness {
 // Alternative 1: Cycle Pattern
 export const TYPE_CHART: TypeEffectiveness = {
   Flame: {
-    superEffective: ['Frost', 'Plant'],
+    superEffective: ['Frost', 'Venom'],
     notVeryEffective: ['Torrent', 'Bolt']
   },
   Torrent: {
@@ -287,15 +287,15 @@ export const TYPE_CHART: TypeEffectiveness = {
   },
   Quake: {
     superEffective: ['Bolt', 'Torrent'],
-    notVeryEffective: ['Gale', 'Plant']
+    notVeryEffective: ['Gale', 'Venom']
   },
   Gale: {
     superEffective: ['Quake', 'Shadow'],
     notVeryEffective: ['Radiance', 'Frost']
   },
   Radiance: {
-    superEffective: ['Gale', 'Plant'],
-    notVeryEffective: ['Shadow', 'Plant']
+    superEffective: ['Gale', 'Venom'],
+    notVeryEffective: ['Shadow', 'Venom']
   },
   Shadow: {
     superEffective: ['Radiance', 'Impact'],
@@ -305,7 +305,7 @@ export const TYPE_CHART: TypeEffectiveness = {
     superEffective: ['Flame', 'Shadow'],
     notVeryEffective: ['Quake', 'Frost']
   },
-  Plant: {
+  Venom: {
     superEffective: ['Quake', 'Radiance'],
     notVeryEffective: ['Flame', 'Radiance']
   },
@@ -387,7 +387,7 @@ function getTypeMultiplier(
 | Radiance | Gold | `#FFD700` | (255, 215, 0) |
 | Shadow | Obsidian | `#0B1215` | (11, 18, 21) |
 | Bolt | Electric Yellow | `#FFFF00` | (255, 255, 0) |
-| Plant | Verdant Green | `#00FF00` | (0, 255, 0) |
+| Venom | Toxic Green | `#00FF00` | (0, 255, 0) |
 | Frost | Ice Blue | `#B0E0E6` | (176, 224, 230) |
 | Impact | Silver | `#C0C0C0` | (192, 192, 192) |
 

@@ -1,4 +1,4 @@
-# Type Effectiveness System - Dual Mode Design
+# Guardian Stars System - Dual Mode Design
 
 **Status**: Ready for implementation  
 **Last Updated**: 2025-11-18
@@ -7,48 +7,48 @@
 
 ## System Overview
 
-This document specifies a **10-type effectiveness system** with two presentation modes that players can toggle between in settings. Both modes use identical battle mechanics and matchups, differing only in naming convention.
+This document specifies the **10-type Guardian Star system** with two presentation modes that players can toggle between in settings. Both modes use identical battle mechanics and matchups from the original Yu-Gi-Oh! Forbidden Memories, differing only in naming convention.
 
 ### Dual Mode System
 
-- **Classic Mode**: Guardian Stars with zodiac/celestial names (Sun, Mercury, Venus, etc.)
-- **Element Mode**: Combat Styles with elemental names (Radiance, Shadow, Bolt, etc.)
+- **Classic Mode**: Zodiac/celestial names (Sun, Mercury, Venus, Moon, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto)
+- **Element Mode**: Direct alignment names (Light, Dark, Dreams, Fiend, Fire, Forest, Wind, Earth, Water, Thunder)
 - **Settings Toggle**: Players can switch between modes based on preference
-- **Same Mechanics**: Both use the two-cycle design with identical matchups
+- **Same Mechanics**: Both use the original two-cycle design with identical matchups
 
 ### Core Mechanics (Both Modes)
 
-- **10 Types** organized in two independent cycles
+- **10 Guardian Stars** organized in two independent cycles
 - **6 Attributes** representing monster elemental nature (FIRE/WATER/EARTH/WIND/LIGHT/DARK)
 - **Two-Cycle Design**: 
-  - **Mystical Cycle**: 4 types - Light/Dark/Dreams/Fiend
-  - **Elemental Cycle**: 6 types - Fire/Forest/Wind/Earth/Water/Thunder
-- **Simple Balance**: Each type beats 1, loses to 1, neutral vs 8
-- **STAB System**: 6 types match attributes for bonus damage potential
-- **Position-Based**: Attack mode uses type, Defense mode uses Attribute only
+  - **Mystical Cycle**: 4 stars - Light/Dark/Dreams/Fiend
+  - **Elemental Cycle**: 6 stars - Fire/Forest/Wind/Earth/Water/Thunder
+- **Simple Balance**: Each star beats 1, loses to 1, neutral vs 8
+- **STAB System**: 6 stars match attributes for bonus damage potential
+- **Position-Based**: Attack mode uses Guardian Star, Defense mode uses Attribute only
 
 ---
 
-## The 10 Types - Both Modes
+## The 10 Guardian Stars - Both Modes
 
-| # | Classic Mode (Guardian Star) | Symbol | Element Mode (Combat Style) | Emoji | Alignment | Attribute Match | Theme |
-|---|------------------------------|--------|----------------------------|-------|-----------|-----------------|-------|
-| 1 | **Sun** | ☉ | **Radiance** | ✨ | Light | LIGHT | Radiant power |
-| 2 | **Mercury** | ☿ | **Shadow** | 🌑 | Dark | DARK | Darkness |
-| 3 | **Venus** | ♀ | **Dream** | 💭 | Dreams | *(none)* | Illusion |
-| 4 | **Moon** | ☾ | **Fiend** | 👹 | Fiend | *(none)* | Dark magic |
-| 5 | **Mars** | ♂ | **Flame** | 🔥 | Fire | FIRE | Burning heat |
-| 6 | **Jupiter** | ♃ | **Plant** | 🌿 | Forest | *(none)* | Natural growth |
-| 7 | **Saturn** | ♄ | **Gale** | 💨 | Wind | WIND | Air currents |
-| 8 | **Uranus** | ⛢ | **Quake** | 🌍 | Earth | EARTH | Seismic power |
-| 9 | **Neptune** | ♆ | **Torrent** | 🌊 | Water | WATER | Flowing water |
-| 10 | **Pluto** | ♇ | **Bolt** | ⚡ | Thunder | *(none)* | Lightning |
+| # | Classic Mode | Symbol | Element Mode | Emoji | Attribute Match | Theme |
+|---|--------------|--------|--------------|-------|-----------------|-------|
+| 1 | **Sun** | ☉ | **Light** | ✨ | LIGHT | Radiant solar power |
+| 2 | **Mercury** | ☿ | **Dark** | 🌑 | DARK | Shadow and darkness |
+| 3 | **Venus** | ♀ | **Dreams** | 💭 | *(none)* | Illusion and fantasy |
+| 4 | **Moon** | ☾ | **Fiend** | 👹 | *(none)* | Dark magic and demons |
+| 5 | **Mars** | ♂ | **Fire** | 🔥 | FIRE | Burning flames |
+| 6 | **Jupiter** | ♃ | **Forest** | 🌿 | *(none)* | Natural growth, plants |
+| 7 | **Saturn** | ♄ | **Wind** | 💨 | WIND | Air currents |
+| 8 | **Uranus** | ⛢ | **Earth** | 🌍 | EARTH | Solid ground |
+| 9 | **Neptune** | ♆ | **Water** | 🌊 | WATER | Ocean depths |
+| 10 | **Pluto** | ♇ | **Thunder** | ⚡ | *(none)* | Lightning and electricity |
 
 ---
 
 ## The Two-Cycle System
 
-### Cycle 1: Mystical Cycle (4 Types)
+### Cycle 1: Mystical Cycle (4 Stars)
 
 The Mystical Cycle represents supernatural forces: Light, Dark, Dreams, and Fiend magic.
 
@@ -59,23 +59,23 @@ Sun (Light) → Moon (Fiend) → Venus (Dreams) → Mercury (Dark) → Sun
 
 **Element Mode Cycle:**
 ```
-Radiance (Light) → Fiend (Fiend) → Dream (Dreams) → Shadow (Dark) → Radiance
+Light → Fiend → Dreams → Dark → Light
 ```
 
-| Classic Mode | Element Mode | Beats | Loses To | Neutral Against (8 types) |
-|--------------|--------------|-------|----------|---------------------------|
-| **Sun** ☉ | **Radiance** ✨ | Moon/Fiend | Mercury/Shadow | Venus/Dream, Mars/Flame, Jupiter/Plant, Saturn/Gale, Uranus/Quake, Neptune/Torrent, Pluto/Bolt |
-| **Mercury** ☿ | **Shadow** 🌑 | Sun/Radiance | Venus/Dream | Moon/Fiend, Mars/Flame, Jupiter/Plant, Saturn/Gale, Uranus/Quake, Neptune/Torrent, Pluto/Bolt |
-| **Venus** ♀ | **Dream** 💭 | Mercury/Shadow | Moon/Fiend | Sun/Radiance, Mars/Flame, Jupiter/Plant, Saturn/Gale, Uranus/Quake, Neptune/Torrent, Pluto/Bolt |
-| **Moon** ☾ | **Fiend** 👹 | Venus/Dream | Sun/Radiance | Mercury/Shadow, Mars/Flame, Jupiter/Plant, Saturn/Gale, Uranus/Quake, Neptune/Torrent, Pluto/Bolt |
+| Classic Mode | Element Mode | Beats | Loses To | Neutral Against (8 stars) |
+|--------------|--------------|-------|----------|--------------------------|
+| **Sun** ☉ | **Light** ✨ | Moon/Fiend | Mercury/Dark | Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto |
+| **Mercury** ☿ | **Dark** 🌑 | Sun/Light | Venus/Dreams | Moon, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto |
+| **Venus** ♀ | **Dreams** 💭 | Mercury/Dark | Moon/Fiend | Sun, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto |
+| **Moon** ☾ | **Fiend** 👹 | Venus/Dreams | Sun/Light | Mercury, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto |
 
 **Thematic Logic:**
 - Light banishes Fiends
-- Darkness obscures Light
+- Dark obscures Light
 - Dreams dissolve in Darkness
 - Fiends corrupt Dreams
 
-### Cycle 2: Elemental Cycle (6 Types)
+### Cycle 2: Elemental Cycle (6 Stars)
 
 The Elemental Cycle represents natural forces: Fire, Water, Thunder, Earth, Wind, and Forest.
 
@@ -86,20 +86,20 @@ Mars (Fire) → Neptune (Water) → Pluto (Thunder) → Uranus (Earth) → Satur
 
 **Element Mode Cycle:**
 ```
-Flame (Fire) → Torrent (Water) → Bolt (Thunder) → Quake (Earth) → Gale (Wind) → Plant (Forest) → Flame
+Fire → Water → Thunder → Earth → Wind → Forest → Fire
 ```
 
-| Classic Mode | Element Mode | Beats | Loses To | Neutral Against (8 types) |
-|--------------|--------------|-------|----------|---------------------------|
-| **Mars** ♂ | **Flame** 🔥 | Jupiter/Plant | Neptune/Torrent | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Saturn/Gale, Uranus/Quake, Pluto/Bolt |
-| **Jupiter** ♃ | **Plant** 🌿 | Saturn/Gale | Mars/Flame | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Uranus/Quake, Neptune/Torrent, Pluto/Bolt |
-| **Saturn** ♄ | **Gale** 💨 | Uranus/Quake | Jupiter/Plant | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Mars/Flame, Neptune/Torrent, Pluto/Bolt |
-| **Uranus** ⛢ | **Quake** 🌍 | Pluto/Bolt | Saturn/Gale | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Mars/Flame, Jupiter/Plant, Neptune/Torrent |
-| **Neptune** ♆ | **Torrent** 🌊 | Mars/Flame | Pluto/Bolt | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Jupiter/Plant, Saturn/Gale, Uranus/Quake |
-| **Pluto** ♇ | **Bolt** ⚡ | Neptune/Torrent | Uranus/Quake | Sun/Radiance, Mercury/Shadow, Venus/Dream, Moon/Fiend, Mars/Flame, Jupiter/Plant, Saturn/Gale |
+| Classic Mode | Element Mode | Beats | Loses To | Neutral Against (8 stars) |
+|--------------|--------------|-------|----------|--------------------------|
+| **Mars** ♂ | **Fire** 🔥 | Jupiter/Forest | Neptune/Water | Sun, Mercury, Venus, Moon, Saturn, Uranus, Pluto |
+| **Jupiter** ♃ | **Forest** 🌿 | Saturn/Wind | Mars/Fire | Sun, Mercury, Venus, Moon, Uranus, Neptune, Pluto |
+| **Saturn** ♄ | **Wind** 💨 | Uranus/Earth | Jupiter/Forest | Sun, Mercury, Venus, Moon, Mars, Neptune, Pluto |
+| **Uranus** ⛢ | **Earth** 🌍 | Pluto/Thunder | Saturn/Wind | Sun, Mercury, Venus, Moon, Mars, Jupiter, Neptune |
+| **Neptune** ♆ | **Water** 🌊 | Mars/Fire | Pluto/Thunder | Sun, Mercury, Venus, Moon, Jupiter, Saturn, Uranus |
+| **Pluto** ♇ | **Thunder** ⚡ | Neptune/Water | Uranus/Earth | Sun, Mercury, Venus, Moon, Mars, Jupiter, Saturn |
 
 **Thematic Logic:**
-- Fire burns Forest/Plants
+- Fire burns Forest
 - Water extinguishes Fire
 - Thunder electrifies Water
 - Earth grounds Thunder
@@ -111,9 +111,9 @@ Flame (Fire) → Torrent (Water) → Bolt (Thunder) → Quake (Earth) → Gale (
 ## Balance Verification
 
 ✅ **Perfect Two-Cycle Balance Confirmed**:
-- Each type beats exactly 1 other
-- Each type loses to exactly 1 other
-- Each type is neutral vs exactly 8 others
+- Each Guardian Star beats exactly 1 other
+- Each Guardian Star loses to exactly 1 other
+- Each Guardian Star is neutral vs exactly 8 others
 - All reverse relationships verified (if A beats B, then B loses to A)
 - Total wins = Total losses = 10
 - Two independent cycles with no cross-interactions
@@ -129,37 +129,43 @@ When attacking a monster in Defense Mode (only Attribute active):
 
 | Matchup Result | Multiplier | Example (Classic) | Example (Element) |
 |----------------|------------|-------------------|-------------------|
-| Super Effective | **×1.5** | Sun vs DARK | Radiance vs DARK |
-| Neutral | **×1.0** | Sun vs FIRE | Radiance vs FIRE |
-| Not Very Effective | **×0.7** | Sun vs LIGHT | Radiance vs LIGHT |
+| Super Effective | **×1.5** | Sun vs DARK | Light vs DARK |
+| Neutral | **×1.0** | Sun vs FIRE | Light vs FIRE |
+| Not Very Effective | **×0.7** | Sun vs LIGHT | Light vs LIGHT |
 
-### vs Attack Mode (Type Active)
+### vs Attack Mode (Guardian Star Active)
 
-When attacking a monster in Attack Mode (type active):
+When attacking a monster in Attack Mode (Guardian Star active):
 
 | Matchup Result | Multiplier | Example (Classic) | Example (Element) |
 |----------------|------------|-------------------|-------------------|
-| **Advantage** | **×1.3** | Sun vs Moon | Radiance vs Fiend |
-| **Neutral** | **×1.0** | Sun vs Mars | Radiance vs Flame |
-| **Disadvantage** | **×0.8** | Sun vs Mercury | Radiance vs Shadow |
+| **Advantage** | **×1.3** | Sun vs Moon | Light vs Fiend |
+| **Neutral** | **×1.0** | Sun vs Mars | Light vs Fire |
+| **Disadvantage** | **×0.8** | Sun vs Mercury | Light vs Dark |
 
 ### STAB (Same Type Attack Bonus)
 
-When a monster's Attribute matches its type alignment:
+When a monster's Attribute matches its Guardian Star:
 
 **Classic Mode Examples:**
 - LIGHT monster using Sun = STAB
 - DARK monster using Mercury = STAB
 - FIRE monster using Mars = STAB
+- WATER monster using Neptune = STAB
+- EARTH monster using Uranus = STAB
+- WIND monster using Saturn = STAB
 
 **Element Mode Examples:**
-- LIGHT monster using Radiance = STAB
-- DARK monster using Shadow = STAB
-- FIRE monster using Flame = STAB
+- LIGHT monster using Light = STAB
+- DARK monster using Dark = STAB
+- FIRE monster using Fire = STAB
+- WATER monster using Water = STAB
+- EARTH monster using Earth = STAB
+- WIND monster using Wind = STAB
 
 **STAB Effect**: +10% bonus to base damage when alignment matches.
 
-**No STAB**: The 4 unaligned types (Dreams, Fiend, Forest, Thunder) don't get STAB but offer tactical flexibility.
+**No STAB**: The 4 unaligned stars (Dreams, Fiend, Forest, Thunder) don't get STAB but offer tactical flexibility.
 
 ---
 
@@ -168,35 +174,30 @@ When a monster's Attribute matches its type alignment:
 ### TypeScript Example
 
 ```typescript
-// Mode-independent type system
-export type TypeAlignment = 
+// Guardian Star names (Classic Mode)
+export type GuardianStar = 
+  | 'Sun' | 'Mercury' | 'Venus' | 'Moon'
+  | 'Mars' | 'Jupiter' | 'Saturn' | 'Uranus' | 'Neptune' | 'Pluto';
+
+// Alignment names (Element Mode)
+export type StarAlignment = 
   | 'Light' | 'Dark' | 'Dreams' | 'Fiend'
   | 'Fire' | 'Forest' | 'Wind' | 'Earth' | 'Water' | 'Thunder';
 
 export type Attribute = 
   | 'FIRE' | 'WATER' | 'EARTH' | 'WIND' | 'LIGHT' | 'DARK';
 
-// Classic Mode (Guardian Stars)
-export type GuardianStar = 
-  | 'Sun' | 'Mercury' | 'Venus' | 'Moon'
-  | 'Mars' | 'Jupiter' | 'Saturn' | 'Uranus' | 'Neptune' | 'Pluto';
-
-// Element Mode (Combat Styles)
-export type CombatStyle = 
-  | 'Radiance' | 'Shadow' | 'Dream' | 'Fiend'
-  | 'Flame' | 'Plant' | 'Gale' | 'Quake' | 'Torrent' | 'Bolt';
-
 export type DisplayMode = 'classic' | 'element';
 
-export interface TypeEffectiveness {
+export interface StarEffectiveness {
   [alignment: string]: {
-    beats: TypeAlignment;
-    losesTo: TypeAlignment;
+    beats: StarAlignment;
+    losesTo: StarAlignment;
   };
 }
 
 // Core matchup data (mode-independent)
-export const TYPE_CHART: TypeEffectiveness = {
+export const GUARDIAN_STAR_CHART: StarEffectiveness = {
   Light: { beats: 'Fiend', losesTo: 'Dark' },
   Dark: { beats: 'Light', losesTo: 'Dreams' },
   Dreams: { beats: 'Dark', losesTo: 'Fiend' },
@@ -210,7 +211,7 @@ export const TYPE_CHART: TypeEffectiveness = {
 };
 
 // Name mappings
-export const CLASSIC_NAMES: Record<TypeAlignment, GuardianStar> = {
+export const CLASSIC_NAMES: Record<StarAlignment, GuardianStar> = {
   Light: 'Sun',
   Dark: 'Mercury',
   Dreams: 'Venus',
@@ -223,20 +224,7 @@ export const CLASSIC_NAMES: Record<TypeAlignment, GuardianStar> = {
   Thunder: 'Pluto'
 };
 
-export const ELEMENT_NAMES: Record<TypeAlignment, CombatStyle> = {
-  Light: 'Radiance',
-  Dark: 'Shadow',
-  Dreams: 'Dream',
-  Fiend: 'Fiend',
-  Fire: 'Flame',
-  Forest: 'Plant',
-  Wind: 'Gale',
-  Earth: 'Quake',
-  Water: 'Torrent',
-  Thunder: 'Bolt'
-};
-
-export const ALIGNMENT_TO_ATTRIBUTE: Partial<Record<TypeAlignment, Attribute>> = {
+export const ALIGNMENT_TO_ATTRIBUTE: Partial<Record<StarAlignment, Attribute>> = {
   Light: 'LIGHT',
   Dark: 'DARK',
   Fire: 'FIRE',
@@ -247,29 +235,27 @@ export const ALIGNMENT_TO_ATTRIBUTE: Partial<Record<TypeAlignment, Attribute>> =
 };
 
 // Display helper
-export function getTypeName(
-  alignment: TypeAlignment, 
+export function getStarName(
+  alignment: StarAlignment, 
   mode: DisplayMode
-): GuardianStar | CombatStyle {
-  return mode === 'classic' 
-    ? CLASSIC_NAMES[alignment] 
-    : ELEMENT_NAMES[alignment];
+): GuardianStar | StarAlignment {
+  return mode === 'classic' ? CLASSIC_NAMES[alignment] : alignment;
 }
 ```
 
 ### Battle Calculation Function
 
 ```typescript
-function getTypeMultiplier(
-  attackerAlignment: TypeAlignment,
+function getStarMultiplier(
+  attackerAlignment: StarAlignment,
   defenderAttribute: Attribute,
-  defenderAlignment?: TypeAlignment // undefined if in defense mode
+  defenderAlignment?: StarAlignment // undefined if in defense mode
 ): number {
-  // If defender is in attack mode, check type matchup
+  // If defender is in attack mode, check Guardian Star matchup
   if (defenderAlignment) {
-    if (TYPE_CHART[attackerAlignment].beats === defenderAlignment) {
+    if (GUARDIAN_STAR_CHART[attackerAlignment].beats === defenderAlignment) {
       return 1.3; // Advantage
-    } else if (TYPE_CHART[attackerAlignment].losesTo === defenderAlignment) {
+    } else if (GUARDIAN_STAR_CHART[attackerAlignment].losesTo === defenderAlignment) {
       return 0.8; // Disadvantage
     }
     return 1.0; // Neutral
@@ -294,48 +280,42 @@ function getTypeMultiplier(
 
 function hasSTAB(
   monsterAttribute: Attribute,
-  typeAlignment: TypeAlignment
+  starAlignment: StarAlignment
 ): boolean {
-  const matchingAttribute = ALIGNMENT_TO_ATTRIBUTE[typeAlignment];
+  const matchingAttribute = ALIGNMENT_TO_ATTRIBUTE[starAlignment];
   return matchingAttribute === monsterAttribute;
 }
 ```
 
 ---
 
-## Color Palettes
+## Color Palette
 
-### Classic Mode (Guardian Stars)
+Both modes use the same colors for matching alignments:
 
-| Star | Color Name | Hex Code | RGB |
-|------|-----------|----------|-----|
-| Sun | Bright Gold | `#FFD700` | (255, 215, 0) |
-| Mercury | Deep Purple | `#4B0082` | (75, 0, 130) |
-| Venus | Pink Dream | `#FF69B4` | (255, 105, 180) |
-| Moon | Dark Violet | `#9400D3` | (148, 0, 211) |
-| Mars | Crimson | `#DC143C` | (220, 20, 60) |
-| Jupiter | Verdant Green | `#228B22` | (34, 139, 34) |
-| Saturn | Sky Blue | `#87CEEB` | (135, 206, 235) |
-| Uranus | Earth Brown | `#8B4513` | (139, 69, 19) |
-| Neptune | Deep Blue | `#00008B` | (0, 0, 139) |
-| Pluto | Electric Yellow | `#FFFF00` | (255, 255, 0) |
+| Classic Mode | Element Mode | Color Name | Hex Code | RGB |
+|--------------|--------------|-----------|----------|-----|
+| Sun | Light | Bright Gold | `#FFD700` | (255, 215, 0) |
+| Mercury | Dark | Deep Purple | `#4B0082` | (75, 0, 130) |
+| Venus | Dreams | Pink Dream | `#FF69B4` | (255, 105, 180) |
+| Moon | Fiend | Dark Violet | `#9400D3` | (148, 0, 211) |
+| Mars | Fire | Crimson | `#DC143C` | (220, 20, 60) |
+| Jupiter | Forest | Verdant Green | `#228B22` | (34, 139, 34) |
+| Saturn | Wind | Sky Blue | `#87CEEB` | (135, 206, 235) |
+| Uranus | Earth | Earth Brown | `#8B4513` | (139, 69, 19) |
+| Neptune | Water | Deep Blue | `#00008B` | (0, 0, 139) |
+| Pluto | Thunder | Electric Yellow | `#FFFF00` | (255, 255, 0) |
 
-### Element Mode (Combat Styles)
+### Attribute Base Colors
 
-| Style | Color Name | Hex Code | RGB |
-|-------|-----------|----------|-----|
-| Radiance | Bright Gold | `#FFD700` | (255, 215, 0) |
-| Shadow | Deep Purple | `#4B0082` | (75, 0, 130) |
-| Dream | Pink Dream | `#FF69B4` | (255, 105, 180) |
-| Fiend | Dark Violet | `#9400D3` | (148, 0, 211) |
-| Flame | Crimson | `#DC143C` | (220, 20, 60) |
-| Plant | Verdant Green | `#228B22` | (34, 139, 34) |
-| Gale | Sky Blue | `#87CEEB` | (135, 206, 235) |
-| Quake | Earth Brown | `#8B4513` | (139, 69, 19) |
-| Torrent | Deep Blue | `#00008B` | (0, 0, 139) |
-| Bolt | Electric Yellow | `#FFFF00` | (255, 255, 0) |
-
-*Note: Both modes use the same colors for matching alignments*
+| Attribute | Color | Hex Code |
+|-----------|-------|----------|
+| FIRE | Orange-Red | `#FF4500` |
+| WATER | Deep Blue | `#0047AB` |
+| EARTH | Brown | `#8B4513` |
+| WIND | Sky Blue | `#87CEEB` |
+| LIGHT | Bright Gold | `#FFD700` |
+| DARK | Deep Purple | `#4B0082` |
 
 ---
 
@@ -348,7 +328,7 @@ Add a display mode preference to the settings:
 ```typescript
 interface UserSettings {
   // ... other settings
-  typeDisplayMode: 'classic' | 'element'; // Default: 'classic'
+  guardianStarDisplayMode: 'classic' | 'element'; // Default: 'classic'
 }
 ```
 
@@ -358,13 +338,13 @@ Throughout the UI, use the mode to determine which names to show:
 
 ```typescript
 // Example: Card display
-function CardTypeDisplay({ alignment, settings }: Props) {
-  const typeName = getTypeName(alignment, settings.typeDisplayMode);
-  const symbol = settings.typeDisplayMode === 'classic' 
-    ? getSymbol(alignment) 
+function CardStarDisplay({ alignment, settings }: Props) {
+  const starName = getStarName(alignment, settings.guardianStarDisplayMode);
+  const symbol = settings.guardianStarDisplayMode === 'classic' 
+    ? getZodiacSymbol(alignment) 
     : getEmoji(alignment);
   
-  return <span>{symbol} {typeName}</span>;
+  return <span>{symbol} {starName}</span>;
 }
 ```
 
@@ -375,9 +355,9 @@ Add a toggle option in the settings screen:
 ```
 ⚙️ Settings
 
-Display Mode:
-○ Classic Mode (Guardian Stars: Sun, Mercury, Venus...)
-○ Element Mode (Combat Styles: Radiance, Shadow, Dream...)
+Guardian Star Display:
+○ Classic Mode (Zodiac: Sun, Mercury, Venus, Moon...)
+○ Element Mode (Alignment: Light, Dark, Dreams, Fiend...)
 ```
 
 ---
@@ -386,7 +366,7 @@ Display Mode:
 
 ### Card Appearance (Both Modes)
 - **Card Base Color**: Attribute color (represents what the monster IS)
-- **Card Border/Accent**: Type color (represents the monster's combat approach)
+- **Card Border/Accent**: Guardian Star color (represents combat approach)
 - **Symbol/Icon**: Mode-dependent (Classic shows ☉☿♀, Element shows ✨🌑💭)
 
 ### Example: Blue-Eyes White Dragon
@@ -399,30 +379,30 @@ Display Mode:
 
 **Element Mode:**
 - Base: Gold (LIGHT attribute)
-- Border: Gold (Radiance style - STAB!)
+- Border: Gold (Light alignment - STAB!)
 - Symbol: ✨
-- Label: "Radiance"
+- Label: "Light"
 
 ---
 
 ## Next Steps for Implementation
 
-1. **Add type fields to Card data structure**
-   - TypeAlignment (internal representation)
+1. **Add Guardian Star fields to Card data structure**
+   - StarAlignment (internal representation)
    - Display name determined by mode setting
 
 2. **Implement settings toggle**
-   - Add typeDisplayMode to user settings
+   - Add guardianStarDisplayMode to user settings
    - Persist preference in localStorage
    - Add UI control in settings screen
 
 3. **Update all UI components**
-   - Use getTypeName() helper for display
+   - Use getStarName() helper for display
    - Show appropriate symbols/emojis based on mode
-   - Type effectiveness indicators work in both modes
+   - Star effectiveness indicators work in both modes
 
 4. **Card Assignment**
-   - Assign TypeAlignment to all 720+ existing cards
+   - Assign StarAlignment to all 720+ existing cards
    - Use thematic logic (e.g., Blue-Eyes = Light, Red-Eyes = Fire)
    - Display adapts automatically based on mode
 
@@ -434,7 +414,7 @@ Display Mode:
 
 ---
 
-**Document Version**: 4.0 - Dual Mode System (Classic & Element)  
+**Document Version**: 4.1 - Simplified Dual Mode (Classic & Element)  
 **Last Updated**: 2025-11-18  
 **Status**: Ready for Implementation ✅  
-**Note**: Combines Guardian Stars (classic/zodiac naming) and Combat Styles (element naming) into a unified dual-mode system. Players can toggle between modes in settings while using the same battle mechanics and matchups.
+**Note**: Simplified dual-mode system using original Guardian Star zodiac names (Sun, Mercury, etc.) in Classic Mode and direct alignment names (Light, Dark, Fire, Water, etc.) in Element Mode. Both modes use identical two-cycle battle mechanics from the original game.

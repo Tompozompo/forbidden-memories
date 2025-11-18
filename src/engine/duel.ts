@@ -54,6 +54,7 @@ export const initialDuel = (p0Cards: Card[], p1Cards: Card[]): DuelState => {
 // quick reducer shape
 type Action =
   | { type: 'DRAW'; player?: 0 | 1 }
+  | { type: 'DRAW_MULTIPLE'; player: 0 | 1; count: number }
   | { type: 'PLAY'; cardId: number; pos: 'atk' | 'def' }
   | { type: 'FUSE'; matA: number; matB: number; allCards: Card[] }
   | { type: 'SUMMON'; cardId: number; position: 'atk' | 'def' }
@@ -71,6 +72,20 @@ export function duelReducer(state: DuelState, action: Action): DuelState {
       const [card, ...rest] = deck;
       const newDecks = state.decks.map((d, i) => (i === player ? rest : d)) as [Card[], Card[]];
       const newHands = state.hands.map((h, i) => (i === player ? [...h, card] : h)) as [Card[], Card[]];
+      return { ...state, decks: newDecks, hands: newHands };
+    }
+    case 'DRAW_MULTIPLE': {
+      const player = action.player;
+      const deck = state.decks[player];
+      if (!deck || deck.length === 0) return state; // nothing to draw
+      
+      // Draw up to 'count' cards, or as many as available in the deck
+      const drawCount = Math.min(action.count, deck.length);
+      const drawnCards = deck.slice(0, drawCount);
+      const remainingDeck = deck.slice(drawCount);
+      
+      const newDecks = state.decks.map((d, i) => (i === player ? remainingDeck : d)) as [Card[], Card[]];
+      const newHands = state.hands.map((h, i) => (i === player ? [...h, ...drawnCards] : h)) as [Card[], Card[]];
       return { ...state, decks: newDecks, hands: newHands };
     }
     case 'FUSE': {

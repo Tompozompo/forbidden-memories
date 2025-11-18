@@ -78,14 +78,9 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
   useEffect(() => {
     if (initialDrawDone.current || initialState) return;
     initialDrawDone.current = true;
-    // draw 5 times for player 0
-    for (let i = 0; i < 5; i++) {
-      dispatch({ type: 'DRAW', player: 0 });
-    }
-    // draw 5 times for player 1
-    for (let i = 0; i < 5; i++) {
-      dispatch({ type: 'DRAW', player: 1 });
-    }
+    // Draw 5 cards for each player all at once
+    dispatch({ type: 'DRAW_MULTIPLE', player: 0, count: 5 });
+    dispatch({ type: 'DRAW_MULTIPLE', player: 1, count: 5 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

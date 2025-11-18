@@ -6,7 +6,7 @@ import CardComponent from '../ui/Card';
 
 const allCards = cards as Card[];
 
-type SortOption = 'id' | 'name' | 'atk' | 'def' | 'level';
+type SortOption = 'id' | 'name' | 'atk' | 'def' | 'level' | 'rarity';
 
 function LibraryScreen() {
   const navigate = useNavigate();
@@ -36,6 +36,12 @@ function LibraryScreen() {
         return (b.def ?? -1) - (a.def ?? -1);
       case 'level':
         return (b.level ?? -1) - (a.level ?? -1);
+      case 'rarity': {
+        const rarityOrder = { 'Common': 1, 'Rare': 2, 'Super Rare': 3, 'Ultra Rare': 4 };
+        const aRarity = a.rarity ? rarityOrder[a.rarity] : 0;
+        const bRarity = b.rarity ? rarityOrder[b.rarity] : 0;
+        return bRarity - aRarity;
+      }
       default:
         return 0;
     }
@@ -154,6 +160,7 @@ function LibraryScreen() {
           { value: 'atk', label: 'ATK' },
           { value: 'def', label: 'DEF' },
           { value: 'level', label: 'Level' },
+          { value: 'rarity', label: 'Rarity' },
         ] as const).map((option) => (
           <button
             key={option.value}

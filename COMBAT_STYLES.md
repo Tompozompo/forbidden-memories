@@ -135,6 +135,68 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 ---
 
+## Alternative 3a: Classic Elements with Refined Physical Balance
+
+**Perfectly balanced** with refined physical vs elemental matchups.
+
+| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
+|--------------|-------------------------|-------------------------------|-----------------|
+| **Flame** 🔥 | Frost, Venom | Torrent, Quake | Gale, Radiance, Shadow, Bolt, Impact |
+| **Torrent** 🌊 | Flame, Impact | Gale, Impact | Quake, Radiance, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Flame | Gale, Impact | Torrent, Radiance, Shadow, Venom, Frost |
+| **Gale** 💨 | Quake, Torrent | Bolt, Venom | Flame, Radiance, Shadow, Frost, Impact |
+| **Radiance** ✨ | Shadow, Impact | Shadow, Venom | Flame, Torrent, Quake, Gale, Bolt, Frost |
+| **Shadow** 🌑 | Radiance, Bolt | Radiance, Frost | Flame, Torrent, Quake, Gale, Venom, Impact |
+| **Bolt** ⚡ | Gale, Frost | Quake, Shadow | Flame, Torrent, Radiance, Venom, Impact |
+| **Venom** ☠️ | Radiance, Gale | Flame, Frost | Torrent, Quake, Shadow, Bolt, Impact |
+| **Frost** ❄️ | Shadow, Venom | Flame, Bolt | Torrent, Quake, Gale, Radiance, Impact |
+| **Impact** 💥 | Torrent, Quake | Torrent, Radiance | Flame, Gale, Shadow, Bolt, Venom, Frost |
+
+**Thematic Logic:**
+- Fire melts ice and burns away toxins
+- Water extinguishes fire and shapes physical matter
+- Earth grounds electricity and smothers fire
+- Wind carves earth and disperses water
+- Light reveals darkness and obstructs physical impact
+- Shadow shrouds light and conducts electricity
+- Lightning energizes wind and freezes into frost
+- Venom pierces light and is carried by wind
+- Frost freezes shadow and neutralizes poison
+- Impact crushes water and shatters earth
+
+---
+
+## Alternative 3b: Classic Elements with Energy Balance
+
+**Perfectly balanced** with balanced energy and physical type interactions.
+
+| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
+|--------------|-------------------------|-------------------------------|-----------------|
+| **Flame** 🔥 | Frost, Shadow | Torrent, Bolt | Quake, Gale, Radiance, Venom, Impact |
+| **Torrent** 🌊 | Flame, Radiance | Quake, Frost | Gale, Shadow, Bolt, Venom, Impact |
+| **Quake** 🌍 | Bolt, Torrent | Gale, Impact | Flame, Radiance, Shadow, Venom, Frost |
+| **Gale** 💨 | Quake, Venom | Frost, Impact | Flame, Torrent, Radiance, Shadow, Bolt |
+| **Radiance** ✨ | Shadow, Venom | Torrent, Venom | Flame, Quake, Gale, Bolt, Frost, Impact |
+| **Shadow** 🌑 | Impact, Bolt | Flame, Radiance | Torrent, Quake, Gale, Venom, Frost |
+| **Bolt** ⚡ | Frost, Flame | Quake, Shadow | Torrent, Gale, Radiance, Venom, Impact |
+| **Venom** ☠️ | Impact, Radiance | Gale, Radiance | Flame, Torrent, Quake, Shadow, Bolt, Frost |
+| **Frost** ❄️ | Gale, Torrent | Flame, Bolt | Quake, Radiance, Shadow, Venom, Impact |
+| **Impact** 💥 | Gale, Quake | Shadow, Venom | Flame, Torrent, Radiance, Bolt, Frost |
+
+**Thematic Logic:**
+- Fire melts ice and engulfs shadow
+- Water extinguishes fire and floods light
+- Earth grounds electricity and absorbs water
+- Wind carves earth and carries poison away
+- Light reveals darkness and purifies poison
+- Shadow disrupts physical matter and conducts electricity
+- Lightning freezes into frost and ignites fire
+- Venom corrodes physical matter and pierces light
+- Frost freezes wind and solidifies water
+- Impact disrupts wind and shatters earth
+
+---
+
 ## Balance Verification
 
 ✅ **Perfect Balance Confirmed for All Alternatives**:
@@ -148,11 +210,13 @@ The original table had reciprocal relationship errors where Impact was weak to 3
 
 ## Choosing an Alternative
 
-All three alternatives are **perfectly balanced** with exactly 2 strengths and 2 weaknesses per type. Choose based on your preferred thematic approach:
+All five alternatives are **perfectly balanced** with exactly 2 strengths and 2 weaknesses per type. Choose based on your preferred thematic approach:
 
 - **Alternative 1**: Clear cycle patterns, easiest to remember
 - **Alternative 2**: Varied interactions, unique combinations
 - **Alternative 3**: Classic elemental relationships, familiar to players
+- **Alternative 3a**: Refined physical vs elemental balance, classic feel with different matchups
+- **Alternative 3b**: Energy-balanced interactions, varied physical and energy type dynamics
 
 ---
 
@@ -361,6 +425,8 @@ function getTypeMultiplier(
    - Alternative 1: Cycle Pattern (recommended for clarity)
    - Alternative 2: Balanced Distribution  
    - Alternative 3: Classic Elements Enhanced
+   - Alternative 3a: Classic Elements with Refined Physical Balance
+   - Alternative 3b: Classic Elements with Energy Balance
 
 2. **Add Combat Style fields to Card data structure**
    - Primary Combat Style

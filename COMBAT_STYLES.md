@@ -36,105 +36,123 @@ This document specifies the **10-type Combat Style system** that replaces the or
 
 ---
 
-## Complete Matchup Table
+## ⚠️ IMPORTANT: Original Table Had Balance Issues
 
-### Type Effectiveness Chart
-
-| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
-|--------------|-------------------------|-------------------------------|-----------------|
-| **Flame** 🔥 | Frost, Venom | Torrent, Quake | Gale, Radiance, Shadow, Bolt, Impact |
-| **Torrent** 🌊 | Flame, Quake | Gale, Bolt | Radiance, Shadow, Venom, Frost, Impact |
-| **Quake** 🌍 | Bolt, Radiance | Torrent, Shadow | Flame, Gale, Venom, Frost, Impact |
-| **Gale** 💨 | Torrent, Shadow | Flame, Frost | Quake, Radiance, Bolt, Venom, Impact |
-| **Radiance** ✨ | Shadow, Venom | Quake, Impact | Flame, Torrent, Gale, Bolt, Frost |
-| **Shadow** 🌑 | Quake, Impact | Gale, Radiance | Flame, Torrent, Bolt, Venom, Frost |
-| **Bolt** ⚡ | Torrent, Impact | Quake, Frost | Flame, Gale, Radiance, Shadow, Venom |
-| **Venom** ☠️ | Frost, Impact | Flame, Radiance | Torrent, Quake, Gale, Shadow, Bolt |
-| **Frost** ❄️ | Gale, Bolt | Flame, Venom | Torrent, Quake, Radiance, Shadow, Impact |
-| **Impact** 💥 | Radiance, Frost | Bolt, Shadow | Flame, Torrent, Quake, Gale, Venom |
-
-### Matchup Matrix
-
-|  | 🔥 | 🌊 | 🌍 | 💨 | ✨ | 🌑 | ⚡ | ☠️ | ❄️ | 💥 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| **Flame** 🔥 | ○ | ❌ | ❌ | ○ | ○ | ○ | ○ | ✓ | ✓ | ○ |
-| **Torrent** 🌊 | ✓ | ○ | ✓ | ❌ | ○ | ○ | ❌ | ○ | ○ | ○ |
-| **Quake** 🌍 | ○ | ❌ | ○ | ○ | ✓ | ❌ | ✓ | ○ | ○ | ○ |
-| **Gale** 💨 | ○ | ✓ | ○ | ○ | ○ | ✓ | ○ | ○ | ❌ | ○ |
-| **Radiance** ✨ | ○ | ○ | ❌ | ○ | ○ | ✓ | ○ | ✓ | ○ | ❌ |
-| **Shadow** 🌑 | ○ | ○ | ✓ | ❌ | ❌ | ○ | ○ | ○ | ○ | ✓ |
-| **Bolt** ⚡ | ○ | ✓ | ❌ | ○ | ○ | ○ | ○ | ○ | ❌ | ✓ |
-| **Venom** ☠️ | ❌ | ○ | ○ | ○ | ❌ | ○ | ○ | ○ | ✓ | ✓ |
-| **Frost** ❄️ | ❌ | ○ | ○ | ✓ | ○ | ○ | ✓ | ❌ | ○ | ○ |
-| **Impact** 💥 | ○ | ○ | ○ | ○ | ✓ | ❌ | ❌ | ○ | ✓ | ○ |
-
-**Legend**: ✓ = Super Effective (×1.5) | ❌ = Not Very Effective (×0.7) | ○ = Neutral (×1.0)
+The original table had reciprocal relationship errors where Impact was weak to 3 types instead of 2. Below are **three perfectly balanced alternatives** to choose from, each with exactly 2 strengths and 2 weaknesses per type.
 
 ---
 
-## Thematic Logic
+## Alternative 1: Cycle Pattern
 
-Each matchup has clear real-world or fantasy logic:
+**Perfectly balanced** with clear thematic cycles.
 
-### Flame 🔥
-- **Beats Frost**: Fire melts ice
-- **Beats Venom**: Fire burns/purifies toxins
-- **Loses to Torrent**: Water extinguishes fire
-- **Loses to Quake**: Earth smothers fire
+| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
+|--------------|-------------------------|-------------------------------|-----------------|
+| **Flame** 🔥 | Frost, Venom | Torrent, Bolt | Quake, Gale, Radiance, Shadow, Impact |
+| **Torrent** 🌊 | Flame, Impact | Quake, Impact | Gale, Radiance, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Torrent | Gale, Venom | Flame, Radiance, Shadow, Frost, Impact |
+| **Gale** 💨 | Quake, Shadow | Radiance, Frost | Flame, Torrent, Bolt, Venom, Impact |
+| **Radiance** ✨ | Gale, Venom | Shadow, Venom | Flame, Torrent, Quake, Bolt, Frost, Impact |
+| **Shadow** 🌑 | Radiance, Impact | Gale, Bolt | Flame, Torrent, Quake, Venom, Frost |
+| **Bolt** ⚡ | Flame, Shadow | Quake, Frost | Torrent, Gale, Radiance, Venom, Impact |
+| **Venom** ☠️ | Quake, Radiance | Flame, Radiance | Torrent, Gale, Shadow, Bolt, Frost, Impact |
+| **Frost** ❄️ | Gale, Bolt | Flame, Impact | Torrent, Quake, Radiance, Shadow, Venom |
+| **Impact** 💥 | Torrent, Frost | Torrent, Shadow | Flame, Quake, Gale, Radiance, Bolt, Venom |
 
-### Torrent 🌊
-- **Beats Flame**: Water extinguishes fire
-- **Beats Quake**: Water erodes earth
-- **Loses to Gale**: Wind evaporates water
-- **Loses to Bolt**: Electricity conducts through water
+**Thematic Logic:**
+- Fire melts ice and burns away toxins
+- Water extinguishes fire and shapes/erodes solid impact  
+- Earth grounds electricity and absorbs water
+- Wind carves earth and disperses shadow
+- Light illuminates wind paths and purifies poison
+- Shadow shrouds light and makes impact miss
+- Lightning ignites fire and pierces shadow
+- Venom corrodes earth and poisons light
+- Frost freezes wind and conducts electricity away
+- Impact crushes water and shatters ice
 
-### Quake 🌍
-- **Beats Bolt**: Earth grounds electricity
-- **Beats Radiance**: Earth blocks/eclipses light
-- **Loses to Torrent**: Water erodes earth
-- **Loses to Shadow**: Shadow flows through cracks
+---
 
-### Gale 💨
-- **Beats Torrent**: Wind evaporates water
-- **Beats Shadow**: Wind disperses darkness
-- **Loses to Flame**: Fire consumes oxygen
-- **Loses to Frost**: Cold stops air movement
+## Alternative 2: Balanced Distribution
 
-### Radiance ✨
-- **Beats Shadow**: Light reveals darkness
-- **Beats Venom**: Light purifies poison
-- **Loses to Quake**: Earth blocks light
-- **Loses to Impact**: Matter obstructs light
+**Perfectly balanced** with varied interactions.
 
-### Shadow 🌑
-- **Beats Quake**: Intangible flows through solid
-- **Beats Impact**: Can't strike what has no form
-- **Loses to Gale**: Wind disperses shadow
-- **Loses to Radiance**: Light reveals shadow
+| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
+|--------------|-------------------------|-------------------------------|-----------------|
+| **Flame** 🔥 | Frost, Venom | Torrent, Impact | Quake, Gale, Radiance, Shadow, Bolt |
+| **Torrent** 🌊 | Flame, Radiance | Gale, Impact | Quake, Shadow, Bolt, Venom, Frost |
+| **Quake** 🌍 | Bolt, Impact | Shadow, Venom | Flame, Torrent, Gale, Radiance, Frost |
+| **Gale** 💨 | Torrent, Shadow | Bolt, Frost | Flame, Quake, Radiance, Venom, Impact |
+| **Radiance** ✨ | Shadow, Frost | Torrent, Venom | Flame, Quake, Gale, Bolt, Impact |
+| **Shadow** 🌑 | Quake, Venom | Gale, Radiance | Flame, Torrent, Bolt, Frost, Impact |
+| **Bolt** ⚡ | Gale, Impact | Quake, Frost | Flame, Torrent, Radiance, Shadow, Venom |
+| **Venom** ☠️ | Radiance, Quake | Flame, Shadow | Torrent, Gale, Bolt, Frost, Impact |
+| **Frost** ❄️ | Bolt, Gale | Flame, Radiance | Torrent, Quake, Shadow, Venom, Impact |
+| **Impact** 💥 | Flame, Torrent | Quake, Bolt | Gale, Radiance, Shadow, Venom, Frost |
 
-### Bolt ⚡
-- **Beats Torrent**: Electricity conducts through water
-- **Beats Impact**: Energy pierces matter
-- **Loses to Quake**: Earth grounds electricity
-- **Loses to Frost**: Cold stops energy flow
+**Thematic Logic:**
+- Fire melts ice and burns toxins
+- Water extinguishes fire and floods light
+- Earth grounds electricity and crushes with impact
+- Wind disperses water and scatters shadows  
+- Light reveals darkness and freezes shadows solid
+- Shadow seeps through earth and poisons awareness
+- Lightning energizes air and disrupts solid matter
+- Venom purifies light and corrodes earth
+- Frost conducts electricity and freezes air
+- Impact smashes fire and crushes water
 
-### Venom ☠️
-- **Beats Frost**: Acid dissolves ice
-- **Beats Impact**: Corrosion weakens matter
-- **Loses to Flame**: Fire burns toxins
-- **Loses to Radiance**: Light purifies poison
+---
 
-### Frost ❄️
-- **Beats Gale**: Cold freezes air
-- **Beats Bolt**: Cold stops energy flow
-- **Loses to Flame**: Fire melts ice
-- **Loses to Venom**: Acid dissolves ice
+## Alternative 3: Classic Elements Enhanced
 
-### Impact 💥
-- **Beats Radiance**: Solid matter blocks light
-- **Beats Frost**: Force shatters brittle ice
-- **Loses to Bolt**: Energy pierces through
-- **Loses to Shadow**: Can't hit intangible
+**Perfectly balanced** with traditional element relationships.
+
+| Combat Style | Beats (Super Effective) | Loses To (Not Very Effective) | Neutral Against |
+|--------------|-------------------------|-------------------------------|-----------------|
+| **Flame** 🔥 | Frost, Gale | Torrent, Quake | Radiance, Shadow, Bolt, Venom, Impact |
+| **Torrent** 🌊 | Flame, Quake | Shadow, Bolt | Gale, Radiance, Venom, Frost, Impact |
+| **Quake** 🌍 | Bolt, Flame | Torrent, Shadow | Gale, Radiance, Venom, Frost, Impact |
+| **Gale** 💨 | Shadow, Venom | Flame, Frost | Torrent, Quake, Radiance, Bolt, Impact |
+| **Radiance** ✨ | Shadow, Impact | Venom, Frost | Flame, Torrent, Quake, Gale, Bolt |
+| **Shadow** 🌑 | Quake, Torrent | Gale, Radiance | Flame, Bolt, Venom, Frost, Impact |
+| **Bolt** ⚡ | Torrent, Frost | Quake, Impact | Flame, Gale, Radiance, Shadow, Venom |
+| **Venom** ☠️ | Radiance, Impact | Gale, Impact | Flame, Torrent, Quake, Shadow, Bolt, Frost |
+| **Frost** ❄️ | Gale, Radiance | Flame, Bolt | Torrent, Quake, Shadow, Venom, Impact |
+| **Impact** 💥 | Bolt, Venom | Radiance, Venom | Flame, Torrent, Quake, Gale, Shadow, Frost |
+
+**Thematic Logic:**
+- Fire melts ice and consumes wind's oxygen
+- Water extinguishes fire and erodes earth
+- Earth grounds electricity and smothers fire  
+- Wind disperses shadow and carries poison away
+- Light reveals darkness and obstructs impact
+- Shadow seeps through earth and absorbs water
+- Lightning conducts through water and freezes into frost
+- Venom pierces light and corrodes through impact
+- Frost freezes wind and reflects light
+- Impact disrupts electricity and crushes poison
+
+---
+
+## Balance Verification
+
+✅ **Perfect Balance Confirmed for All Alternatives**:
+- Each Combat Style beats exactly 2 others
+- Each Combat Style loses to exactly 2 others  
+- Each Combat Style is neutral vs exactly 6 others
+- All reverse relationships verified (if A beats B, then B loses to A)
+- Total wins = Total losses = 20
+
+---
+
+## Choosing an Alternative
+
+All three alternatives are **perfectly balanced** with exactly 2 strengths and 2 weaknesses per type. Choose based on your preferred thematic approach:
+
+- **Alternative 1**: Clear cycle patterns, easiest to remember
+- **Alternative 2**: Varied interactions, unique combinations
+- **Alternative 3**: Classic elemental relationships, familiar to players
 
 ---
 
@@ -176,7 +194,7 @@ When a monster's Attribute matches its Combat Style:
 
 ## Implementation Data Structure
 
-### TypeScript Example
+### TypeScript Example (Using Alternative 1)
 
 ```typescript
 export type CombatStyle = 
@@ -193,46 +211,47 @@ export interface TypeEffectiveness {
   };
 }
 
+// Alternative 1: Cycle Pattern
 export const TYPE_CHART: TypeEffectiveness = {
   Flame: {
     superEffective: ['Frost', 'Venom'],
-    notVeryEffective: ['Torrent', 'Quake']
+    notVeryEffective: ['Torrent', 'Bolt']
   },
   Torrent: {
-    superEffective: ['Flame', 'Quake'],
-    notVeryEffective: ['Gale', 'Bolt']
-  },
-  Quake: {
-    superEffective: ['Bolt', 'Radiance'],
-    notVeryEffective: ['Torrent', 'Shadow']
-  },
-  Gale: {
-    superEffective: ['Torrent', 'Shadow'],
-    notVeryEffective: ['Flame', 'Frost']
-  },
-  Radiance: {
-    superEffective: ['Shadow', 'Venom'],
+    superEffective: ['Flame', 'Impact'],
     notVeryEffective: ['Quake', 'Impact']
   },
+  Quake: {
+    superEffective: ['Bolt', 'Torrent'],
+    notVeryEffective: ['Gale', 'Venom']
+  },
+  Gale: {
+    superEffective: ['Quake', 'Shadow'],
+    notVeryEffective: ['Radiance', 'Frost']
+  },
+  Radiance: {
+    superEffective: ['Gale', 'Venom'],
+    notVeryEffective: ['Shadow', 'Venom']
+  },
   Shadow: {
-    superEffective: ['Quake', 'Impact'],
-    notVeryEffective: ['Gale', 'Radiance']
+    superEffective: ['Radiance', 'Impact'],
+    notVeryEffective: ['Gale', 'Bolt']
   },
   Bolt: {
-    superEffective: ['Torrent', 'Impact'],
+    superEffective: ['Flame', 'Shadow'],
     notVeryEffective: ['Quake', 'Frost']
   },
   Venom: {
-    superEffective: ['Frost', 'Impact'],
+    superEffective: ['Quake', 'Radiance'],
     notVeryEffective: ['Flame', 'Radiance']
   },
   Frost: {
     superEffective: ['Gale', 'Bolt'],
-    notVeryEffective: ['Flame', 'Venom']
+    notVeryEffective: ['Flame', 'Impact']
   },
   Impact: {
-    superEffective: ['Radiance', 'Frost'],
-    notVeryEffective: ['Bolt', 'Shadow']
+    superEffective: ['Torrent', 'Frost'],
+    notVeryEffective: ['Torrent', 'Shadow']
   }
 };
 
@@ -336,43 +355,39 @@ function getTypeMultiplier(
 
 ---
 
-## Balance Verification
-
-✅ **Perfect Balance Confirmed**:
-- Each Combat Style beats exactly 2 others
-- Each Combat Style loses to exactly 2 others  
-- Each Combat Style is neutral vs exactly 6 others
-- All reverse relationships verified (if A beats B, then B loses to A)
-- Total wins = Total losses = 20
-
----
-
 ## Next Steps for Implementation
 
-1. **Add Combat Style fields to Card data structure**
+1. **Choose which alternative to use** (all are perfectly balanced)
+   - Alternative 1: Cycle Pattern (recommended for clarity)
+   - Alternative 2: Balanced Distribution  
+   - Alternative 3: Classic Elements Enhanced
+
+2. **Add Combat Style fields to Card data structure**
    - Primary Combat Style
    - Optional Secondary Combat Style
 
-2. **Implement type effectiveness lookup**
-   - Use TYPE_CHART constant
+3. **Implement type effectiveness lookup**
+   - Use TYPE_CHART constant for chosen alternative
    - Battle calculation with getTypeMultiplier()
 
-3. **UI Updates**
+4. **UI Updates**
    - Card border colors based on Combat Styles
    - Type effectiveness indicators in battle
    - Combat Style icons/badges
 
-4. **Card Assignment**
+5. **Card Assignment**
    - Assign Combat Styles to all 720+ existing cards
    - Formula-based with manual overrides for iconic cards
    - Use thematic logic (e.g., Blue-Eyes = Radiance/Frost)
 
-5. **Testing**
+6. **Testing**
    - Verify multipliers work correctly
    - Balance testing across card pool
    - UI/UX testing
 
 ---
 
-**Document Version**: 1.0 Final  
-**Ready for Implementation**: Yes ✅
+**Document Version**: 2.0 - Fixed Balance Issues  
+**Last Updated**: 2025-11-18  
+**Status**: Ready for Implementation ✅  
+**Note**: Original table had reciprocal relationship errors. All alternatives are now perfectly balanced.

@@ -680,7 +680,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                   onClick={(e) => handleCardClick(c, e)}
                   onContextMenu={(e) => handleCardClick(c, e)}
                 >
-                  <CardComponent card={c} size="small" style={{ width: '100%', height: '100%' }} />
+                  <CardComponent card={c} size="small" style={{ width: '100%' }} />
                 </div>
               );
             })}

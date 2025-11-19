@@ -40,17 +40,12 @@ button:disabled {
 }
 
 .card {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 5/7; /* Maintain card proportions */
-  background: linear-gradient(135deg, #666 0%, #333 100%);
+  /* Removed width, max-width, height, and aspect-ratio */
+  /* The Card component handles its own sizing via inline styles */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
   min-width: 0; /* Allow shrinking in flex containers */
   overflow: hidden; /* Clip contents */
@@ -59,7 +54,6 @@ button:disabled {
 @media (max-width: 480px) {
   .card {
     margin: 3px;
-    border-radius: 6px;
   }
 }
 

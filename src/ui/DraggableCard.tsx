@@ -57,7 +57,7 @@ export default function DraggableCard({ card, onDragEnd }: DraggableCardProps) {
       }}
       className="card select-none"
     >
-      <Card card={card} size="small" style={{ width: '100%', height: '100%' }} />
+      <Card card={card} size="small" style={{ width: '100%' }} />
     </animated.div>
   );
 }

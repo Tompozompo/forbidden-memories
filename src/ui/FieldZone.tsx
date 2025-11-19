@@ -92,7 +92,7 @@ export default function FieldZone({ player, monsters, isActive, onZoneClick, hig
                       justifyContent: 'center',
                     }}
                   >
-                    <CardComponent card={card} size="small" style={{ width: '100%', height: '100%' }} />
+                    <CardComponent card={card} size="small" style={{ width: '100%' }} />
                   </div>
                   {hasEquip && (
                     <div

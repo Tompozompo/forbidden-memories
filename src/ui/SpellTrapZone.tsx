@@ -31,7 +31,7 @@ export default function SpellTrapZone({ cards, isActive }: SpellTrapZoneProps) {
           >
             {card ? (
               <div style={{ width: '100%', height: '100%' }}>
-                <CardComponent card={card} size="small" style={{ width: '100%', height: '100%' }} />
+                <CardComponent card={card} size="small" style={{ width: '100%' }} />
               </div>
             ) : (
               <span style={{ color: '#444' }}>—</span>

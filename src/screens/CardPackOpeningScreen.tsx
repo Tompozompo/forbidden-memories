@@ -15,6 +15,7 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
   const [currentCardInGroup, setCurrentCardInGroup] = useState(-1);
   const [isComplete, setIsComplete] = useState(false);
   const [skipAnimation, setSkipAnimation] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(false); // Track if current card is revealed
   
   const cards: CardType[] = cardIds
     .map(id => cardsData.find(c => c.id === id))
@@ -42,6 +43,7 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
       setCurrentGroupIndex(3);
       setCurrentCardInGroup(4);
       setIsComplete(true);
+      setIsRevealed(true); // Skip to revealed state
       return;
     }
 
@@ -50,40 +52,51 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
       const timer = setTimeout(() => {
         setCurrentGroupIndex(0);
         setCurrentCardInGroup(0);
+        setIsRevealed(false); // Start face-down
       }, 500);
       return () => clearTimeout(timer);
     }
 
+    // Reveal current card after a brief delay
+    if (!isRevealed) {
+      const timer = setTimeout(() => {
+        setIsRevealed(true);
+      }, 300); // Delay before flipping
+      return () => clearTimeout(timer);
+    }
+
     // Advance within current group
-    if (currentCardInGroup < 4) {
+    if (currentCardInGroup < 4 && isRevealed) {
       const timer = setTimeout(() => {
         setCurrentCardInGroup(prev => prev + 1);
-      }, 600); // Show each card for 600ms
+        setIsRevealed(false); // Reset for next card
+      }, 900); // Show each card for 900ms after reveal
       return () => clearTimeout(timer);
     }
 
     // Move to next group after a pause
-    if (currentCardInGroup === 4 && currentGroupIndex < 3) {
+    if (currentCardInGroup === 4 && currentGroupIndex < 3 && isRevealed) {
       const timer = setTimeout(() => {
         setCurrentGroupIndex(prev => prev + 1);
         setCurrentCardInGroup(0);
+        setIsRevealed(false); // Reset for next card
       }, 1200); // Pause between groups
       return () => clearTimeout(timer);
     }
 
     // Complete animation
-    if (currentGroupIndex === 3 && currentCardInGroup === 4) {
+    if (currentGroupIndex === 3 && currentCardInGroup === 4 && isRevealed) {
       const timer = setTimeout(() => {
         setIsComplete(true);
       }, 1000);
       return () => clearTimeout(timer);
     }
-  }, [currentGroupIndex, currentCardInGroup, skipAnimation]);
+  }, [currentGroupIndex, currentCardInGroup, skipAnimation, isRevealed]);
 
-  // Animation for card reveal
+  // Animation for card reveal with flip
   const cardAnimation = useSpring({
     opacity: currentIndex >= 0 ? 1 : 0,
-    transform: currentIndex >= 0 ? 'scale(1) rotateY(0deg)' : 'scale(0.5) rotateY(180deg)',
+    transform: currentIndex >= 0 ? 'scale(1)' : 'scale(0.5)',
     config: config.wobbly,
   });
 
@@ -195,8 +208,9 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
             flexDirection: 'column',
             alignItems: 'center',
             gap: '16px',
+            perspective: '2000px', // Perspective for 3D effect
           }}>
-            {isRareCard && (
+            {isRareCard && isRevealed && (
               <div style={{
                 fontSize: '24px',
                 fontWeight: 'bold',
@@ -211,10 +225,72 @@ function CardPackOpeningScreen({ cardIds }: CardPackOpeningScreenProps) {
             <div style={{
               transform: 'scale(2.5)',
               transformOrigin: 'center',
-              filter: `drop-shadow(${cardGlow.glowIntensity})`,
-              transition: 'filter 0.5s ease',
             }}>
-              <Card card={cards[currentIndex]} size="large" showTooltip={false} />
+              <div style={{
+                position: 'relative',
+                width: '150px',
+                height: '210px', // 5:7 aspect ratio
+                transformStyle: 'preserve-3d',
+                transition: 'transform 0.6s',
+                transform: isRevealed ? 'rotateY(0deg)' : 'rotateY(180deg)',
+                filter: `drop-shadow(${cardGlow.glowIntensity})`,
+              }}>
+              {/* Card Front (revealed face) */}
+              <div style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                backfaceVisibility: 'hidden',
+                transform: 'rotateY(0deg)',
+              }}>
+                <Card card={cards[currentIndex]} size="large" showTooltip={false} />
+              </div>
+              
+              {/* Card Back (face-down) */}
+              <div style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                backfaceVisibility: 'hidden',
+                transform: 'rotateY(180deg)',
+              }}>
+                <div style={{
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%)',
+                  border: '3px solid #ffd700',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 8px rgba(0,0,0,0.5)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  boxSizing: 'border-box',
+                }}>
+                  {/* Decorative pattern on card back */}
+                  <div style={{
+                    fontSize: '48px',
+                    color: '#ffd700',
+                    textShadow: '0 0 20px rgba(255, 215, 0, 0.8)',
+                    fontWeight: 'bold',
+                  }}>
+                    🎴
+                  </div>
+                  {/* Border decoration */}
+                  <div style={{
+                    position: 'absolute',
+                    top: '8px',
+                    left: '8px',
+                    right: '8px',
+                    bottom: '8px',
+                    border: '2px solid rgba(255, 215, 0, 0.3)',
+                    borderRadius: '4px',
+                    pointerEvents: 'none',
+                  }} />
+                </div>
+              </div>
+              </div>
             </div>
           </animated.div>
         )}

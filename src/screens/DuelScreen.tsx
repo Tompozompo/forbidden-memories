@@ -25,6 +25,7 @@ function DuelScreen() {
   const [duelState, setDuelState] = useState<DuelState | null>(null);
   const [isRestored, setIsRestored] = useState(false);
   const [showDefeat, setShowDefeat] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   
   const allCards = cards as Card[];
   const allNpcs = npcs as NPC[];
@@ -148,31 +149,122 @@ function DuelScreen() {
         </div>
       )}
       
-      {/* Back button */}
+      {/* Settings button */}
       <div style={{
         position: 'absolute',
         top: '8px',
-        left: '8px',
+        right: '8px',
         zIndex: 10,
       }}>
         <button
-          onClick={handleBackToMap}
+          onClick={() => setShowSettings(true)}
           style={{
-            padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-            fontSize: 'clamp(10px, 2.5vw, 14px)',
+            padding: 'clamp(6px, 2vw, 8px)',
+            fontSize: 'clamp(16px, 4vw, 20px)',
             backgroundColor: '#444',
             color: '#fff',
             border: 'none',
             borderRadius: '4px',
             cursor: 'pointer',
+            width: 'clamp(36px, 10vw, 44px)',
+            height: 'clamp(36px, 10vw, 44px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
-          ← Back to Map
+          ⚙️
         </button>
       </div>
       
       {/* Duel Board */}
       <DuelBoardWrapper />
+      
+      {/* Settings Overlay */}
+      {showSettings && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          color: '#fff',
+          padding: '20px',
+        }}>
+          <div style={{
+            backgroundColor: '#1a1a1a',
+            padding: 'clamp(20px, 5vw, 32px)',
+            borderRadius: '8px',
+            border: '2px solid #444',
+            maxWidth: '400px',
+            width: '100%',
+          }}>
+            <div style={{
+              fontSize: 'clamp(18px, 5vw, 24px)',
+              fontWeight: 'bold',
+              marginBottom: '24px',
+              textAlign: 'center',
+            }}>
+              Duel Settings
+            </div>
+            
+            <div style={{
+              fontSize: 'clamp(12px, 3vw, 14px)',
+              marginBottom: '24px',
+              color: '#aaa',
+              textAlign: 'center',
+            }}>
+              Your duel progress is automatically saved
+            </div>
+            
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '12px',
+            }}>
+              <button
+                onClick={() => {
+                  setShowSettings(false);
+                  handleBackToMap();
+                }}
+                style={{
+                  padding: '16px 24px',
+                  fontSize: 'clamp(14px, 3.5vw, 16px)',
+                  fontWeight: 'bold',
+                  backgroundColor: '#cc6600',
+                  color: '#fff',
+                  border: '2px solid #ff8800',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                }}
+              >
+                ← Return to Map
+              </button>
+              
+              <button
+                onClick={() => setShowSettings(false)}
+                style={{
+                  padding: '16px 24px',
+                  fontSize: 'clamp(14px, 3.5vw, 16px)',
+                  backgroundColor: '#444',
+                  color: '#fff',
+                  border: '2px solid #666',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                }}
+              >
+                Resume Duel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       
       {/* Victory Overlay */}
       {showVictory && (

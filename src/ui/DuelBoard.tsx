@@ -645,8 +645,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                   key={i} 
                   className={isFusing ? 'flash burst' : ''}
                   style={{
-                    width: 'clamp(60px, 15vw, 80px)',
-                    height: 'clamp(84px, 21vw, 112px)',
+                    width: 'clamp(45px, 12vw, 100px)',
+                    height: 'clamp(63px, 16.8vw, 140px)',
                     display: 'inline-block',
                     zIndex,
                     cursor: fuseMode ? 'pointer' : 'grab',
@@ -667,8 +667,8 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                   key={i}
                   className="card"
                   style={{
-                    width: 'clamp(60px, 15vw, 80px)',
-                    height: 'clamp(84px, 21vw, 112px)',
+                    width: 'clamp(45px, 12vw, 100px)',
+                    height: 'clamp(63px, 16.8vw, 140px)',
                     display: 'inline-block',
                     zIndex,
                     margin: 0,
@@ -680,7 +680,7 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
                   onClick={(e) => handleCardClick(c, e)}
                   onContextMenu={(e) => handleCardClick(c, e)}
                 >
-                  <CardComponent card={c} size="small" style={{ width: '100%' }} />
+                  <CardComponent card={c} size="medium" style={{ width: '100%' }} />
                 </div>
               );
             })}

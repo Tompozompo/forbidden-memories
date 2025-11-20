@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { useSpring, animated, config } from '@react-spring/web';
 import { useSaveStore } from '../store/saveStore';
 import DuelBoard from '../ui/DuelBoard';
+import { FlashEffect } from '../ui/ParticleSystem';
 import npcs from '../data/npcs.json';
 import cards from '../data/cards.json';
 import type { Card } from '../types';
@@ -26,6 +28,29 @@ function DuelScreen() {
   const [isRestored, setIsRestored] = useState(false);
   const [showDefeat, setShowDefeat] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [showVictoryFlash, setShowVictoryFlash] = useState(false);
+  const [showDefeatFlash, setShowDefeatFlash] = useState(false);
+  
+  // Victory animation
+  const victoryAnimation = useSpring({
+    from: { opacity: 0, transform: 'scale(0.5) rotate(-10deg)' },
+    to: showVictory ? { opacity: 1, transform: 'scale(1) rotate(0deg)' } : { opacity: 0, transform: 'scale(0.5) rotate(-10deg)' },
+    config: config.wobbly,
+  });
+
+  // Defeat animation
+  const defeatAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(100px)' },
+    to: showDefeat ? { opacity: 1, transform: 'translateY(0px)' } : { opacity: 0, transform: 'translateY(100px)' },
+    config: config.slow,
+  });
+
+  // Restored notification animation
+  const restoredAnimation = useSpring({
+    from: { opacity: 0, transform: 'scale(0.8)' },
+    to: isRestored ? { opacity: 1, transform: 'scale(1)' } : { opacity: 0, transform: 'scale(0.8)' },
+    config: config.wobbly,
+  });
   
   const allCards = cards as Card[];
   const allNpcs = npcs as NPC[];
@@ -93,6 +118,9 @@ function DuelScreen() {
   };
   
   const handleVictory = () => {
+    // Flash effect
+    setShowVictoryFlash(true);
+    
     // Award rewards
     addStarchips(30);
     addBeatenId(npcId);
@@ -106,12 +134,20 @@ function DuelScreen() {
     // Clear the duel session since duel is over
     clearDuelSession();
     
-    setShowVictory(true);
+    // Show victory after flash
+    setTimeout(() => {
+      setShowVictory(true);
+    }, 500);
   };
   
   const handleDefeat = () => {
-    // Show defeat screen
-    setShowDefeat(true);
+    // Flash effect
+    setShowDefeatFlash(true);
+    
+    // Show defeat screen after flash
+    setTimeout(() => {
+      setShowDefeat(true);
+    }, 500);
   };
   
   const handleContinue = () => {
@@ -127,13 +163,28 @@ function DuelScreen() {
   
   return (
     <div style={{ position: 'relative' }}>
+      {/* Flash effects */}
+      <FlashEffect 
+        active={showVictoryFlash} 
+        color="#ffd700" 
+        duration={400}
+        onComplete={() => setShowVictoryFlash(false)}
+      />
+      <FlashEffect 
+        active={showDefeatFlash} 
+        color="#ff4444" 
+        duration={400}
+        onComplete={() => setShowDefeatFlash(false)}
+      />
+      
       {/* Restoration notification */}
       {isRestored && (
-        <div style={{
+        <animated.div style={{
+          ...restoredAnimation,
           position: 'fixed',
           top: '50%',
           left: '50%',
-          transform: 'translate(-50%, -50%)',
+          transform: restoredAnimation.transform.to(t => `translate(-50%, -50%) ${t}`),
           backgroundColor: 'rgba(0, 150, 0, 0.95)',
           color: '#fff',
           padding: 'clamp(16px, 4vw, 24px)',
@@ -146,7 +197,7 @@ function DuelScreen() {
           textAlign: 'center',
         }}>
           ✓ Duel Restored!
-        </div>
+        </animated.div>
       )}
       
       {/* Settings button */}
@@ -282,54 +333,65 @@ function DuelScreen() {
           zIndex: 1000,
           color: '#fff',
         }}>
-          <div style={{
-            fontSize: 'clamp(32px, 10vw, 48px)',
-            fontWeight: 'bold',
-            marginBottom: '24px',
-            color: '#ffd700',
-            textShadow: '0 0 20px rgba(255, 215, 0, 0.5)',
+          <animated.div style={{
+            ...victoryAnimation,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}>
-            VICTORY!
-          </div>
-          
-          <div style={{
-            fontSize: 'clamp(18px, 5vw, 24px)',
-            marginBottom: '16px',
-          }}>
-            You defeated {npc.name}!
-          </div>
-          
-          <div style={{
-            fontSize: 'clamp(16px, 4vw, 20px)',
-            marginBottom: '32px',
-            color: '#ffd700',
-          }}>
-            +30 Starchips
-          </div>
-          
-          <div style={{
-            fontSize: 'clamp(12px, 3vw, 16px)',
-            marginBottom: '32px',
-            color: '#aaa',
-          }}>
-            +1 Random Card Obtained
-          </div>
-          
-          <button
-            onClick={handleContinue}
-            style={{
-              padding: '16px 48px',
-              fontSize: 'clamp(16px, 4vw, 20px)',
+            <div className="glow" style={{
+              fontSize: 'clamp(32px, 10vw, 48px)',
               fontWeight: 'bold',
-              backgroundColor: '#4caf50',
-              color: '#fff',
-              border: '2px solid #fff',
-              borderRadius: '8px',
-              cursor: 'pointer',
-            }}
-          >
-            Continue
-          </button>
+              marginBottom: '24px',
+              color: '#ffd700',
+              textShadow: '0 0 20px rgba(255, 215, 0, 0.5)',
+            }}>
+              VICTORY!
+            </div>
+            
+            <div className="zoomIn" style={{
+              fontSize: 'clamp(18px, 5vw, 24px)',
+              marginBottom: '16px',
+            }}>
+              You defeated {npc.name}!
+            </div>
+            
+            <div className="slideInFromBottom" style={{
+              fontSize: 'clamp(16px, 4vw, 20px)',
+              marginBottom: '32px',
+              color: '#ffd700',
+              animationDelay: '0.2s',
+            }}>
+              +30 Starchips
+            </div>
+            
+            <div className="slideInFromBottom" style={{
+              fontSize: 'clamp(12px, 3vw, 16px)',
+              marginBottom: '32px',
+              color: '#aaa',
+              animationDelay: '0.3s',
+            }}>
+              +1 Random Card Obtained
+            </div>
+            
+            <button
+              onClick={handleContinue}
+              className="zoomIn"
+              style={{
+                padding: '16px 32px',
+                fontSize: 'clamp(14px, 4vw, 18px)',
+                fontWeight: 'bold',
+                backgroundColor: '#4caf50',
+                color: '#fff',
+                border: '2px solid #fff',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                animationDelay: '0.4s',
+              }}
+            >
+              Continue
+            </button>
+          </animated.div>
         </div>
       )}
       
@@ -349,38 +411,48 @@ function DuelScreen() {
           zIndex: 1000,
           color: '#fff',
         }}>
-          <div style={{
-            fontSize: 'clamp(32px, 10vw, 48px)',
-            fontWeight: 'bold',
-            marginBottom: '24px',
-            color: '#ff4444',
-            textShadow: '0 0 20px rgba(255, 68, 68, 0.5)',
+          <animated.div style={{
+            ...defeatAnimation,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}>
-            DEFEAT
-          </div>
-          
-          <div style={{
-            fontSize: 'clamp(18px, 5vw, 24px)',
-            marginBottom: '32px',
-          }}>
-            {npc.name} has won the duel!
-          </div>
-          
-          <button
-            onClick={handleContinue}
-            style={{
-              padding: '16px 48px',
-              fontSize: 'clamp(16px, 4vw, 20px)',
+            <div className="shake" style={{
+              fontSize: 'clamp(32px, 10vw, 48px)',
               fontWeight: 'bold',
-              backgroundColor: '#666',
-              color: '#fff',
-              border: '2px solid #fff',
-              borderRadius: '8px',
-              cursor: 'pointer',
-            }}
-          >
-            Return to Map
-          </button>
+              marginBottom: '24px',
+              color: '#ff4444',
+              textShadow: '0 0 20px rgba(255, 68, 68, 0.5)',
+            }}>
+              DEFEAT
+            </div>
+            
+            <div className="fadeIn" style={{
+              fontSize: 'clamp(18px, 5vw, 24px)',
+              marginBottom: '32px',
+              animationDelay: '0.2s',
+            }}>
+              {npc.name} has won the duel!
+            </div>
+            
+            <button
+              onClick={handleContinue}
+              className="fadeIn"
+              style={{
+                padding: '16px 48px',
+                fontSize: 'clamp(16px, 4vw, 20px)',
+                fontWeight: 'bold',
+                backgroundColor: '#666',
+                color: '#fff',
+                border: '2px solid #fff',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                animationDelay: '0.3s',
+              }}
+            >
+              Return to Map
+            </button>
+          </animated.div>
         </div>
       )}
     </div>

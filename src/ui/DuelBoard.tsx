@@ -75,20 +75,20 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]); // Only depend on state, not onStateChange to avoid infinite loops
 
-  // draw a starting hand on mount (5 cards each for both players) - only if hands are empty
+  // draw a starting hand on mount (5 cards each for both players) - only for fresh duels
   useEffect(() => {
-    // Only draw if both hands are empty (fresh game, not restored) and we haven't drawn yet
-    if (!hasInitialDrawnRef.current && state.hands[0].length === 0 && state.hands[1].length === 0) {
+    // Skip if we have an initial state (restored duel) or if we've already drawn
+    if (initialState || hasInitialDrawnRef.current) return;
+    
+    // Only draw if both hands are empty (sanity check)
+    if (state.hands[0].length === 0 && state.hands[1].length === 0) {
       hasInitialDrawnRef.current = true;
       // Draw 5 cards for each player all at once
       dispatch({ type: 'DRAW_MULTIPLE', player: 0, count: 5 });
       dispatch({ type: 'DRAW_MULTIPLE', player: 1, count: 5 });
     }
-    // Cleanup function to reset the ref on unmount (React Strict Mode compatibility)
-    return () => {
-      hasInitialDrawnRef.current = false;
-    };
-  }, []); // Empty dependency array ensures this only runs on mount/unmount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Empty dependency array - only run on mount
 
   // AI turn loop - auto-queue AI moves when it's player 1's turn
   useEffect(() => {

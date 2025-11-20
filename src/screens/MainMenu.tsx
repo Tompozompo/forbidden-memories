@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useSpring, animated, config } from '@react-spring/web';
 import { hasSave } from '../utils/saveSystem';
 import { useSaveStore } from '../store/saveStore';
 
@@ -6,6 +7,29 @@ function MainMenu() {
   const navigate = useNavigate();
   const { loadGame, resetGame } = useSaveStore();
   const saveExists = hasSave();
+  
+  // Animated title
+  const titleAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(-50px) scale(0.8)' },
+    to: { opacity: 1, transform: 'translateY(0px) scale(1)' },
+    config: config.slow,
+  });
+
+  // Animated buttons with stagger
+  const buttonAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(30px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    delay: 300,
+    config: config.gentle,
+  });
+
+  // Version fade in
+  const versionAnimation = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 600,
+    config: config.slow,
+  });
   
   const handleNewJourney = () => {
     resetGame();
@@ -29,7 +53,8 @@ function MainMenu() {
       color: '#fff',
     }}>
       {/* Logo Placeholder */}
-      <div style={{
+      <animated.div style={{
+        ...titleAnimation,
         fontSize: 'clamp(24px, 8vw, 48px)',
         fontWeight: 'bold',
         marginBottom: '48px',
@@ -37,12 +62,13 @@ function MainMenu() {
         textShadow: '0 0 20px rgba(255, 215, 0, 0.5)',
         color: '#ffd700',
       }}>
-        <div>FORBIDDEN</div>
-        <div>MEMORIES</div>
-      </div>
+        <div className="glow">FORBIDDEN</div>
+        <div className="glow">MEMORIES</div>
+      </animated.div>
       
       {/* Menu Buttons */}
-      <div style={{
+      <animated.div style={{
+        ...buttonAnimation,
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',
@@ -51,6 +77,7 @@ function MainMenu() {
       }}>
         <button
           onClick={handleNewJourney}
+          className="slideInFromBottom"
           style={{
             padding: '16px 32px',
             fontSize: 'clamp(14px, 4vw, 20px)',
@@ -60,13 +87,6 @@ function MainMenu() {
             border: '2px solid #fff',
             borderRadius: '8px',
             cursor: 'pointer',
-            transition: 'transform 0.2s',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
           }}
         >
           New Journey
@@ -75,6 +95,7 @@ function MainMenu() {
         {saveExists && (
           <button
             onClick={handleContinue}
+            className="slideInFromBottom"
             style={{
               padding: '16px 32px',
               fontSize: 'clamp(14px, 4vw, 20px)',
@@ -84,29 +105,24 @@ function MainMenu() {
               border: '2px solid #fff',
               borderRadius: '8px',
               cursor: 'pointer',
-              transition: 'transform 0.2s',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
+              animationDelay: '0.1s',
             }}
           >
             Continue
           </button>
         )}
-      </div>
+      </animated.div>
       
       {/* Version */}
-      <div style={{
+      <animated.div style={{
+        ...versionAnimation,
         position: 'absolute',
         bottom: '16px',
         fontSize: '12px',
         color: '#888',
       }}>
         v0.1.0-MVP
-      </div>
+      </animated.div>
     </div>
   );
 }

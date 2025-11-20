@@ -80,8 +80,9 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     // Skip if we have an initial state (restored duel) or if we've already drawn
     if (initialState || hasInitialDrawnRef.current) return;
     
-    // Only draw if both hands are empty (sanity check)
-    if (state.hands[0].length === 0 && state.hands[1].length === 0) {
+    // Only draw if both hands are empty and decks have cards (sanity check)
+    if (state.hands[0].length === 0 && state.hands[1].length === 0 && 
+        state.decks[0].length >= 5 && state.decks[1].length >= 5) {
       hasInitialDrawnRef.current = true;
       // Draw 5 cards for each player all at once
       dispatch({ type: 'DRAW_MULTIPLE', player: 0, count: 5 });

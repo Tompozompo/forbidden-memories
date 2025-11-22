@@ -21,7 +21,7 @@ interface DuelBoardProps {
 
 export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onStateChange, onVictory, onDefeat }: DuelBoardProps) {
   const [state, dispatch] = useReducer(duelReducer, initialState || initialDuel(p0Deck, p1Deck));
-  const initialDrawDone = useRef(false);
+  const hasInitialDrawnRef = useRef(false);
   const aiTimeoutRef = useRef<number | null>(null);
   const [selectedAttacker, setSelectedAttacker] = useState<{ cardId: number; playerIdx: number } | null>(null);
   const [attackPreview, setAttackPreview] = useState<{ damage: number; targetPos: number; isDirect: boolean } | null>(null);
@@ -75,15 +75,21 @@ export default function DuelBoard({ p0Deck, p1Deck, allCards, initialState, onSt
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]); // Only depend on state, not onStateChange to avoid infinite loops
 
-  // draw a starting hand on mount (5 cards each for both players) - only if no initial state provided
+  // draw a starting hand on mount (5 cards each for both players) - only for fresh duels
   useEffect(() => {
-    if (initialDrawDone.current || initialState) return;
-    initialDrawDone.current = true;
-    // Draw 5 cards for each player all at once
-    dispatch({ type: 'DRAW_MULTIPLE', player: 0, count: 5 });
-    dispatch({ type: 'DRAW_MULTIPLE', player: 1, count: 5 });
+    // Skip if we have an initial state (restored duel) or if we've already drawn
+    if (initialState || hasInitialDrawnRef.current) return;
+    
+    // Only draw if both hands are empty and decks have cards (sanity check)
+    if (state.hands[0].length === 0 && state.hands[1].length === 0 && 
+        state.decks[0].length >= 5 && state.decks[1].length >= 5) {
+      hasInitialDrawnRef.current = true;
+      // Draw 5 cards for each player all at once
+      dispatch({ type: 'DRAW_MULTIPLE', player: 0, count: 5 });
+      dispatch({ type: 'DRAW_MULTIPLE', player: 1, count: 5 });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, []); // Empty dependency array - only run on mount
 
   // AI turn loop - auto-queue AI moves when it's player 1's turn
   useEffect(() => {
